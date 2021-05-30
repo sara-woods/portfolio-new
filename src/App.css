@@ -1,5 +1,11 @@
-.intro {
-  width: 700px;
+.app {
+  width: 70%;
   margin: 0 auto;
 }
 
+
+@media screen and (max-width: 1000px) {
+  .app {
+    width: 90%;
+  }
+}

@@ -53,6 +53,10 @@ li span {
   font-weight: 300;
 }
 
+.text-700 {
+  font-weight: 700;
+}
+
 .text-20px {
   font-size: 20px;
 }

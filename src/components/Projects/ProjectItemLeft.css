@@ -1,0 +1,24 @@
+.project-item-left {
+  width: 865px;
+  height: 378px;
+  border-radius: 34px 34px 150px 34px;
+  background-color: #E1F0E1;
+  margin: 50px 0;
+  padding: 30px;
+  position: relative;
+}
+
+.project-text {
+  width: 420px;
+}
+
+.project-image {
+  background-size: cover;
+  background-position: center;
+  width: 500px;
+  height: 277px;
+  position: absolute;
+  top: 30px;
+  right: -130px;
+  border-radius: 20px;
+}
