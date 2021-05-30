@@ -1,13 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&family=Limelight&display=swap');
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Josefin Sans', sans-serif;
+  background-color: #FFFDF4;
+  line-height: 1.3;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+h1 {
+  font-family: 'Limelight', cursive;
+  font-size: 64px;
+  font-weight: normal;
 }
+
+h1, h2, h3, p {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  margin-right: 70px;
+  margin-left: 27px;
+  padding: 0;
+  line-height: 1;
+}
+
+li {
+  font-size: 30px;
+}
+li span {
+  font-size: 20px;
+}
+
+.text-orange {
+  color: #DF7861;
+}
+
+.text-sm {
+  font-size: 16px;
+}
+
+.text-md {
+  font-size: 28px;
+}
+
+.text-lg {
+  font-size: 35px;
+}
+
+.text-300 {
+  font-weight: 300;
+}
+
+.text-20px {
+  font-size: 20px;
+}
+
+.list-bullet {
+  vertical-align: middle;
+}
+
