@@ -1,19 +1,10 @@
 .app {
   width: 90%;
   margin: 0 auto;
-  /* background-color: red; */
 }
 
-
-/* @media screen and (max-width: 1450px) {
+/* @media screen and (max-width: 1400px) {
   .app {
-    width: 80%;
-  }
-}
-
-
-@media screen and (max-width: 400px) {
-  .app {
-    width: 90%;
+    width: 100%;
   }
 } */
