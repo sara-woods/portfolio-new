@@ -4,7 +4,7 @@ import './Projects.css';
 const Projects = () => {
   return (
     <div className="projects">
-      <h1>My latest coding projects</h1>
+      <h1 className="mb-3">Projects</h1>
       <ProjectItemLeft />
     </div>
   )
