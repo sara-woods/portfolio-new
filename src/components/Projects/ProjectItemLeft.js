@@ -18,7 +18,7 @@ const ProjectItemLeft = () => {
       <div className="project-item">
 
       
-        <p className="text-orange">Team Project</p>
+        <p className="text-orange text-sm">Team Project</p>
         <h2 className="text-700 mb-3 mt-1">Wellsy</h2>
 
         <div className="image-container">
@@ -29,22 +29,14 @@ const ProjectItemLeft = () => {
   
 
           <div className="project-info">
-            <p className="project-text mt-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occ</p>
+            <p className="project-text text-sm mt-2 text-300">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occ</p>
             
-            <div className="d-flex mt-3">
-              <div className="ml-5">
-                <ul className="text-orange">
-                  <li><span>HTML</span></li>
-                  <li><span>CSS</span></li>
-                  <li><span>JavaScript (ES6+)</span></li>
-                </ul>
-              </div>
-              <div>
-                <ul className="text-orange">
-                  <li><span>React</span></li>
-                  <li><span>Ruby on Rails</span></li>
-                </ul>
-              </div>
+            <div className="tech-tags">
+              <div><p className="tech-tag">Ruby on Rails</p></div>
+              <div><p className="tech-tag">HTML/SCSS</p></div>
+              <div><p className="tech-tag">JavaScript (ES6)</p></div>
+              <div><p className="tech-tag">Stripe</p></div>
+              <div><p className="tech-tag">Heroku</p></div>
             </div>
 
             <div className="links d-flex">
