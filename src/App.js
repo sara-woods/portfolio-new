@@ -1,5 +1,5 @@
 import './App.css';
-import Intro from "./components/Intro";
+import Intro from "./components/Intro/Intro";
 import Projects from './components/Projects/Projects';
 
 const App = () => {

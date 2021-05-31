@@ -1,24 +1,35 @@
 .project-item-left {
   width: 865px;
-  height: 378px;
+  height: 500px;
   border-radius: 34px 34px 150px 34px;
   background-color: #E1F0E1;
   margin: 50px 0;
   padding: 30px;
-  position: relative;
+  /* position: relative; */
 }
 
-.project-text {
-  width: 420px;
+.project-info {
+  width: 35%;
+  padding-right: 30px;
 }
 
-.project-image {
-  background-size: cover;
+.image {
   background-position: center;
-  width: 500px;
-  height: 277px;
-  position: absolute;
-  top: 30px;
-  right: -130px;
+  background-size: cover;
+  width: 100%;
+  padding-top: 60%;
   border-radius: 20px;
+  vertical-align: middle;
+}
+
+.project-img {
+  width: 65%;
+}
+
+
+@media screen and (max-width: 1100px) {
+  .project-item-left {
+    width: 100%;
+  }
+  
 }
