@@ -2,7 +2,7 @@ import './Intro.css';
 
 const Intro = () => {
   return (
-    <div className="intro">
+    <div id="intro">
       <p className="text-orange text-300 text-lg">Hi, my name is</p>
       <h1>Sara Lotfi</h1>
       <p className="text-md text-300 mt-3">I’m a developer and illustrator based in Uppsala, Sweden. I'm currently looking to join a team as a front end developer. Most recently I graduated from Le Wagon, a full-time web development bootcamp. Here's a few technologies I've worked with: </p>

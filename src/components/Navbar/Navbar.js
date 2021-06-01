@@ -40,9 +40,9 @@ const NavbarEx = () => {
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
       <Navbar.Collapse id="responsive-navbar-nav">
         <Nav className="ml-auto">
-          <Nav.Link className="navbar-link" href="#deets">About</Nav.Link>
-          <Nav.Link className="navbar-link" href="#features">Projects</Nav.Link>
-          <Nav.Link className="navbar-link" href="#features">Contact</Nav.Link>
+          <Nav.Link className="navbar-link" href="#top">About</Nav.Link>
+          <Nav.Link className="navbar-link" href="#projects">Projects</Nav.Link>
+          <Nav.Link className="navbar-link" href="#contact">Contact</Nav.Link>
         </Nav>
       </Navbar.Collapse>
     </Navbar>

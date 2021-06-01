@@ -1,0 +1,18 @@
+.footer {
+  text-align: center;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+}
+
+.social-links p {
+  font-size: 46px;
+  margin: 0 10px;
+  transition: 0.2s ease-in;
+}
+
+.social-links p:hover {
+  color: black;
+}

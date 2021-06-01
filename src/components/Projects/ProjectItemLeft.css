@@ -51,6 +51,11 @@
 .links p {
   margin-right: 10px;
   font-size: 28px;
+  transition: 0.2s ease-in;
+}
+
+.links p:hover {
+  color: black;
 }
 
 /* TAGS */
