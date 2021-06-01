@@ -17,6 +17,10 @@ const App = () => {
         <Projects projectData={ProjectData} />
         <Contact/>
         <Footer />
+        <div className="sidebar-email">
+          <div className="line"></div>
+          <p className="e-mail">lotfi.sara@gmail.com</p>
+        </div>
       </div>
     </>
   );
