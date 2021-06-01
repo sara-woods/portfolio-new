@@ -13,7 +13,7 @@ const ProjectItemLeft = () => {
   }
 
   return (
-    <div className="project-container mt-5">   
+    <div className="project-container">   
 
       <div className="project-item">
 
@@ -29,7 +29,7 @@ const ProjectItemLeft = () => {
   
 
           <div className="project-info">
-            <p className="project-text text-sm mt-2 text-300">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occ</p>
+            <p className="project-text text-sm text-300">Movie generator built on React and a Rails backend API. Users can generate a random movie or filter the result based on release year, rating and genres.</p>
             
             <div className="tech-tags">
               <div><p className="tech-tag">Ruby on Rails</p></div>
