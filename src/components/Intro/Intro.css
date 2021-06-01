@@ -5,19 +5,26 @@
   margin-bottom: 200px;
 }
 
+.tech-stack {
+  display: flex;
+}
+
 .intro a {
   color: #DF7861;
   font-weight: 400;
 }
 
 @media screen and (max-width: 1000px) {
-  .intro {
+  #intro {
     width: 100%;
   }
 }
 
-@media screen and (max-width: 991px) {
-  .intro {
+@media screen and (max-width: 500px) {
+  #intro {
     margin-top: 70px;
+  }
+  .tech-stack {
+    display: initial;
   }
 }
