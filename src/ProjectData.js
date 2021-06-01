@@ -12,7 +12,7 @@ export const ProjectData = [
     id: 2,
     type: "Solo project",
     name: "Catsweeper",
-    description: "Minesweeper game built in JavaScript ES6 and based on my own illustrations.",
+    description: "Based on the game Minesweeper, built on JavaScript. I tried to recreate the game mechanics as close to the classic as possible. The design is based on my own illustrations.",
     technologies: ["JavaScript ES6", "HTML", "CSS"],
     repo: "https://github.com/saralotfi/catsweeper",
     web: "https://saralotfi.github.io/catsweeper/"
@@ -22,7 +22,7 @@ export const ProjectData = [
     id: 3,
     type: "Team project",
     name: "Packathon",
-    description: "Winner of Hackathon - Le Wagon, a packing helper app for e-commerce using Ruby on Rails and Three.js. Built in 2 days and designed for mobile screens.",
+    description: "Winner of Hackathon - Le Wagon, an order packing-helper app for online retailers using Ruby on Rails and Three.js. Built in 2 days and designed for mobile screens.",
     technologies: ["Ruby on Rails", "Three.js", "JavaScript ES6", "Heroku", "HTML/SCSS"],
     repo: "https://github.com/thomas-kenny/veeqo",
     web: "https://packathon.herokuapp.com/"
