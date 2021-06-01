@@ -1,11 +1,12 @@
 .project-container {
   width: 1000px;
   margin: 100px auto;
+  margin-bottom: 50px;
 }
 
 .project-item {
   width: 80%;
-  height: fit-content;
+  height: 360px;
   border-radius: 34px 34px 150px 34px;
   padding: 30px;
   position: relative;
@@ -18,7 +19,6 @@
 .bg-blue {
   background-color: #D9EBED;
 }
-
 
 .project-info {
   width: 70%;
@@ -36,15 +36,12 @@
   position: absolute;
   top: -76px;
   right: -470px;
-  
 }
 
 .image-container {
   width: 500px;
   position: relative;
-  
 }
-
 
 /* LINKS  */
 
@@ -90,15 +87,13 @@
   }
   .project-item {
     width: 100%;
+    height: fit-content;
   }
   .image {
     position: initial;
     width: 100%;
     height: 0;
-    padding-top: 60%;
-  }
-  .project {
-    display: initial;
+    padding-top: 63%;
   }
   .project-info {
     width: 100%;
@@ -111,8 +106,8 @@
     top: 30px;
     right: 22px;
   }
-  .project-text {
-    margin-top: 30px;
+  .tech-tags {
+    width: 80%;
   }
 }
 

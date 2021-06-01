@@ -3,7 +3,7 @@ export const ProjectData = [
     id: 1,
     type: "Solo project",
     name: "What movie?",
-    description: "Movie generator built on React and a Rails backend API. Users can generate a random movie or filter the result based on release year, rating and genres.",
+    description: "Movie generator built on React with a Rails backend API to fetch movies. Users can generate a random movie or filter the result based on release year, rating and genres.",
     technologies: ["React", "Ruby on Rails", "JSON", "API", "Heroku", "HTML/SCSS"],
     repo: "https://github.com/saralotfi/rails-find-me-a-movie",
     web: "https://whatmovieapp.herokuapp.com/"
@@ -16,6 +16,7 @@ export const ProjectData = [
     technologies: ["JavaScript ES6", "HTML", "CSS"],
     repo: "https://github.com/saralotfi/catsweeper",
     web: "https://saralotfi.github.io/catsweeper/"
+
   },
   {
     id: 3,
@@ -30,7 +31,7 @@ export const ProjectData = [
     id: 4,
     type: "Team project",
     name: "Wellsy",
-    description: "A platform where users can create or book workout sessions and participate via zoom from their own home. Features search, authorization, image hosting and payments via Stripe. Built in 10 days as part of Le Wagon.",
+    description: "A platform where users can create or book workout sessions and participate via zoom from their own home. Features search, authorization, image hosting and payments via Stripe. Built in 10 days.",
     technologies: ["Ruby on Rails", "JavaScript ES6", "Stripe", "Heroku", "HTML/SCSS", "PostgreSQL"],
     repo: "https://github.com/saralotfi/wellsy",
     web: "http://wellsy.live/"
@@ -39,7 +40,7 @@ export const ProjectData = [
     id: 5,
     type: "Team project",
     name: "Floatify",
-    description: "An Airbnb like platform built on Ruby on Rails featuring search, geocoding and authorization. Users can create or rent boats and manage and review their bookings. Built in 5 days as part of Le Wagon.",
+    description: "An Airbnb like platform built on Ruby on Rails featuring search, geocoding and authorization. Users can create or rent boats and manage and review their bookings. Built in 5 days.",
     technologies: ["Ruby on Rails", "JavaScript ES6", "Mapbox", "Heroku", "HTML/SCSS", "PostgreSQL"],
     repo: "https://github.com/saralotfi/float_boat",
     web: "https://floatifyapp.herokuapp.com/"

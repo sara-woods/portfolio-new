@@ -1,11 +1,16 @@
 .navbar {
   background-color: #FFFDF4;
-  padding: 20px 5%;
+  padding: 10px 5%;
 }
 
 .navbar-brand {
-  font-size: 34px !important;
+  font-size: 54px !important;
 }
+
+.navbar-brand:hover {
+  opacity: 0.8;
+}
+
 .navbar-link {
   color: black;
   margin-left: 30px;

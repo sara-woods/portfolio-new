@@ -1,15 +1,14 @@
-import './ProjectItemLeft.css';
-import pic from "../../images/meta-img.png"
+import './ProjectItem.css';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithubSquare } from '@fortawesome/free-brands-svg-icons'
 import { faExternalLinkSquareAlt } from '@fortawesome/free-solid-svg-icons';
 
 
-const ProjectItemLeft = (props) => {
+const ProjectItem = (props) => {
 
   let style = {
-    backgroundImage: `url(${pic})`
+    backgroundImage: `url(${props.projectImage})`
   }
 
   return (
@@ -41,4 +40,4 @@ const ProjectItemLeft = (props) => {
   )
 }
 
-export default ProjectItemLeft;
+export default ProjectItem;
