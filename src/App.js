@@ -1,5 +1,5 @@
 import './App.css';
-import Navbar from "./components/Navbar/Navbar";
+import NavbarEx from "./components/Navbar/Navbar";
 import Intro from "./components/Intro/Intro";
 import Projects from './components/Projects/Projects';
 import Contact from './components/Contact/Contact';
@@ -9,7 +9,7 @@ const App = () => {
   return (
     <>
       <div className="app">
-        <Navbar />
+        <NavbarEx />
         <Intro />
         <Projects />
         <Contact/>

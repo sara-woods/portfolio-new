@@ -1,32 +1,27 @@
 .navbar {
-
-  
-
-
   background-color: #FFFDF4;
+  padding: 20px 5%;
 }
 
-.navbar ul {
-  margin-right: 0;
+.navbar-brand {
+  font-size: 34px !important;
 }
-
-.navbar ul a {
-  margin-left: 20px;
-  color: black !important;
-}
-
-.navbar a {
-  font-size: 26px;
-}
-
-.nav-links a {
+.navbar-link {
   color: black;
   margin-left: 30px;
-  font-size: 26px;
+  font-size: 24px !important;
   font-weight: 700;
+}
+
+.navbar-collapse {
+  text-align: center;
 }
 
 .navbar-light .navbar-toggler {
   /* border: none; */
   /* color: black; */
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: black;
 }
