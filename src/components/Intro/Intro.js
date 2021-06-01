@@ -9,15 +9,20 @@ const Intro = () => {
       <div className="d-flex text-20px mt-3">
         <div className="ml-5">
           <ul className="text-orange">
-            <li><span>HTML</span></li>
-            <li><span>CSS</span></li>
+            <li><span>React</span></li>
             <li><span>JavaScript (ES6+)</span></li>
+            <li><span>Ruby on Rails</span></li>
+            <li><span>HTML/CSS/Bootstrap</span></li>
+            <li><span>Git/Github</span></li>
           </ul>
         </div>
         <div>
           <ul className="text-orange">
-            <li><span>React</span></li>
-            <li><span>Ruby on Rails</span></li>
+            <li><span>Heroku</span></li>
+            <li><span>JSON</span></li>
+            <li><span>APIs</span></li>
+            <li><span>SQL</span></li>
+            <li><span>Relational databases</span></li>
           </ul>
         </div>
       </div>

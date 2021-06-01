@@ -7,9 +7,16 @@
   width: 80%;
   height: fit-content;
   border-radius: 34px 34px 150px 34px;
-  background-color: #E1F0E1;
   padding: 30px;
   position: relative;
+}
+
+.bg-green {
+  background-color: #E1F0E1;
+}
+
+.bg-blue {
+  background-color: #D9EBED;
 }
 
 

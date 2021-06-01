@@ -6,13 +6,15 @@ import Contact from './components/Contact/Contact';
 import Footer from './components/Footer/Footer';
 import React from 'react';
 
+import { ProjectData } from "./ProjectData";
+
 const App = () => {
   return (
     <>
       <div className="app">
         <NavbarEx />
         <Intro />
-        <Projects />
+        <Projects projectData={ProjectData} />
         <Contact/>
         <Footer />
       </div>
