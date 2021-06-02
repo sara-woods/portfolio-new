@@ -13,7 +13,7 @@ const Intro = () => {
             <li><span>JavaScript (ES6+)</span></li>
             <li><span>Ruby on Rails</span></li>
             <li><span>HTML/CSS/Bootstrap</span></li>
-            <li><span>Git/Github</span></li>
+            <li><span>Git and GitHub</span></li>
           </ul>
         </div>
         <div>
