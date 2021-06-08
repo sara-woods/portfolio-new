@@ -21,7 +21,7 @@ export const ProjectData = [
     id: 3,
     type: "Team project",
     name: "Packathon",
-    description: "Winner of Hackathon - Le Wagon, an order packing-helper app for online retailers using Ruby on Rails and Three.js. Built in 2 days and designed for mobile screens.",
+    description: "Winner of Hackathon - Le Wagon, an order packing-helper app for online retailers using Ruby on Rails and Three.js. (The site breaks at the moment due to the external packing algorithm API currently being down.)",
     technologies: ["Ruby on Rails", "Three.js", "JavaScript ES6", "Heroku", "HTML/SCSS"],
     repo: "https://github.com/thomas-kenny/veeqo",
     web: "https://packathon.herokuapp.com/"
