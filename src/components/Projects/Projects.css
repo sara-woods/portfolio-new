@@ -2,5 +2,39 @@
   margin: 0 auto;
   margin-top: 80px;
   margin-bottom: 200px;
-  width: fit-content;
+  width: 60%;
+}
+
+#projects-anchor {
+  position: relative;
+  top: -200px;
+  left: 0;
+}
+
+.tabs {
+  display: flex;
+}
+
+.tab {
+  color: black;
+  font-size: 24px !important;
+  font-weight: 700;
+  margin-right: 36px;
+  cursor: pointer;
+}
+
+.underline {
+  border-bottom: 3px solid black;
+}
+
+@media screen and (max-width: 1500px) {
+  #projects {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  #projects {
+    width: 100%;
+  }
 }
