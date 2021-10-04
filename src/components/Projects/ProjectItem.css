@@ -37,10 +37,7 @@
   padding-top: 63%;
   background-position: center;
   background-size: cover;
-  /* width: 95%; */
-  /* height: 300px; */
   border-radius: 20px;
-  /* position: absolute; */
   top: -97px;
   right: -470px;
 }
@@ -87,12 +84,6 @@
 }
 
 /* RESPONSIVENESS */
-
-@media screen and (max-width: 1500px) {
-  .project-container {
-    /* width: 80%; */
-  }
-}
 
 @media screen and (max-width: 450px) {
   .project-item {

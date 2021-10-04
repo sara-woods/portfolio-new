@@ -4,6 +4,9 @@ import WebDevProjects from "./WebDevProjects";
 import Illustrations from "./Illustrations";
 import GraphicDesign from "./GraphicDesign";
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowDown } from "@fortawesome/free-solid-svg-icons";
+
 const Projects = (props) => {
   const [page, setPage] = useState("1");
 
@@ -15,6 +18,7 @@ const Projects = (props) => {
     <div id="projects">
       <div id="projects-anchor"></div>
       <h1 className="mb-5">Projects</h1>
+      <FontAwesomeIcon icon={faArrowDown} />
       <div className="tabs">
         <p
           data-page="1"
@@ -35,7 +39,7 @@ const Projects = (props) => {
           className={`tab ${page === "3" ? "underline" : ""}`}
           onClick={handlePageChange}
         >
-          Logos/Web Design
+          Logo/Web Design
         </p>
       </div>
       {page === "1" && (
