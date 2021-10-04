@@ -13,11 +13,11 @@
 }
 
 .bg-green {
-  background-color: #E1F0E1;
+  background-color: #e1f0e1;
 }
 
 .bg-blue {
-  background-color: #D9EBED;
+  background-color: #d9ebed;
 }
 
 .project-info {
@@ -45,7 +45,7 @@
 
 /* LINKS  */
 
-.links  {
+.links {
   position: absolute;
   top: 338px;
   right: -209px;
@@ -71,13 +71,12 @@
 
 .tech-tag {
   color: white;
-  background-color: #DF7861;
-  padding: 5px 15px;
+  background-color: #df7861;
+  padding: 5px 15px 2px 15px;
   border-radius: 20px;
   font-weight: 400;
   margin: 10px 10px 0 0;
 }
-
 
 /* RESPONSIVENESS */
 
@@ -102,7 +101,7 @@
   .image-container {
     width: 100%;
   }
-  .links  {
+  .links {
     top: 30px;
     right: 22px;
   }
@@ -118,7 +117,7 @@
   .project-item {
     padding: 22px;
   }
-  .links  {
+  .links {
     top: 17px;
     right: 16px;
   }
