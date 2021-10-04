@@ -23,6 +23,30 @@
   cursor: pointer;
 }
 
+.filter {
+  display: flex;
+  justify-content: center;
+}
+
+.filter-button {
+  color: white;
+  background: black;
+  font-size: 20px !important;
+  font-weight: 500;
+  cursor: pointer;
+  border: 2px solid black;
+  border-radius: 40px;
+  padding: 10px 20px 8px 20px;
+}
+
+.arrow {
+  font-size: 16px;
+}
+
+.tab:hover {
+  border-bottom: 3px solid black;
+}
+
 .underline {
   border-bottom: 3px solid black;
 }

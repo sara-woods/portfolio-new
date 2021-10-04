@@ -4,8 +4,7 @@ import WebDevProjects from "./WebDevProjects";
 import Illustrations from "./Illustrations";
 import GraphicDesign from "./GraphicDesign";
 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowDown } from "@fortawesome/free-solid-svg-icons";
+import Filter from "./Filter";
 
 const Projects = (props) => {
   const [page, setPage] = useState("1");
@@ -14,11 +13,28 @@ const Projects = (props) => {
     setPage(event.target.dataset.page);
   };
 
+  let filterText;
+
+  switch (page) {
+    case "1":
+      filterText = "Web Development";
+      break;
+    case "2":
+      filterText = "Illustrations";
+      break;
+    case "3":
+      filterText = "Logo/Web Design";
+      break;
+    default:
+      filterText = "Web Development";
+  }
+
   return (
     <div id="projects">
       <div id="projects-anchor"></div>
       <h1 className="mb-5">Projects</h1>
-      <FontAwesomeIcon icon={faArrowDown} />
+      <Filter filterText={filterText} />
+
       <div className="tabs">
         <p
           data-page="1"
