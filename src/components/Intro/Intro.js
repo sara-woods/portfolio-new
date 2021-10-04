@@ -1,4 +1,5 @@
 import "./Intro.css";
+import Button from "../UI/Button";
 
 const Intro = () => {
   return (
@@ -50,6 +51,9 @@ const Intro = () => {
           </ul>
         </div>
       </div>
+      <a href="mailto: lotfi.sara@gmail.com">
+        <Button text="Get in touch" />
+      </a>
     </div>
   );
 };

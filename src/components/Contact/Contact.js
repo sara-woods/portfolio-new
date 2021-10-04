@@ -13,7 +13,7 @@ const Contact = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Linked In
+          LinkedIn
         </a>
         .
       </p>
