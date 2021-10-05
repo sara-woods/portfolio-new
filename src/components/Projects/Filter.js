@@ -1,16 +1,35 @@
+import { useState, useEffect } from "react";
 import "./Filter.css";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowDown } from "@fortawesome/free-solid-svg-icons";
 
 const Filter = (props) => {
+  const [filterSticky, setFilterSticky] = useState(false);
   const windowWidth = window.innerWidth;
-  console.log(windowWidth);
+
+  useEffect(() => {
+    window.addEventListener("scroll", (event) => {
+      const elementTarget = document.querySelector(".scroll-anchor");
+      const elementTargetOffsetTop = elementTarget.offsetTop;
+      console.log("scroll", window.scrollY);
+      console.log("top", elementTargetOffsetTop);
+      if (window.scrollY > elementTargetOffsetTop) {
+        setFilterSticky(true);
+      } else {
+        setFilterSticky(false);
+      }
+    });
+  }, []);
 
   return (
     <>
       {windowWidth <= 800 && (
-        <div className="filter">
+        <div
+          className={`filter-container ${
+            filterSticky ? "filter-container-sticky" : ""
+          }`}
+        >
           <button onClick={props.onFilter} className="filter-button">
             {props.filterText}
             <span className="ml-3 arrow">

@@ -11,7 +11,6 @@ const Projects = (props) => {
   const [showFilterDropdown, setFilterDropdown] = useState(false);
 
   const handlePageChange = (event) => {
-    console.log(event.target.dataset.page);
     setPage(event.target.dataset.page);
     setFilterDropdown(false);
   };
@@ -39,7 +38,7 @@ const Projects = (props) => {
   return (
     <div id="projects">
       <div id="projects-anchor"></div>
-      <h1 className="mb-5 header">Projects</h1>
+      <h1 className="mb-5 header scroll-anchor">Projects</h1>
 
       <Filter
         filterText={filterText}

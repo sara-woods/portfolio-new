@@ -1,4 +1,4 @@
-.filter {
+.filter-container {
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -50,4 +50,14 @@
 
 .filter-option:hover {
   color: #df7861;
+}
+
+.filter-container-sticky {
+  position: fixed;
+  z-index: 200;
+  top: 100px;
+  left: 50% !important;
+  right: auto !important;
+  text-align: center !important;
+  transform: translate(-50%, 0) !important;
 }
