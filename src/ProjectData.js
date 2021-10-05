@@ -12,6 +12,7 @@ export const ProjectData = [
       "API",
       "Heroku",
       "HTML/SCSS",
+      "Responsive",
     ],
     repo: "https://github.com/saralotfi/rails-find-me-a-movie",
     web: "https://whatmovieapp.herokuapp.com/",
@@ -38,13 +39,14 @@ export const ProjectData = [
     type: "Team project",
     name: "Packathon",
     description:
-      "Winner of Hackathon - Le Wagon, an order packing-helper app for online retailers using Ruby on Rails and Three.js. (The site breaks at the moment due to the external packing algorithm API currently being down.)",
+      "Winner of Hackathon - Le Wagon, an order packing-helper app for online retailers using Ruby on Rails and Three.js. (The site breaks at the moment due to the external packing algorithm API being down.)",
     technologies: [
       "Ruby on Rails",
       "Three.js",
       "JavaScript ES6",
       "Heroku",
       "HTML/SCSS",
+      "Responsive",
     ],
     repo: "https://github.com/thomas-kenny/veeqo",
     web: "https://packathon.herokuapp.com/",
@@ -55,7 +57,7 @@ export const ProjectData = [
     name: "Catsweeper",
     description:
       "Based on the game Minesweeper and built in JavaScript. I recreated the game mechanics as close to the classic game as possible. The design includes my own illustrations.",
-    technologies: ["JavaScript ES6", "HTML", "CSS"],
+    technologies: ["JavaScript ES6", "HTML", "CSS", "Responsive"],
     repo: "https://github.com/saralotfi/catsweeper",
     web: "https://saralotfi.github.io/catsweeper/",
   },

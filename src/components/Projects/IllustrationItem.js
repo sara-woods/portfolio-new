@@ -3,7 +3,7 @@ import "./IllustrationItem.css";
 const IllustrationItem = (props) => {
   return (
     <div className="illustration-container">
-      <img src={props.src} alt={props.alt} />
+      <img className="illustration" src={props.src} alt={props.alt} />
     </div>
   );
 };
