@@ -9,7 +9,11 @@ import Filter from "./Filter";
 const Projects = (props) => {
   const [page, setPage] = useState("1");
 
+  const windowWidth = window.innerWidth;
+  console.log(windowWidth);
+
   const handlePageChange = (event) => {
+    console.log(event.target.dataset.page);
     setPage(event.target.dataset.page);
   };
 
@@ -33,31 +37,45 @@ const Projects = (props) => {
     <div id="projects">
       <div id="projects-anchor"></div>
       <h1 className="mb-5">Projects</h1>
-      <Filter filterText={filterText} />
+      {windowWidth <= 800 && (
+        <Filter
+          filterText={filterText}
+          page={page}
+          onFilterChange={handlePageChange}
+        />
+      )}
 
-      <div className="tabs">
-        <p
-          data-page="1"
-          className={`tab ${page === "1" ? "underline" : ""}`}
-          onClick={handlePageChange}
-        >
-          Web Development
-        </p>
-        <p
-          data-page="2"
-          className={`tab ${page === "2" ? "underline" : ""}`}
-          onClick={handlePageChange}
-        >
-          Illustrations
-        </p>
-        <p
-          data-page="3"
-          className={`tab ${page === "3" ? "underline" : ""}`}
-          onClick={handlePageChange}
-        >
-          Logo/Web Design
-        </p>
-      </div>
+      {windowWidth > 800 && (
+        <ul className="tabs">
+          <li>
+            <p
+              data-page="1"
+              className={`tab ${page === "1" ? "underline" : ""}`}
+              onClick={handlePageChange}
+            >
+              Web Development
+            </p>
+          </li>
+          <li>
+            <p
+              data-page="2"
+              className={`tab ${page === "2" ? "underline" : ""}`}
+              onClick={handlePageChange}
+            >
+              Illustrations
+            </p>
+          </li>
+          <li>
+            <p
+              data-page="3"
+              className={`tab ${page === "3" ? "underline" : ""}`}
+              onClick={handlePageChange}
+            >
+              Logo/Web Design
+            </p>
+          </li>
+        </ul>
+      )}
       {page === "1" && (
         <WebDevProjects
           projectData={props.projectData}
