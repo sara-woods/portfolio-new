@@ -9,17 +9,19 @@ const Filter = (props) => {
   const windowWidth = window.innerWidth;
 
   useEffect(() => {
-    window.addEventListener("scroll", (event) => {
+    const handleScroll = () => {
       const elementTarget = document.querySelector(".scroll-anchor");
       const elementTargetOffsetTop = elementTarget.offsetTop;
-      console.log("scroll", window.scrollY);
-      console.log("top", elementTargetOffsetTop);
       if (window.scrollY > elementTargetOffsetTop) {
         setFilterSticky(true);
       } else {
         setFilterSticky(false);
       }
-    });
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   return (

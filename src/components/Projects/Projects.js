@@ -13,6 +13,7 @@ const Projects = (props) => {
   const handlePageChange = (event) => {
     setPage(event.target.dataset.page);
     setFilterDropdown(false);
+    document.querySelector(".scroll-anchor").scrollIntoView();
   };
 
   const showFilterHandler = (event) => {
