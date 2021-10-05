@@ -1,58 +1,90 @@
-import { useState } from "react";
 import "./Filter.css";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowDown } from "@fortawesome/free-solid-svg-icons";
 
 const Filter = (props) => {
-  const [showFilterDropdown, setFilterDropDown] = useState(false);
-
-  const showFilterHandler = (event) => {
-    setFilterDropDown((prevState) => !prevState);
-  };
+  const windowWidth = window.innerWidth;
+  console.log(windowWidth);
 
   return (
-    <div className="filter">
-      <button onClick={showFilterHandler} className="filter-button">
-        {props.filterText}
-        <span className="ml-3 arrow">
-          <FontAwesomeIcon icon={faArrowDown} />
-        </span>
-      </button>
-      {showFilterDropdown && (
-        <div className="filter-dropdown">
-          <ul>
-            <li>
-              <p
-                data-page="1"
-                onClick={props.onFilterChange}
-                className="filter-option"
-              >
-                Web Development
-              </p>
-            </li>
-            <li>
-              <p
-                data-page="2"
-                onClick={props.onFilterChange}
-                className="filter-option"
-              >
-                Illustrations
-              </p>
-            </li>
-            <li>
-              <p
-                data-page="3"
-                onClick={props.onFilterChange}
-                className="filter-option"
-              >
-                Logo/Web Design
-              </p>
-            </li>
-          </ul>
+    <>
+      {windowWidth <= 800 && (
+        <div className="filter">
+          <button onClick={props.onFilter} className="filter-button">
+            {props.filterText}
+            <span className="ml-3 arrow">
+              <FontAwesomeIcon icon={faArrowDown} />
+            </span>
+          </button>
+          {props.showDropdown && (
+            <div className="filter-dropdown">
+              <ul>
+                <li>
+                  <p
+                    data-page="1"
+                    onClick={props.onFilterChange}
+                    className="filter-option"
+                  >
+                    Web Development
+                  </p>
+                </li>
+                <li>
+                  <p
+                    data-page="2"
+                    onClick={props.onFilterChange}
+                    className="filter-option"
+                  >
+                    Illustrations
+                  </p>
+                </li>
+                <li>
+                  <p
+                    data-page="3"
+                    onClick={props.onFilterChange}
+                    className="filter-option"
+                  >
+                    Logo/Web Design
+                  </p>
+                </li>
+              </ul>
+            </div>
+          )}
         </div>
       )}
-    </div>
+
+      {windowWidth > 800 && (
+        <ul className="tabs">
+          <li>
+            <p
+              data-page="1"
+              className={`tab ${props.page === "1" ? "underline" : ""}`}
+              onClick={props.onFilterChange}
+            >
+              Web Development
+            </p>
+          </li>
+          <li>
+            <p
+              data-page="2"
+              className={`tab ${props.page === "2" ? "underline" : ""}`}
+              onClick={props.onFilterChange}
+            >
+              Illustrations
+            </p>
+          </li>
+          <li>
+            <p
+              data-page="3"
+              className={`tab ${props.page === "3" ? "underline" : ""}`}
+              onClick={props.onFilterChange}
+            >
+              Logo/Web Design
+            </p>
+          </li>
+        </ul>
+      )}
+    </>
   );
 };
 
