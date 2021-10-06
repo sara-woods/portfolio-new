@@ -71,7 +71,7 @@ const Filter = (props) => {
                   onClick={props.onFilterChange}
                   className="filter-option"
                 >
-                  Logo/Web Design
+                  Logo/Graphic Design
                 </p>
               </li>
             </ul>
@@ -105,7 +105,7 @@ const Filter = (props) => {
               className={`tab ${props.page === "3" ? "underline" : ""}`}
               onClick={props.onFilterChange}
             >
-              Logo/Web Design
+              Logo/Graphic Design
             </p>
           </li>
         </ul>

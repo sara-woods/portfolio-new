@@ -2,7 +2,7 @@ import { useState } from "react";
 import "./Projects.css";
 import WebDevProjects from "./WebDevProjects";
 import Illustrations from "./Illustrations";
-import GraphicDesign from "./GraphicDesign";
+import GraphicDesigns from "./GraphicDesigns";
 
 import Filter from "./Filter";
 
@@ -30,7 +30,7 @@ const Projects = (props) => {
       filterText = "Illustrations";
       break;
     case "3":
-      filterText = "Logo/Web Design";
+      filterText = "Logo/Graphic Design";
       break;
     default:
       filterText = "Web Development";
@@ -56,7 +56,7 @@ const Projects = (props) => {
         />
       )}
       {page === "2" && <Illustrations />}
-      {page === "3" && <GraphicDesign />}
+      {page === "3" && <GraphicDesigns />}
     </div>
   );
 };

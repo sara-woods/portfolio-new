@@ -7,8 +7,9 @@ import lbImage from "../../images/lightbrigade.jpg";
 import lo88Image from "../../images/LO88.jpg";
 import paddleImage from "../../images/paddleboards.jpg";
 import rosesImage from "../../images/roses.jpg";
+import sweetImage from "../../images/sweet-adventure.jpg";
 
-const GraphicDesign = (props) => {
+const GraphicDesigns = (props) => {
   return (
     <>
       <div>
@@ -19,9 +20,10 @@ const GraphicDesign = (props) => {
         <IllustrationItem src={lo88Image} alt="outdoors logo design" />
         <IllustrationItem src={paddleImage} alt="paddle board logo design" />
         <IllustrationItem src={rosesImage} alt="t-shirt design with roses" />
+        <IllustrationItem src={sweetImage} alt="soap logo design" />
       </div>
     </>
   );
 };
 
-export default GraphicDesign;
+export default GraphicDesigns;
