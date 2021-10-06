@@ -51,7 +51,11 @@ const Intro = () => {
           </ul>
         </div>
       </div>
-      <a href="mailto: lotfi.sara@gmail.com">
+      <a
+        href="mailto: lotfi.sara@gmail.com"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         <Button text="Get in touch" />
       </a>
     </div>
