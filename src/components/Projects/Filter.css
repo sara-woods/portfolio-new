@@ -48,8 +48,9 @@
   margin-bottom: 16px;
 }
 
-.filter-option:hover {
-  color: #df7861;
+#filter-text:hover {
+  cursor: pointer;
+  border-bottom: 2px solid black;
 }
 
 .filter-container-sticky {

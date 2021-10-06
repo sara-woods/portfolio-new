@@ -2,11 +2,14 @@ import "./Navbar.css";
 
 import { Navbar, Nav } from "react-bootstrap";
 
+import duck from "../../images/duck_g.gif";
+
 const NavbarEx = () => {
   return (
     <Navbar collapseOnSelect expand="lg" sticky="top" className="navbar">
       <Navbar.Brand className="navbar-brand" href="#top">
-        👀
+        {/* 👀 */}
+        <img src={duck} style={{ width: "76px" }} />
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
       <Navbar.Collapse id="responsive-navbar-nav">

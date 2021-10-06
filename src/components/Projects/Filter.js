@@ -73,6 +73,7 @@ const Filter = (props) => {
                   <span
                     data-page="1"
                     onClick={props.onFilterChange}
+                    id="filter-text"
                     className={props.page === "1" ? "underline-filter" : ""}
                   >
                     Web Development
@@ -84,6 +85,7 @@ const Filter = (props) => {
                   <span
                     data-page="2"
                     onClick={props.onFilterChange}
+                    id="filter-text"
                     className={props.page === "2" ? "underline-filter" : ""}
                   >
                     Illustrations
@@ -95,6 +97,7 @@ const Filter = (props) => {
                   <span
                     data-page="3"
                     onClick={props.onFilterChange}
+                    id="filter-text"
                     className={props.page === "3" ? "underline-filter" : ""}
                   >
                     Logo/Graphic Design
