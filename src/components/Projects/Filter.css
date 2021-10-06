@@ -16,7 +16,7 @@
   border-radius: 40px;
   padding: 10px 20px 8px 20px;
   z-index: 200;
-  width: 241px;
+  width: 280px;
 }
 
 .filter-dropdown {
@@ -27,7 +27,7 @@
   border-radius: 25px;
   position: absolute;
   z-index: 100;
-  width: 241px;
+  width: 280px;
   top: 0px;
   left: 50% !important;
   right: auto !important;
@@ -60,4 +60,31 @@
   right: auto !important;
   text-align: center !important;
   transform: translate(-50%, 0) !important;
+}
+
+.tabs {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+}
+
+.tab {
+  color: black;
+  font-size: 24px !important;
+  font-weight: 700;
+  margin-right: 36px;
+  cursor: pointer;
+}
+
+.arrow {
+  font-size: 16px;
+}
+
+.tab:hover {
+  border-bottom: 3px solid black;
+}
+
+.underline {
+  border-bottom: 3px solid black;
 }

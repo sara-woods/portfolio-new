@@ -13,7 +13,7 @@ const Filter = (props) => {
     const handleScroll = () => {
       const elementTarget = document.querySelector(".scroll-anchor");
       const elementTargetOffsetTop = elementTarget.offsetTop;
-      if (window.scrollY > elementTargetOffsetTop) {
+      if (window.scrollY > elementTargetOffsetTop + 100) {
         setFilterSticky(true);
         if (windowWidth > 800) {
           setShowFilterButton(true);
