@@ -8,7 +8,7 @@ import { faTimes } from "@fortawesome/free-solid-svg-icons";
 const Filter = (props) => {
   const [filterSticky, setFilterSticky] = useState(false);
   const [showFilterButton, setShowFilterButton] = useState(true);
-  const windowWidth = window.innerWidth;
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -16,21 +16,35 @@ const Filter = (props) => {
       const elementTargetOffsetTop = elementTarget.offsetTop;
       if (window.scrollY > elementTargetOffsetTop + 100) {
         setFilterSticky(true);
-        if (windowWidth > 800) {
-          setShowFilterButton(true);
-        }
+        if (windowWidth > 800) setShowFilterButton(true);
       } else {
         setFilterSticky(false);
-        if (windowWidth > 800) {
-          setShowFilterButton(false);
-        }
+        if (windowWidth > 800) setShowFilterButton(false);
       }
     };
 
     window.addEventListener("scroll", handleScroll);
-
     return () => window.removeEventListener("scroll", handleScroll);
   }, [windowWidth]);
+
+  useEffect(() => {
+    const handleResize = () => {
+      const elementTarget = document.querySelector(".scroll-anchor");
+      const elementTargetOffsetTop = elementTarget.offsetTop;
+
+      setShowFilterButton(true);
+      if (window.scrollY > elementTargetOffsetTop + 100) {
+        setFilterSticky(true);
+      } else {
+        setFilterSticky(false);
+        if (window.innerWidth > 800) setShowFilterButton(false);
+      }
+      setWindowWidth(window.innerWidth);
+    };
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   let filterButton;
 
