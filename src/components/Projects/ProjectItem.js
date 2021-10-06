@@ -17,7 +17,21 @@ const ProjectItem = (props) => {
         }`}
       >
         <p className="text-orange text-sm">{props.projectData.type}</p>
-        <h2 className="text-700 mb-3 mt-1">{props.projectData.name}</h2>
+        <div className="d-flex justify-content-between align-items-end">
+          <h2 className="text-700 mb-3 mt-1">{props.projectData.name}</h2>
+          <a
+            href={props.projectData.repo}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <p className="text-orange">
+              <FontAwesomeIcon
+                icon={faGithubSquare}
+                className="text-lg mb-4 link"
+              />
+            </p>
+          </a>
+        </div>
 
         <div className="image-container">
           <div className="image" style={style}></div>
@@ -36,17 +50,17 @@ const ProjectItem = (props) => {
             ))}
           </div>
 
-          <div className="links d-flex">
+          {/* <div className="links d-flex">
             <a
               href={props.projectData.repo}
               target="_blank"
               rel="noopener noreferrer"
             >
-              <p className="text-orange text-lg">
-                <FontAwesomeIcon icon={faGithubSquare} />
+              <p className="text-orange">
+                <FontAwesomeIcon icon={faGithubSquare} className="text-lg" />
               </p>
             </a>
-          </div>
+          </div> */}
         </div>
         <a
           href={props.projectData.web}

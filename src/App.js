@@ -6,10 +6,10 @@ import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
 
 import whatmovieImage from "./images/whatmovie_small.png";
-import wellsyImage from "./images/wellsy_small.png";
+import wellsyImage from "./images/wellsy_new.png";
 import floatifyImage from "./images/floatify_small.png";
-import catsweeperImage from "./images/catsweeper_small.png";
-import packathonImage from "./images/packathon_small.png";
+import catsweeperImage from "./images/catsweeper_new.png";
+import packathonImage from "./images/packathon.png";
 
 import { ProjectData } from "./ProjectData";
 

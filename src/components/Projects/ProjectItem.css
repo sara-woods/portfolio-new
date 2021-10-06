@@ -16,11 +16,13 @@
 }
 
 .bg-green {
-  background-color: #e1f0e1;
+  /* background-color: #e1f0e1; */
+  background-color: none;
 }
 
 .bg-blue {
-  background-color: #d9ebed;
+  /* background-color: #d9ebed; */
+  background-color: none;
 }
 
 .project-info {
@@ -37,7 +39,7 @@
   padding-top: 63%;
   background-position: center;
   background-size: cover;
-  border-radius: 20px;
+  border-radius: 8px;
   top: -97px;
   right: -470px;
 }
@@ -49,7 +51,7 @@
 
 /* LINKS  */
 
-.links {
+/* .links {
   position: absolute;
   top: 30px;
   right: 22px;
@@ -62,6 +64,14 @@
 }
 
 .links p:hover {
+  color: black;
+} */
+
+.link {
+  transition: 0.2s ease-in;
+}
+
+.link:hover {
   color: black;
 }
 
