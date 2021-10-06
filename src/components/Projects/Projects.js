@@ -17,6 +17,7 @@ const Projects = (props) => {
   };
 
   const showFilterHandler = (event) => {
+    console.log("test");
     setFilterDropdown((prevState) => !prevState);
   };
 

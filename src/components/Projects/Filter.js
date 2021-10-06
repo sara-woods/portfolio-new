@@ -3,6 +3,7 @@ import "./Filter.css";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowDown } from "@fortawesome/free-solid-svg-icons";
+import { faTimes } from "@fortawesome/free-solid-svg-icons";
 
 const Filter = (props) => {
   const [filterSticky, setFilterSticky] = useState(false);
@@ -31,6 +32,30 @@ const Filter = (props) => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, [windowWidth]);
 
+  let filterButton;
+
+  if (props.showDropdown) {
+    filterButton = (
+      <button onClick={props.onFilter} className="filter-button">
+        Filter Content
+        <span className="ml-3 arrow">
+          <FontAwesomeIcon icon={faTimes} />
+        </span>
+      </button>
+    );
+  }
+
+  if (!props.showDropdown) {
+    filterButton = (
+      <button onClick={props.onFilter} className="filter-button">
+        {props.filterText}
+        <span className="ml-3 arrow">
+          <FontAwesomeIcon icon={faArrowDown} />
+        </span>
+      </button>
+    );
+  }
+
   return (
     <>
       <div
@@ -38,40 +63,42 @@ const Filter = (props) => {
           filterSticky ? "filter-container-sticky" : ""
         } ${showFilterButton ? "" : "d-none"} `}
       >
-        <button onClick={props.onFilter} className="filter-button">
-          {props.filterText}
-          <span className="ml-3 arrow">
-            <FontAwesomeIcon icon={faArrowDown} />
-          </span>
-        </button>
+        {filterButton}
+
         {props.showDropdown && (
           <div className="filter-dropdown">
             <ul>
               <li>
-                <p
-                  data-page="1"
-                  onClick={props.onFilterChange}
-                  className="filter-option"
-                >
-                  Web Development
+                <p className="filter-option">
+                  <span
+                    data-page="1"
+                    onClick={props.onFilterChange}
+                    className={props.page === "1" ? "underline-filter" : ""}
+                  >
+                    Web Development
+                  </span>
                 </p>
               </li>
               <li>
-                <p
-                  data-page="2"
-                  onClick={props.onFilterChange}
-                  className="filter-option"
-                >
-                  Illustrations
+                <p className="filter-option">
+                  <span
+                    data-page="2"
+                    onClick={props.onFilterChange}
+                    className={props.page === "2" ? "underline-filter" : ""}
+                  >
+                    Illustrations
+                  </span>
                 </p>
               </li>
               <li>
-                <p
-                  data-page="3"
-                  onClick={props.onFilterChange}
-                  className="filter-option"
-                >
-                  Logo/Graphic Design
+                <p className="filter-option">
+                  <span
+                    data-page="3"
+                    onClick={props.onFilterChange}
+                    className={props.page === "3" ? "underline-filter" : ""}
+                  >
+                    Logo/Graphic Design
+                  </span>
                 </p>
               </li>
             </ul>
@@ -84,7 +111,7 @@ const Filter = (props) => {
           <li>
             <p
               data-page="1"
-              className={`tab ${props.page === "1" ? "underline" : ""}`}
+              className={`tab ${props.page === "1" ? "underline-tab" : ""}`}
               onClick={props.onFilterChange}
             >
               Web Development
@@ -93,7 +120,7 @@ const Filter = (props) => {
           <li>
             <p
               data-page="2"
-              className={`tab ${props.page === "2" ? "underline" : ""}`}
+              className={`tab ${props.page === "2" ? "underline-tab" : ""}`}
               onClick={props.onFilterChange}
             >
               Illustrations
@@ -102,7 +129,7 @@ const Filter = (props) => {
           <li>
             <p
               data-page="3"
-              className={`tab ${props.page === "3" ? "underline" : ""}`}
+              className={`tab ${props.page === "3" ? "underline-tab" : ""}`}
               onClick={props.onFilterChange}
             >
               Logo/Graphic Design

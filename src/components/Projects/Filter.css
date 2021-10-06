@@ -85,6 +85,10 @@
   border-bottom: 3px solid black;
 }
 
-.underline {
+.underline-tab {
   border-bottom: 3px solid black;
+}
+
+.underline-filter {
+  border-bottom: 2px solid black;
 }
