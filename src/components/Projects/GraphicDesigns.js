@@ -7,12 +7,18 @@ import lbImage from "../../images/lightbrigade.jpg";
 import lo88Image from "../../images/LO88.jpg";
 import paddleImage from "../../images/paddleboards.jpg";
 import rosesImage from "../../images/roses.jpg";
-import sweetImage from "../../images/sweet-adventure.jpg";
+// import sweetImage from "../../images/sweet-adventure.jpg";
 
 const GraphicDesigns = (props) => {
   return (
     <>
       <div>
+        <div id="logo-personal" className="text-sm">
+          <p>
+            This selection of logos is personal work of mine (not client-work).
+          </p>
+        </div>
+
         <IllustrationItem src={inkImage} alt="publisher logo design" />
         <IllustrationItem src={babyImage} alt="baby boutique logo design" />
         <IllustrationItem src={lbImage} alt="photography logo design" />
@@ -20,7 +26,7 @@ const GraphicDesigns = (props) => {
         <IllustrationItem src={lo88Image} alt="outdoors logo design" />
         <IllustrationItem src={paddleImage} alt="paddle board logo design" />
         <IllustrationItem src={rosesImage} alt="t-shirt design with roses" />
-        <IllustrationItem src={sweetImage} alt="soap logo design" />
+        {/* <IllustrationItem src={sweetImage} alt="soap logo design" /> */}
       </div>
     </>
   );

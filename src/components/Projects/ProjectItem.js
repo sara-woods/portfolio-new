@@ -11,11 +11,7 @@ const ProjectItem = (props) => {
 
   return (
     <div className="project-container">
-      <div
-        className={`project-item ${
-          props.projectData.id % 2 === 0 ? "bg-green" : "bg-blue"
-        }`}
-      >
+      <div className="project-item">
         <p className="text-orange text-sm">{props.projectData.type}</p>
         <div className="d-flex justify-content-between align-items-end">
           <h2 className="text-700 mb-3 mt-1">{props.projectData.name}</h2>

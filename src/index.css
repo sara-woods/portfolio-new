@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&family=Limelight&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,300&display=swap");
 
 body {
   margin: 0;
@@ -78,4 +79,16 @@ li span {
 
 a {
   text-decoration: none;
+}
+
+#logo-personal {
+  display: flex;
+  justify-content: center;
+}
+
+#logo-personal p {
+  font-style: italic;
+  font-weight: 300;
+  text-align: center;
+  width: 80%;
 }

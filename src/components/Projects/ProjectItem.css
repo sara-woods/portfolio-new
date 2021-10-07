@@ -1,6 +1,6 @@
 .project-container {
   width: 100%;
-  margin: 30px auto;
+  /* margin: 30px auto; */
 }
 
 .project-item {
@@ -33,15 +33,15 @@
 /* IMAGE */
 
 .image {
-  position: initial;
+  /* position: initial; */
   width: 100%;
   height: 0;
   padding-top: 63%;
   background-position: center;
   background-size: cover;
   border-radius: 8px;
-  top: -97px;
-  right: -470px;
+  /* top: -97px;
+  right: -470px; */
 }
 
 .image-container {
