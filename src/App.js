@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import "./App.css";
 import NavbarEx from "./components/Navbar/Navbar";
 import Intro from "./components/Intro/Intro";
@@ -13,7 +14,29 @@ import packathonImage from "./images/packathon.png";
 
 import { ProjectData } from "./ProjectData";
 
+const url_1 = ProjectData[1]["web"];
+const url_2 = ProjectData[2]["web"];
+const url_3 = ProjectData[3]["web"];
+const url_4 = ProjectData[4]["web"];
+
 const App = () => {
+  useEffect(() => {
+    const ping = (url) => {
+      fetch(url, { mode: "no-cors" })
+        .then((response) => {
+          //
+        })
+        .catch((error) => {
+          //
+        });
+    };
+
+    ping(url_1);
+    ping(url_2);
+    ping(url_3);
+    ping(url_4);
+  }, []);
+
   return (
     <>
       <NavbarEx />
