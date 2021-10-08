@@ -4,6 +4,14 @@ import Button from "../UI/Button";
 import portrait from "../../images/portrait.png";
 
 const Intro = () => {
+  const handleRightClick = (event) => {
+    event.preventDefault();
+  };
+
+  const handleDrag = (event) => {
+    event.preventDefault();
+  };
+
   return (
     <>
       <div id="intro-container">
@@ -70,7 +78,13 @@ const Intro = () => {
             <Button text="Get in touch" />
           </a>
 
-          <img id="portrait" src={portrait} alt="Sara Lotfi portrait" />
+          <img
+            onContextMenu={handleRightClick}
+            onDragStart={handleDrag}
+            id="portrait"
+            src={portrait}
+            alt="Sara Lotfi portrait"
+          />
         </div>
       </div>
     </>
