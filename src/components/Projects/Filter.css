@@ -24,7 +24,7 @@
   width: 300px;
   height: fit-content;
   background-color: #fffdf4;
-  border: 2px solid black;
+  border: 3px solid black;
   border-radius: 25px;
   position: absolute;
   z-index: 100;
@@ -45,7 +45,7 @@
 
 .filter-option {
   font-size: 20px;
-  font-weight: 500;
+  font-weight: 700;
   margin-bottom: 20px;
 }
 
@@ -93,5 +93,5 @@
 }
 
 .underline-filter {
-  border-bottom: 2px solid black;
+  border-bottom: 3px solid black;
 }

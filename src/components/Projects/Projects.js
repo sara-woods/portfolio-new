@@ -40,7 +40,7 @@ const Projects = (props) => {
   return (
     <div id="projects">
       <div id="projects-anchor" className="scroll-anchor"></div>
-      {/* <h1 className="mb-5 header scroll-anchor">Projects</h1> */}
+      <h1 className="mb-5 header">Projects</h1>
 
       <Filter
         filterText={filterText}

@@ -7,14 +7,19 @@ import { faTimes } from "@fortawesome/free-solid-svg-icons";
 
 const Filter = (props) => {
   const [filterSticky, setFilterSticky] = useState(false);
-  const [showFilterButton, setShowFilterButton] = useState(true);
+  const [showFilterButton, setShowFilterButton] = useState(false);
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+    if (window.innerWidth > 800) setShowFilterButton(false);
+    if (window.innerWidth <= 800) setShowFilterButton(true);
+  }, []);
 
   useEffect(() => {
     const handleScroll = () => {
       const elementTarget = document.querySelector(".scroll-anchor");
       const elementTargetOffsetTop = elementTarget.offsetTop;
-      if (window.scrollY > elementTargetOffsetTop + 100) {
+      if (window.scrollY > elementTargetOffsetTop + 200) {
         setFilterSticky(true);
         if (windowWidth > 800) setShowFilterButton(true);
       } else {
