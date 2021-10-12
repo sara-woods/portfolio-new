@@ -23,10 +23,10 @@ const Intro = () => {
               {/* I’m a full-stack developer and illustrator based in Uppsala, Sweden.
           Most recently I graduated from Le Wagon, a full-time web development
           bootcamp. Here's a few technologies I've worked with:{" "} */}
-              I’m a web developer and illustrator based in Uppsala, Sweden. Some
-              previous work of mine can be seen below. If you’re looking for a
-              freelance developer/illustrator/designer to help bring an idea to
-              life or to fix an existing issue - let’s chat!
+              I’m a web developer and illustrator based in Uppsala, Sweden.
+              Check out some of my previous work below. If you’re looking for a
+              freelance web developer, illustrator or designer to help bring an
+              idea to life or to fix an existing issue - let’s chat!
             </p>
             {/* <div className="tech-stack text-20px">
           <div>

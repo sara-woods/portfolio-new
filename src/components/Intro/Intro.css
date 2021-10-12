@@ -25,6 +25,7 @@
   width: 35%;
   object-fit: cover;
   object-position: center;
+  border-radius: 8px;
 }
 
 .contact-button {

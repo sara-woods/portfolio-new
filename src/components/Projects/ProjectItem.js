@@ -63,7 +63,7 @@ const ProjectItem = (props) => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <Button text="Visit" />
+          <Button className="mt-4" text="Visit website" />
         </a>
       </div>
     </div>

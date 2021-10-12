@@ -39,7 +39,7 @@ export const ProjectData = [
     type: "Team project",
     name: "Packathon",
     description:
-      "Winner of Hackathon - Le Wagon, an order packing-helper app for online retailers using Ruby on Rails and Three.js. (The site breaks at the moment due to the external packing algorithm API being down.)",
+      "Winner of Hackathon 2021 - Le Wagon, an order packing-helper app for online retailers using Ruby on Rails and Three.js. (The site breaks at the moment due to the external packing algorithm API being down.)",
     technologies: [
       "Ruby on Rails",
       "Three.js",

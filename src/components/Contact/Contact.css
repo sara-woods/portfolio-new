@@ -7,11 +7,11 @@
 
 #contact a {
   transition: 0.2s ease-in;
-  color: #df7861;
+  color: var(--orange);
   font-weight: 400;
   text-decoration: none;
 }
 
 #contact a:hover {
-  color: black;
+  color: var(--black);
 }

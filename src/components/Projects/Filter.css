@@ -8,11 +8,11 @@
 
 .filter-button {
   color: white;
-  background: black;
+  background: var(--black);
   font-size: 20px;
   font-weight: 500;
   cursor: pointer;
-  border: 2px solid black;
+  border: 2px solid var(--black);
   border-radius: 40px;
   padding: 10px 20px 8px 20px;
   z-index: 200;
@@ -23,8 +23,8 @@
 .filter-dropdown {
   width: 300px;
   height: fit-content;
-  background-color: #fffdf4;
-  border: 3px solid black;
+  background-color: var(--bg);
+  border: 3px solid var(--black);
   border-radius: 25px;
   position: absolute;
   z-index: 100;
@@ -49,9 +49,13 @@
   margin-bottom: 20px;
 }
 
+#filter-text {
+  transition: all 0.2s ease-out;
+}
+
 #filter-text:hover {
   cursor: pointer;
-  border-bottom: 2px solid black;
+  border-bottom: 3px solid var(--black);
 }
 
 .filter-container-sticky {
@@ -73,11 +77,12 @@
 }
 
 .tab {
-  color: black;
+  color: var(--black);
   font-size: 24px !important;
   font-weight: 700;
   margin-right: 36px;
   cursor: pointer;
+  transition: all 0.2s ease-out;
 }
 
 .arrow {
@@ -85,13 +90,13 @@
 }
 
 .tab:hover {
-  border-bottom: 3px solid black;
+  border-bottom: 3px solid var(--black);
 }
 
 .underline-tab {
-  border-bottom: 3px solid black;
+  border-bottom: 3px solid var(--black);
 }
 
 .underline-filter {
-  border-bottom: 3px solid black;
+  border-bottom: 3px solid var(--black);
 }

@@ -18,6 +18,10 @@ const url_1 = ProjectData[1]["web"];
 const url_2 = ProjectData[2]["web"];
 const url_3 = ProjectData[3]["web"];
 const url_4 = ProjectData[4]["web"];
+console.log(url_1);
+console.log(url_2);
+console.log(url_3);
+console.log(url_4);
 
 const App = () => {
   useEffect(() => {
