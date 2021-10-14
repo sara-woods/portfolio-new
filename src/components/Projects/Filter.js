@@ -39,7 +39,7 @@ const Filter = (props) => {
       const elementTargetOffsetTop = elementTarget.offsetTop;
 
       setShowFilterButton(true);
-      if (window.scrollY > elementTargetOffsetTop + 100) {
+      if (window.scrollY > elementTargetOffsetTop + 200) {
         setFilterSticky(true);
       } else {
         setFilterSticky(false);
