@@ -12,16 +12,12 @@ import floatifyImage from "./images/floatify_small.png";
 import catsweeperImage from "./images/catsweeper_new.png";
 import packathonImage from "./images/packathon.png";
 
-import { ProjectData } from "./ProjectData";
+import { contentData } from "./contentData";
 
-const url_1 = ProjectData[1]["web"];
-const url_2 = ProjectData[2]["web"];
-const url_3 = ProjectData[3]["web"];
-const url_4 = ProjectData[4]["web"];
-console.log(url_1);
-console.log(url_2);
-console.log(url_3);
-console.log(url_4);
+const projectData = contentData.projectData;
+
+const urls = [];
+projectData.forEach((url) => urls.push(url["web"]));
 
 const App = () => {
   useEffect(() => {
@@ -35,19 +31,16 @@ const App = () => {
         });
     };
 
-    ping(url_1);
-    ping(url_2);
-    ping(url_3);
-    ping(url_4);
+    urls.forEach((url) => ping(url));
   }, []);
 
   return (
     <>
-      <NavbarEx />
+      <NavbarEx navLinks={contentData.navLinks} />
       <div className="app">
-        <Intro />
+        <Intro introData={contentData.intro} />
         <Projects
-          projectData={ProjectData}
+          projectData={projectData}
           projectImages={{
             whatmovieImage,
             wellsyImage,

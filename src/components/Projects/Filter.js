@@ -4,6 +4,7 @@ import "./Filter.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowDown } from "@fortawesome/free-solid-svg-icons";
 import { faTimes } from "@fortawesome/free-solid-svg-icons";
+import { contentData } from "../../contentData";
 
 const Filter = (props) => {
   const [filterSticky, setFilterSticky] = useState(false);
@@ -56,7 +57,7 @@ const Filter = (props) => {
   if (props.showDropdown) {
     filterButton = (
       <button onClick={props.onFilter} className="filter-button">
-        Filter Content
+        {contentData.filterOptions.header}
         <span className="ml-3 arrow">
           <FontAwesomeIcon icon={faTimes} />
         </span>
@@ -95,7 +96,7 @@ const Filter = (props) => {
                     id="filter-text"
                     className={props.page === "1" ? "underline-filter" : ""}
                   >
-                    Web Development
+                    {contentData.filterOptions.webDev}
                   </span>
                 </p>
               </li>
@@ -107,7 +108,7 @@ const Filter = (props) => {
                     id="filter-text"
                     className={props.page === "2" ? "underline-filter" : ""}
                   >
-                    Illustrations
+                    {contentData.filterOptions.illustrations}
                   </span>
                 </p>
               </li>
@@ -119,7 +120,7 @@ const Filter = (props) => {
                     id="filter-text"
                     className={props.page === "3" ? "underline-filter" : ""}
                   >
-                    Logo/Graphic Design
+                    {contentData.filterOptions.graphicDesign}
                   </span>
                 </p>
               </li>

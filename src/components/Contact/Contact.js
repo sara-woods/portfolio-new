@@ -1,13 +1,14 @@
 import "./Contact.css";
+import { contentData } from "../../contentData";
 
 const Contact = () => {
   return (
     <div id="contact">
-      <h1 className="header">Hey there!</h1>
+      <h1 className="header">{contentData.contactData.header}</h1>
       <p className="text-md text-300 mt-3 text-center">
-        If you would like to get in contact, pop me an e-mail at{" "}
-        <a href="mailto: lotfi.sara@gmail.com">lotfi.sara@gmail.com</a> or
-        message me on{" "}
+        {contentData.contactData.text[0]}{" "}
+        <a href="mailto: lotfi.sara@gmail.com">lotfi.sara@gmail.com </a>
+        {contentData.contactData.text[1]}{" "}
         <a
           href="https://www.linkedin.com/in/sara-lotfi/"
           target="_blank"

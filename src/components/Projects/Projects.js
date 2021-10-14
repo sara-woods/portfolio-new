@@ -3,8 +3,9 @@ import "./Projects.css";
 import WebDevProjects from "./WebDevProjects";
 import Illustrations from "./Illustrations";
 import GraphicDesigns from "./GraphicDesigns";
-
 import Filter from "./Filter";
+
+import { contentData } from "../../contentData";
 
 const Projects = (props) => {
   const [page, setPage] = useState("1");
@@ -17,7 +18,6 @@ const Projects = (props) => {
   };
 
   const showFilterHandler = (event) => {
-    console.log("test");
     setFilterDropdown((prevState) => !prevState);
   };
 
@@ -25,22 +25,22 @@ const Projects = (props) => {
 
   switch (page) {
     case "1":
-      filterText = "Web Development";
+      filterText = contentData.filterOptions.webDev;
       break;
     case "2":
-      filterText = "Illustrations";
+      filterText = contentData.filterOptions.illustraitons;
       break;
     case "3":
-      filterText = "Logo/Graphic Design";
+      filterText = contentData.filterOptions.graphicDesign;
       break;
     default:
-      filterText = "Web Development";
+      filterText = contentData.filterOptions.webDev;
   }
 
   return (
     <div id="projects">
       <div id="projects-anchor" className="scroll-anchor"></div>
-      <h1 className="mb-5 header">Projects</h1>
+      <h1 className="mb-5 header">{contentData.navLinks.projects}</h1>
 
       <Filter
         filterText={filterText}

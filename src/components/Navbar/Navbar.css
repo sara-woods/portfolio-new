@@ -29,3 +29,7 @@
 .navbar-light .navbar-nav .nav-link.active {
   color: var(--black);
 }
+
+.navbar-light .navbar-nav .nav-link:hover {
+  color: var(--orange);
+}

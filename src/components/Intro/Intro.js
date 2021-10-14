@@ -1,9 +1,11 @@
 import "./Intro.css";
 import Button from "../UI/Button";
 
+import { contentData } from "../../contentData";
+
 import portrait from "../../images/portrait.png";
 
-const Intro = () => {
+const Intro = (props) => {
   const handleRightClick = (event) => {
     event.preventDefault();
   };
@@ -17,16 +19,15 @@ const Intro = () => {
       <div id="intro-container">
         <div id="intro">
           <div className="intro-left">
-            <p className="text-orange text-300 text-lg">Hi, my name is</p>
+            <p className="text-orange text-300 text-lg">
+              {props.introData.hello}
+            </p>
             <h1>Sara Lotfi</h1>
             <p className="text-md text-300 mt-4">
               {/* I’m a full-stack developer and illustrator based in Uppsala, Sweden.
           Most recently I graduated from Le Wagon, a full-time web development
           bootcamp. Here's a few technologies I've worked with:{" "} */}
-              I’m a web developer and illustrator based in Uppsala, Sweden.
-              Check out some of my previous work below. If you’re looking for a
-              freelance web developer, illustrator or designer to help bring an
-              idea to life or to fix an existing issue - let’s chat!
+              {props.introData.introText}
             </p>
             {/* <div className="tech-stack text-20px">
           <div>
@@ -75,7 +76,7 @@ const Intro = () => {
             rel="noopener noreferrer"
             className="contact-button"
           >
-            <Button text="Get in touch" />
+            <Button text={contentData.buttonText.contact} />
           </a>
 
           <img

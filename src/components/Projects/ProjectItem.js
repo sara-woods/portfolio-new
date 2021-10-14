@@ -3,6 +3,7 @@ import Button from "../UI/Button";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithubSquare } from "@fortawesome/free-brands-svg-icons";
+import { contentData } from "../../contentData";
 
 const ProjectItem = (props) => {
   let style = {
@@ -63,7 +64,7 @@ const ProjectItem = (props) => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <Button className="mt-4" text="Visit website" />
+          <Button className="mt-4" text={contentData.buttonText.visit} />
         </a>
       </div>
     </div>
