@@ -1,4 +1,5 @@
 import "./Contact.css";
+import Button from "../UI/Button";
 import { contentData } from "../../contentData";
 
 const Contact = () => {
@@ -18,6 +19,14 @@ const Contact = () => {
         </a>
         .
       </p>
+      <a
+        href="mailto: lotfi.sara@gmail.com"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="text-center d-block"
+      >
+        <Button className="mt-5" text={contentData.buttonText.contact} />
+      </a>
     </div>
   );
 };
