@@ -17,7 +17,6 @@
   padding: 10px 20px 8px 20px;
   z-index: 200;
   width: 280px;
-  margin-bottom: 24px;
 }
 
 .filter-dropdown {
@@ -54,13 +53,9 @@
 }
 
 .filter-container-sticky {
-  position: fixed;
+  position: sticky;
   z-index: 200;
   top: 130px;
-  left: 50% !important;
-  right: auto !important;
-  text-align: center !important;
-  transform: translate(-50%, 0) !important;
 }
 
 .tabs {
@@ -68,7 +63,6 @@
   justify-content: center;
   list-style: none;
   margin: 0;
-  margin-bottom: 36px;
 }
 
 .tab {

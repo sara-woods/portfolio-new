@@ -1,4 +1,4 @@
-import { useState, useEffect, useCallback } from "react";
+import { useState, useEffect } from "react";
 import "./Filter.css";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -42,10 +42,18 @@ const Filter = (props) => {
       const scrollTop = document.querySelector(".scroll-anchor").offsetTop;
       const projectTop = document.querySelector("#projects").offsetTop;
       const projectHeight = document.querySelector("#projects").offsetHeight;
-      const projectBottom = projectHeight + projectTop - 200;
-
+      const projectBottom = projectHeight + projectTop;
+      console.log("scroll-top", scrollTop);
+      console.log("top", projectTop);
+      console.log("height", projectHeight);
+      console.log("bottom", projectBottom);
+      console.log("scroll", window.scrollY);
+      console.log("----------------");
       setShowFilterButton(true);
-      if (window.scrollY > scrollTop + 200 && window.scrollY < projectBottom) {
+      if (
+        window.scrollY > scrollTop + 200 &&
+        window.scrollY < projectBottom - 200
+      ) {
         setFilterSticky(true);
       } else {
         setFilterSticky(false);
@@ -60,7 +68,6 @@ const Filter = (props) => {
   // RESIZE
   useEffect(() => {
     const handleResize = () => {
-      // handleFilterButton();
       const scrollTop = document.querySelector(".scroll-anchor").offsetTop;
       const projectTop = document.querySelector("#projects").offsetTop;
       const projectHeight = document.querySelector("#projects").offsetHeight;
@@ -107,10 +114,42 @@ const Filter = (props) => {
 
   return (
     <>
+      {windowWidth > 800 && (
+        <ul className="tabs">
+          <li>
+            <p
+              data-page="1"
+              className={`tab ${props.page === "1" ? "underline-tab" : ""}`}
+              onClick={props.onFilterChange}
+            >
+              {contentData.filterOptions.webDev}
+            </p>
+          </li>
+          <li>
+            <p
+              data-page="2"
+              className={`tab ${props.page === "2" ? "underline-tab" : ""}`}
+              onClick={props.onFilterChange}
+            >
+              {contentData.filterOptions.illustrations}
+            </p>
+          </li>
+          <li>
+            <p
+              data-page="3"
+              className={`tab ${props.page === "3" ? "underline-tab" : ""}`}
+              onClick={props.onFilterChange}
+            >
+              {contentData.filterOptions.graphicDesign}
+            </p>
+          </li>
+        </ul>
+      )}
+
       <div
         className={`filter-container ${
           filterSticky ? "filter-container-sticky" : ""
-        } ${showFilterButton ? "" : "d-none"} `}
+        } ${showFilterButton ? "" : "invisible"} `}
       >
         {filterButton}
 
@@ -157,38 +196,6 @@ const Filter = (props) => {
           </div>
         )}
       </div>
-
-      {windowWidth > 800 && (
-        <ul className="tabs">
-          <li>
-            <p
-              data-page="1"
-              className={`tab ${props.page === "1" ? "underline-tab" : ""}`}
-              onClick={props.onFilterChange}
-            >
-              Web Development
-            </p>
-          </li>
-          <li>
-            <p
-              data-page="2"
-              className={`tab ${props.page === "2" ? "underline-tab" : ""}`}
-              onClick={props.onFilterChange}
-            >
-              Illustrations
-            </p>
-          </li>
-          <li>
-            <p
-              data-page="3"
-              className={`tab ${props.page === "3" ? "underline-tab" : ""}`}
-              onClick={props.onFilterChange}
-            >
-              Logo/Graphic Design
-            </p>
-          </li>
-        </ul>
-      )}
     </>
   );
 };

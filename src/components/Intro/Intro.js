@@ -23,12 +23,7 @@ const Intro = (props) => {
               {props.introData.hello}
             </p>
             <h1>Sara Lotfi</h1>
-            <p className="text-md text-300 mt-4">
-              {/* I’m a full-stack developer and illustrator based in Uppsala, Sweden.
-          Most recently I graduated from Le Wagon, a full-time web development
-          bootcamp. Here's a few technologies I've worked with:{" "} */}
-              {props.introData.introText}
-            </p>
+            <p className="text-md text-300 mt-4">{props.introData.introText}</p>
             {/* <div className="tech-stack text-20px">
           <div>
             <ul className="text-orange">

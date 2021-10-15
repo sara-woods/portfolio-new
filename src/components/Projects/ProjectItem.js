@@ -46,18 +46,6 @@ const ProjectItem = (props) => {
               </div>
             ))}
           </div>
-
-          {/* <div className="links d-flex">
-            <a
-              href={props.projectData.repo}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <p className="text-orange">
-                <FontAwesomeIcon icon={faGithubSquare} className="text-lg" />
-              </p>
-            </a>
-          </div> */}
         </div>
         <a
           href={props.projectData.web}

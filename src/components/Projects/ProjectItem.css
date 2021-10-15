@@ -1,29 +1,18 @@
 .project-container {
   width: 100%;
-  margin: 50px auto;
+  margin: 50px auto 100px auto;
 }
 
 .project-item {
   width: 100%;
   height: fit-content;
   border-radius: 34px 34px 150px 34px;
-  padding: 30px;
   position: relative;
 }
 
 .project-text {
   margin-top: 20px;
 }
-
-/* .bg-green { */
-/* background-color: #e1f0e1; */
-/* background-color: none; */
-/* } */
-
-/* .bg-blue { */
-/* background-color: #d9ebed; */
-/* background-color: none; */
-/* } */
 
 .project-info {
   width: 100%;
@@ -33,15 +22,12 @@
 /* IMAGE */
 
 .image {
-  /* position: initial; */
   width: 100%;
   height: 0;
   padding-top: 63%;
   background-position: center;
   background-size: cover;
   border-radius: 8px;
-  /* top: -97px;
-  right: -470px; */
 }
 
 .image-container {
@@ -50,22 +36,6 @@
 }
 
 /* LINKS  */
-
-/* .links {
-  position: absolute;
-  top: 30px;
-  right: 22px;
-}
-
-.links p {
-  margin-right: 10px;
-  font-size: 28px;
-  transition: 0.2s ease-in;
-}
-
-.links p:hover {
-  color: var(--black);
-} */
 
 .link {
   transition: 0.2s ease-in;

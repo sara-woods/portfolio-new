@@ -1,16 +1,11 @@
-import "./Navbar.css";
-
 import { Navbar, Nav } from "react-bootstrap";
-
-// import duck from "../../images/duck_g.gif";
+import "./Navbar.css";
 import logo from "../../images/logo.png";
 
 const NavbarEx = (props) => {
   return (
     <Navbar collapseOnSelect expand="lg" sticky="top" className="navbar">
       <Navbar.Brand className="navbar-brand" href="#top">
-        {/* 👀 */}
-        {/* <img src={duck} style={{ width: "76px" }} alt="Duck gif" /> */}
         <img src={logo} style={{ width: "80px" }} alt="logo sara lotfi" />
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />

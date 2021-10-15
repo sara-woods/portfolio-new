@@ -28,7 +28,7 @@ const Projects = (props) => {
       filterText = contentData.filterOptions.webDev;
       break;
     case "2":
-      filterText = contentData.filterOptions.illustraitons;
+      filterText = contentData.filterOptions.illustrations;
       break;
     case "3":
       filterText = contentData.filterOptions.graphicDesign;
