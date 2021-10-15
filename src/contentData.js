@@ -21,9 +21,9 @@ export const contentData = {
     visit: "Visit website",
   },
   graphicDesign: {
-    disclaimer: "This selection of logos is a mix of personal and client work.",
+    disclaimer: "This selection of works is a mix of personal and client work.",
   },
-  copyright: "© 2021 Sara Lotfi. All rights reserved.",
+  copyright: "© 2021 Sara Lotfi",
   filterOptions: {
     header: "Filter Content",
     webDev: "Web Development",
@@ -38,7 +38,7 @@ export const contentData = {
       description:
         "Movie generator built in React with a Rails back-end API to fetch movies. Users can generate a random movie or filter the result based on release year, rating and genres.",
       technologies: [
-        "React",
+        "React.js",
         "Ruby on Rails",
         "JSON",
         "API",
@@ -54,7 +54,7 @@ export const contentData = {
       type: "Team project",
       name: "Wellsy",
       description:
-        "A platform where users can create or book workout sessions and participate via zoom from their own home. Includes search, authorization, image-hosting and payments via Stripe. Built in 10 days.",
+        "A platform where users can create or book workout sessions and participate via Zoom from their own home. Includes search, authorization, image-hosting and payments via Stripe.",
       technologies: [
         "Ruby on Rails",
         "JavaScript ES6",
@@ -98,7 +98,7 @@ export const contentData = {
       type: "Team project",
       name: "Floatify",
       description:
-        "An Airbnb like platform built in Ruby on Rails featuring search, geocoding and authorization. Users can create or rent boats as well as manage and review their bookings. Built in 5 days.",
+        "An Airbnb like platform built in Ruby on Rails featuring search, geocoding and authorization. Users can create or rent boats as well as manage and review their bookings.",
       technologies: [
         "Ruby on Rails",
         "JavaScript ES6",

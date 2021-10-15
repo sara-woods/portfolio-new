@@ -20,6 +20,14 @@ const NavbarEx = (props) => {
           <Nav.Link className="navbar-link" href="#contact">
             {props.navLinks.contact}
           </Nav.Link>
+          {/* <div className="d-flex align-items-center ml-5">
+            ENG
+            <label className="switch ml-2 mr-2">
+              <input type="checkbox" />
+              <span className="slider round"></span>
+            </label>
+            SV
+          </div> */}
         </Nav>
       </Navbar.Collapse>
     </Navbar>
