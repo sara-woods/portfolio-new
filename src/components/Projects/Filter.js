@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
 import "./Filter.css";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -10,41 +10,70 @@ const Filter = (props) => {
   const [filterSticky, setFilterSticky] = useState(false);
   const [showFilterButton, setShowFilterButton] = useState(false);
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  // const [scrollTargetTop, setScrollTargetTop] = useState(0);
+  // const [projectTargetTop, setProjectTargetTop] = useState(0);
+  // const [projectTargetHeight, setProjectTargetHeight] = useState(0);
+  // const [projectTargetBottom, setProjectTargetBottom] = useState(0);
 
+  // console.log("scroll-top", scrollTargetTop);
+  // console.log("top", projectTargetTop);
+  // console.log("height", projectTargetHeight);
+  // console.log("bottom", projectTargetBottom);
+  // console.log("----------------");
+
+  // ON FIRST LOAD //
   useEffect(() => {
     if (window.innerWidth > 800) setShowFilterButton(false);
     if (window.innerWidth <= 800) setShowFilterButton(true);
+    // const scrollTop = document.querySelector(".scroll-anchor").offsetTop;
+    // const projectTop = document.querySelector("#projects").offsetTop;
+    // const projectHeight = document.querySelector("#projects").offsetHeight;
+    // const projectBottom = projectHeight + projectTop - 200;
+
+    // setScrollTargetTop(scrollTop);
+    // setProjectTargetTop(projectTop);
+    // setProjectTargetHeight(projectHeight);
+    // setProjectTargetBottom(projectBottom);
   }, []);
 
+  // SCROLL //
   useEffect(() => {
     const handleScroll = () => {
-      const elementTarget = document.querySelector(".scroll-anchor");
-      const elementTargetOffsetTop = elementTarget.offsetTop;
-      if (window.scrollY > elementTargetOffsetTop + 200) {
-        setFilterSticky(true);
-        if (windowWidth > 800) setShowFilterButton(true);
-      } else {
-        setFilterSticky(false);
-        if (windowWidth > 800) setShowFilterButton(false);
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, [windowWidth]);
-
-  useEffect(() => {
-    const handleResize = () => {
-      const elementTarget = document.querySelector(".scroll-anchor");
-      const elementTargetOffsetTop = elementTarget.offsetTop;
+      const scrollTop = document.querySelector(".scroll-anchor").offsetTop;
+      const projectTop = document.querySelector("#projects").offsetTop;
+      const projectHeight = document.querySelector("#projects").offsetHeight;
+      const projectBottom = projectHeight + projectTop - 200;
 
       setShowFilterButton(true);
-      if (window.scrollY > elementTargetOffsetTop + 200) {
+      if (window.scrollY > scrollTop + 200 && window.scrollY < projectBottom) {
         setFilterSticky(true);
       } else {
         setFilterSticky(false);
         if (window.innerWidth > 800) setShowFilterButton(false);
       }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  // RESIZE
+  useEffect(() => {
+    const handleResize = () => {
+      // handleFilterButton();
+      const scrollTop = document.querySelector(".scroll-anchor").offsetTop;
+      const projectTop = document.querySelector("#projects").offsetTop;
+      const projectHeight = document.querySelector("#projects").offsetHeight;
+      const projectBottom = projectHeight + projectTop - 200;
+
+      setShowFilterButton(true);
+      if (window.scrollY > scrollTop + 200 && window.scrollY < projectBottom) {
+        setFilterSticky(true);
+      } else {
+        setFilterSticky(false);
+        if (window.innerWidth > 800) setShowFilterButton(false);
+      }
+
       setWindowWidth(window.innerWidth);
     };
 
