@@ -1,5 +1,5 @@
 #contact {
-  max-width: 700px;
+  max-width: 800px;
   margin: 0 auto;
   margin-top: 150px;
   margin-bottom: 200px;
@@ -7,11 +7,11 @@
 
 #contact a {
   transition: 0.2s ease-in;
-  color: #df7861;
+  color: var(--orange);
   font-weight: 400;
   text-decoration: none;
 }
 
 #contact a:hover {
-  color: black;
+  color: var(--black);
 }

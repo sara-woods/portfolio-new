@@ -14,5 +14,5 @@
 }
 
 .social-links p:hover {
-  color: black;
+  color: var(--black);
 }
