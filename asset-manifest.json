@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.a7d8d83b.chunk.css",
-    "main.js": "/static/js/main.3256290c.chunk.js",
-    "main.js.map": "/static/js/main.3256290c.chunk.js.map",
+    "main.js": "/static/js/main.565ad56f.chunk.js",
+    "main.js.map": "/static/js/main.565ad56f.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.b83279d6.js",
     "runtime-main.js.map": "/static/js/runtime-main.b83279d6.js.map",
     "static/css/2.ef9168ec.chunk.css": "/static/css/2.ef9168ec.chunk.css",
@@ -33,7 +33,7 @@
     "static/media/paddleboards.a81b971b.jpg": "/static/media/paddleboards.a81b971b.jpg",
     "static/media/pennywise.eace29e5.jpg": "/static/media/pennywise.eace29e5.jpg",
     "static/media/photography.b10664fe.jpg": "/static/media/photography.b10664fe.jpg",
-    "static/media/portrait.165bb6a0.png": "/static/media/portrait.165bb6a0.png",
+    "static/media/portrait.4032371a.jpg": "/static/media/portrait.4032371a.jpg",
     "static/media/publishing.6a165df7.jpg": "/static/media/publishing.6a165df7.jpg",
     "static/media/pug.c58853af.jpg": "/static/media/pug.c58853af.jpg",
     "static/media/roses.be63e138.jpg": "/static/media/roses.be63e138.jpg",
@@ -48,6 +48,6 @@
     "static/css/2.ef9168ec.chunk.css",
     "static/js/2.33c584a5.chunk.js",
     "static/css/main.a7d8d83b.chunk.css",
-    "static/js/main.3256290c.chunk.js"
+    "static/js/main.565ad56f.chunk.js"
   ]
 }
