@@ -3,7 +3,7 @@ import Button from "../UI/Button";
 
 import { contentData } from "../../contentData";
 
-import portrait from "../../images/portrait.png";
+import portrait from "../../images/portrait.jpg";
 
 const Intro = (props) => {
   const handleRightClick = (event) => {
