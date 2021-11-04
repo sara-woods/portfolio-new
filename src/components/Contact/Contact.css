@@ -5,7 +5,7 @@
 
 #contact-anchor {
   position: relative;
-  top: -270px;
+  top: -150px;
   left: 0;
 }
 
@@ -23,4 +23,12 @@
 
 #contact a:hover {
   color: var(--black);
+}
+
+@media screen and (max-width: 974px) {
+  #contact-anchor {
+    position: relative;
+    top: -270px;
+    left: 0;
+  }
 }
