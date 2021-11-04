@@ -8,25 +8,30 @@ const Contact = () => {
       <h1 className="header">{contentData.contactData.header}</h1>
       <p className="text-md text-300 mt-3 text-center">
         {contentData.contactData.text[0]}{" "}
-        <a href="mailto: lotfi.sara@gmail.com">lotfi.sara@gmail.com </a>
+        <a
+          href="mailto: lotfi.sara@gmail.com"
+          className="contact-link tab-link"
+        >
+          lotfi.sara@gmail.com{" "}
+        </a>
         {contentData.contactData.text[1]}{" "}
         <a
           href="https://www.linkedin.com/in/sara-lotfi/"
           target="_blank"
           rel="noopener noreferrer"
+          className="contact-link tab-link"
         >
           LinkedIn
         </a>
         .
       </p>
-      <a
-        href="mailto: lotfi.sara@gmail.com"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="text-center d-block"
-      >
-        <Button className="mt-5" text={contentData.buttonText.contact} />
-      </a>
+
+      <div className="d-flex justify-content-center">
+        <Button
+          text={contentData.buttonText.contact}
+          href="mailto: lotfi.sara@gmail.com"
+        />
+      </div>
     </div>
   );
 };

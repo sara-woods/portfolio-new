@@ -65,15 +65,12 @@ const Intro = (props) => {
           </div>
         </div> */}
           </div>
-          <a
-            href="mailto: lotfi.sara@gmail.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="contact-button"
-          >
-            <Button text={contentData.buttonText.contact} />
-          </a>
 
+          <Button
+            text={contentData.buttonText.contact}
+            href="mailto: lotfi.sara@gmail.com"
+            className="contact-button"
+          />
           <img
             onContextMenu={handleRightClick}
             onDragStart={handleDrag}

@@ -34,6 +34,10 @@
   color: var(--orange);
 }
 
+.navbar-link:focus-visible {
+  outline: 4px solid var(--orange);
+}
+
 /* CHECKBOX */
 
 /* The switch - the box around the slider */

@@ -20,12 +20,10 @@ const ProjectItem = (props) => {
             href={props.projectData.repo}
             target="_blank"
             rel="noopener noreferrer"
+            className="mb-4 tab-link"
           >
             <p className="text-orange">
-              <FontAwesomeIcon
-                icon={faGithubSquare}
-                className="text-lg mb-4 link"
-              />
+              <FontAwesomeIcon icon={faGithubSquare} className="text-lg link" />
             </p>
           </a>
         </div>
@@ -46,14 +44,12 @@ const ProjectItem = (props) => {
               </div>
             ))}
           </div>
+          <Button
+            text={contentData.buttonText.visit}
+            href={props.projectData.web}
+            className="mt-4"
+          />
         </div>
-        <a
-          href={props.projectData.web}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Button className="mt-4" text={contentData.buttonText.visit} />
-        </a>
       </div>
     </div>
   );

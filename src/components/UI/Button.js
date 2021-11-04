@@ -2,9 +2,14 @@ import "./Button.css";
 
 const Button = (props) => {
   return (
-    <button className={`button-pill text-sm ${props.className}`}>
+    <a
+      href={props.href}
+      rel="noopener noreferrer"
+      target="_blank"
+      className={`button-pill text-sm ${props.className}`}
+    >
       {props.text}
-    </button>
+    </a>
   );
 };
 

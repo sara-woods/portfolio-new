@@ -1,11 +1,17 @@
 #contact {
   max-width: 800px;
   margin: 0 auto;
-  margin-top: 150px;
+  padding-top: 280px;
+  margin-top: -320px;
   margin-bottom: 200px;
 }
 
-#contact a {
+/* Alternative to off-setting with negative margin for scroll to #contact */
+/* #anchor {
+  scroll-margin-top: 100px;
+} */
+
+.contact-link {
   transition: 0.2s ease-in;
   color: var(--orange);
   font-weight: 400;

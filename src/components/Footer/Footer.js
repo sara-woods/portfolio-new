@@ -12,6 +12,7 @@ const Footer = () => {
           href="https://github.com/saralotfi"
           target="_blank"
           rel="noopener noreferrer"
+          className="tab-link"
         >
           <p className="text-orange text-md">
             <FontAwesomeIcon icon={faGithubSquare} />
@@ -21,6 +22,7 @@ const Footer = () => {
           href="https://www.linkedin.com/in/sara-lotfi/"
           target="_blank"
           rel="noopener noreferrer"
+          className="tab-link"
         >
           <p className="text-orange text-md">
             <FontAwesomeIcon icon={faLinkedin} />

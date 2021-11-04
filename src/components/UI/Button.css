@@ -1,23 +1,29 @@
 .button-pill {
+  margin-top: 36px;
   border: 2px solid var(--black);
   border-radius: 40px;
   padding: 8px 28px 5px 28px;
-  /* background: var(--bg); */
   background: #fffef9;
   box-shadow: 1px 1px 0 0 var(--black), 2px 2px 0 0 var(--black),
     3px 3px 0 0 var(--black);
-  margin-top: 36px;
   font-weight: 500;
   color: var(--black);
+  display: inline-block;
 }
 
 .button-pill:hover {
   cursor: pointer;
   box-shadow: 1px 1px 0 0 var(--black), 2px 2px 0 0 var(--black);
   transform: translate(1px, 1px);
+  text-decoration: none;
+  color: var(--black);
 }
 
 .button-pill:active {
   box-shadow: none;
   transform: translate(3px, 3px);
+}
+
+.button-pill:focus-visible {
+  outline: 4px solid var(--orange);
 }

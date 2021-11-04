@@ -5,9 +5,7 @@
 
 .project-item {
   width: 100%;
-  height: fit-content;
   border-radius: 34px 34px 150px 34px;
-  position: relative;
 }
 
 .project-text {

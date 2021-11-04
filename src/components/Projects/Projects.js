@@ -4,6 +4,7 @@ import WebDevProjects from "./WebDevProjects";
 import Illustrations from "./Illustrations";
 import GraphicDesigns from "./GraphicDesigns";
 import Filter from "./Filter";
+import Button from "../UI/Button";
 
 import { contentData } from "../../contentData";
 
