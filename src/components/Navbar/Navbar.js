@@ -17,7 +17,7 @@ const NavbarEx = (props) => {
           <Nav.Link className="navbar-link" href="#projects-anchor">
             {props.navLinks.projects}
           </Nav.Link>
-          <Nav.Link className="navbar-link" href="#contact">
+          <Nav.Link className="navbar-link" href="#contact-anchor">
             {props.navLinks.contact}
           </Nav.Link>
           {/* <div className="d-flex align-items-center ml-5">

@@ -7,6 +7,12 @@
 
 #projects-anchor {
   position: relative;
+  top: -270px;
+  left: 0;
+}
+
+.scroll-anchor {
+  position: relative;
   top: -200px;
   left: 0;
 }

@@ -5,6 +5,7 @@ import { contentData } from "../../contentData";
 const Contact = () => {
   return (
     <div id="contact">
+      <div id="contact-anchor"></div>
       <h1 className="header">{contentData.contactData.header}</h1>
       <p className="text-md text-300 mt-3 text-center">
         {contentData.contactData.text[0]}{" "}

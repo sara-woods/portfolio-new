@@ -40,7 +40,8 @@ const Projects = (props) => {
 
   return (
     <div id="projects">
-      <div id="projects-anchor" className="scroll-anchor"></div>
+      <div id="projects-anchor"></div>
+      <div className="scroll-anchor"></div>
       <h1 className="mb-5 header">{contentData.navLinks.projects}</h1>
 
       <Filter
