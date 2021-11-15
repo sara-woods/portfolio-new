@@ -22,7 +22,6 @@ const NavbarEx = (props) => {
     } else {
       i18n.changeLanguage("en");
     }
-    document.documentElement.lang = i18n.language;
   };
 
   return (

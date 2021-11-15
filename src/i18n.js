@@ -18,6 +18,10 @@ const DETECTION_OPTIONS = {
   caches: ["localStorage"],
 };
 
+i18n.on("languageChanged", () => {
+  document.documentElement.lang = i18n.language;
+});
+
 i18n
   // .use(Backend) // load translations using http (default public/assets/locals/en/translations)
   // detect user language
