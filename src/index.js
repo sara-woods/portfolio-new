@@ -6,5 +6,11 @@ import App from "./App";
 
 // import i18n (needs to be bundled ;))
 import "./i18n";
+import { BrowserRouter } from "react-router-dom";
 
-ReactDOM.render(<App />, document.getElementById("root"));
+ReactDOM.render(
+  <BrowserRouter>
+    <App />
+  </BrowserRouter>,
+  document.getElementById("root")
+);

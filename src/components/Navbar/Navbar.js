@@ -1,11 +1,13 @@
 import { Navbar, Nav } from "react-bootstrap";
+import { useNavigate } from "react-router-dom";
 import { useRef, useEffect } from "react";
 import "./Navbar.css";
 import logo from "../../images/logo.png";
 import { useTranslation } from "react-i18next";
 
-const NavbarEx = (props) => {
-  const { i18n } = useTranslation();
+const NavbarEx = () => {
+  const { t, i18n } = useTranslation();
+  const navigate = useNavigate();
   const langCheckbox = useRef();
 
   useEffect(() => {
@@ -19,8 +21,10 @@ const NavbarEx = (props) => {
   const handleLangChange = (event) => {
     if (langCheckbox.current.checked) {
       i18n.changeLanguage("sv");
+      navigate("/sv");
     } else {
       i18n.changeLanguage("en");
+      navigate("/en");
     }
   };
 
@@ -39,13 +43,13 @@ const NavbarEx = (props) => {
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ml-auto">
             <Nav.Link className="navbar-link" href="#top">
-              {props.navLinks.about}
+              {t("navLinks.about")}
             </Nav.Link>
             <Nav.Link className="navbar-link" href="#projects-anchor">
-              {props.navLinks.projects}
+              {t("navLinks.projects")}
             </Nav.Link>
             <Nav.Link className="navbar-link" href="#contact-anchor">
-              {props.navLinks.contact}
+              {t("navLinks.contact")}
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>

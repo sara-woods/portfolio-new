@@ -14,11 +14,17 @@ const resources = {
 };
 
 const DETECTION_OPTIONS = {
-  order: ["localStorage", "navigator"],
-  caches: ["localStorage"],
+  order: ["path", "localStorage", "navigator"],
+  // caches: ["localStorage"],
+  caches: [],
+  lookupFromPathIndex: 0,
+  checkWhitelist: true,
 };
 
-i18n.on("languageChanged", () => {
+i18n.on("languageChanged", (lng) => {
+  // if (lng !== "en" || lng !== "sv") {
+  //   lng = "en";
+  // }
   document.documentElement.lang = i18n.language;
 });
 
@@ -34,9 +40,6 @@ i18n
   .init({
     // order: ["localStorage", "sessionStorage", "navigator", "path"],
     // debug: false,
-    // detection: {
-    //   checkWhitelist: true, // options for language detection
-    // },
     // interpolation: {
     //   escapeValue: false, // not needed for react as it escapes by default
     // },

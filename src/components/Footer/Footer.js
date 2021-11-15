@@ -1,10 +1,12 @@
 import "./Footer.css";
+import { useTranslation } from "react-i18next";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithubSquare, faLinkedin } from "@fortawesome/free-brands-svg-icons";
-import { contentData } from "../../contentData";
 
 const Footer = () => {
+  const { t } = useTranslation();
+
   return (
     <div className="footer">
       <div className="social-links">
@@ -29,7 +31,7 @@ const Footer = () => {
           </p>
         </a>
       </div>
-      <p className="text-orange mb-5 mt-4">{contentData.copyright}</p>
+      <p className="text-orange mb-5 mt-4">{t("copyright")}</p>
     </div>
   );
 };

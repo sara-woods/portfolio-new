@@ -1,8 +1,8 @@
 import "./Intro.css";
 import Button from "../UI/Button";
-import { useTranslation, Trans } from "react-i18next";
+import { useTranslation } from "react-i18next";
 
-import { contentData } from "../../contentData";
+// import { contentData } from "../../contentData";
 
 import portrait from "../../images/portrait.jpg";
 
@@ -24,10 +24,10 @@ const Intro = (props) => {
           <div className="intro-left">
             <p className="text-orange text-300 text-lg">
               {/* {props.introData.hello} */}
-              {t("intro.part1")}
+              {t("intro.hello")}
             </p>
             <h1>Sara Lotfi</h1>
-            <p className="text-md text-300 mt-4">{props.introData.introText}</p>
+            <p className="text-md text-300 mt-4">{t("intro.introText")}</p>
             {/* <div className="tech-stack text-20px">
           <div>
             <ul className="text-orange">
@@ -71,7 +71,8 @@ const Intro = (props) => {
           </div>
 
           <Button
-            text={contentData.buttonText.contact}
+            // text={contentData.buttonText.contact}
+            text={t("buttonText.contact")}
             href="mailto: lotfi.sara@gmail.com"
             className="contact-button"
           />

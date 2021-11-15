@@ -1,21 +1,23 @@
 import "./Contact.css";
 import Button from "../UI/Button";
-import { contentData } from "../../contentData";
+import { useTranslation } from "react-i18next";
 
 const Contact = () => {
+  const { t } = useTranslation();
+
   return (
     <div id="contact">
       <div id="contact-anchor"></div>
-      <h1 className="header">{contentData.contactData.header}</h1>
+      <h1 className="header">{t("contactData.header")}</h1>
       <p className="text-md text-300 mt-3 text-center">
-        {contentData.contactData.text[0]}{" "}
+        {t("contactData.text1")}{" "}
         <a
           href="mailto: lotfi.sara@gmail.com"
           className="contact-link tab-link"
         >
           lotfi.sara@gmail.com{" "}
         </a>
-        {contentData.contactData.text[1]}{" "}
+        {t("contactData.text2")}{" "}
         <a
           href="https://www.linkedin.com/in/sara-lotfi/"
           target="_blank"
@@ -29,7 +31,7 @@ const Contact = () => {
 
       <div className="d-flex justify-content-center">
         <Button
-          text={contentData.buttonText.contact}
+          text={t("buttonText.contact")}
           href="mailto: lotfi.sara@gmail.com"
         />
       </div>

@@ -1,39 +1,21 @@
 import { useState, useEffect } from "react";
+import { useTranslation } from "react-i18next";
 import "./Filter.css";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowDown } from "@fortawesome/free-solid-svg-icons";
 import { faTimes } from "@fortawesome/free-solid-svg-icons";
-import { contentData } from "../../contentData";
 
 const Filter = (props) => {
+  const { t } = useTranslation();
   const [filterSticky, setFilterSticky] = useState(false);
   const [showFilterButton, setShowFilterButton] = useState(false);
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
-  // const [scrollTargetTop, setScrollTargetTop] = useState(0);
-  // const [projectTargetTop, setProjectTargetTop] = useState(0);
-  // const [projectTargetHeight, setProjectTargetHeight] = useState(0);
-  // const [projectTargetBottom, setProjectTargetBottom] = useState(0);
-
-  // console.log("scroll-top", scrollTargetTop);
-  // console.log("top", projectTargetTop);
-  // console.log("height", projectTargetHeight);
-  // console.log("bottom", projectTargetBottom);
-  // console.log("----------------");
 
   // ON FIRST LOAD //
   useEffect(() => {
     if (window.innerWidth > 800) setShowFilterButton(false);
     if (window.innerWidth <= 800) setShowFilterButton(true);
-    // const scrollTop = document.querySelector(".scroll-anchor").offsetTop;
-    // const projectTop = document.querySelector("#projects").offsetTop;
-    // const projectHeight = document.querySelector("#projects").offsetHeight;
-    // const projectBottom = projectHeight + projectTop - 200;
-
-    // setScrollTargetTop(scrollTop);
-    // setProjectTargetTop(projectTop);
-    // setProjectTargetHeight(projectHeight);
-    // setProjectTargetBottom(projectBottom);
   }, []);
 
   // SCROLL //
@@ -43,12 +25,6 @@ const Filter = (props) => {
       const projectTop = document.querySelector("#projects").offsetTop;
       const projectHeight = document.querySelector("#projects").offsetHeight;
       const projectBottom = projectHeight + projectTop;
-      console.log("scroll-top", scrollTop);
-      console.log("top", projectTop);
-      console.log("height", projectHeight);
-      console.log("bottom", projectBottom);
-      console.log("scroll", window.scrollY);
-      console.log("----------------");
       setShowFilterButton(true);
       if (
         window.scrollY > scrollTop + 200 &&
@@ -93,7 +69,7 @@ const Filter = (props) => {
   if (props.showDropdown) {
     filterButton = (
       <button onClick={props.onFilter} className="filter-button">
-        {contentData.filterOptions.header}
+        {t("filterOptions.header")}
         <span className="ml-3 arrow">
           <FontAwesomeIcon icon={faTimes} />
         </span>
@@ -122,7 +98,7 @@ const Filter = (props) => {
               className={`tab ${props.page === "1" ? "underline-tab" : ""}`}
               onClick={props.onFilterChange}
             >
-              {contentData.filterOptions.webDev}
+              {t("filterOptions.webDev")}
             </p>
           </li>
           <li>
@@ -131,7 +107,7 @@ const Filter = (props) => {
               className={`tab ${props.page === "2" ? "underline-tab" : ""}`}
               onClick={props.onFilterChange}
             >
-              {contentData.filterOptions.illustrations}
+              {t("filterOptions.illustrations")}
             </p>
           </li>
           <li>
@@ -140,7 +116,7 @@ const Filter = (props) => {
               className={`tab ${props.page === "3" ? "underline-tab" : ""}`}
               onClick={props.onFilterChange}
             >
-              {contentData.filterOptions.graphicDesign}
+              {t("filterOptions.graphicDesign")}
             </p>
           </li>
         </ul>
@@ -164,7 +140,7 @@ const Filter = (props) => {
                     id="filter-text"
                     className={props.page === "1" ? "underline-filter" : ""}
                   >
-                    {contentData.filterOptions.webDev}
+                    {t("filterOptions.webDev")}
                   </span>
                 </p>
               </li>
@@ -176,7 +152,7 @@ const Filter = (props) => {
                     id="filter-text"
                     className={props.page === "2" ? "underline-filter" : ""}
                   >
-                    {contentData.filterOptions.illustrations}
+                    {t("filterOptions.illustrations")}
                   </span>
                 </p>
               </li>
@@ -188,7 +164,7 @@ const Filter = (props) => {
                     id="filter-text"
                     className={props.page === "3" ? "underline-filter" : ""}
                   >
-                    {contentData.filterOptions.graphicDesign}
+                    {t("filterOptions.graphicDesign")}
                   </span>
                 </p>
               </li>
