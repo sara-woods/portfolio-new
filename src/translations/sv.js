@@ -16,7 +16,7 @@ export const sv = {
       text2: "eller ett meddelande på ",
     },
     buttonText: {
-      contact: "Kontakta Sara",
+      contact: "Kontakta mig",
       visit: "Besök hemsida",
     },
     graphicDesign: {
@@ -25,7 +25,7 @@ export const sv = {
     },
     copyright: "© 2021 Sara Lotfi",
     filterOptions: {
-      header: "Filtrera Urval",
+      header: "Filtrera urval",
       webDev: "Webb-utveckling",
       illustrations: "Illustrationer",
       graphicDesign: "Logotyper/Grafisk Design",
