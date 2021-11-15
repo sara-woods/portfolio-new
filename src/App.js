@@ -14,12 +14,17 @@ import packathonImage from "./images/packathon.png";
 
 import { contentData } from "./contentData";
 
+import { useTranslation } from "react-i18next";
+
 const projectData = contentData.projectData;
 
 const urls = [];
 projectData.forEach((url) => urls.push(url["web"]));
 
 const App = () => {
+  const { i18n } = useTranslation();
+  document.documentElement.lang = i18n.language;
+
   useEffect(() => {
     const ping = (url) => {
       fetch(url, { mode: "no-cors" })

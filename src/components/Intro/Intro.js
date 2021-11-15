@@ -1,11 +1,14 @@
 import "./Intro.css";
 import Button from "../UI/Button";
+import { useTranslation, Trans } from "react-i18next";
 
 import { contentData } from "../../contentData";
 
 import portrait from "../../images/portrait.jpg";
 
 const Intro = (props) => {
+  const { t } = useTranslation();
+
   const handleRightClick = (event) => {
     event.preventDefault();
   };
@@ -20,7 +23,8 @@ const Intro = (props) => {
         <div id="intro">
           <div className="intro-left">
             <p className="text-orange text-300 text-lg">
-              {props.introData.hello}
+              {/* {props.introData.hello} */}
+              {t("intro.part1")}
             </p>
             <h1>Sara Lotfi</h1>
             <p className="text-md text-300 mt-4">{props.introData.introText}</p>
