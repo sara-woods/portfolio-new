@@ -8,7 +8,7 @@ export const en = {
     intro: {
       hello: "Hi, my name is",
       introText:
-        "I’m a web developer, designer and illustrator based in Uppsala, Sweden. I help small businesses with work related to their visual presence. Together we can create a customer experience that is creative, beautiful, and memorable. Below are previous websites that I have designed and developed as well as a selection of my illustrations and logo designs.",
+        "I’m a web developer, designer and illustrator based in Uppsala, Sweden. I help small businesses with work related to their visual presence. Together we can create a user experience that is creative, beautiful, and memorable. Below are previous websites that I have designed and developed as well as a selection of my illustrations and logo designs.",
     },
     contactData: {
       header: "Hey there!",
@@ -37,7 +37,7 @@ export const en = {
         type: "Solo project",
         name: "What movie?",
         description:
-          "Movie generator built in React with a Rails back-end API to fetch movies. Users can generate a random movie or filter the result based on release year, rating and genres.",
+          "Movie generator where users can generate a random movie or filter the result based on release year, rating and genres. Also includes a link to watch the trailer on Youtube.",
         technologies: [
           "React.js",
           "Ruby on Rails",
@@ -72,7 +72,7 @@ export const en = {
         type: "Team project",
         name: "Packathon",
         description:
-          "Winner of Hackathon 2021 - Le Wagon, an order packing-helper app for online retailers using Ruby on Rails and Three.js. (The site breaks at the moment due to the external packing algorithm API being down.)",
+          "Winner of Hackathon 2021 - Le Wagon, an order packing-helper app for online retailers. The user is adviced which box-size to use when packing the order. (The site breaks at the moment due to the external packing algorithm API being down.)",
         technologies: [
           "Ruby on Rails",
           "Three.js",
@@ -89,7 +89,7 @@ export const en = {
         type: "Solo project",
         name: "Catsweeper",
         description:
-          "Based on the game Minesweeper and built in JavaScript. I recreated the game mechanics as close to the classic game as possible. The design includes my own illustrations.",
+          "Based on the game Minesweeper where I recreated the game mechanics as close to the classic game as possible. The design includes my own illustrations.",
         technologies: ["JavaScript ES6", "HTML", "CSS", "Responsive"],
         repo: "https://github.com/saralotfi/catsweeper",
         web: "https://saralotfi.github.io/catsweeper/",
@@ -99,7 +99,7 @@ export const en = {
         type: "Team project",
         name: "Floatify",
         description:
-          "An Airbnb like platform built in Ruby on Rails featuring search, geocoding and authorization. Users can create or rent boats as well as manage and review their bookings.",
+          "An Airbnb like platform but for boats, featuring search, geocoding and authorization. Users can create or rent boats as well as manage and review their bookings.",
         technologies: [
           "Ruby on Rails",
           "JavaScript ES6",

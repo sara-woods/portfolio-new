@@ -39,7 +39,6 @@ const Projects = (props) => {
 
   return (
     <div id="projects">
-      <div id="projects-anchor"></div>
       <div className="scroll-anchor"></div>
       <h1 className="mb-5 header">{t("navLinks.projects")}</h1>
 

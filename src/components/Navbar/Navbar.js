@@ -40,10 +40,10 @@ const NavbarEx = () => {
           <Nav.Link className="navbar-link" href="#top">
             {t("navLinks.about")}
           </Nav.Link>
-          <Nav.Link className="navbar-link" href="#projects-anchor">
+          <Nav.Link className="navbar-link" href="#projects">
             {t("navLinks.projects")}
           </Nav.Link>
-          <Nav.Link className="navbar-link" href="#contact-anchor">
+          <Nav.Link className="navbar-link" href="#contact">
             {t("navLinks.contact")}
           </Nav.Link>
           <div className="lang-switch d-flex align-items-center justify-content-center">

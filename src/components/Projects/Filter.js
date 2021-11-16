@@ -12,6 +12,8 @@ const Filter = (props) => {
   const [showFilterButton, setShowFilterButton] = useState(false);
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
+  const navbarOffset = 130;
+
   // ON FIRST LOAD //
   useEffect(() => {
     if (window.innerWidth > 800) setShowFilterButton(false);
@@ -27,8 +29,8 @@ const Filter = (props) => {
       const projectBottom = projectHeight + projectTop;
       setShowFilterButton(true);
       if (
-        window.scrollY > scrollTop + 200 &&
-        window.scrollY < projectBottom - 200
+        window.scrollY > scrollTop + navbarOffset &&
+        window.scrollY < projectBottom - navbarOffset
       ) {
         setFilterSticky(true);
       } else {
@@ -47,10 +49,13 @@ const Filter = (props) => {
       const scrollTop = document.querySelector(".scroll-anchor").offsetTop;
       const projectTop = document.querySelector("#projects").offsetTop;
       const projectHeight = document.querySelector("#projects").offsetHeight;
-      const projectBottom = projectHeight + projectTop - 200;
+      const projectBottom = projectHeight + projectTop - navbarOffset;
 
       setShowFilterButton(true);
-      if (window.scrollY > scrollTop + 200 && window.scrollY < projectBottom) {
+      if (
+        window.scrollY > scrollTop + navbarOffset &&
+        window.scrollY < projectBottom
+      ) {
         setFilterSticky(true);
       } else {
         setFilterSticky(false);
