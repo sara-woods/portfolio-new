@@ -8,11 +8,12 @@ export const sv = {
     intro: {
       hello: "Hej, jag heter",
       introText:
-        "Jag är en webb-utvecklare och illustratör baserad i Uppsala, Sverige. Kolla in några av mina tidigare projekt nedan. Om du letar efter en frilansande webb-utvecklare, illustratör eller designer för hjälp att väcka en idé till liv eller fixa ett existerande problem - tveka inte att höra av dig!",
+        "Jag är en webbutvecklare, grafisk designer och illustratör baserad i Uppsala, Sverige. Jag hjälper små företag med arbete relaterat till deras visuella närvaro. Tillsammans kan vi skapa en kundupplevelse som är kreativ, vacker och minnesvärd. Nedan finns tidigare hemsidor jag har designat och programmerat, samt ett urval av mina illustrationer och logotyper.",
     },
     contactData: {
       header: "Hej!",
-      text1: "För att komma i kontakt med mig, skicka ett e-mail till",
+      text1:
+        "Om du letar efter en frilansande webbutvecklare, designer eller illustratör för hjälp med att utveckla en idé eller fixa ett existerande problem - låt oss höras! Skicka ett email till ",
       text2: "eller ett meddelande på ",
     },
     buttonText: {
@@ -26,7 +27,7 @@ export const sv = {
     copyright: "© 2021 Sara Lotfi",
     filterOptions: {
       header: "Filtrera urval",
-      webDev: "Webb-utveckling",
+      webDev: "Webbutveckling",
       illustrations: "Illustrationer",
       graphicDesign: "Logotyper/Grafisk Design",
     },
@@ -71,7 +72,7 @@ export const sv = {
         type: "Team-projekt",
         name: "Packathon",
         description:
-          "Vinnare av Hackathon 2021 - Le Wagon, en order-paketerings-hjälpreda för e-butiker i Ruby on Rails och Three.js. (Sidan krashar för tillfället p.g.a den externa paketerings-APIn som är nere)",
+          "Vinnare av Hackathon 2021 - Le Wagon, en order-paketerings-hjälpreda för e-butiker i Ruby on Rails och Three.js. (Sidan krashar för tillfället p.g.a den externa paketerings-APIn som är nere.)",
         technologies: [
           "Ruby on Rails",
           "Three.js",
@@ -88,7 +89,7 @@ export const sv = {
         type: "Solo-projekt",
         name: "Catsweeper",
         description:
-          "Baserat på spelet Minesweeper och byggt med JavaScript. Jag återskapade spelets mekanik så nära originalet som möjligt. Designen inkluderar mina egna illustraitoner",
+          "Baserat på spelet Minesweeper och byggt med JavaScript. Jag återskapade spelets mekanik så nära originalet som möjligt. Designen inkluderar mina egna illustrationer.",
         technologies: ["JavaScript ES6", "HTML", "CSS", "Responsive"],
         repo: "https://github.com/saralotfi/catsweeper",
         web: "https://saralotfi.github.io/catsweeper/",

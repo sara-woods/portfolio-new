@@ -29,43 +29,37 @@ const NavbarEx = () => {
   };
 
   return (
-    <Navbar
-      collapseOnSelect
-      expand="lg"
-      sticky="top"
-      className="navbar d-flex justify-content-between"
-    >
+    <Navbar collapseOnSelect expand="lg" sticky="top" className="navbar">
       <Navbar.Brand className="navbar-brand" href="#top">
         <img src={logo} style={{ width: "80px" }} alt="logo sara lotfi" />
       </Navbar.Brand>
-      <div className="d-flex">
-        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-        <Navbar.Collapse id="responsive-navbar-nav">
-          <Nav className="ml-auto">
-            <Nav.Link className="navbar-link" href="#top">
-              {t("navLinks.about")}
-            </Nav.Link>
-            <Nav.Link className="navbar-link" href="#projects-anchor">
-              {t("navLinks.projects")}
-            </Nav.Link>
-            <Nav.Link className="navbar-link" href="#contact-anchor">
-              {t("navLinks.contact")}
-            </Nav.Link>
-          </Nav>
-        </Navbar.Collapse>
-        <div className="lang-switch d-flex align-items-center">
-          <p className="text-700">EN</p>
-          <label className="switch ml-2 mr-2">
-            <input
-              ref={langCheckbox}
-              type="checkbox"
-              onChange={handleLangChange}
-            />
-            <span className="slider round"></span>
-          </label>
-          <p className="text-700">SV</p>
-        </div>
-      </div>
+
+      <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+      <Navbar.Collapse id="responsive-navbar-nav">
+        <Nav className="ml-auto">
+          <Nav.Link className="navbar-link" href="#top">
+            {t("navLinks.about")}
+          </Nav.Link>
+          <Nav.Link className="navbar-link" href="#projects-anchor">
+            {t("navLinks.projects")}
+          </Nav.Link>
+          <Nav.Link className="navbar-link" href="#contact-anchor">
+            {t("navLinks.contact")}
+          </Nav.Link>
+          <div className="lang-switch d-flex align-items-center justify-content-center">
+            <p className="text-700">EN</p>
+            <label className="switch ml-2 mr-2">
+              <input
+                ref={langCheckbox}
+                type="checkbox"
+                onChange={handleLangChange}
+              />
+              <span className="slider round"></span>
+            </label>
+            <p className="text-700">SV</p>
+          </div>
+        </Nav>
+      </Navbar.Collapse>
     </Navbar>
   );
 };

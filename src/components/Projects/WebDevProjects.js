@@ -50,52 +50,6 @@ const WebDevProjects = (props) => {
           projectImage={item.image}
         />
       ))}
-
-      {/* <ProjectItem
-        name={t("projectData.whatmovie.name")}
-        type={t("projectData.whatmovie.type")}
-        description={t("projectData.whatmovie.description")}
-        webLink={t("projectData.whatmovie.web")}
-        repoLink={t("projectData.whatmovie.repo")}
-        technologies={projectData.whatmovie.technologies}
-        projectImage={whatmovieImage}
-      />
-      <ProjectItem
-        name={t("projectData.wellsy.name")}
-        type={t("projectData.wellsy.type")}
-        description={t("projectData.wellsy.description")}
-        webLink={t("projectData.wellsy.web")}
-        repoLink={t("projectData.wellsy.repo")}
-        technologies={projectData.wellsy.technologies}
-        projectImage={wellsyImage}
-      />
-      <ProjectItem
-        name={t("projectData.packathon.name")}
-        type={t("projectData.packathon.type")}
-        description={t("projectData.packathon.description")}
-        webLink={t("projectData.packathon.web")}
-        repoLink={t("projectData.packathon.repo")}
-        technologies={projectData.packathon.technologies}
-        projectImage={packathonImage}
-      />
-      <ProjectItem
-        name={t("projectData.catsweeper.name")}
-        type={t("projectData.catsweeper.type")}
-        description={t("projectData.catsweeper.description")}
-        webLink={t("projectData.catsweeper.web")}
-        repoLink={t("projectData.catsweeper.repo")}
-        technologies={projectData.catsweeper.technologies}
-        projectImage={catsweeperImage}
-      />
-      <ProjectItem
-        name={t("projectData.floatify.name")}
-        type={t("projectData.floatify.type")}
-        description={t("projectData.floatify.description")}
-        webLink={t("projectData.floatify.web")}
-        repoLink={t("projectData.floatify.repo")}
-        technologies={projectData.floatify.technologies}
-        projectImage={floatifyImage}
-      /> */}
     </>
   );
 };

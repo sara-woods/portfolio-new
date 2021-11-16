@@ -18,7 +18,7 @@ const GraphicDesigns = (props) => {
   return (
     <>
       <div>
-        <div id="logo-personal" className="text-sm mt-5">
+        <div id="logo-personal" className="text-sm mt-3">
           <p>{t("graphicDesign.disclaimer")}</p>
         </div>
 

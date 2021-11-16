@@ -2,7 +2,7 @@
   max-width: 800px;
   margin: 0 auto;
   margin-top: 150px;
-  margin-bottom: 280px;
+  margin-bottom: 200px;
 }
 
 #intro {
@@ -10,11 +10,16 @@
   justify-content: space-between;
   align-items: flex-end;
   position: relative;
+  margin-bottom: 40px;
 }
 
 /* .tech-stack {
   display: flex;
 } */
+
+.contact-button-screen {
+  display: none !important;
+}
 
 .intro-left {
   width: 60%;
@@ -28,24 +33,18 @@
   border-radius: 8px;
 }
 
-.contact-button {
-  position: absolute;
-  top: 436px;
-  left: 0px;
-}
-
 @media screen and (max-width: 500px) {
   #intro {
     margin-top: 70px;
   }
-  .tech-stack {
+  /* .tech-stack {
     display: initial;
-  }
+  } */
 }
 
 @media screen and (max-width: 750px) {
   #intro-container {
-    margin-bottom: 150px;
+    margin-bottom: 126px;
   }
   #intro {
     display: block;
@@ -57,6 +56,10 @@
   }
 
   .contact-button {
-    position: initial;
+    display: none !important;
+  }
+
+  .contact-button-screen {
+    display: inline-block !important;
   }
 }
