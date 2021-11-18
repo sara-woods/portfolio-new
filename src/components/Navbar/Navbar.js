@@ -1,5 +1,4 @@
 import { Navbar, Nav } from "react-bootstrap";
-import { useNavigate } from "react-router-dom";
 import { useRef, useEffect } from "react";
 import "./Navbar.css";
 import logo from "../../images/logo.png";
@@ -7,7 +6,6 @@ import { useTranslation } from "react-i18next";
 
 const NavbarEx = () => {
   const { t, i18n } = useTranslation();
-  const navigate = useNavigate();
   const langCheckbox = useRef();
 
   useEffect(() => {
@@ -21,10 +19,8 @@ const NavbarEx = () => {
   const handleLangChange = (event) => {
     if (langCheckbox.current.checked) {
       i18n.changeLanguage("sv");
-      navigate("/sv");
     } else {
       i18n.changeLanguage("en");
-      navigate("/en");
     }
   };
 

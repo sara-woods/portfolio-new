@@ -1,5 +1,6 @@
 export const en = {
   translation: {
+    documentTitle: "Sara Lotfi | Web developer, designer and illustrator",
     navLinks: {
       about: "About",
       projects: "Projects",

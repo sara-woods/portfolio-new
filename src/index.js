@@ -6,11 +6,5 @@ import App from "./App";
 
 // import i18n (needs to be bundled ;))
 import "./i18n";
-import { HashRouter } from "react-router-dom";
 
-ReactDOM.render(
-  <HashRouter>
-    <App />
-  </HashRouter>,
-  document.getElementById("root")
-);
+ReactDOM.render(<App />, document.getElementById("root"));

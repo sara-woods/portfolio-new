@@ -1,5 +1,6 @@
 export const sv = {
   translation: {
+    documentTitle: "Sara Lotfi | Webbutvecklare, designer och illustratör",
     navLinks: {
       about: "Om",
       projects: "Projekt",
@@ -8,7 +9,7 @@ export const sv = {
     intro: {
       hello: "Hej, jag heter",
       introText:
-        "Jag är en webbutvecklare, grafisk designer och illustratör och baserad i Uppsala. Jag hjälper små företag med arbete relaterat till deras visuella närvaro. Tillsammans kan vi skapa en användarupplevelse som är kreativ, vacker och minnesvärd. Nedan finns tidigare hemsidor jag har designat och programmerat, samt ett urval av mina illustrationer och logotyper.",
+        "Jag är en webbutvecklare, grafisk designer och illustratör baserad i Uppsala. Jag hjälper små företag med arbete relaterat till deras visuella närvaro. Tillsammans kan vi skapa en användarupplevelse som är kreativ, vacker och minnesvärd. Nedan finns tidigare hemsidor jag har designat och programmerat, samt ett urval av mina illustrationer och logotyper.",
     },
     contactData: {
       header: "Hej!",
