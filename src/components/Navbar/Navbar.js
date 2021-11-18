@@ -28,22 +28,38 @@ const NavbarEx = () => {
     }
   };
 
+  const handleIdScroll = (id) => {
+    document.getElementById(id).scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <Navbar collapseOnSelect expand="lg" sticky="top" className="navbar">
-      <Navbar.Brand className="navbar-brand" href="#top">
+      <Navbar.Brand
+        className="navbar-brand"
+        onClick={() => handleIdScroll("root")}
+      >
         <img src={logo} style={{ width: "80px" }} alt="logo sara lotfi" />
       </Navbar.Brand>
 
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
       <Navbar.Collapse id="responsive-navbar-nav">
         <Nav className="ml-auto">
-          <Nav.Link className="navbar-link" href="#top">
+          <Nav.Link
+            className="navbar-link"
+            onClick={() => handleIdScroll("root")}
+          >
             {t("navLinks.about")}
           </Nav.Link>
-          <Nav.Link className="navbar-link" href="#projects">
+          <Nav.Link
+            className="navbar-link"
+            onClick={() => handleIdScroll("projects")}
+          >
             {t("navLinks.projects")}
           </Nav.Link>
-          <Nav.Link className="navbar-link" href="#contact">
+          <Nav.Link
+            className="navbar-link"
+            onClick={() => handleIdScroll("contact")}
+          >
             {t("navLinks.contact")}
           </Nav.Link>
           <div className="lang-switch d-flex align-items-center justify-content-center">

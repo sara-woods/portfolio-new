@@ -5,6 +5,7 @@
 
 .navbar-brand {
   font-size: 54px !important;
+  cursor: pointer;
 }
 
 .navbar-brand:hover {

@@ -8,7 +8,7 @@ export const sv = {
     intro: {
       hello: "Hej, jag heter",
       introText:
-        "Jag är webbutvecklare, grafisk designer och illustratör och baserad i Uppsala. Jag hjälper små företag med arbete relaterat till deras visuella närvaro. Tillsammans kan vi skapa en användarupplevelse som är kreativ, vacker och minnesvärd. Nedan finns tidigare hemsidor jag har designat och programmerat, samt ett urval av mina illustrationer och logotyper.",
+        "Jag är en webbutvecklare, grafisk designer och illustratör och baserad i Uppsala. Jag hjälper små företag med arbete relaterat till deras visuella närvaro. Tillsammans kan vi skapa en användarupplevelse som är kreativ, vacker och minnesvärd. Nedan finns tidigare hemsidor jag har designat och programmerat, samt ett urval av mina illustrationer och logotyper.",
     },
     contactData: {
       header: "Hej!",
@@ -22,7 +22,7 @@ export const sv = {
     },
     graphicDesign: {
       disclaimer:
-        "Det här urvalet är en mix av personligt arbete och kund-arbeten.",
+        "Det här urvalet är en mix av personligt arbete och kundarbeten.",
     },
     copyright: "© 2021 Sara Lotfi",
     filterOptions: {
