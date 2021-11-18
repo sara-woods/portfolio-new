@@ -37,13 +37,11 @@ const App = () => {
   // console.log(baseRouteUrl);
 
   useEffect(() => {
-    const urls = [
-      projectData.whatmovie.web,
-      projectData.wellsy.web,
-      projectData.packathon.web,
-      projectData.catsweeper.web,
-      projectData.floatify.web,
-    ];
+    const urls = [];
+
+    for (const property in projectData) {
+      urls.push(projectData[property].web);
+    }
 
     // ping heroku urls
     const ping = (url) => {

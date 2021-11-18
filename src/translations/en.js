@@ -37,7 +37,7 @@ export const en = {
         type: "Solo project",
         name: "What movie?",
         description:
-          "Movie generator where users can generate a random movie or filter the result based on release year, rating and genres. Also includes a link to watch the trailer on Youtube.",
+          "Movie generator where users can generate a random movie or filter the result based on release year, rating and genres. The interface also includes a link to watch the trailer on Youtube.",
         technologies: [
           "React.js",
           "Ruby on Rails",
