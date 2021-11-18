@@ -1,14 +1,13 @@
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 import "./Projects.css";
 import WebDevProjects from "./WebDevProjects";
 import Illustrations from "./Illustrations";
 import GraphicDesigns from "./GraphicDesigns";
 import Filter from "./Filter";
-import Button from "../UI/Button";
-
-import { contentData } from "../../contentData";
 
 const Projects = (props) => {
+  const { t } = useTranslation();
   const [page, setPage] = useState("1");
   const [showFilterDropdown, setFilterDropdown] = useState(false);
 
@@ -26,23 +25,22 @@ const Projects = (props) => {
 
   switch (page) {
     case "1":
-      filterText = contentData.filterOptions.webDev;
+      filterText = t("filterOptions.webDev");
       break;
     case "2":
-      filterText = contentData.filterOptions.illustrations;
+      filterText = t("filterOptions.illustrations");
       break;
     case "3":
-      filterText = contentData.filterOptions.graphicDesign;
+      filterText = t("filterOptions.graphicDesign");
       break;
     default:
-      filterText = contentData.filterOptions.webDev;
+      filterText = t("filterOptions.webDev");
   }
 
   return (
     <div id="projects">
-      <div id="projects-anchor"></div>
       <div className="scroll-anchor"></div>
-      <h1 className="mb-5 header">{contentData.navLinks.projects}</h1>
+      <h1 className="mb-5 header">{t("navLinks.projects")}</h1>
 
       <Filter
         filterText={filterText}
@@ -52,12 +50,7 @@ const Projects = (props) => {
         onFilter={showFilterHandler}
       />
 
-      {page === "1" && (
-        <WebDevProjects
-          projectData={props.projectData}
-          projectImages={props.projectImages}
-        />
-      )}
+      {page === "1" && <WebDevProjects />}
       {page === "2" && <Illustrations />}
       {page === "3" && <GraphicDesigns />}
     </div>

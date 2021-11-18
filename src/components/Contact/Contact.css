@@ -1,18 +1,8 @@
 #contact {
   max-width: 800px;
-  margin: 80px auto 200px auto;
+  margin: -80px auto 200px auto;
+  padding-top: 80px;
 }
-
-#contact-anchor {
-  position: relative;
-  top: -150px;
-  left: 0;
-}
-
-/* Alternative to off-setting with negative margin for scroll to #contact */
-/* #anchor {
-  scroll-margin-top: 100px;
-} */
 
 .contact-link {
   transition: 0.2s ease-in;
@@ -26,9 +16,8 @@
 }
 
 @media screen and (max-width: 974px) {
-  #contact-anchor {
-    position: relative;
-    top: -270px;
-    left: 0;
+  #contact {
+    margin-top: -300px;
+    padding-top: 300px;
   }
 }

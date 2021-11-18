@@ -1,4 +1,7 @@
 import { useEffect } from "react";
+import { Route, Routes, Navigate } from "react-router-dom";
+import { useTranslation } from "react-i18next";
+
 import "./App.css";
 import NavbarEx from "./components/Navbar/Navbar";
 import Intro from "./components/Intro/Intro";
@@ -6,21 +9,41 @@ import Projects from "./components/Projects/Projects";
 import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
 
-import whatmovieImage from "./images/whatmovie_small.png";
-import wellsyImage from "./images/wellsy_new.png";
-import floatifyImage from "./images/floatify_small.png";
-import catsweeperImage from "./images/catsweeper_new.png";
-import packathonImage from "./images/packathon.png";
+import { en } from "./translations/en";
 
-import { contentData } from "./contentData";
+const projectData = en.translation.projectData;
 
-const projectData = contentData.projectData;
-
-const urls = [];
-projectData.forEach((url) => urls.push(url["web"]));
+const AppComponent = () => {
+  return (
+    <>
+      <NavbarEx />
+      <div className="app">
+        <Intro />
+        <Projects />
+        <Contact />
+        <Footer />
+      </div>
+    </>
+  );
+};
 
 const App = () => {
+  const { i18n } = useTranslation();
+  document.documentElement.lang = i18n.language;
+
+  // const baseUrl = i18n.language === "en" ? "" : "/" + i18n.language;
+  // const baseUrl = "/" + i18n.language;
+  // const baseRouteUrl = "/:locale(sv|en)?";
+  // console.log(baseRouteUrl);
+
   useEffect(() => {
+    const urls = [];
+
+    for (const property in projectData) {
+      urls.push(projectData[property].web);
+    }
+
+    // ping heroku urls
     const ping = (url) => {
       fetch(url, { mode: "no-cors" })
         .then((response) => {
@@ -36,22 +59,10 @@ const App = () => {
 
   return (
     <>
-      <NavbarEx navLinks={contentData.navLinks} />
-      <div className="app">
-        <Intro introData={contentData.intro} />
-        <Projects
-          projectData={projectData}
-          projectImages={{
-            whatmovieImage,
-            wellsyImage,
-            floatifyImage,
-            catsweeperImage,
-            packathonImage,
-          }}
-        />
-        <Contact />
-        <Footer />
-      </div>
+      <Routes>
+        <Route path={"/"} element={<Navigate to={"/" + i18n.language} />} />
+        <Route path={"/" + i18n.language} exact element={<AppComponent />} />
+      </Routes>
     </>
   );
 };

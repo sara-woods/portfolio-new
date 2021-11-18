@@ -81,7 +81,7 @@
 }
 
 input:checked + .slider {
-  background-color: #b7d0f6;
+  background-color: #8e75f3;
 }
 
 input:focus + .slider {
@@ -101,4 +101,22 @@ input:checked + .slider:before {
 
 .slider.round:before {
   border-radius: 50%;
+}
+
+/* NAVBAR TOGGLER */
+
+/* .navbar-light .navbar-toggler {
+  color: var(--black);
+  border-color: var(--black);
+} */
+
+/* LANGUAGE SWITCH */
+.lang-switch {
+  margin-left: 36px;
+}
+
+@media screen and (max-width: 991px) {
+  .lang-switch {
+    margin-left: 22px;
+  }
 }
