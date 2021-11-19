@@ -14,7 +14,14 @@ const projectData = en.translation.projectData;
 
 const App = () => {
   const { i18n } = useTranslation();
-  document.documentElement.lang = i18n.language;
+
+  useEffect(() => {
+    if (i18n.language === "sv") {
+      document.documentElement.lang = "sv";
+    } else {
+      document.documentElement.lang = "en";
+    }
+  }, [i18n.language]);
 
   useEffect(() => {
     const urls = [];

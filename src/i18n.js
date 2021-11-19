@@ -21,8 +21,11 @@ const DETECTION_OPTIONS = {
 };
 
 i18n.on("languageChanged", (lng) => {
-  document.documentElement.lang = i18n.language;
-  document.title = resources[lng].translation.documentTitle;
+  if (lng === "sv") {
+    document.title = resources["sv"].translation.documentTitle;
+  } else {
+    document.title = resources["en"].translation.documentTitle;
+  }
 });
 
 i18n
