@@ -9,8 +9,8 @@ import campingImage from "../../images/camping.jpg";
 import paddleImage from "../../images/paddleboards.jpg";
 import rosesImage from "../../images/roses.jpg";
 import soapImage from "../../images/soap.jpg";
-import pugImage from "../../images/pug.jpg";
-import cafeImage from "../../images/cafe.jpg";
+// import pugImage from "../../images/pug.jpg";
+// import cafeImage from "../../images/cafe.jpg";
 
 const GraphicDesigns = (props) => {
   const { t } = useTranslation();
@@ -31,8 +31,8 @@ const GraphicDesigns = (props) => {
         />
         <IllustrationItem src={campingImage} alt="outdoors logo design" />
         <IllustrationItem src={paddleImage} alt="paddle board logo design" />
-        <IllustrationItem src={pugImage} alt="business card with pug logo" />
-        <IllustrationItem src={cafeImage} alt="gaming cafe logo design" />
+        {/* <IllustrationItem src={pugImage} alt="business card with pug logo" /> */}
+        {/* <IllustrationItem src={cafeImage} alt="gaming cafe logo design" /> */}
         <IllustrationItem src={rosesImage} alt="t-shirt design with roses" />
         <IllustrationItem src={soapImage} alt="cute soap logo design" />
       </div>
