@@ -9,7 +9,7 @@ const NavbarEx = () => {
   const langCheckbox = useRef();
 
   useEffect(() => {
-    if (i18n.language.startsWith("en-")) {
+    if (i18n.language.startsWith("en")) {
       langCheckbox.current.checked = false;
     } else {
       langCheckbox.current.checked = true;
