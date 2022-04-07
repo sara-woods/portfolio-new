@@ -1,7 +1,7 @@
 import { Navbar, Nav } from "react-bootstrap";
 import { useRef, useEffect } from "react";
 import "./Navbar.css";
-import logo from "../../images/logo.png";
+import logo from "../../images/logo2.png";
 import { useTranslation } from "react-i18next";
 
 const NavbarEx = () => {
@@ -43,7 +43,7 @@ const NavbarEx = () => {
             {t("navLinks.contact")}
           </Nav.Link>
           <div className="lang-switch d-flex align-items-center justify-content-center">
-            <p className="text-700">EN</p>
+            <p className="text-700">English</p>
             <label className="switch ml-2 mr-2">
               <input
                 ref={langCheckbox}
@@ -52,7 +52,7 @@ const NavbarEx = () => {
               />
               <span className="slider round"></span>
             </label>
-            <p className="text-700">SV</p>
+            <p className="text-700">Swedish</p>
           </div>
         </Nav>
       </Navbar.Collapse>
