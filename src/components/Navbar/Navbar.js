@@ -1,5 +1,5 @@
 import { Navbar, Nav } from "react-bootstrap";
-import { useRef, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import "./Navbar.css";
 import logo from "../../images/logo2.png";
 import { useTranslation } from "react-i18next";
