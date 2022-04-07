@@ -45,7 +45,7 @@ i18n
     whitelist: availableLanguages,
     detection: DETECTION_OPTIONS,
     resources,
-    fallbackLng: ["sv", "eng"]
+    fallbackLng: ["en", "sv"]
   });
 
 export default i18n;
