@@ -1,25 +1,27 @@
 import { Navbar, Nav } from "react-bootstrap";
-import { useRef, useEffect } from "react";
+import { useRef, useEffect, useState } from "react";
 import "./Navbar.css";
 import logo from "../../images/logo2.png";
 import { useTranslation } from "react-i18next";
 
 const NavbarEx = () => {
   const { t, i18n } = useTranslation();
-  const langCheckbox = useRef();
+  const [isChecked, setIsChecked] = useState("");
 
   useEffect(() => {
     if (i18n.language === "sv") {
-      langCheckbox.current.checked = true;
+      setIsChecked("checked");
     } else {
-      langCheckbox.current.checked = false;
+      setIsChecked("");
     }
   }, [i18n]);
 
   const handleLangChange = (event) => {
-    if (langCheckbox.current.checked) {
+    if (event.currentTarget.checked) {
+      setIsChecked("checked");
       i18n.changeLanguage("sv");
     } else {
+      setIsChecked("");
       i18n.changeLanguage("en");
     }
   };
@@ -46,8 +48,8 @@ const NavbarEx = () => {
             <p className="text-700">English</p>
             <label className="switch ml-2 mr-2">
               <input
-                ref={langCheckbox}
                 type="checkbox"
+                checked={isChecked}
                 onChange={handleLangChange}
               />
               <span className="slider round"></span>
