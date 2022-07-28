@@ -1,6 +1,6 @@
 export const en = {
   translation: {
-    documentTitle: "Sara Lotfi | Web developer, designer and illustrator",
+    documentTitle: "Sara Woods | Web developer, designer and illustrator",
     navLinks: {
       about: "About",
       projects: "Projects",
@@ -27,7 +27,7 @@ export const en = {
       disclaimer:
         "This selection of works is a mix of personal and client work.",
     },
-    copyright: "© 2021 Sara Lotfi",
+    copyright: "© 2022 Sara Woods",
     filterOptions: {
       header: "Filter Content",
       webDev: "Web Development",
@@ -50,7 +50,7 @@ export const en = {
           "HTML/SCSS",
           "Responsive",
         ],
-        repo: "https://github.com/saralotfi/rails-find-me-a-movie",
+        repo: "https://github.com/sara-woods/rails-find-me-a-movie",
         web: "https://whatmovieapp.herokuapp.com/",
       },
       wellsy: {
@@ -67,7 +67,7 @@ export const en = {
           "HTML/SCSS",
           "PostgreSQL",
         ],
-        repo: "https://github.com/saralotfi/wellsy",
+        repo: "https://github.com/sara-woods/wellsy",
         web: "https://wellsy.herokuapp.com/",
       },
       packathon: {
@@ -94,8 +94,8 @@ export const en = {
         description:
           "Based on the game Minesweeper where I recreated the game mechanics as close to the classic game as possible. The design includes my own illustrations.",
         technologies: ["JavaScript ES6", "HTML", "CSS", "Responsive"],
-        repo: "https://github.com/saralotfi/catsweeper",
-        web: "https://saralotfi.github.io/catsweeper/",
+        repo: "https://github.com/sara-woods/catsweeper",
+        web: "https://sara-woods.github.io/catsweeper/",
       },
       floatify: {
         id: 5,
@@ -111,7 +111,7 @@ export const en = {
           "HTML/SCSS",
           "PostgreSQL",
         ],
-        repo: "https://github.com/saralotfi/float_boat",
+        repo: "https://github.com/sara-woods/float_boat",
         web: "https://floatifyapp.herokuapp.com/",
       },
     },

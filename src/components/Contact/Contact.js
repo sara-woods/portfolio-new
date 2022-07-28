@@ -11,14 +11,14 @@ const Contact = () => {
       <p className="text-md text-300 mt-3 text-center">
         {t("contactData.text1")}{" "}
         <a
-          href="mailto: lotfi.sara@gmail.com"
+          href="mailto: hellosarawoods@gmail.com"
           className="contact-link tab-link"
         >
-          lotfi.sara@gmail.com{" "}
+          hellosarawoods@gmail.com{" "}
         </a>
         {t("contactData.text2")}{" "}
         <a
-          href="https://www.linkedin.com/in/sara-lotfi/"
+          href="https://www.linkedin.com/in/hellosarawoods/"
           target="_blank"
           rel="noopener noreferrer"
           className="contact-link tab-link"
@@ -31,7 +31,7 @@ const Contact = () => {
       <div className="d-flex justify-content-center">
         <Button
           text={t("buttonText.contact")}
-          href="mailto: lotfi.sara@gmail.com"
+          href="mailto: hellosarawoods@gmail.com"
         />
       </div>
     </div>

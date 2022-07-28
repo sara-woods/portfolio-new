@@ -21,11 +21,11 @@ const Intro = (props) => {
         <div id="intro">
           <div className="intro-left">
             <p className="text-orange text-300 text-lg">{t("intro.hello")}</p>
-            <h1>Sara Lotfi</h1>
+            <h1>Sara Woods</h1>
             <p className="text-md text-300 mt-4">{t("intro.introText")}</p>
             <Button
               text={t("buttonText.contact")}
-              href="mailto: lotfi.sara@gmail.com"
+              href="mailto: hellosarawoods@gmail.com"
               className="contact-button-screen"
             />
             {/* <div className="tech-stack text-20px">
@@ -75,13 +75,13 @@ const Intro = (props) => {
             onDragStart={handleDrag}
             id="portrait"
             src={portrait}
-            alt="Sara Lotfi portrait"
+            alt="Sara Woods portrait"
           />
         </div>
         <div className="d-flex justify-content-center">
           <Button
             text={t("buttonText.contact")}
-            href="mailto: lotfi.sara@gmail.com"
+            href="mailto: hellosarawoods@gmail.com"
             className="contact-button"
           />
         </div>

@@ -11,7 +11,7 @@ const Footer = () => {
     <div className="footer">
       <div className="social-links">
         <a
-          href="https://github.com/saralotfi"
+          href="https://github.com/sara-woods"
           target="_blank"
           rel="noopener noreferrer"
           className="tab-link"
@@ -21,7 +21,7 @@ const Footer = () => {
           </p>
         </a>
         <a
-          href="https://www.linkedin.com/in/sara-lotfi/"
+          href="https://www.linkedin.com/in/hellosarawoods/"
           target="_blank"
           rel="noopener noreferrer"
           className="tab-link"

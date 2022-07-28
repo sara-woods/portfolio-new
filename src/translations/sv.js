@@ -1,6 +1,6 @@
 export const sv = {
   translation: {
-    documentTitle: "Sara Lotfi | Webbutvecklare, designer och illustratör",
+    documentTitle: "Sara Woods | Webbutvecklare, designer och illustratör",
     navLinks: {
       about: "Om",
       projects: "Projekt",
@@ -27,7 +27,7 @@ export const sv = {
       disclaimer:
         "Det här urvalet är en mix av personligt arbete och kundarbeten.",
     },
-    copyright: "© 2021 Sara Lotfi",
+    copyright: "© 2022 Sara Woods",
     filterOptions: {
       header: "Filtrera urval",
       webDev: "Webbutveckling",
@@ -50,7 +50,7 @@ export const sv = {
           "HTML/SCSS",
           "Responsiv",
         ],
-        repo: "https://github.com/saralotfi/rails-find-me-a-movie",
+        repo: "https://github.com/sara-woods/rails-find-me-a-movie",
         web: "https://whatmovieapp.herokuapp.com/",
       },
       wellsy: {
@@ -67,7 +67,7 @@ export const sv = {
           "HTML/SCSS",
           "PostgreSQL",
         ],
-        repo: "https://github.com/saralotfi/wellsy",
+        repo: "https://github.com/sara-woods/wellsy",
         web: "https://wellsy.herokuapp.com/",
       },
       packathon: {
@@ -94,8 +94,8 @@ export const sv = {
         description:
           "Baserat på spelet Minesweeper där jag återskapade spelets mekanik så nära originalet som möjligt. Designen inkluderar mina egna illustrationer.",
         technologies: ["JavaScript ES6", "HTML", "CSS", "Responsive"],
-        repo: "https://github.com/saralotfi/catsweeper",
-        web: "https://saralotfi.github.io/catsweeper/",
+        repo: "https://github.com/sara-woods/catsweeper",
+        web: "https://sara-woods.github.io/catsweeper/",
       },
       floatify: {
         id: 5,
@@ -111,7 +111,7 @@ export const sv = {
           "HTML/SCSS",
           "PostgreSQL",
         ],
-        repo: "https://github.com/saralotfi/float_boat",
+        repo: "https://github.com/sara-woods/float_boat",
         web: "https://floatifyapp.herokuapp.com/",
       },
     },

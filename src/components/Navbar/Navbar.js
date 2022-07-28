@@ -29,7 +29,7 @@ const NavbarEx = () => {
   return (
     <Navbar collapseOnSelect expand="lg" sticky="top" className="navbar">
       <Navbar.Brand className="navbar-brand" href="#top">
-        <img src={logo} style={{ width: "80px" }} alt="logo sara lotfi" />
+        <img src={logo} style={{ width: "80px" }} alt="logo sara woods" />
       </Navbar.Brand>
 
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
