@@ -6,10 +6,12 @@ import wellsyImage from "../../images/wellsy_new.png";
 import floatifyImage from "../../images/floatify_small.png";
 import catsweeperImage from "../../images/catsweeper_new.png";
 import packathonImage from "../../images/packathon.png";
+import watchdominionImage from "../../images/watchdominion.png";
 
 import { en } from "../../translations/en";
 
 const images = {
+  watchdominion: watchdominionImage,
   whatmovie: whatmovieImage,
   wellsy: wellsyImage,
   packathon: packathonImage,

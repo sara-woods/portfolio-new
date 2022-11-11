@@ -35,8 +35,21 @@ export const sv = {
       graphicDesign: "Logotyper/Grafisk Design",
     },
     projectData: {
-      whatmovie: {
+      watchdominion: {
         id: 1,
+        type: "Team-projekt",
+        name: "Watch Dominion",
+        description:
+          "En hemsida för att sprida dokumentären Dominion, designad av mig och skapad av utvecklare på Vegan Hacktivists.",
+        technologies: [
+          "Web Design",
+          "Figma",
+        ],
+        repo: "",
+        web: "https://watchdominion.org",
+      },
+      whatmovie: {
+        id: 2,
         type: "Solo-projekt",
         name: "What movie?",
         description:
@@ -54,7 +67,7 @@ export const sv = {
         web: "https://whatmovieapp.herokuapp.com/",
       },
       wellsy: {
-        id: 2,
+        id: 3,
         type: "Team-projekt",
         name: "Wellsy",
         description:
@@ -71,7 +84,7 @@ export const sv = {
         web: "https://wellsy.herokuapp.com/",
       },
       packathon: {
-        id: 3,
+        id: 4,
         type: "Team-projekt",
         name: "Packathon",
         description:
@@ -88,7 +101,7 @@ export const sv = {
         web: "https://packathon.herokuapp.com/",
       },
       catsweeper: {
-        id: 4,
+        id: 5,
         type: "Solo-projekt",
         name: "Catsweeper",
         description:
@@ -98,7 +111,7 @@ export const sv = {
         web: "https://sara-woods.github.io/catsweeper/",
       },
       floatify: {
-        id: 5,
+        id: 6,
         type: "Team-projekt",
         name: "Floatify",
         description:

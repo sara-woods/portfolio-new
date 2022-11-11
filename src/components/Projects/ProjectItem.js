@@ -17,7 +17,7 @@ const ProjectItem = (props) => {
         <p className="text-orange text-sm">{props.type}</p>
         <div className="d-flex justify-content-between align-items-end">
           <h2 className="text-700 mb-3 mt-1">{props.name}</h2>
-          <a
+          {props.repo !== "" && <a
             href={props.repo}
             target="_blank"
             rel="noopener noreferrer"
@@ -26,7 +26,7 @@ const ProjectItem = (props) => {
             <p className="text-orange">
               <FontAwesomeIcon icon={faGithubSquare} className="text-lg link" />
             </p>
-          </a>
+          </a>}
         </div>
 
         <div className="image-container">
