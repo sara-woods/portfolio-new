@@ -25,7 +25,7 @@ export const en = {
     },
     graphicDesign: {
       disclaimer:
-        "This selection of works is a mix of personal and client work.",
+      "This selection of works is a mix of personal and client work.",
     },
     copyright: "© 2022 Sara Woods",
     filterOptions: {
@@ -35,8 +35,21 @@ export const en = {
       graphicDesign: "Logo/Graphic Design",
     },
     projectData: {
-      whatmovie: {
+      watchdominion: {
         id: 1,
+        type: "Team project",
+        name: "Watch Dominion",
+        description:
+          "A website to promote and spread the documentary Dominion, designed by me and created by developers at Vegan Hacktivists.",
+        technologies: [
+          "Web Design",
+          "Figma",
+        ],
+        repo: "",
+        web: "https:watchdominion.org",
+      },
+      whatmovie: {
+        id: 2,
         type: "Solo project",
         name: "What movie?",
         description:
@@ -54,7 +67,7 @@ export const en = {
         web: "https://whatmovieapp.herokuapp.com/",
       },
       wellsy: {
-        id: 2,
+        id: 3,
         type: "Team project",
         name: "Wellsy",
         description:
@@ -71,7 +84,7 @@ export const en = {
         web: "https://wellsy.herokuapp.com/",
       },
       packathon: {
-        id: 3,
+        id: 4,
         type: "Team project",
         name: "Packathon",
         description:
@@ -88,7 +101,7 @@ export const en = {
         web: "https://packathon.herokuapp.com/",
       },
       catsweeper: {
-        id: 4,
+        id: 5,
         type: "Solo project",
         name: "Catsweeper",
         description:
@@ -98,7 +111,7 @@ export const en = {
         web: "https://sara-woods.github.io/catsweeper/",
       },
       floatify: {
-        id: 5,
+        id: 6,
         type: "Team project",
         name: "Floatify",
         description:
