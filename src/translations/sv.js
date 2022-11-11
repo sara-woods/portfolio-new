@@ -46,7 +46,7 @@ export const sv = {
           "Figma",
         ],
         repo: "",
-        web: "https://watchdominion.org",
+        web: "https://watchdominion.org/",
       },
       whatmovie: {
         id: 2,
