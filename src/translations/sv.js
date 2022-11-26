@@ -64,7 +64,7 @@ export const sv = {
           "Responsiv",
         ],
         repo: "https://github.com/sara-woods/rails-find-me-a-movie",
-        web: "https://whatmovieapp.herokuapp.com/",
+        web: "https://whatmovie.fly.dev/",
       },
       wellsy: {
         id: 3,
@@ -81,7 +81,7 @@ export const sv = {
           "PostgreSQL",
         ],
         repo: "https://github.com/sara-woods/wellsy",
-        web: "https://wellsy.herokuapp.com/",
+        web: "https://wellsy.fly.dev/",
       },
       packathon: {
         id: 4,
@@ -98,7 +98,7 @@ export const sv = {
           "Responsiv",
         ],
         repo: "https://github.com/thomas-kenny/veeqo",
-        web: "https://packathon.herokuapp.com/",
+        web: "https://packathon.fly.dev/",
       },
       catsweeper: {
         id: 5,
@@ -125,7 +125,7 @@ export const sv = {
           "PostgreSQL",
         ],
         repo: "https://github.com/sara-woods/float_boat",
-        web: "https://floatifyapp.herokuapp.com/",
+        web: "https://floatify.fly.dev/",
       },
     },
   },
