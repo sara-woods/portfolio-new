@@ -11,10 +11,10 @@ const Contact = () => {
       <p className="text-md text-300 mt-3 text-center">
         {t("contactData.text1")}{" "}
         <a
-          href="mailto: hellosarawoods@gmail.com"
+          href="mailto: hello@sarawoodsdesign.com"
           className="contact-link tab-link"
         >
-          hellosarawoods@gmail.com{" "}
+          hello@sarawoodsdesign.com{" "}
         </a>
         {t("contactData.text2")}{" "}
         <a
@@ -31,7 +31,7 @@ const Contact = () => {
       <div className="d-flex justify-content-center">
         <Button
           text={t("buttonText.contact")}
-          href="mailto: hellosarawoods@gmail.com"
+          href="mailto: hello@sarawoodsdesign.com"
         />
       </div>
     </div>

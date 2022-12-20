@@ -25,7 +25,7 @@ const Intro = (props) => {
             <p className="text-md text-300 mt-4">{t("intro.introText")}</p>
             <Button
               text={t("buttonText.contact")}
-              href="mailto: hellosarawoods@gmail.com"
+              href="mailto: hello@sarawoodsdesign.com"
               className="contact-button-screen"
             />
             {/* <div className="tech-stack text-20px">
@@ -81,7 +81,7 @@ const Intro = (props) => {
         <div className="d-flex justify-content-center">
           <Button
             text={t("buttonText.contact")}
-            href="mailto: hellosarawoods@gmail.com"
+            href="mailto: hello@sarawoodsdesign.com"
             className="contact-button"
           />
         </div>
