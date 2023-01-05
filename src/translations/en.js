@@ -64,7 +64,7 @@ export const en = {
           "Responsive",
         ],
         repo: "https://github.com/sara-woods/rails-find-me-a-movie",
-        web: "https://whatmovie.fly.dev/",
+        web: "https://what-movie.onrender.com/",
       },
       wellsy: {
         id: 3,
@@ -98,7 +98,7 @@ export const en = {
           "Responsive",
         ],
         repo: "https://github.com/thomas-kenny/veeqo",
-        web: "https://packathon.fly.dev/",
+        web: "",
       },
       catsweeper: {
         id: 5,
