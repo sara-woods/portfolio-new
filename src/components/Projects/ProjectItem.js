@@ -43,11 +43,11 @@ const ProjectItem = (props) => {
               </div>
             ))}
           </div>
-          <Button
+          {props.web.length !== 0 && <Button
             text={t("buttonText.visit")}
             href={props.web}
             className="mt-4"
-          />
+          />}
         </div>
       </div>
     </div>
