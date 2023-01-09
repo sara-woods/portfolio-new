@@ -19,6 +19,18 @@ const App = () => {
     }
   }, [i18n.language]);
 
+  useEffect(() => {
+
+    // ping render url
+    fetch("https://what-movie.onrender.com/", { mode: "no-cors" })
+      .then((response) => {
+        //
+      })
+      .catch((error) => {
+        //
+      });
+  }, []);
+
   return (
     <>
       <NavbarEx />
