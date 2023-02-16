@@ -30,9 +30,9 @@ export const sv = {
     copyright: "© 2022 Sara Woods",
     filterOptions: {
       header: "Filtrera urval",
-      webDev: "Webbutveckling",
+      webDev: "Webbutveckling/design",
       illustrations: "Illustrationer",
-      graphicDesign: "Logotyper/Grafisk Design",
+      graphicDesign: "Grafisk design",
     },
     projectData: {
       watchdominion: {

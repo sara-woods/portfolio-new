@@ -2,11 +2,12 @@ import { useEffect } from "react";
 import { useTranslation } from "react-i18next";
 
 import "./App.css";
-import NavbarEx from "./components/Navbar/Navbar";
 import Intro from "./components/Intro/Intro";
 import Projects from "./components/Projects/Projects";
 import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
+import Navbar from "./components/Navbar/Navbar";
+import { ProjectContextProvider } from "./store/project-context";
 
 const App = () => {
   const { i18n } = useTranslation();
@@ -20,8 +21,7 @@ const App = () => {
   }, [i18n.language]);
 
   useEffect(() => {
-
-    // ping render url
+    // ping Render url
     fetch("https://what-movie.onrender.com/", { mode: "no-cors" })
       .then((response) => {
         //
@@ -32,15 +32,15 @@ const App = () => {
   }, []);
 
   return (
-    <>
-      <NavbarEx />
+    <ProjectContextProvider>
+      <Navbar />
       <div className="app">
         <Intro />
         <Projects />
         <Contact />
         <Footer />
       </div>
-    </>
+    </ProjectContextProvider>
   );
 };
 
