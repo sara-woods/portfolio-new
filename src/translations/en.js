@@ -27,7 +27,7 @@ export const en = {
       disclaimer:
       "This selection of works is a mix of personal and client work.",
     },
-    copyright: "© 2022 Sara Woods",
+    copyright: "© 2023 Sara Woods",
     filterOptions: {
       header: "Filter Content",
       webDev: "Web development/design",
