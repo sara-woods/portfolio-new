@@ -27,12 +27,12 @@ export const sv = {
       disclaimer:
         "Det här urvalet är en mix av personligt arbete och kundarbeten.",
     },
-    copyright: "© 2022 Sara Woods",
+    copyright: "© 2023 Sara Woods",
     filterOptions: {
       header: "Filtrera urval",
-      webDev: "Webbutveckling",
+      webDev: "Webbutveckling/design",
       illustrations: "Illustrationer",
-      graphicDesign: "Logotyper/Grafisk Design",
+      graphicDesign: "Grafisk design",
     },
     projectData: {
       watchdominion: {

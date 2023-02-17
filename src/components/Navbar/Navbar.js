@@ -1,12 +1,18 @@
-import { Navbar, Nav } from "react-bootstrap";
-import { useEffect, useState } from "react";
+import React, { useRef, useState, useEffect, useContext } from "react";
+import { useTranslation } from "react-i18next";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faTimes, faBars } from "@fortawesome/free-solid-svg-icons";
+
 import "./Navbar.css";
 import logo from "../../images/logo2.png";
-import { useTranslation } from "react-i18next";
-
-const NavbarEx = () => {
+import ProjectContext from "../../store/project-context";
+  
+const Navbar = () => {
   const { t, i18n } = useTranslation();
   const [isChecked, setIsChecked] = useState("");
+  const [showResponsiveNavbar, setShowResponsiveNavbar] = useState(false);
+  const navRef = useRef();
+  const ctx = useContext(ProjectContext);
 
   useEffect(() => {
     if (i18n.language === "sv") {
@@ -16,6 +22,17 @@ const NavbarEx = () => {
     }
   }, [i18n]);
 
+  const toggleResponsiveNavbar = () => {
+    setShowResponsiveNavbar(prev => !prev);
+  }
+
+  const handleNavLinkClick = (event) => {
+    if (event.currentTarget.hasAttribute("data-page")) {
+      ctx.handlePageChange(event);
+    }
+    hideResponsiveNavbar();
+  }
+
   const handleLangChange = (event) => {
     if (event.currentTarget.checked) {
       setIsChecked("checked");
@@ -24,42 +41,43 @@ const NavbarEx = () => {
       setIsChecked("");
       i18n.changeLanguage("en");
     }
+    setTimeout(hideResponsiveNavbar, 500);
   };
 
+  const hideResponsiveNavbar = () => {
+    setShowResponsiveNavbar(false);
+  }
+
   return (
-    <Navbar collapseOnSelect expand="lg" sticky="top" className="navbar">
-      <Navbar.Brand className="navbar-brand" href="#top">
-        <img src={logo} style={{ width: "80px" }} alt="logo sara woods" />
-      </Navbar.Brand>
-
-      <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-      <Navbar.Collapse id="responsive-navbar-nav">
-        <Nav className="ml-auto">
-          <Nav.Link className="navbar-link" href="#top">
-            {t("navLinks.about")}
-          </Nav.Link>
-          <Nav.Link className="navbar-link" href="#projects">
-            {t("navLinks.projects")}
-          </Nav.Link>
-          <Nav.Link className="navbar-link" href="#contact">
-            {t("navLinks.contact")}
-          </Nav.Link>
-          <div className="lang-switch d-flex align-items-center justify-content-center">
-            <p className="text-700">English</p>
-            <label className="switch ml-2 mr-2">
-              <input
-                type="checkbox"
-                checked={isChecked}
-                onChange={handleLangChange}
+    <header>
+      <img className="navbar-logo" src={logo} alt="logo sara woods" />
+      <nav ref={navRef} className={`${showResponsiveNavbar ? "responsive-nav" : ""}`}>
+        <a href="#projects" data-page="1" onClick={handleNavLinkClick}>{t("filterOptions.webDev")}</a>
+        <a href="#projects" data-page="2" onClick={handleNavLinkClick}>{t("filterOptions.illustrations")}</a>
+        <a href="#projects" data-page="3" onClick={handleNavLinkClick}>{t("filterOptions.graphicDesign")}</a>
+        <a href="#contact" onClick={handleNavLinkClick}>Contact</a>
+        <div className="lang-switch-container">
+          <p className="text-700">EN</p>
+          <label className="lang-switch ml-2 mr-2">
+            <input
+              type="checkbox"
+              checked={isChecked}
+              onChange={handleLangChange}
               />
-              <span className="slider round"></span>
-            </label>
-            <p className="text-700">Swedish</p>
-          </div>
-        </Nav>
-      </Navbar.Collapse>
-    </Navbar>
+            <span className="slider round"></span>
+          </label>
+          <p className="text-700">SV</p>
+        </div>
+        <button className="nav-btn nav-close-btn" onClick={toggleResponsiveNavbar}>
+          <FontAwesomeIcon icon={faTimes} />
+        </button>
+      </nav>
+      <button className="nav-btn" onClick={toggleResponsiveNavbar}>
+        <FontAwesomeIcon icon={faBars} />
+      </button>
+    </header>
   );
-};
 
-export default NavbarEx;
+}
+
+export default Navbar;

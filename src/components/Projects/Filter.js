@@ -1,21 +1,49 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
 import { useTranslation } from "react-i18next";
 import "./Filter.css";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowDown } from "@fortawesome/free-solid-svg-icons";
 import { faTimes } from "@fortawesome/free-solid-svg-icons";
+import ProjectContext from "../../store/project-context";
 
 const Filter = (props) => {
   const { t } = useTranslation();
+  const ctx = useContext(ProjectContext);
   const [filterSticky, setFilterSticky] = useState(false);
   const [showFilterButton, setShowFilterButton] = useState(false);
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
-  const navbarOffset = 130;
+  const navbarOffset = 180;
+  const projectBottomOffset = 200;
+
+  const filterButtonHandler = () => {
+    const scrollTop = document.querySelector(".scroll-anchor").offsetTop;
+    const projectTop = document.querySelector("#projects").offsetTop;
+    const projectHeight = document.querySelector("#projects").offsetHeight;
+    const projectBottom = projectHeight + projectTop - navbarOffset - projectBottomOffset;
+    setShowFilterButton(true);
+    if (window.innerWidth >= 1000) {
+      // If the window is larger than 1000 there is no need for the filter button at all
+      setShowFilterButton(false);
+    } else if (
+      // If scroll position is between start and end of the projects section
+      window.scrollY > scrollTop + navbarOffset &&
+      window.scrollY < projectBottom 
+    ) {
+      // If true, the filter button is sticky
+      setFilterSticky(true);
+    } else {
+      // If false, the filter button is not sticky
+      setFilterSticky(false);
+      // And if the window size is larger than 800 the filter button has to be removed completely
+      if (window.innerWidth > 800) setShowFilterButton(false);
+    }
+  }
 
   // ON FIRST LOAD //
   useEffect(() => {
+    // Hide filter button on page load if window size is larger than 800
     if (window.innerWidth > 800) setShowFilterButton(false);
     if (window.innerWidth <= 800) setShowFilterButton(true);
   }, []);
@@ -23,20 +51,7 @@ const Filter = (props) => {
   // SCROLL //
   useEffect(() => {
     const handleScroll = () => {
-      const scrollTop = document.querySelector(".scroll-anchor").offsetTop;
-      const projectTop = document.querySelector("#projects").offsetTop;
-      const projectHeight = document.querySelector("#projects").offsetHeight;
-      const projectBottom = projectHeight + projectTop;
-      setShowFilterButton(true);
-      if (
-        window.scrollY > scrollTop + navbarOffset &&
-        window.scrollY < projectBottom - navbarOffset
-      ) {
-        setFilterSticky(true);
-      } else {
-        setFilterSticky(false);
-        if (window.innerWidth > 800) setShowFilterButton(false);
-      }
+      filterButtonHandler();
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -46,22 +61,7 @@ const Filter = (props) => {
   // RESIZE
   useEffect(() => {
     const handleResize = () => {
-      const scrollTop = document.querySelector(".scroll-anchor").offsetTop;
-      const projectTop = document.querySelector("#projects").offsetTop;
-      const projectHeight = document.querySelector("#projects").offsetHeight;
-      const projectBottom = projectHeight + projectTop - navbarOffset;
-
-      setShowFilterButton(true);
-      if (
-        window.scrollY > scrollTop + navbarOffset &&
-        window.scrollY < projectBottom
-      ) {
-        setFilterSticky(true);
-      } else {
-        setFilterSticky(false);
-        if (window.innerWidth > 800) setShowFilterButton(false);
-      }
-
+      filterButtonHandler(); // Filter button needs to be removed if window size got bigger than threshold
       setWindowWidth(window.innerWidth);
     };
 
@@ -71,20 +71,18 @@ const Filter = (props) => {
 
   let filterButton;
 
-  if (props.showDropdown) {
+  if (ctx.showFilterDropdown) {
     filterButton = (
-      <button onClick={props.onFilter} className="filter-button">
+      <button onClick={ctx.showFilterHandler} className="filter-button">
         {t("filterOptions.header")}
         <span className="ml-3 arrow">
           <FontAwesomeIcon icon={faTimes} />
         </span>
       </button>
     );
-  }
-
-  if (!props.showDropdown) {
+  } else {
     filterButton = (
-      <button onClick={props.onFilter} className="filter-button">
+      <button onClick={ctx.showFilterHandler} className="filter-button">
         {props.filterText}
         <span className="ml-3 arrow">
           <FontAwesomeIcon icon={faArrowDown} />
@@ -100,8 +98,8 @@ const Filter = (props) => {
           <li>
             <p
               data-page="1"
-              className={`tab ${props.page === "1" ? "underline-tab" : ""}`}
-              onClick={props.onFilterChange}
+              className={`tab ${ctx.page === "1" ? "underline-tab" : ""}`}
+              onClick={ctx.handlePageChange}
             >
               {t("filterOptions.webDev")}
             </p>
@@ -109,8 +107,8 @@ const Filter = (props) => {
           <li>
             <p
               data-page="2"
-              className={`tab ${props.page === "2" ? "underline-tab" : ""}`}
-              onClick={props.onFilterChange}
+              className={`tab ${ctx.page === "2" ? "underline-tab" : ""}`}
+              onClick={ctx.handlePageChange}
             >
               {t("filterOptions.illustrations")}
             </p>
@@ -118,8 +116,8 @@ const Filter = (props) => {
           <li>
             <p
               data-page="3"
-              className={`tab ${props.page === "3" ? "underline-tab" : ""}`}
-              onClick={props.onFilterChange}
+              className={`tab ${ctx.page === "3" ? "underline-tab" : ""}`}
+              onClick={ctx.handlePageChange}
             >
               {t("filterOptions.graphicDesign")}
             </p>
@@ -134,16 +132,16 @@ const Filter = (props) => {
       >
         {filterButton}
 
-        {props.showDropdown && (
+        {ctx.showFilterDropdown && (
           <div className="filter-dropdown">
             <ul>
               <li>
                 <p className="filter-option">
                   <span
                     data-page="1"
-                    onClick={props.onFilterChange}
+                    onClick={ctx.handlePageChange}
                     id="filter-text"
-                    className={props.page === "1" ? "underline-filter" : ""}
+                    className={ctx.page === "1" ? "underline-filter" : ""}
                   >
                     {t("filterOptions.webDev")}
                   </span>
@@ -153,9 +151,9 @@ const Filter = (props) => {
                 <p className="filter-option">
                   <span
                     data-page="2"
-                    onClick={props.onFilterChange}
+                    onClick={ctx.handlePageChange}
                     id="filter-text"
-                    className={props.page === "2" ? "underline-filter" : ""}
+                    className={ctx.page === "2" ? "underline-filter" : ""}
                   >
                     {t("filterOptions.illustrations")}
                   </span>
@@ -165,9 +163,9 @@ const Filter = (props) => {
                 <p className="filter-option">
                   <span
                     data-page="3"
-                    onClick={props.onFilterChange}
+                    onClick={ctx.handlePageChange}
                     id="filter-text"
-                    className={props.page === "3" ? "underline-filter" : ""}
+                    className={ctx.page === "3" ? "underline-filter" : ""}
                   >
                     {t("filterOptions.graphicDesign")}
                   </span>

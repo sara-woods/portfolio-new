@@ -16,7 +16,7 @@
   border-radius: 40px;
   padding: 10px 20px 8px 20px;
   z-index: 200;
-  width: 280px;
+  width: 308px;
 }
 
 .filter-dropdown {
@@ -27,7 +27,7 @@
   border-radius: 25px;
   position: absolute;
   z-index: 100;
-  width: 280px;
+  width: 308px;
   top: 0px;
   left: 50% !important;
   right: auto !important;
