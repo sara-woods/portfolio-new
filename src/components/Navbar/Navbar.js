@@ -50,7 +50,7 @@ const Navbar = () => {
 
   return (
     <header>
-      <img className="navbar-logo" src={logo} alt="logo sara woods" />
+      <a href="#top" tabIndex="0"><img className="navbar-logo" src={logo} alt="logo sara woods" /></a>
       <nav ref={navRef} className={`${showResponsiveNavbar ? "responsive-nav" : ""}`}>
         <a href="#projects" data-page="1" onClick={handleNavLinkClick}>{t("filterOptions.webDev")}</a>
         <a href="#projects" data-page="2" onClick={handleNavLinkClick}>{t("filterOptions.illustrations")}</a>
