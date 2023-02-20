@@ -10,6 +10,7 @@ import watchdominionImage from "../../images/watchdominion.png";
 import cafeImage from "../../images/cafe.png";
 
 import { en } from "../../translations/en";
+const projectData = en.translation.projectData;
 
 const images = {
   cafe: cafeImage,
@@ -21,28 +22,26 @@ const images = {
   floatify: floatifyImage,
 };
 
-const projectData = en.translation.projectData;
-
-const WebDevProjects = (props) => {
+const WebDevProjects = () => {
   const { t } = useTranslation();
 
-  const projectAarray = [];
+  const projectArray = [];
 
   for (const property in projectData) {
-    projectAarray.push({
+    projectArray.push({
       name: t(`projectData.${property}.name`),
       description: t(`projectData.${property}.description`),
       type: t(`projectData.${property}.type`),
       web: t(`projectData.${property}.web`),
       repo: t(`projectData.${property}.repo`),
-      technologies: projectData[`${property}`].technologies,
+      technologies: t(`projectData.${property}.technologies`,{ returnObjects: true }),
       image: images[`${property}`],
     });
   }
 
   return (
     <>
-      {projectAarray.map((item) => (
+      {projectArray.map((item) => (
         <ProjectItem
           key={item.name}
           name={item.name}

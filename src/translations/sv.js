@@ -120,7 +120,7 @@ export const sv = {
         name: "Catsweeper",
         description:
           "Baserat på spelet Minesweeper där jag återskapade spelets mekanik så nära originalet som möjligt. Designen inkluderar mina egna illustrationer.",
-        technologies: ["JavaScript ES6", "HTML", "CSS", "Responsive"],
+        technologies: ["JavaScript ES6", "HTML", "CSS", "Responsiv"],
         repo: "https://github.com/sara-woods/catsweeper",
         web: "https://sara-woods.github.io/catsweeper/",
       },
