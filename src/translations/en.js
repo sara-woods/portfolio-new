@@ -35,21 +35,35 @@ export const en = {
       graphicDesign: "Graphic design",
     },
     projectData: {
-      watchdominion: {
+      cafe: {
         id: 1,
+        type: "Solo project",
+        name: "Café",
+        description:
+          "A personal re-design of a local café's website. Implemented with Webflow.",
+        technologies: [
+          "Web design",
+          "Figma",
+          "Webflow",
+        ],
+        repo: "",
+        web: "",
+      },
+      watchdominion: {
+        id: 2,
         type: "Team project",
         name: "Watch Dominion",
         description:
           "A website to promote and spread the documentary Dominion, designed by me and created by developers at Vegan Hacktivists.",
         technologies: [
-          "Web Design",
+          "Web design",
           "Figma",
         ],
         repo: "",
         web: "https://watchdominion.org/",
       },
       whatmovie: {
-        id: 2,
+        id: 3,
         type: "Solo project",
         name: "What movie?",
         description:
@@ -67,7 +81,7 @@ export const en = {
         web: "https://what-movie.onrender.com/",
       },
       wellsy: {
-        id: 3,
+        id: 4,
         type: "Team project",
         name: "Wellsy",
         description:
@@ -84,7 +98,7 @@ export const en = {
         web: "https://wellsy.fly.dev/",
       },
       packathon: {
-        id: 4,
+        id: 5,
         type: "Team project",
         name: "Packathon",
         description:
@@ -101,7 +115,7 @@ export const en = {
         web: "",
       },
       catsweeper: {
-        id: 5,
+        id: 6,
         type: "Solo project",
         name: "Catsweeper",
         description:
@@ -111,7 +125,7 @@ export const en = {
         web: "https://sara-woods.github.io/catsweeper/",
       },
       floatify: {
-        id: 6,
+        id: 7,
         type: "Team project",
         name: "Floatify",
         description:

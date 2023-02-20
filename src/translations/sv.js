@@ -35,21 +35,35 @@ export const sv = {
       graphicDesign: "Grafisk design",
     },
     projectData: {
-      watchdominion: {
+      cafe: {
         id: 1,
+        type: "Solo-projekt",
+        name: "Café",
+        description:
+          "En personlig omdesign av ett lokalt fiks hemsida. Implementerad i Webflow.",
+        technologies: [
+          "Webdesign",
+          "Figma",
+          "Webflow",
+        ],
+        repo: "",
+        web: "",
+      },
+      watchdominion: {
+        id: 2,
         type: "Team-projekt",
         name: "Watch Dominion",
         description:
           "En hemsida för att sprida dokumentären Dominion, designad av mig och skapad av utvecklare på Vegan Hacktivists.",
         technologies: [
-          "Web Design",
+          "Webdesign",
           "Figma",
         ],
         repo: "",
         web: "https://watchdominion.org/",
       },
       whatmovie: {
-        id: 2,
+        id: 3,
         type: "Solo-projekt",
         name: "What movie?",
         description:
@@ -67,7 +81,7 @@ export const sv = {
         web: "https://what-movie.onrender.com/",
       },
       wellsy: {
-        id: 3,
+        id: 4,
         type: "Team-projekt",
         name: "Wellsy",
         description:
@@ -84,7 +98,7 @@ export const sv = {
         web: "https://wellsy.fly.dev/",
       },
       packathon: {
-        id: 4,
+        id: 5,
         type: "Team-projekt",
         name: "Packathon",
         description:
@@ -101,7 +115,7 @@ export const sv = {
         web: "",
       },
       catsweeper: {
-        id: 5,
+        id: 6,
         type: "Solo-projekt",
         name: "Catsweeper",
         description:
@@ -111,7 +125,7 @@ export const sv = {
         web: "https://sara-woods.github.io/catsweeper/",
       },
       floatify: {
-        id: 6,
+        id: 7,
         type: "Team-projekt",
         name: "Floatify",
         description:

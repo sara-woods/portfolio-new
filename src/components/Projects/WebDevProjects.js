@@ -7,10 +7,12 @@ import floatifyImage from "../../images/floatify_small.png";
 import catsweeperImage from "../../images/catsweeper_new.png";
 import packathonImage from "../../images/packathon.png";
 import watchdominionImage from "../../images/watchdominion.png";
+import cafeImage from "../../images/cafe.png";
 
 import { en } from "../../translations/en";
 
 const images = {
+  cafe: cafeImage,
   watchdominion: watchdominionImage,
   whatmovie: whatmovieImage,
   wellsy: wellsyImage,
