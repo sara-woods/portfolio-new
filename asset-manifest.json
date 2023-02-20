@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.b91cd424.chunk.css",
-    "main.js": "/static/js/main.8da3561c.chunk.js",
-    "main.js.map": "/static/js/main.8da3561c.chunk.js.map",
+    "main.js": "/static/js/main.6aaef691.chunk.js",
+    "main.js.map": "/static/js/main.6aaef691.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.2fcd232a.js",
     "runtime-main.js.map": "/static/js/runtime-main.2fcd232a.js.map",
     "static/css/2.ef9168ec.chunk.css": "/static/css/2.ef9168ec.chunk.css",
@@ -19,6 +19,7 @@
     "static/media/beach.f0a34b19.jpg": "/static/media/beach.f0a34b19.jpg",
     "static/media/bear.739bd062.jpg": "/static/media/bear.739bd062.jpg",
     "static/media/birds.06be9aba.jpg": "/static/media/birds.06be9aba.jpg",
+    "static/media/cafe.c7f81133.png": "/static/media/cafe.c7f81133.png",
     "static/media/camping.e2fbcb5b.jpg": "/static/media/camping.e2fbcb5b.jpg",
     "static/media/cat_turnaround.87b97d8a.gif": "/static/media/cat_turnaround.87b97d8a.gif",
     "static/media/catsweeper_new.c0143c69.png": "/static/media/catsweeper_new.c0143c69.png",
@@ -38,7 +39,7 @@
     "static/media/soap.b21ebf4c.jpg": "/static/media/soap.b21ebf4c.jpg",
     "static/media/tv.554897e1.jpg": "/static/media/tv.554897e1.jpg",
     "static/media/vans.83545fe4.jpg": "/static/media/vans.83545fe4.jpg",
-    "static/media/watchdominion.6956eac3.png": "/static/media/watchdominion.6956eac3.png",
+    "static/media/watchdominion.2c91335a.png": "/static/media/watchdominion.2c91335a.png",
     "static/media/wellsy_new.07d4176f.png": "/static/media/wellsy_new.07d4176f.png",
     "static/media/whatmovie_small.6ef8f957.png": "/static/media/whatmovie_small.6ef8f957.png"
   },
@@ -47,6 +48,6 @@
     "static/css/2.ef9168ec.chunk.css",
     "static/js/2.57aae0f9.chunk.js",
     "static/css/main.b91cd424.chunk.css",
-    "static/js/main.8da3561c.chunk.js"
+    "static/js/main.6aaef691.chunk.js"
   ]
 }
