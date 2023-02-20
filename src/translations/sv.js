@@ -2,8 +2,9 @@ export const sv = {
   translation: {
     documentTitle: "Sara Woods | Webbutvecklare, designer och illustratör",
     navLinks: {
-      about: "Om",
-      projects: "Projekt",
+      webDev: "Webbutveckling/design",
+      illustrations: "Illustrationer",
+      graphicDesign: "Grafisk design",
       contact: "Kontakt",
     },
     intro: {
@@ -23,6 +24,7 @@ export const sv = {
       contact: "Kontakta mig",
       visit: "Besök hemsida",
     },
+    projectsHeader: "Projekt",
     graphicDesign: {
       disclaimer:
         "Det här urvalet är en mix av personligt arbete och kundarbeten.",

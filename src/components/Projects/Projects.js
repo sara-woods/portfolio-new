@@ -31,7 +31,7 @@ const Projects = () => {
   return (
     <div id="projects">
       <div className="scroll-anchor"></div>
-      <h1 className="mb-5 header">{t("navLinks.projects")}</h1>
+      <h1 className="mb-5 header">{t("projectsHeader")}</h1>
       <Filter filterText={filterText} />
       {ctx.page === "1" && <WebDevProjects />}
       {ctx.page === "2" && <Illustrations />}

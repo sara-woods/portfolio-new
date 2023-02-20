@@ -52,10 +52,10 @@ const Navbar = () => {
     <header>
       <a href="#top" tabIndex="0"><img className="navbar-logo" src={logo} alt="logo sara woods" /></a>
       <nav ref={navRef} className={`${showResponsiveNavbar ? "responsive-nav" : ""}`}>
-        <a href="#projects" data-page="1" onClick={handleNavLinkClick}>{t("filterOptions.webDev")}</a>
-        <a href="#projects" data-page="2" onClick={handleNavLinkClick}>{t("filterOptions.illustrations")}</a>
-        <a href="#projects" data-page="3" onClick={handleNavLinkClick}>{t("filterOptions.graphicDesign")}</a>
-        <a href="#contact" onClick={handleNavLinkClick}>Contact</a>
+        <a href="#projects" data-page="1" onClick={handleNavLinkClick}>{t("navLinks.webDev")}</a>
+        <a href="#projects" data-page="2" onClick={handleNavLinkClick}>{t("navLinks.illustrations")}</a>
+        <a href="#projects" data-page="3" onClick={handleNavLinkClick}>{t("navLinks.graphicDesign")}</a>
+        <a href="#contact" onClick={handleNavLinkClick}>{t("navLinks.contact")}</a>
         <div className="lang-switch-container">
           <p className="text-700">EN</p>
           <label className="lang-switch ml-2 mr-2">
