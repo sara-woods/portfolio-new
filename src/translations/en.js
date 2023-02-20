@@ -2,8 +2,9 @@ export const en = {
   translation: {
     documentTitle: "Sara Woods | Web developer, designer and illustrator",
     navLinks: {
-      about: "About",
-      projects: "Projects",
+      webDev: "Web development/design",
+      illustrations: "Illustrations",
+      graphicDesign: "Graphic design",
       contact: "Contact",
     },
     intro: {
@@ -23,6 +24,7 @@ export const en = {
       contact: "Get in touch",
       visit: "Visit website",
     },
+    projectsHeader: "Projects",
     graphicDesign: {
       disclaimer:
       "This selection of works is a mix of personal and client work.",
