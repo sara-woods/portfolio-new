@@ -11,13 +11,13 @@ export const en = {
       hello: "Hi, my name is",
       introText:
         // "I’m a web developer, designer and illustrator based in Uppsala, Sweden. I help small businesses with work related to their visual presence. Together we can create a user experience that is creative, beautiful, and memorable. Below are previous websites that I have designed and developed as well as a selection of my illustrations and logo designs.",
-        "I’m a web developer, designer and illustrator based in Uppsala, Sweden. Below are websites that I have designed and developed as well as a selection of my illustrations and logo designs.",
+        "I’m a web developer, web designer and illustrator based in Sweden. Below are websites that I have designed and developed as well as a selection of my illustrations and logo designs.",
     },
     contactData: {
       header: "Hey there!",
       text1:
         // "If you’re looking for a freelance web developer, designer or illustrator to help bring an idea to life or fix an existing issue - let’s chat! Pop me an e-mail at ",
-        "If you would like to get in contact with me, pop me an e-mail at ",
+        "If you would like to get in contact with me, send me an e-mail at ",
       text2: "or message me on ",
     },
     buttonText: {

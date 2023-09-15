@@ -11,13 +11,13 @@ export const sv = {
       hello: "Hej, jag heter",
       introText:
         // "Jag är en webbutvecklare, grafisk designer och illustratör baserad i Uppsala. Jag hjälper små företag med arbete relaterat till deras visuella närvaro. Tillsammans kan vi skapa en användarupplevelse som är kreativ, vacker och minnesvärd. Nedan finns tidigare hemsidor jag har designat och programmerat, samt ett urval av mina illustrationer och logotyper.",
-        "Jag är en webbutvecklare, grafisk designer och illustratör baserad i Uppsala. Här nedan finns hemsidor jag har designat och programmerat, samt ett urval av mina illustrationer och logotyper.",
+        "Jag kodar och designar hemsidor, är illustratör och pysslar med grafisk design. Här nedan finns hemsidor jag har designat och programmerat, samt ett urval av mina illustrationer och logotyper.",
     },
     contactData: {
       header: "Hej!",
       text1:
         // "Om du letar efter en frilansande webbutvecklare, designer eller illustratör för hjälp med att utveckla en idé eller fixa ett existerande problem - låt oss höras! Skicka ett mail till ",
-        "Om du skulle vilja komma i kontakt med mig, skicka iväg ett e-mail till ",
+        "Om du skulle vilja komma i kontakt med mig, skicka ett e-mail till ",
       text2: "eller ett meddelande på ",
     },
     buttonText: {
