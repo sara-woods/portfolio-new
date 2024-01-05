@@ -1,12 +1,9 @@
-import { useTranslation } from "react-i18next";
 import "./ProjectItem.css";
 import Button from "../UI/Button";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithubSquare } from "@fortawesome/free-brands-svg-icons";
 
 const ProjectItem = (props) => {
-  const { t } = useTranslation();
-
   let style = {
     backgroundImage: `url(${props.projectImage})`,
   };
@@ -44,7 +41,7 @@ const ProjectItem = (props) => {
             ))}
           </div>
           {props.web.length !== 0 && <Button
-            text={t("buttonText.visit")}
+            text={"Visit website"}
             href={props.web}
             className="mt-4"
           />}

@@ -1,4 +1,3 @@
-import { useTranslation } from "react-i18next";
 import IllustrationItem from "./IllustrationItem";
 
 import babyImage from "../../images/baby.jpg";
@@ -9,17 +8,13 @@ import campingImage from "../../images/camping.jpg";
 import paddleImage from "../../images/paddleboards.jpg";
 import rosesImage from "../../images/roses.jpg";
 import soapImage from "../../images/soap.jpg";
-// import pugImage from "../../images/pug.jpg";
-// import cafeImage from "../../images/cafe.jpg";
 
 const GraphicDesigns = (props) => {
-  const { t } = useTranslation();
-
   return (
     <>
       <div>
         <div id="logo-personal" className="text-sm mt-3">
-          <p>{t("graphicDesign.disclaimer")}</p>
+          <p>This selection of works is a mix of personal and client work.</p>
         </div>
 
         <IllustrationItem src={publishingImage} alt="publisher logo design" />
