@@ -1,5 +1,4 @@
 import { useState, useEffect, useContext } from "react";
-import { useTranslation } from "react-i18next";
 import "./Filter.css";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -8,7 +7,12 @@ import { faTimes } from "@fortawesome/free-solid-svg-icons";
 import ProjectContext from "../../store/project-context";
 
 const Filter = (props) => {
-  const { t } = useTranslation();
+  const filterOptions = {
+    header: "Filter Content",
+    webDev: "Web development/design",
+    illustrations: "Illustrations",
+    graphicDesign: "Graphic design",
+  }
   const ctx = useContext(ProjectContext);
   const [filterSticky, setFilterSticky] = useState(false);
   const [showFilterButton, setShowFilterButton] = useState(false);
@@ -29,7 +33,7 @@ const Filter = (props) => {
     } else if (
       // If scroll position is between start and end of the projects section
       window.scrollY > scrollTop + navbarOffset &&
-      window.scrollY < projectBottom 
+      window.scrollY < projectBottom
     ) {
       // If true, the filter button is sticky
       setFilterSticky(true);
@@ -74,7 +78,7 @@ const Filter = (props) => {
   if (ctx.showFilterDropdown) {
     filterButton = (
       <button onClick={ctx.showFilterHandler} className="filter-button">
-        {t("filterOptions.header")}
+        {filterOptions.header}
         <span className="ml-3 arrow">
           <FontAwesomeIcon icon={faTimes} />
         </span>
@@ -101,7 +105,7 @@ const Filter = (props) => {
               className={`tab ${ctx.page === "1" ? "underline-tab" : ""}`}
               onClick={ctx.handlePageChange}
             >
-              {t("filterOptions.webDev")}
+              {filterOptions.webDev}
             </p>
           </li>
           <li>
@@ -110,7 +114,7 @@ const Filter = (props) => {
               className={`tab ${ctx.page === "2" ? "underline-tab" : ""}`}
               onClick={ctx.handlePageChange}
             >
-              {t("filterOptions.illustrations")}
+              {filterOptions.illustrations}
             </p>
           </li>
           <li>
@@ -119,7 +123,7 @@ const Filter = (props) => {
               className={`tab ${ctx.page === "3" ? "underline-tab" : ""}`}
               onClick={ctx.handlePageChange}
             >
-              {t("filterOptions.graphicDesign")}
+              {filterOptions.graphicDesign}
             </p>
           </li>
         </ul>
@@ -143,7 +147,7 @@ const Filter = (props) => {
                     id="filter-text"
                     className={ctx.page === "1" ? "underline-filter" : ""}
                   >
-                    {t("filterOptions.webDev")}
+                    {filterOptions.webDev}
                   </span>
                 </p>
               </li>
@@ -155,7 +159,7 @@ const Filter = (props) => {
                     id="filter-text"
                     className={ctx.page === "2" ? "underline-filter" : ""}
                   >
-                    {t("filterOptions.illustrations")}
+                    {filterOptions.illustrations}
                   </span>
                 </p>
               </li>
@@ -167,7 +171,7 @@ const Filter = (props) => {
                     id="filter-text"
                     className={ctx.page === "3" ? "underline-filter" : ""}
                   >
-                    {t("filterOptions.graphicDesign")}
+                    {filterOptions.graphicDesign}
                   </span>
                 </p>
               </li>

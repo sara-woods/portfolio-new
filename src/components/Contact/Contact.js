@@ -1,22 +1,19 @@
 import "./Contact.css";
 import Button from "../UI/Button";
-import { useTranslation } from "react-i18next";
 
 const Contact = () => {
-  const { t } = useTranslation();
-
   return (
     <div id="contact">
-      <h1 className="header">{t("contactData.header")}</h1>
+      <h1 className="header">Hey there!</h1>
       <p className="text-md text-300 mt-3 text-center">
-        {t("contactData.text1")}{" "}
+        {"If you would like to get in contact with me, send me an e-mail at "}
         <a
           href="mailto: hello@sarawoodsdesign.com"
           className="contact-link tab-link"
         >
-          hello@sarawoodsdesign.com{" "}
+          hello@sarawoodsdesign.com
         </a>
-        {t("contactData.text2")}{" "}
+        {"or message me on "}
         <a
           href="https://www.linkedin.com/in/hellosarawoods/"
           target="_blank"
@@ -30,7 +27,7 @@ const Contact = () => {
 
       <div className="d-flex justify-content-center">
         <Button
-          text={t("buttonText.contact")}
+          text={"Get in touch"}
           href="mailto: hello@sarawoodsdesign.com"
         />
       </div>

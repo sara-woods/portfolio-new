@@ -1,12 +1,9 @@
 import "./Intro.css";
 import Button from "../UI/Button";
-import { useTranslation } from "react-i18next";
 
 import portrait from "../../images/portrait.jpg";
 
-const Intro = (props) => {
-  const { t } = useTranslation();
-
+const Intro = () => {
   const handleRightClick = (event) => {
     event.preventDefault();
   };
@@ -20,54 +17,14 @@ const Intro = (props) => {
       <div id="intro-container">
         <div id="intro">
           <div className="intro-left">
-            <p className="text-orange text-300 text-lg">{t("intro.hello")}</p>
+            <p className="text-orange text-300 text-lg">Hi, my name is</p>
             <h1>Sara Woods</h1>
-            <p className="text-md text-300 mt-4">{t("intro.introText")}</p>
+            <p className="text-md text-300 mt-4">I’m a web developer, web designer and illustrator based in Sweden. Below are websites that I have designed and developed as well as a selection of my illustrations and logo designs.</p>
             <Button
-              text={t("buttonText.contact")}
+              text={"Get in touch"}
               href="mailto: hello@sarawoodsdesign.com"
               className="contact-button-screen"
             />
-            {/* <div className="tech-stack text-20px">
-          <div>
-            <ul className="text-orange">
-              <li>
-                <span>React</span>
-              </li>
-              <li>
-                <span>JavaScript (ES6+)</span>
-              </li>
-              <li>
-                <span>Ruby on Rails</span>
-              </li>
-              <li>
-                <span>HTML/CSS/Bootstrap</span>
-              </li>
-              <li>
-                <span>Git and GitHub</span>
-              </li>
-            </ul>
-          </div>
-          <div>
-            <ul className="text-orange">
-              <li>
-                <span>Heroku</span>
-              </li>
-              <li>
-                <span>JSON</span>
-              </li>
-              <li>
-                <span>APIs</span>
-              </li>
-              <li>
-                <span>SQL</span>
-              </li>
-              <li>
-                <span>Relational databases</span>
-              </li>
-            </ul>
-          </div>
-        </div> */}
           </div>
 
           <img
@@ -80,7 +37,7 @@ const Intro = (props) => {
         </div>
         <div className="d-flex justify-content-center">
           <Button
-            text={t("buttonText.contact")}
+            text={"Get in touch"}
             href="mailto: hello@sarawoodsdesign.com"
             className="contact-button"
           />

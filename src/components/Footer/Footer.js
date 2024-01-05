@@ -1,12 +1,9 @@
 import "./Footer.css";
-import { useTranslation } from "react-i18next";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithubSquare, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
 const Footer = () => {
-  const { t } = useTranslation();
-
   return (
     <div className="footer">
       <div className="social-links">
@@ -31,7 +28,7 @@ const Footer = () => {
           </p>
         </a>
       </div>
-      <p className="text-orange mb-5 mt-4">{t("copyright")}</p>
+      <p className="text-orange mb-5 mt-4">© 2024 Sara Woods</p>
     </div>
   );
 };

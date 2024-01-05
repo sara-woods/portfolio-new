@@ -1,5 +1,4 @@
 import { useEffect } from "react";
-import { useTranslation } from "react-i18next";
 
 import "./App.css";
 import Intro from "./components/Intro/Intro";
@@ -10,15 +9,9 @@ import Navbar from "./components/Navbar/Navbar";
 import { ProjectContextProvider } from "./store/project-context";
 
 const App = () => {
-  const { i18n } = useTranslation();
-
   useEffect(() => {
-    if (i18n.language === "sv") {
-      document.documentElement.lang = "sv";
-    } else {
-      document.documentElement.lang = "en";
-    }
-  }, [i18n.language]);
+    document.title = "Sara Woods | UX/UI designer, front-end developer and illustrator";
+  }, []);
 
   useEffect(() => {
     // ping Render url
