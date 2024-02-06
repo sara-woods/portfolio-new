@@ -12,9 +12,9 @@ const Navbar = () => {
   const ctx = useContext(ProjectContext);
 
   const navLinks = {
-    webDev: "Web development/design",
+    webDev: "UI/UX/Code",
     illustrations: "Illustrations",
-    graphicDesign: "Graphic design",
+    graphicDesign: "About",
     contact: "Contact",
   }
 
