@@ -1,0 +1,26 @@
+.link-button {
+  text-decoration: none;
+  color: var(--black);
+  font-size: 2rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+}
+
+.arrow {
+  margin-left: 8px;
+}
+
+.link-button:hover {
+  cursor: pointer;
+  color: var(--orange);
+}
+
+.link-button:active {
+  box-shadow: none;
+}
+
+.link-button:focus-visible {
+  outline: 4px solid var(--orange);
+}

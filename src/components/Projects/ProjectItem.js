@@ -1,7 +1,8 @@
 import "./ProjectItem.css";
-import Button from "../UI/Button";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGithubSquare } from "@fortawesome/free-brands-svg-icons";
+// import Button from "../UI/Button";
+import LinkButton from "../UI/LinkButton";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import { faGithubSquare } from "@fortawesome/free-brands-svg-icons";
 
 const ProjectItem = (props) => {
   let style = {
@@ -11,7 +12,7 @@ const ProjectItem = (props) => {
   return (
     <div className="project-container">
       <div className="project-item">
-        <p className="text-orange text-sm">{props.type}</p>
+        {/* <p className="text-orange text-sm">{props.type}</p>
         <div className="d-flex justify-content-between align-items-end">
           <h2 className="text-700 mb-3 mt-1">{props.name}</h2>
           {props.repo !== "" && <a
@@ -24,15 +25,15 @@ const ProjectItem = (props) => {
               <FontAwesomeIcon icon={faGithubSquare} className="text-lg link" />
             </p>
           </a>}
-        </div>
+        </div> */}
 
         <div className="image-container">
           <div className="image" style={style}></div>
         </div>
 
         <div className="project-info">
-          <p className="project-text text-sm text-300">{props.description}</p>
 
+          {/* <p className="project-text text-sm text-300">{props.description}</p> */}
           <div className="tech-tags">
             {props.technologies.map((techname) => (
               <div key={techname}>
@@ -40,11 +41,16 @@ const ProjectItem = (props) => {
               </div>
             ))}
           </div>
-          {props.web.length !== 0 && <Button
+            <LinkButton
+              text={"Dynamic link"}
+              href={props.web}
+              className=""
+            />
+          {/* {props.web.length !== 0 && <Button
             text={"Visit website"}
             href={props.web}
             className="mt-4"
-          />}
+          />} */}
         </div>
       </div>
     </div>
