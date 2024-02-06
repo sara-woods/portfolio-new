@@ -1,47 +1,48 @@
 import "./Intro.css";
-import Button from "../UI/Button";
 
-import portrait from "../../images/portrait.jpg";
+// import logo from "../../images/logo2.png";
 
 const Intro = () => {
-  const handleRightClick = (event) => {
-    event.preventDefault();
-  };
+  // const handleRightClick = (event) => {
+  //   event.preventDefault();
+  // };
 
-  const handleDrag = (event) => {
-    event.preventDefault();
-  };
+  // const handleDrag = (event) => {
+  //   event.preventDefault();
+  // };
 
   return (
     <>
-      <div id="intro-container">
-        <div id="intro">
-          <div className="intro-left">
-            <p className="text-orange text-300 text-lg">Hi, my name is</p>
-            <h1>Sara Woods</h1>
-            <p className="text-md text-300 mt-4">I’m a web developer, web designer and illustrator based in Sweden. Below are websites that I have designed and developed as well as a selection of my illustrations and logo designs.</p>
-            <Button
-              text={"Get in touch"}
-              href="mailto: hello@sarawoodsdesign.com"
-              className="contact-button-screen"
-            />
+      <div className="intro-container">
+
+          <div className="intro-top">
+            {/* <img className="logo" src={logo} alt="Sara Woods logo"/> */}
+            <p>Hi! I’m Sara Woods — <br></br>
+              UX/UI designer with coding experience and a love for illustration.</p>
+          </div>
+          <div className="intro-bottom">
+            <p>Based in Sweden</p>
+            <div className="intro-email">
+              <p>Get in touch</p>
+              <a href="mailto: hello@sarawoodsdesign.com"><p>hellosarawoods@gmail.com</p></a>
+            </div>
           </div>
 
-          <img
+          {/* <img
             onContextMenu={handleRightClick}
             onDragStart={handleDrag}
             id="portrait"
             src={portrait}
             alt="Sara Woods portrait"
-          />
-        </div>
-        <div className="d-flex justify-content-center">
+          /> */}
+
+        {/* <div className="d-flex justify-content-center">
           <Button
             text={"Get in touch"}
             href="mailto: hello@sarawoodsdesign.com"
             className="contact-button"
           />
-        </div>
+        </div> */}
       </div>
     </>
   );
