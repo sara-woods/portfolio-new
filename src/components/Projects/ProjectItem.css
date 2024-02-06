@@ -2,6 +2,10 @@
   margin-bottom: 140px;
 }
 
+.main-container .project-container:last-child {
+  margin-bottom: 0;
+}
+
 .project-info {
   width: 100%;
   display: flex;

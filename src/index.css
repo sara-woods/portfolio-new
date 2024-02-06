@@ -15,29 +15,31 @@ body {
   color: var(--black);
 }
 
+.main-container {
+  width: 82%;
+  margin: 0 auto;
+  padding: 88px 0;
+}
+
 html {
   scroll-behavior: smooth;
 }
 
 h1 {
   font-family: 'Dela Gothic One', sans-serif;
-  font-size: 64px;
-  font-weight: normal;
+  font-size: 80px;
+  text-transform: uppercase;
+  margin-bottom: 72px;
 }
 
 h2 {
   font-size: 42px;
 }
 
-h1,
 h2,
 h3,
 p {
   margin: 0;
-}
-
-.header {
-  text-align: center;
 }
 
 ul {
@@ -67,21 +69,6 @@ li span {
   font-size: 28px;
 }
 
-.text-lg {
-  font-size: 35px;
-}
-
-.text-300 {
-  font-weight: 300;
-}
-
-.text-700 {
-  font-weight: 700;
-}
-
-.text-20px {
-  font-size: 20px;
-}
 
 .list-bullet {
   vertical-align: middle;
@@ -105,4 +92,52 @@ a:hover {
 
 .tab-link:focus-visible {
   outline: 4px solid var(--black);
+}
+
+.wrapper-background {
+  margin: 0 auto;
+  background-color: #ebe5de;
+  border-radius: 100px 100px 0 0;
+}
+
+@media screen and (max-width: 900px) {
+  .wrapper-background {
+    border-radius: 80px 80px 0 0;
+  }
+  .main-container {
+    padding-top: 60px;
+  }
+  h1 {
+    font-size: 64px;
+  }
+}
+@media screen and (max-width: 650px) {
+  .wrapper-background {
+    border-radius: 60px 60px 0 0;
+  }
+  .main-container {
+    padding-top: 60px;
+  }
+  h1 {
+    font-size: 56px;
+  }
+}
+@media screen and (max-width: 550px) {
+  .main-container {
+    padding-top: 60px;
+  }
+  h1 {
+    font-size: 42px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .wrapper-background {
+    border-radius: 40px 40px 0 0;
+  }
+  .main-container {
+    padding-top: 60px;
+  }
+  h1 {
+    font-size: 32px;
+  }
 }

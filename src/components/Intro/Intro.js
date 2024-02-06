@@ -12,9 +12,8 @@ const Intro = () => {
   // };
 
   return (
-    <>
+    <div className="main-container">
       <div className="intro-container">
-
           <div className="intro-top">
             {/* <img className="logo" src={logo} alt="Sara Woods logo"/> */}
             <p>Hi! I’m Sara Woods — <br></br>
@@ -44,7 +43,7 @@ const Intro = () => {
           />
         </div> */}
       </div>
-    </>
+    </div>
   );
 };
 
