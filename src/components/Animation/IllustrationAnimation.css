@@ -1,0 +1,65 @@
+.animation-image {
+  width: 100%;
+}
+
+.animation-mask {
+  height: 700px;
+  width: 800px;
+  /* overflow: hidden; */
+  display: flex;
+  gap: 16px;
+  border-radius: 16px;
+  width: fit-content;
+}
+
+@keyframes changeYup {
+  100% {
+    transform: translateY(-100%);
+  }
+}
+
+@keyframes changeYdown {
+  100% {
+    transform: translateY(100%);
+  }
+}
+
+.animation-column {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  /* animation-name: changeYup; */
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+.animation-column:nth-child(even) {
+  margin-top: -100%;
+  /* animation-name: changeYdown; */
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+@media screen and (max-width: 750px) {
+  .animation-mask {
+    height: 500px;
+  }
+}
+@media screen and (max-width: 550px) {
+  .animation-mask {
+    height: 400px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .animation-column {
+      gap: 8px;
+  }
+  .animation-mask {
+    height: 300px;
+    gap: 8px;
+  }
+}

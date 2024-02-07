@@ -17,7 +17,7 @@ body {
 
 .main-container {
   margin: 0 4%;
-  padding: 88px 0;
+  padding: 88px 0 200px 0;
 }
 
 html {
@@ -84,6 +84,11 @@ a:hover {
   margin: 0 auto;
   background-color: #ebe5de;
   border-radius: 100px 100px 0 0;
+}
+
+.wrapper-background.overlap {
+  position: relative;
+  top: -100px;
 }
 
 @media screen and (max-width: 900px) {

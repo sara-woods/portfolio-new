@@ -34,8 +34,7 @@ const Projects = () => {
 
   return (
     <WrapperBackground className="wrapper-background" backgroundColor="#f1f1f1">
-      <div className="main-container">
-        <div className="scroll-anchor"></div>
+      <div className="main-container scroll-anchor" id="scroll-projects">
         <h1>Projects</h1>
         <UIUXProjects />
         {/* <Filter filterText={filterText} /> */}
