@@ -3,6 +3,7 @@ import { useEffect } from "react";
 import "./App.css";
 import Intro from "./components/Intro/Intro";
 import Projects from "./components/Projects/Projects";
+import IllustrationAnimation from "./components/Animation/IllustrationAnimation";
 import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
 import Navbar from "./components/Navbar/Navbar";
@@ -30,6 +31,7 @@ const App = () => {
       <div className="app">
         <Intro />
         <Projects />
+        <IllustrationAnimation />
         <Contact />
         <Footer />
       </div>
