@@ -3,6 +3,7 @@
   color: var(--black);
   font-size: 2rem;
   font-weight: 500;
+  font-family: 'Dela Gothic One', sans-serif;
   display: flex;
   align-items: center;
   white-space: nowrap;

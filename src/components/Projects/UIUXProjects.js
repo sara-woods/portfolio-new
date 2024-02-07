@@ -7,15 +7,25 @@ import cafeImage from "../../images/cafe.png";
 const projectData = [
   {
     id: 1,
-    name: "Café landing page",
+    name: "UX Jobs Board",
     technologies: [
+      "UX Research",
+      "UX Design",
       "UI Design",
-      "Webflow",
     ],
     image: cafeImage,
   },
   {
-    id: 12,
+    id: 2,
+    name: "Movie Generator",
+    technologies: [
+      "UI Design",
+      "ReactJS",
+    ],
+    image: whatmovieImage,
+  },
+  {
+    id: 3,
     name: "WatchDominion.org",
     technologies: [
       "UI Design",
@@ -23,13 +33,13 @@ const projectData = [
     image: watchdominionImage,
   },
   {
-    id: 3,
-    name: "Movie Generator",
+    id: 1,
+    name: "Café landing page",
     technologies: [
       "UI Design",
-      "React.js",
+      "Webflow",
     ],
-    image: whatmovieImage,
+    image: cafeImage,
   }
 ]
 

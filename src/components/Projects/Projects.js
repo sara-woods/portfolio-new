@@ -34,7 +34,7 @@ const Projects = () => {
 
   return (
     <WrapperBackground className="wrapper-background" backgroundColor="#f1f1f1">
-      <div className="main-container">
+      <div className="main-container" id="main-container-projects">
         <div className="scroll-anchor"></div>
         <h1>Projects</h1>
         <UIUXProjects />
