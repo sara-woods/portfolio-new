@@ -16,8 +16,7 @@ body {
 }
 
 .main-container {
-  width: 82%;
-  margin: 0 auto;
+  margin: 0 4%;
   padding: 88px 0;
 }
 
@@ -56,19 +55,6 @@ li {
 li span {
   font-size: 20px;
 }
-
-.text-orange {
-  color: var(--orange);
-}
-
-.text-sm {
-  font-size: 22px;
-}
-
-.text-md {
-  font-size: 28px;
-}
-
 
 .list-bullet {
   vertical-align: middle;
@@ -125,7 +111,6 @@ a:hover {
 @media screen and (max-width: 550px) {
   .main-container {
     padding-top: 60px;
-    width: 90%;
   }
   h1 {
     font-size: 42px;
@@ -137,7 +122,6 @@ a:hover {
   }
   .main-container {
     padding-top: 60px;
-    width: 90%;
   }
   h1 {
     font-size: 32px;
