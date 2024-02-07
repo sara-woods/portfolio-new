@@ -13,7 +13,7 @@
 }
 
 .project-info a {
-  margin: 20px 0;
+  margin: 32px 0;
 }
 
 /* IMAGE */
@@ -50,13 +50,19 @@
 
 /* RESPONSIVENESS */
 
+@media screen and (max-width: 1000px) {
+  .project-info a {
+    margin: 24px 0;
+  }
+}
+
 @media screen and (max-width: 750px) {
   .project-container {
     margin-bottom: 88px;
   }
 
   .project-info a {
-    font-size: 1.5rem;
+    margin: 20px 0;
   }
 
   .project-info svg {
@@ -67,5 +73,11 @@
     padding: 16px 32px;
     border-radius: 50px;
     font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .project-info a {
+    margin: 16px 0;
   }
 }

@@ -7,8 +7,61 @@
   display: flex;
   align-items: center;
   white-space: nowrap;
+  height: 30px;
+  align-items: center;
+  display: flex;
   /* transition: transform .7s ease-in-out; */
 }
+
+/* Hide extra text */
+.mask {
+  position: relative;
+  padding: 0;
+  height: 24px;
+  /*  Remove overflow to see how it works　:) */
+  overflow: hidden;
+}
+
+.link-container {
+  transition: transform 0.4s ease;
+}
+
+
+.title {
+  display: block;
+  /*  Set same font-size and line height  */
+  font-size: 24px;
+  line-height: 24px;
+  text-transform: uppercase;
+  transition: transform 0.4s ease;
+}
+
+.link-title1 {
+  transform-origin: right center;
+}
+
+.link-title2 {
+  transform-origin: left center;
+  transform: rotate(20deg);
+}
+
+/* Hover Action*/
+
+/* Move up two texts (20px = font-size) */
+.link-button:hover .link-container {
+  transform: translateY(-24px);
+}
+
+/* Rotate texts a little bit */
+.link-button:hover .link-title1 {
+  transform: rotate(20deg);
+}
+
+.link-button:hover .link-title2 {
+  transform: rotate(0);
+}
+
+
 
 .arrow {
   margin-left: 8px;
@@ -28,4 +81,33 @@
 
 .link-button:focus-visible {
   outline: 4px solid var(--orange);
+}
+
+
+
+
+@media screen and (max-width: 550px) {
+  .mask {
+    height: 16px;
+  }
+  .title {
+    font-size: 16px;
+    line-height: 16px;
+  }
+  .link-button:hover .link-container {
+    transform: translateY(-16px);
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .mask {
+    height: 16px;
+  }
+  .title {
+    font-size: 16px;
+    line-height: 16px;
+  }
+  .link-button:hover .link-container {
+    transform: translateY(-16px);
+  }
 }

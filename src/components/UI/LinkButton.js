@@ -8,7 +8,13 @@ const LinkButton = (props) => {
       // target="_blank"
       className={`link-button ${props.className}`}
       >
-      {props.text}
+      <span className="mask">
+        <div className="link-container">
+          <span className="link-title1 title">{props.text}</span>
+          <span className="link-title2 title">{props.text}</span>
+        </div>
+      </span>
+      {/* {props.text} */}
       <svg width="55" height="55" viewBox="0 0 55 55" fill="none" xmlns="http://www.w3.org/2000/svg">
         <g clip-path="url(#clip0_110_1074)">
           <path d="M38.9775 17.7787L16.9378 39.8185" stroke="#1F1E1E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
