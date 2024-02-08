@@ -14,7 +14,7 @@ const Navbar = () => {
 
   const navLinks = {
     webDev: "Projects",
-    illustrations: "Illustration",
+    illustrations: "Illustrations",
     about: "About",
     contact: "Contact",
   };
@@ -52,7 +52,7 @@ const Navbar = () => {
         <a href="#scroll-projects" data-page="1">
           {navLinks.webDev}
         </a>
-        <Link to="illustrations" data-page="2">
+        <Link to="/illustrations" data-page="2">
           {navLinks.illustrations}
         </Link>
         <a href="#scroll-about" data-page="3">
