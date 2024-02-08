@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./ProjectItem.css";
 
 import LinkButton from "../UI/LinkButton";
@@ -10,7 +11,6 @@ const ProjectItem = (props) => {
   return (
     <div className="project-container">
       <div className="project-item">
-
         <div className="image-container">
           <div className="image" style={style}></div>
         </div>
@@ -23,14 +23,10 @@ const ProjectItem = (props) => {
               </div>
             ))}
           </div>
-            <LinkButton
-              text={props.name}
-              href={props.web}
-              className=""
-            />
+          <LinkButton text={props.name} href={props.web} className="" />
         </div>
-
       </div>
+      <Link to={`/${props.projectId}`}>Read more</Link>
     </div>
   );
 };
