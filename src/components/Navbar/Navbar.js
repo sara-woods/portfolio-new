@@ -1,4 +1,5 @@
 import React, { useRef, useState, useContext } from "react";
+import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTimes, faBars } from "@fortawesome/free-solid-svg-icons";
 
@@ -16,33 +17,54 @@ const Navbar = () => {
     illustrations: "Illustration",
     about: "About",
     contact: "Contact",
-  }
+  };
 
   const toggleResponsiveNavbar = () => {
-    setShowResponsiveNavbar(prev => !prev);
-  }
+    setShowResponsiveNavbar((prev) => !prev);
+  };
 
   const handleNavLinkClick = (event) => {
     if (event.currentTarget.hasAttribute("data-page")) {
       ctx.handlePageChange(event);
     }
     hideResponsiveNavbar();
-  }
+  };
 
   const hideResponsiveNavbar = () => {
     setShowResponsiveNavbar(false);
-  }
+  };
 
   return (
     <header>
-      <a href="#top" tabIndex="0"><img className="navbar-logo" src={logo} alt="logo sara woods" /></a>
+      <Link to="/">
+        <img
+          tabIndex="0"
+          className="navbar-logo"
+          src={logo}
+          alt="logo sara woods"
+        />
+      </Link>
       {/* <p id="name">SARA WOODS</p> */}
-      <nav ref={navRef} className={`${showResponsiveNavbar ? "responsive-nav" : ""}`}>
-        <a href="#scroll-projects" data-page="1" onClick={handleNavLinkClick}>{navLinks.webDev}</a>
-        <a href="#scroll-illustration" data-page="2" onClick={handleNavLinkClick}>{navLinks.illustrations}</a>
-        <a href="#scroll-about" data-page="3" onClick={handleNavLinkClick}>{navLinks.about}</a>
-        <a href="#scroll-contact" onClick={handleNavLinkClick}>{navLinks.contact}</a>
-        <button className="nav-btn nav-close-btn" onClick={toggleResponsiveNavbar}>
+      <nav
+        ref={navRef}
+        className={`${showResponsiveNavbar ? "responsive-nav" : ""}`}
+      >
+        <a href="#scroll-projects" data-page="1">
+          {navLinks.webDev}
+        </a>
+        <Link to="illustrations" data-page="2">
+          {navLinks.illustrations}
+        </Link>
+        <a href="#scroll-about" data-page="3">
+          {navLinks.about}
+        </a>
+        <a href="#scroll-contact" onClick={handleNavLinkClick}>
+          {navLinks.contact}
+        </a>
+        <button
+          className="nav-btn nav-close-btn"
+          onClick={toggleResponsiveNavbar}
+        >
           <FontAwesomeIcon icon={faTimes} />
         </button>
       </nav>
@@ -51,7 +73,6 @@ const Navbar = () => {
       </button>
     </header>
   );
-
-}
+};
 
 export default Navbar;

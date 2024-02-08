@@ -1,23 +1,35 @@
+import Navbar from "../../Navbar/Navbar";
 import IllustrationItem from "./IllustrationItem";
+import Contact from "../../Contact/Contact";
+import Footer from "../../Footer/Footer";
 
-import bearImage from "../../images/bear.jpg";
-import tvImage from "../../images/tv.jpg";
-import birdsImage from "../../images/birds.jpg";
-import backgammonImage from "../../images/backgammon.jpg";
-import basketImage from "../../images/basket.jpg";
-import catWereWolfImage from "../../images/catwerewolf.jpg";
-import girlImage from "../../images/girl.jpg";
-import faceImage from "../../images/face.jpg";
-import clownImage from "../../images/pennywise.jpg";
-import vansImage from "../../images/vans.jpg";
-import abcImage from "../../images/abc.jpg";
-import catGif from "../../images/cat_turnaround.gif";
-import duckGif from "../../images/duck.gif";
+import bearImage from "../../../images/bear.jpg";
+import tvImage from "../../../images/tv.jpg";
+import birdsImage from "../../../images/birds.jpg";
+import backgammonImage from "../../../images/backgammon.jpg";
+import basketImage from "../../../images/basket.jpg";
+import catWereWolfImage from "../../../images/catwerewolf.jpg";
+import girlImage from "../../../images/girl.jpg";
+import faceImage from "../../../images/face.jpg";
+import clownImage from "../../../images/pennywise.jpg";
+import vansImage from "../../../images/vans.jpg";
+import abcImage from "../../../images/abc.jpg";
+import catGif from "../../../images/cat_turnaround.gif";
+import duckGif from "../../../images/duck.gif";
+import { useEffect } from "react";
 
-const Illustrations = (props) => {
+const Illustrations = () => {
+  useEffect(() => {
+    document.documentElement.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: "instant", // Optional if you want to skip the scrolling animation
+    });
+  }, []);
   return (
     <>
-      <div>
+      <Navbar />
+      <div className="main-container">
         <IllustrationItem
           src={tvImage}
           alt="Vintage tv flying among the clouds"
@@ -62,6 +74,8 @@ const Illustrations = (props) => {
           alt="Pennywise the clown in rubber hose retro style"
         />
       </div>
+      <Contact />
+      <Footer />
     </>
   );
 };

@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import Navbar from "../../Navbar/Navbar";
 
-const UXJobsBoard = () => {
+const Cafe = () => {
   useEffect(() => {
     document.documentElement.scrollTo({
       top: 0,
@@ -12,9 +12,9 @@ const UXJobsBoard = () => {
   return (
     <div className="">
       <Navbar />
-      <p className="mb-5">UX Jobs Board</p>
+      <p className="mb-5">Cafe landing page</p>
     </div>
   );
 };
 
-export default UXJobsBoard;
+export default Cafe;

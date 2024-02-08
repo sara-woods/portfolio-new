@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 import WrapperBackground from "../UI/WrapperBackground";
 import LinkButton from "../UI/LinkButton";
 import AnimationImage from "./AnimationImage";
@@ -25,91 +27,86 @@ import photographyImage from "../../images/photography.jpg";
 import paddleboardsImage from "../../images/paddleboards.jpg";
 import babyImage from "../../images/baby.jpg";
 
-
 const IllustrationAnimation = () => {
   return (
     <WrapperBackground id="wrapper-animation" backgroundColor="#dbd7d7">
       <div className="main-container" id="scroll-illustration">
-      <h1>Illustration & logo design</h1>
-      <div className="animation-mask">
-        <div className="animation-column">
-          <AnimationImage src={beachImage} />
-          <AnimationImage src={cat_turnaroundImage} />
-          <AnimationImage src={bearImage} />
-          <AnimationImage src={duckImage} />
-          <AnimationImage src={vansImage} />
-          <AnimationImage src={birdsImage} />
-          <AnimationImage src={soapImage} />
-          <AnimationImage src={rosesImage} />
-          <AnimationImage src={girlImage} />
-          <AnimationImage src={photographyImage} />
-          <AnimationImage src={faceImage} />
-          <AnimationImage src={abcImage} />
-          <AnimationImage src={publishingImage} />
-          <AnimationImage src={pennywiseImage} />
-          <AnimationImage src={backgammonImage} />
-          <AnimationImage src={catWereWolfImage} />
-          <AnimationImage src={paddleboardsImage} />
-          <AnimationImage src={campingImage} />
-          <AnimationImage src={basketImage} />
-          <AnimationImage src={babyImage} />
-          <AnimationImage src={tvImage} />
+        <h1>Illustration & logo design</h1>
+        <div className="animation-mask">
+          <div className="animation-column">
+            <AnimationImage src={beachImage} />
+            <AnimationImage src={cat_turnaroundImage} />
+            <AnimationImage src={bearImage} />
+            <AnimationImage src={duckImage} />
+            <AnimationImage src={vansImage} />
+            <AnimationImage src={birdsImage} />
+            <AnimationImage src={soapImage} />
+            <AnimationImage src={rosesImage} />
+            <AnimationImage src={girlImage} />
+            <AnimationImage src={photographyImage} />
+            <AnimationImage src={faceImage} />
+            <AnimationImage src={abcImage} />
+            <AnimationImage src={publishingImage} />
+            <AnimationImage src={pennywiseImage} />
+            <AnimationImage src={backgammonImage} />
+            <AnimationImage src={catWereWolfImage} />
+            <AnimationImage src={paddleboardsImage} />
+            <AnimationImage src={campingImage} />
+            <AnimationImage src={basketImage} />
+            <AnimationImage src={babyImage} />
+            <AnimationImage src={tvImage} />
+          </div>
+          <div className="animation-column" id="column-2">
+            <AnimationImage src={beachImage} />
+            <AnimationImage src={cat_turnaroundImage} />
+            <AnimationImage src={birdsImage} />
+            <AnimationImage src={babyImage} />
+            <AnimationImage src={paddleboardsImage} />
+            <AnimationImage src={photographyImage} />
+            <AnimationImage src={publishingImage} />
+            <AnimationImage src={bearImage} />
+            <AnimationImage src={rosesImage} />
+            <AnimationImage src={campingImage} />
+            <AnimationImage src={duckImage} />
+            <AnimationImage src={faceImage} />
+            <AnimationImage src={vansImage} />
+            <AnimationImage src={pennywiseImage} />
+            <AnimationImage src={backgammonImage} />
+            <AnimationImage src={soapImage} />
+            <AnimationImage src={catWereWolfImage} />
+            <AnimationImage src={basketImage} />
+            <AnimationImage src={abcImage} />
+            <AnimationImage src={tvImage} />
+            <AnimationImage src={girlImage} />
+          </div>
+          <div className="animation-column">
+            <AnimationImage src={catWereWolfImage} />
+            <AnimationImage src={birdsImage} />
+            <AnimationImage src={duckImage} />
+            <AnimationImage src={tvImage} />
+            <AnimationImage src={bearImage} />
+            <AnimationImage src={faceImage} />
+            <AnimationImage src={abcImage} />
+            <AnimationImage src={vansImage} />
+            <AnimationImage src={cat_turnaroundImage} />
+            <AnimationImage src={pennywiseImage} />
+            <AnimationImage src={backgammonImage} />
+            <AnimationImage src={beachImage} />
+            <AnimationImage src={babyImage} />
+            <AnimationImage src={paddleboardsImage} />
+            <AnimationImage src={photographyImage} />
+            <AnimationImage src={publishingImage} />
+            <AnimationImage src={soapImage} />
+            <AnimationImage src={campingImage} />
+            <AnimationImage src={basketImage} />
+            <AnimationImage src={girlImage} />
+            <AnimationImage src={rosesImage} />
+          </div>
         </div>
-        <div className="animation-column" id="column-2">
-          <AnimationImage src={beachImage} />
-          <AnimationImage src={cat_turnaroundImage} />
-          <AnimationImage src={birdsImage} />
-          <AnimationImage src={babyImage} />
-          <AnimationImage src={paddleboardsImage} />
-          <AnimationImage src={photographyImage} />
-          <AnimationImage src={publishingImage} />
-          <AnimationImage src={bearImage} />
-          <AnimationImage src={rosesImage} />
-          <AnimationImage src={campingImage} />
-          <AnimationImage src={duckImage} />
-          <AnimationImage src={faceImage} />
-          <AnimationImage src={vansImage} />
-          <AnimationImage src={pennywiseImage} />
-          <AnimationImage src={backgammonImage} />
-          <AnimationImage src={soapImage} />
-          <AnimationImage src={catWereWolfImage} />
-          <AnimationImage src={basketImage} />
-          <AnimationImage src={abcImage} />
-          <AnimationImage src={tvImage} />
-          <AnimationImage src={girlImage} />
-        </div>
-        <div className="animation-column">
-          <AnimationImage src={catWereWolfImage} />
-          <AnimationImage src={birdsImage} />
-          <AnimationImage src={duckImage} />
-          <AnimationImage src={tvImage} />
-          <AnimationImage src={bearImage} />
-          <AnimationImage src={faceImage} />
-          <AnimationImage src={abcImage} />
-          <AnimationImage src={vansImage} />
-          <AnimationImage src={cat_turnaroundImage} />
-          <AnimationImage src={pennywiseImage} />
-          <AnimationImage src={backgammonImage} />
-          <AnimationImage src={beachImage} />
-          <AnimationImage src={babyImage} />
-          <AnimationImage src={paddleboardsImage} />
-          <AnimationImage src={photographyImage} />
-          <AnimationImage src={publishingImage} />
-          <AnimationImage src={soapImage} />
-          <AnimationImage src={campingImage} />
-          <AnimationImage src={basketImage} />
-          <AnimationImage src={girlImage} />
-          <AnimationImage src={rosesImage} />
-        </div>
+        <LinkButton id="illustrations" text="See more" className="" />
       </div>
-        <LinkButton
-          text="See more"
-          href="#"
-          className=""
-        />
-    </div>
     </WrapperBackground>
-  )
-}
+  );
+};
 
 export default IllustrationAnimation;

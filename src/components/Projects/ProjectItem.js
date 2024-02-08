@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import "./ProjectItem.css";
 
 import LinkButton from "../UI/LinkButton";
@@ -23,10 +22,9 @@ const ProjectItem = (props) => {
               </div>
             ))}
           </div>
-          <LinkButton text={props.name} href={props.web} className="" />
+          <LinkButton id={props.projectId} text={props.name} className="" />
         </div>
       </div>
-      <Link to={`/${props.projectId}`}>Read more</Link>
     </div>
   );
 };
