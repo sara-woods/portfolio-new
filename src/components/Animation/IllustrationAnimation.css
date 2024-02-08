@@ -5,22 +5,25 @@
 .animation-mask {
   height: 700px;
   width: 800px;
-  /* overflow: hidden; */
+  overflow: hidden;
   display: flex;
   gap: 16px;
   border-radius: 16px;
   width: fit-content;
+  --animation-offset: 7700px;
+  --animation-duration: 45s;
+  margin-bottom: 32px;
 }
 
 @keyframes changeYup {
   100% {
-    transform: translateY(-100%);
+    transform: translateY(calc(var(--animation-offset)*-1));
   }
 }
 
 @keyframes changeYdown {
   100% {
-    transform: translateY(100%);
+    transform: translateY(var(--animation-offset));
   }
 }
 
@@ -28,30 +31,42 @@
   display: flex;
   flex-direction: column;
   gap: 16px;
-  /* animation-name: changeYup; */
-  animation-duration: 5s;
+  animation-name: changeYup;
+  animation-duration: var(--animation-duration);
   animation-iteration-count: infinite;
   animation-direction: alternate;
   animation-timing-function: linear;
 }
 
 .animation-column:nth-child(even) {
-  margin-top: -100%;
-  /* animation-name: changeYdown; */
-  animation-duration: 5s;
+  margin-top: calc(var(--animation-offset)*-1);
+  animation-name: changeYdown;
+  animation-duration: var(--animation-duration);
   animation-iteration-count: infinite;
   animation-direction: alternate;
   animation-timing-function: linear;
 }
 
+@media screen and (max-width: 1350px) {
+  .animation-mask {
+    --animation-offset: 5500px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .animation-mask {
+    --animation-offset: 4000px;
+  }
+}
 @media screen and (max-width: 750px) {
   .animation-mask {
     height: 500px;
+    --animation-offset: 3000px;
   }
 }
 @media screen and (max-width: 550px) {
   .animation-mask {
     height: 400px;
+    --animation-offset: 2000px;
   }
 }
 @media screen and (max-width: 400px) {
@@ -59,7 +74,18 @@
       gap: 8px;
   }
   .animation-mask {
+    --animation-offset: 1000px;
     height: 300px;
     gap: 8px;
+  }
+}
+@media screen and (max-width: 250px) {
+  .animation-mask {
+    --animation-offset: 500px;
+  }
+}
+@media screen and (max-width: 150px) {
+  .animation-mask {
+    --animation-offset: 300px;
   }
 }

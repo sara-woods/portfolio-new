@@ -1,6 +1,5 @@
-import { useState } from "react";
-
 import WrapperBackground from "../UI/WrapperBackground";
+import LinkButton from "../UI/LinkButton";
 import AnimationImage from "./AnimationImage";
 import "./IllustrationAnimation.css";
 
@@ -25,37 +24,9 @@ import publishingImage from "../../images/publishing.jpg";
 import photographyImage from "../../images/photography.jpg";
 import paddleboardsImage from "../../images/paddleboards.jpg";
 import babyImage from "../../images/baby.jpg";
-import { useEffect } from "react";
+
 
 const IllustrationAnimation = () => {
-  // const [columnHeight, setColumnHeight] = useState("-100%");
-
-  // useEffect(() => {
-  //   let height = -Math.abs(document.getElementById('column-2').scrollHeight);
-  //   setColumnHeight(height);
-  //   console.log(height)
-
-    // let style = document.createElement('style');
-
-    // style.innerHTML = `
-    //   @keyframes changeYup {
-    //     100% {
-    //       transform: translateY(${height}px);
-    //     }
-    //   }
-
-    //   @keyframes changeYdown {
-    //     100% {
-    //       transform: translateY(${height}px);
-    //     }
-    //   }
-    //   `;
-
-    // document.head.appendChild(style);
-    // },[]);
-
-
-
   return (
     <WrapperBackground className="overlap" backgroundColor="#dbd7d7">
       <div className="main-container" id="scroll-illustration">
@@ -132,6 +103,11 @@ const IllustrationAnimation = () => {
           <AnimationImage src={rosesImage} />
         </div>
       </div>
+        <LinkButton
+          text="See more"
+          href="#"
+          className=""
+        />
     </div>
     </WrapperBackground>
   )
