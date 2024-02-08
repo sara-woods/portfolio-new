@@ -10,7 +10,6 @@ const ProjectItem = (props) => {
   return (
     <div className="project-container">
       <div className="project-item">
-
         <div className="image-container">
           <div className="image" style={style}></div>
         </div>
@@ -23,13 +22,8 @@ const ProjectItem = (props) => {
               </div>
             ))}
           </div>
-            <LinkButton
-              text={props.name}
-              href={props.web}
-              className=""
-            />
+          <LinkButton id={props.projectId} text={props.name} className="" />
         </div>
-
       </div>
     </div>
   );
