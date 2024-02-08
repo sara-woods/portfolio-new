@@ -28,7 +28,7 @@ import babyImage from "../../images/baby.jpg";
 
 const IllustrationAnimation = () => {
   return (
-    <WrapperBackground className="overlap" backgroundColor="#dbd7d7">
+    <WrapperBackground id="wrapper-animation" backgroundColor="#dbd7d7">
       <div className="main-container" id="scroll-illustration">
       <h1>Illustration & logo design</h1>
       <div className="animation-mask">
@@ -55,7 +55,6 @@ const IllustrationAnimation = () => {
           <AnimationImage src={babyImage} />
           <AnimationImage src={tvImage} />
         </div>
-        {/* <div className="animation-column" id="column-2" style={{ marginTop: `${columnHeight}px`}}> */}
         <div className="animation-column" id="column-2">
           <AnimationImage src={beachImage} />
           <AnimationImage src={cat_turnaroundImage} />

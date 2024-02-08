@@ -86,11 +86,6 @@ a:hover {
   border-radius: 100px 100px 0 0;
 }
 
-.wrapper-background.overlap {
-  position: relative;
-  top: -100px;
-}
-
 @media screen and (max-width: 900px) {
   .wrapper-background {
     border-radius: 80px 80px 0 0;

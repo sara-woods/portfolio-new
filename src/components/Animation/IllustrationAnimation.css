@@ -1,3 +1,9 @@
+#wrapper-animation {
+  position: relative;
+  margin-top: -100px;
+  z-index: 1000;
+}
+
 .animation-image {
   width: 100%;
 }
