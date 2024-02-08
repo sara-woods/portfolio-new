@@ -30,49 +30,58 @@ const Illustrations = () => {
     <>
       <Navbar />
       <div className="main-container">
-        <IllustrationItem
-          src={tvImage}
-          alt="Vintage tv flying among the clouds"
-        />
-        <IllustrationItem src={backgammonImage} alt="Cat playing backgammon" />
-        <IllustrationItem src={birdsImage} alt="Birds in watercolor and ink" />
-        <IllustrationItem
-          src={bearImage}
-          alt="Bear listening to music in his room"
-        />
-        <IllustrationItem
-          src={vansImage}
-          alt="old vans shoes in watercolor and ink"
-        />
-        <IllustrationItem
-          src={catWereWolfImage}
-          alt="Cat-werewolf in a pumpkin"
-        />
-        <IllustrationItem src={duckGif} alt="Walking duck animation" />
-        <IllustrationItem
-          src={faceImage}
-          alt="A girls face in watercolor with thick eyeliner"
-        />
-        <IllustrationItem
-          src={catGif}
-          alt="Black and white cat turnaround animation"
-        />
-        <IllustrationItem
-          src={abcImage}
-          alt="The alphabet as different figures"
-        />
-        <IllustrationItem
-          src={basketImage}
-          alt="A basket in a rubber hose retro style"
-        />
-        <IllustrationItem
-          src={girlImage}
-          alt="Crying girl in halftone asking for vegan chocolate in vintage comic book halftone style"
-        />
-        <IllustrationItem
-          src={clownImage}
-          alt="Pennywise the clown in rubber hose retro style"
-        />
+        <h1>Illustrations</h1>
+        <div className="illustrations-container">
+          <IllustrationItem
+            src={tvImage}
+            alt="Vintage tv flying among the clouds"
+          />
+          <IllustrationItem
+            src={backgammonImage}
+            alt="Cat playing backgammon"
+          />
+          <IllustrationItem
+            src={birdsImage}
+            alt="Birds in watercolor and ink"
+          />
+          <IllustrationItem
+            src={bearImage}
+            alt="Bear listening to music in his room"
+          />
+          <IllustrationItem
+            src={vansImage}
+            alt="old vans shoes in watercolor and ink"
+          />
+          <IllustrationItem
+            src={catWereWolfImage}
+            alt="Cat-werewolf in a pumpkin"
+          />
+          <IllustrationItem src={duckGif} alt="Walking duck animation" />
+          <IllustrationItem
+            src={faceImage}
+            alt="A girls face in watercolor with thick eyeliner"
+          />
+          <IllustrationItem
+            src={catGif}
+            alt="Black and white cat turnaround animation"
+          />
+          <IllustrationItem
+            src={abcImage}
+            alt="The alphabet as different figures"
+          />
+          <IllustrationItem
+            src={basketImage}
+            alt="A basket in a rubber hose retro style"
+          />
+          <IllustrationItem
+            src={girlImage}
+            alt="Crying girl in halftone asking for vegan chocolate in vintage comic book halftone style"
+          />
+          <IllustrationItem
+            src={clownImage}
+            alt="Pennywise the clown in rubber hose retro style"
+          />
+        </div>
       </div>
       <Contact />
       <Footer />

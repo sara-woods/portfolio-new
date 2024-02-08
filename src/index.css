@@ -86,20 +86,9 @@ a:hover {
   border-radius: 100px 100px 0 0;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 950px) {
   .wrapper-background {
     border-radius: 80px 80px 0 0;
-  }
-  .main-container {
-    padding-top: 60px;
-  }
-  h1 {
-    font-size: 64px;
-  }
-}
-@media screen and (max-width: 650px) {
-  .wrapper-background {
-    border-radius: 60px 60px 0 0;
   }
   .main-container {
     padding-top: 60px;
@@ -108,12 +97,23 @@ a:hover {
     font-size: 56px;
   }
 }
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 750px) {
+  .wrapper-background {
+    border-radius: 60px 60px 0 0;
+  }
   .main-container {
     padding-top: 60px;
   }
   h1 {
-    font-size: 42px;
+    font-size: 48px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .main-container {
+    padding-top: 60px;
+  }
+  h1 {
+    font-size: 36px;
   }
 }
 @media screen and (max-width: 450px) {
@@ -124,6 +124,6 @@ a:hover {
     padding-top: 60px;
   }
   h1 {
-    font-size: 32px;
+    font-size: 24px;
   }
 }

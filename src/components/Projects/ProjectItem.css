@@ -3,7 +3,7 @@
   max-width: 1200px;
 }
 
-.project-container:nth-child(even) {
+.project-container:nth-child(odd) {
   margin-left: auto;
   margin-right: 0;
 }

@@ -1,9 +1,29 @@
+.illustrations-container {
+  margin: 0 auto 0 auto;
+  /* max-width: 1200px; */
+}
+
 .illustration-container {
   width: fit-content;
   margin: 50px auto 50px auto;
+}
+.illustration-container:first-child {
+  margin-top: 0;
+}
+.illustration-container:last-child {
+  margin-bottom: 0;
 }
 
 .illustration {
   width: 100%;
   border-radius: 8px;
+}
+
+.illustration-container:nth-child(even) {
+  margin-left: auto;
+  margin-right: 0;
+}
+.illustration-container:nth-child(odd) {
+  margin-left: 0;
+  margin-right: auto;
 }
