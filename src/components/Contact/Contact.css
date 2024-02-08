@@ -1,27 +1,36 @@
-#contact {
-  max-width: 800px;
-  margin: -80px auto 200px auto;
-  padding-top: 80px;
+#wrapper-contact {
+  position: relative;
+  margin-top: -100px;
+  z-index: 1000;
 }
 
-#contact p {
-  overflow-wrap: break-word;
+#scroll-contact {
+  padding-bottom: 80px;
 }
 
-.contact-link {
-  transition: 0.2s ease-in;
-  color: var(--orange);
-  font-weight: 400;
+#scroll-contact a {
   text-decoration: none;
-}
-
-#contact a:hover {
+  font-weight: 500;
   color: var(--black);
+  font-size: 2rem;
 }
 
-@media screen and (max-width: 974px) {
-  #contact {
-    margin-top: -300px;
-    padding-top: 300px;
+#scroll-contact a:hover {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 550px) {
+#scroll-contact a {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 450px) {
+#scroll-contact a {
+    font-size: 1.2rem;
+  }
+}
+@media screen and (max-width: 310px) {
+#scroll-contact a {
+    font-size: 1rem;
   }
 }

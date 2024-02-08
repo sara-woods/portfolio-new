@@ -1,65 +1,51 @@
-#intro-container {
-  max-width: 800px;
-  margin: 0 auto;
-  margin-top: 150px;
-  margin-bottom: 200px;
-}
-
-#intro {
+.intro-container {
+  padding: 25% 0 80px 0;
   display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-  position: relative;
-  margin-bottom: 40px;
+  flex-direction: column;
+  /* width: 100%; */
 }
 
-/* .tech-stack {
+.intro-top {
+  margin-bottom: 80px;
+  line-height: 1.4em;
+  font-size: 2rem;
+}
+
+.intro-bottom {
   display: flex;
-} */
-
-.contact-button-screen {
-  display: none !important;
+  justify-content: end;
+  gap: 120px;
+  font-size: 1.5rem;
 }
 
-.intro-left {
-  width: 60%;
-  height: 100%;
+.intro-email a {
+  text-decoration: none;
+  font-weight: 500;
+  color: var(--black);
 }
 
-#portrait {
-  width: 35%;
-  object-fit: cover;
-  object-position: center;
-  border-radius: 8px;
-}
-
-@media screen and (max-width: 500px) {
-  #intro {
-    margin-top: 70px;
-  }
-  /* .tech-stack {
-    display: initial;
-  } */
+.logo {
+  width: 128px;
+  margin-bottom: 24px;
 }
 
 @media screen and (max-width: 750px) {
-  #intro-container {
-    margin-bottom: 126px;
-  }
-  #intro {
-    display: block;
-  }
-  .intro-left,
-  #portrait {
-    width: 100%;
-    margin-top: 42px;
+  .intro-top {
+      margin-bottom: 60px;
+      line-height: 1.4em;
+      font-size: 1.4rem;
   }
 
-  .contact-button {
-    display: none !important;
+  .intro-bottom {
+    gap: 56px;
+    font-size: 1rem;
   }
+}
 
-  .contact-button-screen {
-    display: inline-block !important;
+@media screen and (max-width: 400px) {
+  .intro-bottom {
+    flex-direction: column;
+    gap: 32px;
+    font-size: 1rem;
   }
 }

@@ -7,15 +7,18 @@
   opacity: 0.7;
 }
 
+#name {
+  font-family: 'Dela Gothic One', sans-serif;
+  cursor: pointer;
+}
+
 header {
-  border-bottom: 2px solid var(--black);
   display: flex;
   align-items: center;
   justify-content: space-between;
   height: 100px;
-  padding: 10px 3%;
-  background-color: var(--bg);
-  position: sticky;
+  padding: 10px 4%;
+  /* position: sticky; */
   top: 0;
   z-index: 500;
 }
@@ -39,8 +42,14 @@ nav a {
   margin: 0 1.5rem;
   color: var(--black);
   text-decoration: none;
-  font-weight: 700;
-  font-size: 18px;
+  font-weight: 600;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+nav a:nth-last-child(2) {
+  margin-right: 0;
 }
 
 nav a:hover {
@@ -171,5 +180,11 @@ input:checked + .slider:before {
 
   .lang-switch-container {
     margin-right: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .navbar-logo {
+    width: 60px;
   }
 }

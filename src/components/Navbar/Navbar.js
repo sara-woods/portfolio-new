@@ -12,9 +12,9 @@ const Navbar = () => {
   const ctx = useContext(ProjectContext);
 
   const navLinks = {
-    webDev: "Web development/design",
-    illustrations: "Illustrations",
-    graphicDesign: "Graphic design",
+    webDev: "Projects",
+    illustrations: "Illustration",
+    about: "About",
     contact: "Contact",
   }
 
@@ -36,11 +36,12 @@ const Navbar = () => {
   return (
     <header>
       <a href="#top" tabIndex="0"><img className="navbar-logo" src={logo} alt="logo sara woods" /></a>
+      {/* <p id="name">SARA WOODS</p> */}
       <nav ref={navRef} className={`${showResponsiveNavbar ? "responsive-nav" : ""}`}>
-        <a href="#projects" data-page="1" onClick={handleNavLinkClick}>{navLinks.webDev}</a>
-        <a href="#projects" data-page="2" onClick={handleNavLinkClick}>{navLinks.illustrations}</a>
-        <a href="#projects" data-page="3" onClick={handleNavLinkClick}>{navLinks.graphicDesign}</a>
-        <a href="#contact" onClick={handleNavLinkClick}>{navLinks.contact}</a>
+        <a href="#scroll-projects" data-page="1" onClick={handleNavLinkClick}>{navLinks.webDev}</a>
+        <a href="#scroll-illustration" data-page="2" onClick={handleNavLinkClick}>{navLinks.illustrations}</a>
+        <a href="#scroll-about" data-page="3" onClick={handleNavLinkClick}>{navLinks.about}</a>
+        <a href="#scroll-contact" onClick={handleNavLinkClick}>{navLinks.contact}</a>
         <button className="nav-btn nav-close-btn" onClick={toggleResponsiveNavbar}>
           <FontAwesomeIcon icon={faTimes} />
         </button>
