@@ -34,8 +34,8 @@ const Homepage = () => {
         <Intro />
         <Projects />
         <IllustrationAnimation />
-        <Contact />
-        <Footer />
+        <Contact backgroundColor="#F2F2F2" />
+        <Footer backgroundColor="#F2F2F2" />
       </div>
     </ProjectContextProvider>
   );
