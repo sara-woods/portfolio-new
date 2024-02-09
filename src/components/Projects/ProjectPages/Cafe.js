@@ -108,7 +108,7 @@ const Cafe = () => {
               </div>
             </div>
           </div>
-          {/* <div className="case-study-section">
+          <div className="case-study-section">
             <h4>Accessibility check</h4>
             <p className="text-grey">
               Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem
@@ -122,7 +122,7 @@ const Cafe = () => {
               alt="Café UI design"
             />
           </div>
-          <div
+          {/* <div
             className="case-study-section"
             style={{ backgroundColor: "lightblue" }}
           >
