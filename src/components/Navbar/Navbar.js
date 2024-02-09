@@ -24,9 +24,7 @@ const Navbar = () => {
   };
 
   const handleNavLinkClick = (event) => {
-    if (event.currentTarget.hasAttribute("data-page")) {
-      ctx.handlePageChange(event);
-    }
+    ctx.handlePageChange(event);
     hideResponsiveNavbar();
   };
 
@@ -49,18 +47,18 @@ const Navbar = () => {
         ref={navRef}
         className={`${showResponsiveNavbar ? "responsive-nav" : ""}`}
       >
-        <a href="#scroll-projects" data-page="1">
+        <Link to="/#scroll-projects" onClick={handleNavLinkClick}>
           {navLinks.webDev}
-        </a>
-        <Link to="/illustrations" data-page="2">
+        </Link>
+        <Link to="/illustrations" onClick={handleNavLinkClick}>
           {navLinks.illustrations}
         </Link>
-        <a href="#scroll-about" data-page="3">
+        <Link to="#scroll-about" onClick={handleNavLinkClick}>
           {navLinks.about}
-        </a>
-        <a href="#scroll-contact" onClick={handleNavLinkClick}>
+        </Link>
+        <Link to="/#scroll-contact" onClick={handleNavLinkClick}>
           {navLinks.contact}
-        </a>
+        </Link>
         <button
           className="nav-btn nav-close-btn"
           onClick={toggleResponsiveNavbar}
