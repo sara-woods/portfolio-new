@@ -1,4 +1,5 @@
 import { useParams } from "react-router-dom";
+import "./ProjectPage.css";
 
 import UXJobsBoard from "./UXJobsBoard";
 import MovieGenerator from "./MovieGenerator";
