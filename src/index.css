@@ -81,6 +81,9 @@ p {
 .font-2rem {
   font-size: 2rem !important;
 }
+.font-1-5rem {
+  font-size: 1.5rem !important;
+}
 
 ul {
   margin: 0;

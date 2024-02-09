@@ -5,6 +5,8 @@ import "./ProjectPage.css";
 import ColorSwatch from "../../UI/ColorSwatch";
 import ColorBackground from "../../UI/ColorBackground";
 import LinkButton from "../../UI/LinkButton";
+import Contact from "../../Contact/Contact";
+import Footer from "../../Footer/Footer";
 
 const technologies = ["UI Design", "Webflow", "CMS"];
 
@@ -147,6 +149,8 @@ const Cafe = () => {
           </div>
         </div>
       </ColorBackground>
+      <Contact caseStudy={true} backgroundColor="teal" />
+      <Footer backgroundColor="teal" />
     </>
   );
 };
