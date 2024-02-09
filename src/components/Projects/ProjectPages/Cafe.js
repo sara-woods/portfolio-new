@@ -3,6 +3,8 @@ import Navbar from "../../Navbar/Navbar";
 import cafeImage from "../../../images/cafe.png";
 import "./ProjectPage.css";
 import ColorSwatch from "../../UI/ColorSwatch";
+import ColorBackground from "../../UI/ColorBackground";
+import LinkButton from "../../UI/LinkButton";
 
 const technologies = ["UI Design", "Webflow", "CMS"];
 
@@ -19,7 +21,8 @@ const Cafe = () => {
   return (
     <>
       <Navbar />
-      <div className="main-container">
+
+      <div className="main-container mb-0">
         <div className="case-study-container">
           <img
             // onContextMenu={handleRightClick}
@@ -32,6 +35,7 @@ const Cafe = () => {
           <p className="text-grey case-study-body">
             Landing page for fictional café
           </p>
+
           <div className="tech-tags">
             {technologies.map((techname) => (
               <div key={techname}>
@@ -39,6 +43,7 @@ const Cafe = () => {
               </div>
             ))}
           </div>
+
           <div className="case-study-info">
             <div>
               <p className="text-grey">What</p>
@@ -64,6 +69,7 @@ const Cafe = () => {
             </div>
           </div>
 
+          {/* ----------------------------------------------------- */}
           <div className="case-study-section">
             <h4>Visual design</h4>
             <p className="text-grey">
@@ -108,6 +114,7 @@ const Cafe = () => {
               </div>
             </div>
           </div>
+          {/* ----------------------------------------------------- */}
           <div className="case-study-section">
             <h4>Accessibility check</h4>
             <p className="text-grey">
@@ -122,20 +129,24 @@ const Cafe = () => {
               alt="Café UI design"
             />
           </div>
-          {/* <div
-            className="case-study-section"
-            style={{ backgroundColor: "lightblue" }}
-          >
+          {/* ----------------------------------------------------- */}
+        </div>
+      </div>
+
+      <ColorBackground backgroundColor="lightblue">
+        <div className="main-section">
+          <div className="video-section">
             <img
               // onContextMenu={handleRightClick}
               // onDragStart={handleDrag}
-              className="cover-image"
+              style={{ width: "400px" }}
               src={cafeImage}
               alt="Café UI design"
             />
-          </div> */}
+            <LinkButton text="Visit site" className="mt-4" />
+          </div>
         </div>
-      </div>
+      </ColorBackground>
     </>
   );
 };

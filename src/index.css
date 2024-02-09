@@ -18,7 +18,7 @@ body {
 
 .main-container {
   margin: 0 4%;
-  padding: 88px 0 200px 0;
+  padding: 80px 0 80px 0;
 }
 
 html {
@@ -123,7 +123,6 @@ a:hover {
 
 .wrapper-background {
   margin: 0 auto;
-  background-color: #ebe5de;
   border-radius: 100px 100px 0 0;
 }
 
