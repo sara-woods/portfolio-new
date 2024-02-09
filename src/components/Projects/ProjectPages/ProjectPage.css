@@ -13,7 +13,6 @@
   margin-bottom: 32px;
 }
 
-
 .case-study-container p {
   font-size: 1.5rem;
 }
@@ -33,13 +32,6 @@
   margin-bottom: 72px;
 }
 
-.text-grey {
-  color: #6D6D6F;
-}
-.weight-700 {
-  font-weight: 700;
-}
-
 .why-container {
   border-radius: 16px;
   display: flex;
@@ -51,6 +43,24 @@
   padding: 40px 32px;
 }
 
+.swatch-group-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.color-font-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 16px;
+}
+
+@media screen and (max-width: 750px) {
+  .color-font-info {
+    grid-template-columns: 1fr;
+  }
+}
 @media screen and (max-width: 650px) {
   .case-study-container p {
     font-size: 1.25rem;

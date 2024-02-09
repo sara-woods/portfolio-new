@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import Navbar from "../../Navbar/Navbar";
 import cafeImage from "../../../images/cafe.png";
 import "./ProjectPage.css";
+import ColorSwatch from "../../UI/ColorSwatch";
 
 const technologies = ["UI Design", "Webflow", "CMS"];
 
@@ -38,7 +39,7 @@ const Cafe = () => {
               </div>
             ))}
           </div>
-          <div className="case-study-info" style={{backgroundColor: "#E6F5F1";}}>
+          <div className="case-study-info">
             <div>
               <p className="text-grey">What</p>
               <p className="weight-700">Landing page</p>
@@ -53,7 +54,7 @@ const Cafe = () => {
             </div>
           </div>
 
-          <div className="why-container">
+          <div className="why-container" style={{ backgroundColor: "#E6F5F1" }}>
             <div id="why-text">
               <p className="weight-700 mb-4">Why I made this project</p>
               <p className="text-grey">
@@ -62,6 +63,77 @@ const Cafe = () => {
               </p>
             </div>
           </div>
+
+          <div className="case-study-section">
+            <h4>Visual design</h4>
+            <p className="text-grey">
+              Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem
+              ipsum Lorem ipsum Lorem ipsumLorem ipsumLorem ipsumLorem ipsum
+            </p>
+            <div className="color-font-info">
+              <div>
+                <h5 className="mt-5">Color</h5>
+                <div className="swatch-group-container">
+                  <ColorSwatch
+                    backgroundColor="red"
+                    hex="#F2F2F2"
+                    name="Text secondary"
+                  />
+                  <ColorSwatch
+                    backgroundColor="blue"
+                    hex="#F2F2F2"
+                    name="Text secondary"
+                  />
+                  <ColorSwatch
+                    backgroundColor="green"
+                    hex="#F2F2F2"
+                    name="Text secondary"
+                  />
+                  <ColorSwatch
+                    backgroundColor="yellow"
+                    hex="#F2F2F2"
+                    name="Text secondary"
+                  />
+                </div>
+              </div>
+
+              <div>
+                <h5 className="mt-5">Font</h5>
+                <p className="mb-1">Courier Prime</p>
+                <p className="mb-1">Regular, Medium, Bold</p>
+                <p className="courier-prime font-2rem mb-4">AaBbCcDdEeFfGg</p>
+                <p>Londrina Solid</p>
+                <p>Regular</p>
+                <p className="londrina font-2rem">AaBbCcDdEeFfGg</p>
+              </div>
+            </div>
+          </div>
+          {/* <div className="case-study-section">
+            <h4>Accessibility check</h4>
+            <p className="text-grey">
+              Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem
+              ipsum Lorem ipsum Lorem ipsumLorem ipsumLorem ipsumLorem ipsum
+            </p>
+            <img
+              // onContextMenu={handleRightClick}
+              // onDragStart={handleDrag}
+              className="cover-image"
+              src={cafeImage}
+              alt="Café UI design"
+            />
+          </div>
+          <div
+            className="case-study-section"
+            style={{ backgroundColor: "lightblue" }}
+          >
+            <img
+              // onContextMenu={handleRightClick}
+              // onDragStart={handleDrag}
+              className="cover-image"
+              src={cafeImage}
+              alt="Café UI design"
+            />
+          </div> */}
         </div>
       </div>
     </>
