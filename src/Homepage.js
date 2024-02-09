@@ -8,7 +8,7 @@ import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
 import Navbar from "./components/Navbar/Navbar";
 import { ProjectContextProvider } from "./store/project-context";
-
+import ScrollToHashElement from "./ScrollToHashElement";
 const Homepage = () => {
   useEffect(() => {
     document.title =
@@ -28,6 +28,7 @@ const Homepage = () => {
 
   return (
     <ProjectContextProvider>
+      <ScrollToHashElement />
       <Navbar />
       <div className="app">
         <Intro />
