@@ -2,7 +2,7 @@ import ProjectItem from "./ProjectItem";
 
 import whatmovieImage from "../../images/whatmovie_small.png";
 import watchdominionImage from "../../images/watchdominion.png";
-import cafeImage from "../../images/cafe.png";
+import cafeImage from "../../images/Cafe/cafe-cover-image.png";
 
 const projectData = [
   {

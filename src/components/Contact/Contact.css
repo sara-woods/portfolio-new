@@ -12,25 +12,33 @@
   text-decoration: none;
   font-weight: 500;
   color: var(--black);
-  font-size: 2rem;
+  font-size: 1.5rem;
+}
+
+.extra-paragraph {
+  font-size: 1.5rem;
 }
 
 #scroll-contact a:hover {
   text-decoration: underline;
 }
 
-@media screen and (max-width: 550px) {
-#scroll-contact a {
-    font-size: 1.5rem;
+.contact-header {
+  text-transform: none;
+}
+
+@media screen and (min-width: 551px) {
+  .contact-header {
+      font-size: 60px;
   }
 }
 @media screen and (max-width: 450px) {
-#scroll-contact a {
+  #scroll-contact a, .extra-paragraph {
     font-size: 1.2rem;
   }
 }
 @media screen and (max-width: 310px) {
-#scroll-contact a {
+  #scroll-contact a, .extra-paragraph {
     font-size: 1rem;
   }
 }
