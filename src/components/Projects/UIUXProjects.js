@@ -3,6 +3,7 @@ import ProjectItem from "./ProjectItem";
 import movieImage from "../../images/Movie/movie-cover-image.png";
 import watchdominionImage from "../../images/WatchDominion/watchdominion-cover-image.png";
 import cafeImage from "../../images/Cafe/cafe-cover-image.png";
+import uxjobsboardImage from "../../images/UXjobsboard/uxjobsboard-cover-image.png";
 
 const projectData = [
   {
@@ -10,7 +11,7 @@ const projectData = [
     projectId: "uxjobsboard",
     name: "UX Jobs Board",
     technologies: ["UX Research", "UX Design", "UI Design"],
-    image: cafeImage,
+    image: uxjobsboardImage,
   },
   {
     id: 2,
