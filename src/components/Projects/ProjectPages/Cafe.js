@@ -123,10 +123,10 @@ const Cafe = () => {
 
                 <div>
                   <h5 className="mt-5">Font</h5>
-                  <p className="mb-1">Courier Prime (Regular, Medium, Bold)</p>
+                  <p className="mb-2">Courier Prime (Regular, Medium, Bold)</p>
                   <p className="courier-prime font-2rem mb-4">AaBbCcDdEeFfGg</p>
                   <p>Londrina Solid (Regular)</p>
-                  <p className="londrina font-2rem">AaBbCcDdEeFfGg</p>
+                  <p className="londrina font-2rem mb-2">AaBbCcDdEeFfGg</p>
                   <img
                     src={cafeArrow}
                     style={{ width: "250px", margin: "8px 0 0 24px" }}
