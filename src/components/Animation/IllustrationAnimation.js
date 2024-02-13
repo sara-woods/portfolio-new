@@ -30,7 +30,10 @@ import babyImage from "../../images/baby.jpg";
 const IllustrationAnimation = () => {
   return (
     <WrapperBackground id="wrapper-animation" backgroundColor="#dbd7d7">
-      <div className="main-container" id="scroll-illustration">
+      <div
+        className="main-container extra-bottom-padding"
+        id="scroll-illustration"
+      >
         <h1>Illustration & logo design</h1>
         <div className="animation-mask">
           <div className="animation-column">

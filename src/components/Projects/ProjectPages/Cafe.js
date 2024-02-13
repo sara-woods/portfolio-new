@@ -1,14 +1,19 @@
 import { useEffect } from "react";
-import Navbar from "../../Navbar/Navbar";
-import cafeImage from "../../../images/cafe.png";
 import "./ProjectPage.css";
+
+import Navbar from "../../Navbar/Navbar";
 import ColorSwatch from "../../UI/ColorSwatch";
 import ColorBackground from "../../UI/ColorBackground";
 import LinkButton from "../../UI/LinkButton";
 import Contact from "../../Contact/Contact";
 import Footer from "../../Footer/Footer";
 
-const technologies = ["UI Design", "Webflow", "CMS"];
+import cafeCoverImage from "../../../images/Cafe/cafe-cover-image.png";
+import cafeAccessibilityImage from "../../../images/Cafe/cafe-accessibility.png";
+import cafeGif from "../../../images/Cafe/cafe-gif.gif";
+import cafeArrow from "../../../images/Cafe/cafe-font-arrow.png";
+
+const technologies = ["UI Design", "Responsive", "Webflow", "CMS"];
 
 const Cafe = () => {
   // Scroll to top of page from react-router Link
@@ -24,18 +29,18 @@ const Cafe = () => {
     <>
       <Navbar />
 
-      <div className="main-container mb-0">
+      <div className="main-container">
         <div className="case-study-container">
           <img
             // onContextMenu={handleRightClick}
             // onDragStart={handleDrag}
             className="cover-image"
-            src={cafeImage}
+            src={cafeCoverImage}
             alt="Café UI design"
           />
           <h3 className="">Café landing page</h3>
           <p className="text-grey case-study-body">
-            Landing page for fictional café
+            A landing page for a fictional café
           </p>
 
           <div className="tech-tags">
@@ -57,7 +62,7 @@ const Cafe = () => {
             </div>
             <div>
               <p className="text-grey">Role</p>
-              <p className="weight-700">UI Design, development</p>
+              <p className="weight-700">UI Design, Webflow development</p>
             </div>
           </div>
 
@@ -65,92 +70,112 @@ const Cafe = () => {
             <div id="why-text">
               <p className="weight-700 mb-4">Why I made this project</p>
               <p className="text-grey">
-                Exploring my proficiency with Webflow, I embarked on the
-                creation of a vibrant landing page for an imaginary café.
+                Exploring my proficiency with Webflow, I decided to create a
+                vibrant landing page for an imaginary café.
               </p>
             </div>
           </div>
+        </div>
+      </div>
+      {/* ----------------------------------------------------- */}
+      <ColorBackground backgroundColor="#EAF9FB">
+        <div className="main-container">
+          <div className="case-study-container">
+            <div
+              className="case-study-section"
+              style={{ marginBottom: "80px" }}
+            >
+              <h4>Visual interface definitions</h4>
+              <p className="text-grey">
+                I was inspired by the lively ambiance of the café's interior,
+                and decided to incorporate a teal color drawn from the wall
+                color inside the café. To enhance visual appeal, I added a
+                complimentary pink accent. The imagery on the page mimics large
+                arched windows, adding a touch of elegance to the overall
+                design.
+              </p>
+              <div className="color-font-info">
+                <div>
+                  <h5 className="mt-5">Color</h5>
+                  <div className="swatch-group-container">
+                    <ColorSwatch
+                      backgroundColor="#EFC3F5"
+                      hex="#EFC3F5"
+                      name="Main accent"
+                    />
+                    <ColorSwatch
+                      backgroundColor="#2EA3B2"
+                      hex="#2EA3B2"
+                      name="Primary"
+                    />
+                    <ColorSwatch
+                      backgroundColor="#E6F5F1"
+                      hex="#E6F5F1"
+                      name="Secondary"
+                    />
+                    <ColorSwatch
+                      backgroundColor="#334E58"
+                      hex="#334E58"
+                      name="Dark"
+                    />
+                  </div>
+                </div>
 
-          {/* ----------------------------------------------------- */}
-          <div className="case-study-section">
-            <h4>Visual design</h4>
-            <p className="text-grey">
-              Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem
-              ipsum Lorem ipsum Lorem ipsumLorem ipsumLorem ipsumLorem ipsum
-            </p>
-            <div className="color-font-info">
-              <div>
-                <h5 className="mt-5">Color</h5>
-                <div className="swatch-group-container">
-                  <ColorSwatch
-                    backgroundColor="red"
-                    hex="#F2F2F2"
-                    name="Text secondary"
-                  />
-                  <ColorSwatch
-                    backgroundColor="blue"
-                    hex="#F2F2F2"
-                    name="Text secondary"
-                  />
-                  <ColorSwatch
-                    backgroundColor="green"
-                    hex="#F2F2F2"
-                    name="Text secondary"
-                  />
-                  <ColorSwatch
-                    backgroundColor="yellow"
-                    hex="#F2F2F2"
-                    name="Text secondary"
+                <div>
+                  <h5 className="mt-5">Font</h5>
+                  <p className="mb-1">Courier Prime (Regular, Medium, Bold)</p>
+                  <p className="courier-prime font-2rem mb-4">AaBbCcDdEeFfGg</p>
+                  <p>Londrina Solid (Regular)</p>
+                  <p className="londrina font-2rem">AaBbCcDdEeFfGg</p>
+                  <img
+                    src={cafeArrow}
+                    style={{ width: "250px", margin: "8px 0 0 24px" }}
+                    alt="Arrow describing font-style"
                   />
                 </div>
               </div>
+            </div>
+            {/* ----------------------------------------------------- */}
 
-              <div>
-                <h5 className="mt-5">Font</h5>
-                <p className="mb-1">Courier Prime</p>
-                <p className="mb-1">Regular, Medium, Bold</p>
-                <p className="courier-prime font-2rem mb-4">AaBbCcDdEeFfGg</p>
-                <p>Londrina Solid</p>
-                <p>Regular</p>
-                <p className="londrina font-2rem">AaBbCcDdEeFfGg</p>
-              </div>
+            <div className="case-study-section">
+              <h4>Accessibility check</h4>
+              <p className="text-grey">
+                The app was evaluated for contrast to match AA standards of WCAG
+                using the Color Contrast plugin in Figma.
+              </p>
+              <img
+                // onContextMenu={handleRightClick}
+                // onDragStart={handleDrag}
+                className="img-80"
+                src={cafeAccessibilityImage}
+                alt="Café accessibility check for contrast in colors"
+              />
             </div>
           </div>
-          {/* ----------------------------------------------------- */}
-          <div className="case-study-section">
-            <h4>Accessibility check</h4>
-            <p className="text-grey">
-              Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem
-              ipsum Lorem ipsum Lorem ipsumLorem ipsumLorem ipsumLorem ipsum
-            </p>
-            <img
-              // onContextMenu={handleRightClick}
-              // onDragStart={handleDrag}
-              className="cover-image"
-              src={cafeImage}
-              alt="Café UI design"
-            />
-          </div>
-          {/* ----------------------------------------------------- */}
         </div>
-      </div>
+      </ColorBackground>
+      {/* ----------------------------------------------------- */}
 
-      <ColorBackground backgroundColor="lightblue">
-        <div className="main-section">
+      <ColorBackground backgroundColor="white">
+        <div className="main-section extra-bottom-padding">
           <div className="video-section">
             <img
               // onContextMenu={handleRightClick}
               // onDragStart={handleDrag}
-              style={{ width: "400px" }}
-              src={cafeImage}
+              style={{ width: "80%", marginTop: "60px", marginBottom: "24px" }}
+              src={cafeGif}
               alt="Café UI design"
             />
-            <LinkButton text="Visit site" className="mt-4" />
+            <LinkButton text="Visit Webflow site" className="mt-4" />
           </div>
         </div>
       </ColorBackground>
-      <Contact caseStudy={true} backgroundColor="teal" />
-      <Footer backgroundColor="teal" />
+      <Contact
+        caseStudy={true}
+        backgroundColor="#EFC3F5"
+        header="Thank you for reading :)"
+      />
+      <Footer backgroundColor="#EFC3F5" />
     </>
   );
 };
