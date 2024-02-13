@@ -11,6 +11,10 @@
   padding: 24px 0;
 }
 
+.footer.text-white a {
+  color: white;
+}
+
 .social-links {
   display: flex;
 }

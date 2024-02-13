@@ -13,6 +13,14 @@
   /* transition: transform .7s ease-in-out; */
 }
 
+.link-button.white .title {
+  color: white;
+}
+
+.link-button.white path {
+  stroke: white;
+}
+
 /* Hide extra text */
 .mask {
   position: relative;
@@ -63,9 +71,9 @@
 
 
 
-.arrow {
+/* .arrow {
   margin-left: 8px;
-}
+} */
 
 .link-button:hover {
   cursor: pointer;
