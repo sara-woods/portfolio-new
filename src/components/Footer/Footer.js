@@ -26,7 +26,7 @@ const Footer = (props) => {
             <p className="">GitHub</p>
           </a>
         </div>
-        <p className="copyright">© 2024 Sara Woods</p>
+        <p className="copyright">©2024 Sara Woods</p>
       </div>
     </WrapperBackground>
   );

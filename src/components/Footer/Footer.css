@@ -36,3 +36,9 @@
 .copyright {
   font-size: 1.25rem;
 }
+
+@media screen and (max-width: 750px) {
+  .footer p, .social-links {
+    font-size: 1rem;
+  }
+}

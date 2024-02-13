@@ -31,6 +31,12 @@ color: white !important;
   text-transform: none;
 }
 
+@media screen and (max-width: 750px) {
+  .contact-container p {
+      font-size: 1rem;
+  }
+}
+/* MIN-WIDTH */
 @media screen and (min-width: 551px) {
   .contact-header {
       font-size: 60px;
