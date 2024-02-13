@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Inter:wght@400;500;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Courier+Prime&family=Londrina+Solid&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
 
 
 /* ------------ CONTAINERS  */
@@ -77,6 +79,9 @@ p {
   line-height: 160%;
 }
 
+.weight-300 {
+  font-weight: 400;
+}
 .weight-400 {
   font-weight: 400;
 }
@@ -108,6 +113,12 @@ p {
 }
 .poppins {
   font-family: "Poppins", sans-serif;
+}
+.rubik {
+  font-family: "Rubik", sans-serif;
+}
+.rocksalt {
+  font-family: "Rock Salt", cursive;
 }
 
 .font-2rem {

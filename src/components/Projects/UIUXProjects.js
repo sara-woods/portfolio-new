@@ -1,7 +1,7 @@
 import ProjectItem from "./ProjectItem";
 
 import movieImage from "../../images/Movie/movie-cover-image.png";
-import watchdominionImage from "../../images/watchdominion.png";
+import watchdominionImage from "../../images/WatchDominion/watchdominion-cover-image.png";
 import cafeImage from "../../images/Cafe/cafe-cover-image.png";
 
 const projectData = [
