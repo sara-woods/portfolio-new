@@ -23,6 +23,9 @@
   font-weight: 500;
   color: var(--black);
 }
+.intro-email a:hover {
+  text-decoration: underline;
+}
 
 .logo {
   width: 128px;
