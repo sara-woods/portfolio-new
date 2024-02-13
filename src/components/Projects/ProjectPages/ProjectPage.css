@@ -36,6 +36,7 @@
   border-radius: 16px;
   display: flex;
   justify-content: center;
+  position: relative;
 }
 
 #why-text {
@@ -67,6 +68,13 @@
   display: block;
   margin: 48px auto 0 auto;
 }
+
+.popcorn {
+  position: absolute;
+  bottom: -80px;
+  right: 100px;
+  rotate: 10deg;
+}
 @media screen and (max-width: 750px) {
   .color-font-info {
     grid-template-columns: 1fr;
@@ -79,6 +87,10 @@
   .case-study-container .tech-tag {
     font-size: 1rem;
   }
+  .popcorn {
+    width: 130px;
+    bottom: -100px;
+  }
 }
 @media screen and (max-width: 500px) {
   .case-study-container p {
@@ -86,5 +98,8 @@
   }
   .case-study-container .tech-tag {
     font-size: 0.875rem;
+  }
+  .popcorn {
+    right: 0;
   }
 }

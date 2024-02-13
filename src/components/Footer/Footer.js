@@ -7,7 +7,7 @@ const Footer = (props) => {
       id="footer-wrapper"
       backgroundColor={props.backgroundColor}
     >
-      <div className="footer main-container">
+      <div className={`footer main-container ${props.className}`}>
         <div className="social-links">
           <a
             href="https://www.linkedin.com/in/hellosarawoods/"

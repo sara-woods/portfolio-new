@@ -1,6 +1,6 @@
 import ProjectItem from "./ProjectItem";
 
-import whatmovieImage from "../../images/whatmovie_small.png";
+import movieImage from "../../images/Movie/movie-cover-image.png";
 import watchdominionImage from "../../images/watchdominion.png";
 import cafeImage from "../../images/Cafe/cafe-cover-image.png";
 
@@ -17,7 +17,7 @@ const projectData = [
     projectId: "moviegenerator",
     name: "Movie Generator",
     technologies: ["UI Design", "ReactJS"],
-    image: whatmovieImage,
+    image: movieImage,
   },
   {
     id: 3,

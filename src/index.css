@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Inter:wght@400;500;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Courier+Prime&family=Londrina+Solid&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;900&display=swap');
 
 
 /* ------------ CONTAINERS  */
@@ -76,17 +77,27 @@ p {
   line-height: 160%;
 }
 
-.weight-600 {
-  font-weight: 600;
+.weight-400 {
+  font-weight: 400;
+}
+.weight-500 {
+  font-weight: 500;
+}
+.weight-700 {
+  font-weight: 700;
+}
+.weight-900 {
+  font-weight: 900;
 }
 
 .text-grey {
   color: #6D6D6F;
 }
 
-.weight-700 {
-  font-weight: 700;
+.text-white {
+  color: white;
 }
+
 
 .londrina {
   font-family: 'Londrina Solid', sans-serif;
@@ -94,6 +105,9 @@ p {
 
 .courier-prime {
   font-family: 'Courier Prime', monospace;
+}
+.poppins {
+  font-family: "Poppins", sans-serif;
 }
 
 .font-2rem {
