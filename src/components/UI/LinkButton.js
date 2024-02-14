@@ -17,6 +17,7 @@ const LinkButton = (props) => {
       </span>
       {/* {props.text} */}
       <svg
+        id="link-arrow"
         width="55"
         height="55"
         viewBox="0 0 55 55"
