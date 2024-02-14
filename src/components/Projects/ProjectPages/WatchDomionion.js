@@ -125,13 +125,13 @@ const WatchDominion = () => {
                 <div>
                   <h5 className="mt-5">Font</h5>
                   <p className="mb-2">Rubik (Light, Bold, Black)</p>
-                  <p className="rubik font-2rem weight-300">AaBbCcDdEeFfGg</p>
-                  <p className="rubik font-2rem weight-700">AaBbCcDdEeFfGg</p>
-                  <p className="rubik font-2rem mb-4 weight-900">
+                  <p className="rubik typeface weight-300">AaBbCcDdEeFfGg</p>
+                  <p className="rubik typeface weight-700">AaBbCcDdEeFfGg</p>
+                  <p className="rubik typeface mb-4 weight-900">
                     AaBbCcDdEeFfGg
                   </p>
                   <p className="mb-2">Rock Salt (Regular)</p>
-                  <p className="rocksalt font-2rem">AaBbCcDdEeFfGg</p>
+                  <p className="rocksalt typeface">AaBbCcDdEeFfGg</p>
                   <img
                     src={watchdominionArrow}
                     style={{ width: "250px", margin: "8px 0 0 24px" }}
