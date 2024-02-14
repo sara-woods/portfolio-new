@@ -99,4 +99,9 @@
   .project-info a {
     margin: 16px 0;
   }
+  .tech-tag {
+    padding: 12px 24px;
+    border-radius: 50px;
+    font-size: 0.875rem;
+  }
 }

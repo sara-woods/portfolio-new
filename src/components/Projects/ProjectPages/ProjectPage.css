@@ -127,12 +127,15 @@
     bottom: -100px;
   }
 }
+@media screen and (max-width: 550px) {
+  .case-study-container .tech-tag {
+    padding: 12px 24px;
+    font-size: 0.875rem;
+  }
+}
 @media screen and (max-width: 500px) {
   .case-study-container p {
     font-size: 1rem;
-  }
-  .case-study-container .tech-tag {
-    font-size: 0.875rem;
   }
   #popcorn {
     right: 0;
