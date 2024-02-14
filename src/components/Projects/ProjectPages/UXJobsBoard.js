@@ -22,6 +22,10 @@ import laptop from "../../../images/UXjobsboard/laptop.png";
 import user1 from "../../../images/UXjobsboard/user1.png";
 import user2 from "../../../images/UXjobsboard/user2.png";
 import user3 from "../../../images/UXjobsboard/user3.png";
+import persona from "../../../images/UXjobsboard/persona.png";
+import userflow from "../../../images/UXjobsboard/userflow.png";
+import prototype from "../../../images/UXjobsboard/uxjobsboard-prototype.gif";
+import wireframes from "../../../images/UXjobsboard/wireframes.png";
 
 const technologies = [
   "Market research",
@@ -46,6 +50,7 @@ const UXJobsBoard = () => {
   return (
     <>
       <Navbar />
+      {/* ------------INTRODUCTION----------------------------------------- */}
       <div className="main-container">
         <div className="case-study-container">
           <img
@@ -101,7 +106,7 @@ const UXJobsBoard = () => {
           </div>
         </div>
       </div>
-      {/* ----------------------------------------------------- */}
+      {/* ------------MARKET INSIGHTS----------------------------------------- */}
       <ColorBackground backgroundColor="white">
         <div className="main-container">
           <div className="case-study-container">
@@ -132,7 +137,7 @@ const UXJobsBoard = () => {
           </div>
         </div>
       </ColorBackground>
-      {/* ----------------------------------------------------- */}
+      {/* ------------COMPETITIVE ANALYSIS----------------------------------------- */}
       <ColorBackground backgroundColor="#F6F0FF">
         <div className="main-container">
           <div className="case-study-container">
@@ -213,7 +218,97 @@ const UXJobsBoard = () => {
           </div>
         </div>
       </ColorBackground>
-      {/* ----------------------------------------------------- */}
+      {/* ------------PERSONA----------------------------------------- */}
+      <ColorBackground backgroundColor="white">
+        <div className="main-container">
+          <div className="case-study-container">
+            <div
+              className="case-study-section"
+              style={{ marginBottom: "80px" }}
+            >
+              <h4>Persona</h4>
+              <p className="text-grey">
+                I created one persona based on a typical user of the app.
+              </p>
+              <img
+                className="img-80"
+                src={persona}
+                alt="Information about persona"
+                style={{ marginBottom: "80px" }}
+              />
+            </div>
+          </div>
+        </div>
+      </ColorBackground>
+      {/* ------------FLOW DIAGRAM----------------------------------------- */}
+      <ColorBackground backgroundColor="#F7FFF0">
+        <div className="main-container">
+          <div className="case-study-container">
+            <div
+              className="case-study-section"
+              style={{ marginBottom: "80px" }}
+            >
+              <h4>Flow diagram</h4>
+              <p className="text-grey">
+                To outline all the necessary functionality for the search
+                journey, I began with a simple flow diagram. The app prioritizes
+                ease of navigation, ensuring users seamlessly transition from
+                welcome screen to search form, and subsequently, filter options.
+              </p>
+              <img
+                className="img-80"
+                src={userflow}
+                alt="User flow diagram"
+                style={{ marginBottom: "80px" }}
+              />
+            </div>
+          </div>
+        </div>
+      </ColorBackground>
+      {/* ------------WIREFRAMES----------------------------------------- */}
+      <ColorBackground backgroundColor="white">
+        <div className="main-container">
+          <div className="case-study-container">
+            <div
+              className="case-study-section"
+              style={{ marginBottom: "80px" }}
+            >
+              <h4>Wireframes and prototype</h4>
+              <p className="text-grey">
+                Once the flow diagram was established, I started sketching
+                wireframes with pen and paper of the main task flow - to find a
+                Junior UX Designer job listing. Based on the sketches I then
+                created low-fidelity wireframes in Figma.
+              </p>
+              <div
+                className="wireframe-container-main"
+                style={{ marginTop: "40px" }}
+              >
+                <div className="wireframe-container-left">
+                  <img
+                    className=""
+                    src={wireframes}
+                    alt="Wireframes"
+                    style={{ marginBottom: "40px", width: "100%" }}
+                  />
+                  <p className="text-grey">
+                    The low-fidelity wireframes were connected into a clickable
+                    prototype, with the aim of testing the usability of the app
+                    based on effectiveness, efficiency and user satisfaction.
+                  </p>
+                </div>
+                <img
+                  id="prototype"
+                  src={prototype}
+                  alt="Figma prototype"
+                  style={{ width: "300px" }}
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </ColorBackground>
+      {/* ------------UI DESIGN----------------------------------------- */}
       <ColorBackground backgroundColor="linear-gradient(#F7FFF0, #F6F0FF)">
         <div className="main-container">
           <div className="case-study-container">
@@ -289,8 +384,7 @@ const UXJobsBoard = () => {
           </div>
         </div>
       </ColorBackground>
-      {/* ----------------------------------------------------- */}
-
+      {/* ------------VIDEO----------------------------------------- */}
       <ColorBackground backgroundColor="white">
         <div className="main-section extra-bottom-padding">
           <div className="video-section">
