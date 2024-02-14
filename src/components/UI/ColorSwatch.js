@@ -8,7 +8,7 @@ const ColorSwatch = (props) => {
         style={{ backgroundColor: props.backgroundColor }}
       ></div>
       <div className="hex-container">
-        <p className="hex weight-600">{props.hex}</p>
+        <p className="weight-600">{props.hex}</p>
         <p className="text-grey">{props.name}</p>
       </div>
     </div>

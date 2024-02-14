@@ -8,7 +8,7 @@
 .color-container {
   border-bottom: 1px solid grey;;
   height: 100px;
-  border-radius: 8px 8px 0 0;
+  border-radius: 7px 7px 0 0;
 }
 
 .hex-container {
@@ -17,4 +17,10 @@
 
 .hex-container p {
   text-align: center;
+}
+
+@media screen and (max-width: 500px) {
+  .swatch-container {
+    max-width: 100px;
+  }
 }
