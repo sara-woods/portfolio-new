@@ -131,6 +131,12 @@
   top: 60px;
   right: 5%;
 }
+#lightbulb {
+  position: absolute;
+  top: 60px;
+  right: 2%;
+  width:  180px;
+}
 
 /* ------ MOVIE CASE STUDY */
 
@@ -160,6 +166,9 @@
 @media screen and (max-width: 1000px) {
   #ipad {
     top: 80px;
+  }
+  #lightbulb {
+    top: 90%;
   }
 }
 @media screen and (max-width: 900px) {

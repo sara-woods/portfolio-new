@@ -11,7 +11,7 @@ import Footer from "../../Footer/Footer";
 
 import uxjobsboardCoverImage from "../../../images/UXjobsboard/uxjobsboard-cover-image.png";
 import uxjobsboardAccessibilityImage from "../../../images/UXjobsboard/uxjobsboard-accessibility-check.png";
-// import uxjobsboardGif from "../../../images/UXjobsboard/uxjobsboard-gif.gif";
+import uxjobsboardGif from "../../../images/UXjobsboard/uxjobsboard-gif.gif";
 import uxjobsboardArrow from "../../../images/UXjobsboard/uxjobsboard-font-arrow.png";
 import uxjobsboardGraph from "../../../images/UXjobsboard/uxjobsboard-graph.png";
 import competitiveanalysis from "../../../images/UXjobsboard/competitive-analysis.png";
@@ -103,6 +103,11 @@ const UXJobsBoard = () => {
                 commitment to creating intuitive, user-centric experiences that
                 drive positive outcomes.
               </p>
+              <img
+                src={lightbulb}
+                id="lightbulb"
+                alt="Lightbulb illustration"
+              />
             </div>
           </div>
         </div>
@@ -458,8 +463,7 @@ const UXJobsBoard = () => {
                 </div>
               </div>
             </div>
-            {/* ----------------------------------------------------- */}
-
+            {/* -------------ACCESSIBILITY CHECK---------------------------------------- */}
             <div className="case-study-section">
               <h4>Accessibility check</h4>
               <p className="text-grey">
@@ -485,7 +489,7 @@ const UXJobsBoard = () => {
               // onContextMenu={handleRightClick}
               // onDragStart={handleDrag}
               style={{ width: "80%", marginTop: "60px", marginBottom: "24px" }}
-              src={uxjobsboardCoverImage}
+              src={uxjobsboardGif}
               alt="UX jobs finder UI design"
             />
             <LinkButton text="Visit Webflow site" className="mt-4" />
