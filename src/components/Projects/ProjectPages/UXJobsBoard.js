@@ -98,6 +98,37 @@ const UXJobsBoard = () => {
         </div>
       </div>
       {/* ----------------------------------------------------- */}
+      <ColorBackground backgroundColor="white">
+        <div className="main-container">
+          <div className="case-study-container">
+            <div
+              className="case-study-section"
+              style={{ marginBottom: "80px" }}
+            >
+              <h4>Market insights</h4>
+              <h5 className="mt-5">The claim and the problem</h5>
+              <p className="text-grey">
+                As the demand for UX designers skyrockets, the search for the
+                perfect job becomes increasingly daunting. Nielsen Norman
+                Group's projections foresee a staggering rise in UX
+                professionals globally, reaching over 100 million by 2050.
+                However, amidst this growth, the challenge persists: traditional
+                job search platforms lack the finesse needed to match skilled
+                individuals with their ideal roles, resulting in frustration for
+                both employers and job seekers.
+              </p>
+              <img
+                // onContextMenu={handleRightClick}
+                // onDragStart={handleDrag}
+                className="img-80"
+                src={uxjobsboardGraph}
+                alt="Graph showing number of ux professionals into the future"
+              />
+            </div>
+          </div>
+        </div>
+      </ColorBackground>
+      {/* ----------------------------------------------------- */}
       <ColorBackground backgroundColor="linear-gradient(#F7FFF0, #F6F0FF)">
         <div className="main-container">
           <div className="case-study-container">
@@ -141,15 +172,15 @@ const UXJobsBoard = () => {
                 <div>
                   <h5 className="mt-5">Font</h5>
                   <p className="mb-2">DM Sans (Regular, Medium, Bold)</p>
-                  <p className="dmsans font-2rem weight-400">AaBbCcDdEeFfGg</p>
-                  <p className="dmsans font-2rem weight-500">AaBbCcDdEeFfGg</p>
-                  <p className="dmsans font-2rem weight-700 mb-4">
+                  <p className="dmsans typeface weight-400">AaBbCcDdEeFfGg</p>
+                  <p className="dmsans typeface weight-500">AaBbCcDdEeFfGg</p>
+                  <p className="dmsans typeface weight-700 mb-4">
                     AaBbCcDdEeFfGg
                   </p>
                   <img
                     src={uxjobsboardArrow}
-                    style={{ width: "250px", margin: "8px 0 0 24px" }}
-                    alt="Arrow describing font-style"
+                    id="uxjobsboard-arrow"
+                    alt="Arrow describing font-style and illustrations in the"
                   />
                 </div>
               </div>

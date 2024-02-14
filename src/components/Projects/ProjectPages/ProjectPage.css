@@ -75,6 +75,13 @@
 
 
 
+/* ------ UXJOBSBOARD STUDY */
+
+#uxjobsboard-arrow {
+  width: 400px;
+  margin: 0 0 0 24px;
+}
+
 /* ------ MOVIE CASE STUDY */
 
 #cafe-arrow {
@@ -139,6 +146,10 @@
   }
   #popcorn {
     right: 0;
+  }
+  #uxjobsboard-arrow {
+    width: 100%;
+    margin: 0;
   }
 }
 @media screen and (max-width: 400px) {
