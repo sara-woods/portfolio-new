@@ -1,5 +1,3 @@
-import { Link } from "react-router-dom";
-
 import WrapperBackground from "../UI/WrapperBackground";
 import LinkButton from "../UI/LinkButton";
 import AnimationImage from "./AnimationImage";
