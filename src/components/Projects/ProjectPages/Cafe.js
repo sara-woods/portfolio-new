@@ -129,7 +129,7 @@ const Cafe = () => {
                   <p className="londrina typeface mb-2">AaBbCcDdEeFfGg</p>
                   <img
                     src={cafeArrow}
-                    alt="Arrow describing font-style"
+                    alt="Arrow describing font style"
                     id="cafe-arrow"
                   />
                 </div>

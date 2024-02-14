@@ -135,7 +135,7 @@ const WatchDominion = () => {
                   <img
                     src={watchdominionArrow}
                     style={{ width: "250px", margin: "8px 0 0 24px" }}
-                    alt="Arrow describing font-style Rocksalt"
+                    alt="Arrow describing font style Rocksalt"
                   />
                 </div>
               </div>

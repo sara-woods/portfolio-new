@@ -59,7 +59,7 @@ const UXJobsBoard = () => {
             // onDragStart={handleDrag}
             className="cover-image"
             src={uxjobsboardCoverImage}
-            alt="Café UI design"
+            alt="UX Jobs Finder UI design"
           />
           <h3 className="">UX Job Finder</h3>
           <p className="text-grey case-study-body">
@@ -453,7 +453,7 @@ const UXJobsBoard = () => {
                   <img
                     src={uxjobsboardArrow}
                     id="uxjobsboard-arrow"
-                    alt="Arrow describing font-style and illustrations in the"
+                    alt="Arrow describing font-style and illustrations in the design"
                   />
                 </div>
               </div>
@@ -471,7 +471,7 @@ const UXJobsBoard = () => {
                 // onDragStart={handleDrag}
                 className="img-80"
                 src={uxjobsboardAccessibilityImage}
-                alt="Café accessibility check for contrast in colors"
+                alt="Accessibility check illustration for contrast in colors"
               />
             </div>
           </div>
@@ -486,7 +486,7 @@ const UXJobsBoard = () => {
               // onDragStart={handleDrag}
               style={{ width: "80%", marginTop: "60px", marginBottom: "24px" }}
               src={uxjobsboardCoverImage}
-              alt="Café UI design"
+              alt="UX jobs finder UI design"
             />
             <LinkButton text="Visit Webflow site" className="mt-4" />
           </div>
