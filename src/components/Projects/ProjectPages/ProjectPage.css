@@ -82,6 +82,22 @@
   margin: 0 0 0 24px;
 }
 
+.user-quote {
+  border: 1px solid #D0CAE4;
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 32px 12px 12px;
+  background-color: white;
+}
+
+.user-quote img {
+  width: 80px;
+  /* border: 1px solid #D0CAE4;
+  border-radius: 100px; */
+}
+
 /* ------ MOVIE CASE STUDY */
 
 #cafe-arrow {

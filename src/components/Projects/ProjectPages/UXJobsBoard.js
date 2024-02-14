@@ -14,10 +14,14 @@ import uxjobsboardAccessibilityImage from "../../../images/UXjobsboard/uxjobsboa
 // import uxjobsboardGif from "../../../images/UXjobsboard/uxjobsboard-gif.gif";
 import uxjobsboardArrow from "../../../images/UXjobsboard/uxjobsboard-font-arrow.png";
 import uxjobsboardGraph from "../../../images/UXjobsboard/uxjobsboard-graph.png";
+import competitiveanalysis from "../../../images/UXjobsboard/competitive-analysis.png";
 import uxjobsboardAlignment from "../../../images/UXjobsboard/uxjobsboard-alignment.png";
 import uxjobsboardSecondImage from "../../../images/UXjobsboard/uxjobsboard-second-image.png";
 import lightbulb from "../../../images/UXjobsboard/lightbulb.png";
 import laptop from "../../../images/UXjobsboard/laptop.png";
+import user1 from "../../../images/UXjobsboard/user1.png";
+import user2 from "../../../images/UXjobsboard/user2.png";
+import user3 from "../../../images/UXjobsboard/user3.png";
 
 const technologies = [
   "Market research",
@@ -124,6 +128,87 @@ const UXJobsBoard = () => {
                 src={uxjobsboardGraph}
                 alt="Graph showing number of ux professionals into the future"
               />
+            </div>
+          </div>
+        </div>
+      </ColorBackground>
+      {/* ----------------------------------------------------- */}
+      <ColorBackground backgroundColor="#F6F0FF">
+        <div className="main-container">
+          <div className="case-study-container">
+            <div
+              className="case-study-section"
+              style={{ marginBottom: "80px" }}
+            >
+              <h4>Competitive analysis</h4>
+              <p className="text-grey">
+                I analyzed 3 different websites/apps in the space - looking at
+                the job search experience as well as negative user comments
+                through Reddit and Google.
+              </p>
+              <img
+                // onContextMenu={handleRightClick}
+                // onDragStart={handleDrag}
+                className="img-80"
+                src={competitiveanalysis}
+                alt="Screen-shots from three competitors"
+                style={{ marginBottom: "80px" }}
+              />
+              <h5 className="mt-5">The good</h5>
+              <p className="text-grey">
+                All three apps allow users to search and apply for jobs without
+                forcing the user to have to create an account.
+              </p>
+              <h5 className="mt-5">The bad</h5>
+              <ul>
+                <li>
+                  <p className="text-grey">
+                    No information on when the job listing was posted (Dribbble)
+                  </p>
+                </li>
+                <li>
+                  <p className="text-grey">
+                    No button to clear filters (UIUX Jobs Board, UX Jobs Board)
+                  </p>
+                </li>
+                <li>
+                  <p className="text-grey">
+                    No option to filter on remote only (Dribbble)
+                  </p>
+                </li>
+                <li>
+                  <p className="text-grey">
+                    Not user-friendly filter functionality (UX Jobs Board, UIUX
+                    Jobs Board)
+                  </p>
+                </li>
+                <li>
+                  <p className="text-grey">
+                    No option to filter for experience level (all three)
+                  </p>
+                </li>
+              </ul>
+              <h5 className="mt-5">Problems from the comments</h5>
+              <div className="user-quote mb-4">
+                <img src={user1} alt="User avatar 1" />
+                <p className="text-grey">
+                  “Location search always infuriates me...”
+                </p>
+              </div>
+              <div className="user-quote mb-4">
+                <img src={user2} alt="User avatar 2" />
+                <p className="text-grey">
+                  “When I search for remote jobs I want to ensure that the
+                  listings I find actually are remote.”
+                </p>
+              </div>
+              <div className="user-quote mb-4">
+                <img src={user3} alt="User avatar 3" />
+                <p className="text-grey">
+                  “Listings are often old or the job is not available anymore,
+                  but the listing is still up.”
+                </p>
+              </div>
             </div>
           </div>
         </div>
