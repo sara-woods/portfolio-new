@@ -1,7 +1,6 @@
 import "./ColorBackground.css";
 
 const ColorBackground = (props) => {
-  console.log(props.backgroundColor);
   return (
     <div
       id={props.id}
