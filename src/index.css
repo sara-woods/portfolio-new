@@ -132,6 +132,12 @@ p {
 .font-1-5rem {
   font-size: 1.5rem !important;
 }
+.font-1-25rem {
+  font-size: 1.25rem !important;
+}
+.font-1rem {
+  font-size: 1rem !important;
+}
 
 /* ------------------------ LISTS */
 

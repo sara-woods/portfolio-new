@@ -22,6 +22,7 @@ import laptop from "../../../images/UXjobsboard/laptop.png";
 import user1 from "../../../images/UXjobsboard/user1.png";
 import user2 from "../../../images/UXjobsboard/user2.png";
 import user3 from "../../../images/UXjobsboard/user3.png";
+import user4 from "../../../images/UXjobsboard/user4.png";
 import persona from "../../../images/UXjobsboard/persona.png";
 import userflow from "../../../images/UXjobsboard/userflow.png";
 import prototype from "../../../images/UXjobsboard/uxjobsboard-prototype.gif";
@@ -196,20 +197,20 @@ const UXJobsBoard = () => {
               <h5 className="mt-5">Problems from the comments</h5>
               <div className="user-quote mb-4">
                 <img src={user1} alt="User avatar 1" />
-                <p className="text-grey">
+                <p className="text-grey font-1-25rem">
                   “Location search always infuriates me...”
                 </p>
               </div>
               <div className="user-quote mb-4">
                 <img src={user2} alt="User avatar 2" />
-                <p className="text-grey">
+                <p className="text-grey font-1-25rem">
                   “When I search for remote jobs I want to ensure that the
                   listings I find actually are remote.”
                 </p>
               </div>
               <div className="user-quote mb-4">
                 <img src={user3} alt="User avatar 3" />
-                <p className="text-grey">
+                <p className="text-grey font-1-25rem">
                   “Listings are often old or the job is not available anymore,
                   but the listing is still up.”
                 </p>
@@ -308,6 +309,84 @@ const UXJobsBoard = () => {
           </div>
         </div>
       </ColorBackground>
+      {/* ------------USABILITY TEST----------------------------------------- */}
+      <ColorBackground backgroundColor="#F6F0FF">
+        <div className="main-container">
+          <div className="case-study-container">
+            <div
+              className="case-study-section"
+              style={{ marginBottom: "80px" }}
+            >
+              <h4>Mini usability test</h4>
+              <p className="text-grey">
+                I tested my prototype with one user to assess its
+                user-friendliness. We met in person, where I explained the test,
+                assigned them a task, and asked for their feedback as they
+                completed it. I closely observed how they interacted with the
+                application and asked additional questions to gather insights
+                for potential improvements.
+              </p>
+              <h5 className="mt-5">The task</h5>
+              <div id="task">
+                <svg
+                  width="51"
+                  height="51"
+                  viewBox="0 0 51 51"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M22.3125 32.1618L16.5909 26.4403L14.3438 28.6874L22.3125 36.6562L36.6562 22.3124L34.4091 20.0493L22.3125 32.1618Z"
+                    fill="white"
+                  />
+                  <path
+                    d="M39.8438 7.96875H35.0625V6.375C35.0625 5.52962 34.7267 4.71887 34.1289 4.1211C33.5311 3.52332 32.7204 3.1875 31.875 3.1875H19.125C18.2796 3.1875 17.4689 3.52332 16.8711 4.1211C16.2733 4.71887 15.9375 5.52962 15.9375 6.375V7.96875H11.1562C10.3109 7.96875 9.50012 8.30457 8.90235 8.90235C8.30457 9.50012 7.96875 10.3109 7.96875 11.1562V44.625C7.96875 45.4704 8.30457 46.2811 8.90235 46.8789C9.50012 47.4767 10.3109 47.8125 11.1562 47.8125H39.8438C40.6891 47.8125 41.4999 47.4767 42.0977 46.8789C42.6954 46.2811 43.0312 45.4704 43.0312 44.625V11.1562C43.0312 10.3109 42.6954 9.50012 42.0977 8.90235C41.4999 8.30457 40.6891 7.96875 39.8438 7.96875ZM19.125 6.375H31.875V12.75H19.125V6.375ZM39.8438 44.625H11.1562V11.1562H15.9375V15.9375H35.0625V11.1562H39.8438V44.625Z"
+                    fill="white"
+                  />
+                </svg>
+                <p className="text-white font-1-25rem">
+                  “Show me how you would use this app to search for Junior UX
+                  Designer jobs in London”
+                </p>
+              </div>
+              <h5 className="mt-5">Test findings</h5>
+              <p className="text-grey">
+                There were no issues for the user to complete the task. However,
+                feedback and suggestions were given during the interview.
+              </p>
+              <div className="user-quote mt-4 mb-4">
+                <img src={user4} alt="User avatar 4" />
+                <p className="text-grey font-1-25rem">
+                  “I expected there to be a back button on the search page to
+                  get back to the home screen.”
+                </p>
+              </div>
+              <div className="user-quote mb-4">
+                <img src={user4} alt="User avatar 4" />
+                <p className="text-grey font-1-25rem">
+                  “I was confused with the difference between the two buttons on
+                  the home screen. I didn’t know what to expect by clicking the
+                  first one but assumed that’s the one I should click to make
+                  the search.”
+                </p>
+              </div>
+              <h5 className="mt-5">Prototype updates</h5>
+              <p className="text-grey">
+                After receiving feedback, I made a few changes. This included
+                removing the second button on the home screen, updating the CTA
+                button text to "Search for a job," and adding a back button on
+                the search page. Additionally, I realized the need to further
+                evaluate the structure of the search process. Instead of
+                immediately showing all listings and then applying filters, I
+                decided to implement a search page before displaying listings -
+                which should undergo A/B testing for validation. Another
+                potential test would involve splitting the search page into
+                multiple steps or screens.
+              </p>
+            </div>
+          </div>
+        </div>
+      </ColorBackground>
       {/* ------------UI DESIGN----------------------------------------- */}
       <ColorBackground backgroundColor="linear-gradient(#F7FFF0, #F6F0FF)">
         <div className="main-container">
@@ -316,6 +395,20 @@ const UXJobsBoard = () => {
               className="case-study-section"
               style={{ marginBottom: "80px" }}
             >
+              <div
+                className="why-container"
+                style={{ backgroundColor: "#D7FF64", marginBottom: "160px" }}
+              >
+                <div id="why-text">
+                  <p className="weight-700 mb-4">Time for the visual design</p>
+                  <p>
+                    Drawing from the research, persona and usability testing,
+                    it’s time to delve into my favorite phase: crafting the
+                    visual identity of the app.
+                  </p>
+                  <img src={laptop} id="laptop" alt="Laptop illustration" />
+                </div>
+              </div>
               <h4>High-fidelity UI design</h4>
               <p className="text-grey">
                 I started with defining the fonts and colors and overall vibe,
