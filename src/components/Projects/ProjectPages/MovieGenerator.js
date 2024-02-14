@@ -12,6 +12,7 @@ import movieCoverImage from "../../../images/Movie/movie-cover-image.png";
 import movieGif from "../../../images/Movie/movie-gif.gif";
 import movieAlignment from "../../../images/Movie/movie-alignment.png";
 import popcorn from "../../../images/Movie/popcorn.png";
+import ipad from "../../../images/Movie/ipad.png";
 
 const technologies = [
   "UI Design",
@@ -40,7 +41,7 @@ const MovieGenerator = () => {
             // onDragStart={handleDrag}
             className="cover-image"
             src={movieCoverImage}
-            alt="Café UI design"
+            alt="Movie generator UI design"
           />
           <h3 className="">Movie generator</h3>
           <p className="text-grey case-study-body">
@@ -82,7 +83,7 @@ const MovieGenerator = () => {
                 process for those indecisive evenings.
               </p>
             </div>
-            <img className="popcorn" src={popcorn} alt="popcorn" />
+            <img id="popcorn" src={popcorn} alt="popcorn" />
           </div>
         </div>
       </div>
@@ -136,9 +137,9 @@ const MovieGenerator = () => {
                 <div>
                   <h5 className="mt-5">Font</h5>
                   <p className="mb-1">Poppins (Regular, Medium, Black)</p>
-                  <p className="poppins font-2rem weight-400">AaBbCcDdEeFfGg</p>
-                  <p className="poppins font-2rem weight-500">AaBbCcDdEeFfGg</p>
-                  <p className="poppins font-2rem mb-4 weight-900">
+                  <p className="poppins typeface weight-400">AaBbCcDdEeFfGg</p>
+                  <p className="poppins typeface weight-500">AaBbCcDdEeFfGg</p>
+                  <p className="poppins typeface mb-4 weight-900">
                     AaBbCcDdEeFfGg
                   </p>
                 </div>
@@ -158,7 +159,7 @@ const MovieGenerator = () => {
                 // onDragStart={handleDrag}
                 className="img-80"
                 src={movieAlignment}
-                alt="Café accessibility check for contrast in colors"
+                alt="Movie generator accessibility check for contrast in colors"
               />
             </div>
           </div>
@@ -169,14 +170,35 @@ const MovieGenerator = () => {
       <ColorBackground backgroundColor="#1A1A1A">
         <div className="main-section extra-bottom-padding">
           <div className="video-section">
-            <img
-              // onContextMenu={handleRightClick}
-              // onDragStart={handleDrag}
-              style={{ width: "80%", marginTop: "60px", marginBottom: "24px" }}
-              src={movieGif}
-              alt="Café UI design"
-            />
-            <LinkButton text="Visit site" className="mt-4 white" />
+            <div
+              className="case-study-section"
+              style={{
+                display: "flex",
+                alignItems: "center",
+                flexDirection: "column",
+                position: "relative",
+                paddingTop: "100px",
+              }}
+            >
+              <img
+                // onContextMenu={handleRightClick}
+                // onDragStart={handleDrag}
+                style={{
+                  width: "80%",
+                  margin: "0 auto 24px auto",
+                }}
+                src={movieGif}
+                alt="movie generator gif"
+              />
+              <img
+                // onContextMenu={handleRightClick}
+                // onDragStart={handleDrag}
+                id="ipad"
+                src={ipad}
+                alt="ipad frame"
+              />
+              <LinkButton text="Visit site" className="mt-4 white" />
+            </div>
           </div>
         </div>
       </ColorBackground>

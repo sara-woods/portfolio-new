@@ -57,6 +57,10 @@
   grid-column-gap: 16px;
 }
 
+.typeface {
+  font-size: 2rem !important;
+}
+
 .video-section {
   display: flex;
   flex-direction: column;
@@ -69,15 +73,39 @@
   margin: 48px auto 0 auto;
 }
 
-.popcorn {
+
+
+/* ------ MOVIE CASE STUDY */
+#popcorn {
   position: absolute;
   bottom: -80px;
   right: 100px;
   rotate: 10deg;
 }
+
+#ipad {
+  width: 83%;
+  position: absolute;
+  top: 73px;
+  left: 8%;
+}
+/* ----------------------------- */
+
+
+@media screen and (max-width: 1000px) {
+  #ipad {
+    top: 80px;
+  }
+}
 @media screen and (max-width: 750px) {
   .color-font-info {
     grid-template-columns: 1fr;
+  }
+  #ipad {
+    top: 90px;
+  }
+  .img-80 {
+    width: 100%;
   }
 }
 @media screen and (max-width: 650px) {
@@ -87,7 +115,7 @@
   .case-study-container .tech-tag {
     font-size: 1rem;
   }
-  .popcorn {
+  #popcorn {
     width: 130px;
     bottom: -100px;
   }
@@ -99,7 +127,32 @@
   .case-study-container .tech-tag {
     font-size: 0.875rem;
   }
-  .popcorn {
+  #popcorn {
     right: 0;
+  }
+}
+@media screen and (max-width: 400px) {
+  #ipad {
+    top: 96px;
+  }
+  .case-study-info {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: 16px;
+    margin-bottom: 72px;
+  }
+  .typeface {
+    font-size: 1.5rem !important;
+  }
+}
+@media screen and (max-width: 350px) {
+  #ipad {
+    top: 96px;
+  }
+  .case-study-info {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: 16px;
+    margin-bottom: 72px;
   }
 }
