@@ -124,13 +124,13 @@ const Cafe = () => {
                 <div>
                   <h5 className="mt-5">Font</h5>
                   <p className="mb-2">Courier Prime (Regular, Medium, Bold)</p>
-                  <p className="courier-prime font-2rem mb-4">AaBbCcDdEeFfGg</p>
+                  <p className="courier-prime typeface mb-4">AaBbCcDdEeFfGg</p>
                   <p>Londrina Solid (Regular)</p>
-                  <p className="londrina font-2rem mb-2">AaBbCcDdEeFfGg</p>
+                  <p className="londrina typeface mb-2">AaBbCcDdEeFfGg</p>
                   <img
                     src={cafeArrow}
-                    style={{ width: "250px", margin: "8px 0 0 24px" }}
                     alt="Arrow describing font-style"
+                    id="cafe-arrow"
                   />
                 </div>
               </div>
@@ -166,7 +166,7 @@ const Cafe = () => {
               src={cafeGif}
               alt="Café UI design"
             />
-            <LinkButton text="Visit Webflow site" className="mt-4" />
+            <LinkButton text="Visit page" className="mt-4" />
           </div>
         </div>
       </ColorBackground>

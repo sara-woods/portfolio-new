@@ -76,6 +76,13 @@
 
 
 /* ------ MOVIE CASE STUDY */
+
+#cafe-arrow {
+  width: 250px;
+  margin: 8px 0 0 24px;
+}
+
+/* ------ MOVIE CASE STUDY */
 #popcorn {
   position: absolute;
   bottom: -80px;
@@ -143,6 +150,10 @@
   }
   .typeface {
     font-size: 1.5rem !important;
+  }
+  #cafe-arrow {
+    width: 180px;
+    margin: 8px 0 0 24px;
   }
 }
 @media screen and (max-width: 350px) {
