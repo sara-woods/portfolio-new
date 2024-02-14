@@ -12,11 +12,9 @@ const projects = ["uxjobsboard", "moviegenerator", "watchdominion", "cafe"];
 const ProjectPage = () => {
   const params = useParams();
   let missingProjectPage = false;
-  console.log(params);
 
   if (!projects.find((project) => project === params.projectId)) {
     missingProjectPage = true;
-    console.log("true");
   }
 
   return (

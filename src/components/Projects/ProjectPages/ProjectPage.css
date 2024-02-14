@@ -75,6 +75,69 @@
 
 
 
+/* ------ UXJOBSBOARD STUDY */
+
+#uxjobsboard-arrow {
+  width: 400px;
+  margin: 0 0 0 24px;
+}
+
+.user-quote {
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  padding: 12px 32px 12px 16px;
+  background-color: white;
+}
+
+.user-quote img {
+  width: 50px;
+}
+
+.wireframe-container-main {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  align-items: flex-start;
+}
+.wireframe-container-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#prototype {
+  width: 300px;
+}
+
+#task {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  background-color: #8D53D9;
+  border-radius: 16px;
+  font-size: 1rem;
+  padding: 24px;
+}
+
+#task svg {
+  min-width: 40px;
+  max-width: 40px;
+}
+
+#laptop {
+  position: absolute;
+  top: 60px;
+  right: 5%;
+}
+#lightbulb {
+  position: absolute;
+  top: 60px;
+  right: 2%;
+  width:  180px;
+}
+
 /* ------ MOVIE CASE STUDY */
 
 #cafe-arrow {
@@ -96,14 +159,29 @@
   top: 73px;
   left: 8%;
 }
-/* ----------------------------- */
 
+
+/* -----------RESPONSIVENESS------------------ */
 
 @media screen and (max-width: 1000px) {
   #ipad {
     top: 80px;
   }
+  #lightbulb {
+    top: 90%;
+  }
 }
+@media screen and (max-width: 900px) {
+  .wireframe-container-main {
+    flex-direction: column;
+    align-items: center;
+  }
+  #laptop {
+    top: 80%;
+    rotate: 50deg;
+  }
+}
+
 @media screen and (max-width: 750px) {
   .color-font-info {
     grid-template-columns: 1fr;
@@ -139,6 +217,13 @@
   }
   #popcorn {
     right: 0;
+  }
+  #uxjobsboard-arrow {
+    width: 100%;
+    margin: 0;
+  }
+  #prototype {
+    width: 200px;
   }
 }
 @media screen and (max-width: 400px) {
