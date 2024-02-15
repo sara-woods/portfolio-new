@@ -5,7 +5,6 @@ import "./ProjectPage.css";
 import Navbar from "../../Navbar/Navbar";
 import ColorSwatch from "../../UI/ColorSwatch";
 import ColorBackground from "../../UI/ColorBackground";
-import LinkButton from "../../UI/LinkButton";
 import Contact from "../../Contact/Contact";
 import Footer from "../../Footer/Footer";
 
@@ -16,7 +15,6 @@ import uxjobsboardArrow from "../../../images/UXjobsboard/uxjobsboard-font-arrow
 import uxjobsboardGraph from "../../../images/UXjobsboard/uxjobsboard-graph.png";
 import competitiveanalysis from "../../../images/UXjobsboard/competitive-analysis.png";
 import uxjobsboardAlignment from "../../../images/UXjobsboard/uxjobsboard-alignment.png";
-// import uxjobsboardSecondImage from "../../../images/UXjobsboard/uxjobsboard-second-image.png";
 import uxjobsboardSecondImage from "../../../images/UXjobsboard/uxjobsboardsecondimage.png";
 import lightbulb from "../../../images/UXjobsboard/lightbulb.png";
 import laptop from "../../../images/UXjobsboard/laptop.png";
@@ -118,10 +116,7 @@ const UXJobsBoard = () => {
       <ColorBackground backgroundColor="white">
         <div className="main-container">
           <div className="case-study-container">
-            <div
-              className="case-study-section"
-              style={{ marginBottom: "80px" }}
-            >
+            <div className="case-study-section">
               <h4>Market insights</h4>
               <h5 className="mt-5">The claim and the problem</h5>
               <p className="text-grey">
@@ -149,10 +144,7 @@ const UXJobsBoard = () => {
       <ColorBackground backgroundColor="#F6F0FF">
         <div className="main-container">
           <div className="case-study-container">
-            <div
-              className="case-study-section"
-              style={{ marginBottom: "80px" }}
-            >
+            <div className="case-study-section">
               <h4>Competitive analysis</h4>
               <p className="text-grey">
                 I analyzed 3 different websites/apps in the space - looking at
@@ -165,7 +157,7 @@ const UXJobsBoard = () => {
                 className="img-80"
                 src={competitiveanalysis}
                 alt="Screen-shots from three competitors"
-                style={{ marginBottom: "80px" }}
+                style={{ marginBottom: "100px", marginTop: "80px" }}
               />
               <h5 className="mt-5">The good</h5>
               <p className="text-grey">
@@ -230,10 +222,7 @@ const UXJobsBoard = () => {
       <ColorBackground backgroundColor="white">
         <div className="main-container">
           <div className="case-study-container">
-            <div
-              className="case-study-section"
-              style={{ marginBottom: "80px" }}
-            >
+            <div className="case-study-section">
               <h4>Persona</h4>
               <p className="text-grey">
                 I created one persona based on a typical user of the app.
@@ -242,7 +231,6 @@ const UXJobsBoard = () => {
                 className="img-80"
                 src={persona}
                 alt="Information about persona"
-                style={{ marginBottom: "80px" }}
               />
             </div>
           </div>
@@ -252,10 +240,7 @@ const UXJobsBoard = () => {
       <ColorBackground backgroundColor="#F7FFF0">
         <div className="main-container">
           <div className="case-study-container">
-            <div
-              className="case-study-section"
-              style={{ marginBottom: "80px" }}
-            >
+            <div className="case-study-section">
               <h4>Flow diagram</h4>
               <p className="text-grey">
                 To outline all the necessary functionality for the search
@@ -263,12 +248,7 @@ const UXJobsBoard = () => {
                 ease of navigation, ensuring users seamlessly transition from
                 welcome screen to search form, and subsequently, filter options.
               </p>
-              <img
-                className="img-80"
-                src={userflow}
-                alt="User flow diagram"
-                style={{ marginBottom: "80px" }}
-              />
+              <img className="img-80" src={userflow} alt="User flow diagram" />
             </div>
           </div>
         </div>
@@ -277,10 +257,7 @@ const UXJobsBoard = () => {
       <ColorBackground backgroundColor="white">
         <div className="main-container">
           <div className="case-study-container">
-            <div
-              className="case-study-section"
-              style={{ marginBottom: "80px" }}
-            >
+            <div className="case-study-section">
               <h4>Wireframes and prototype</h4>
               <p className="text-grey">
                 Once the flow diagram was established, I started sketching
@@ -320,10 +297,7 @@ const UXJobsBoard = () => {
       <ColorBackground backgroundColor="#F6F0FF">
         <div className="main-container">
           <div className="case-study-container">
-            <div
-              className="case-study-section"
-              style={{ marginBottom: "80px" }}
-            >
+            <div className="case-study-section">
               <h4>Mini usability test</h4>
               <p className="text-grey">
                 I tested my prototype with one user to assess its
@@ -395,17 +369,13 @@ const UXJobsBoard = () => {
         </div>
       </ColorBackground>
       {/* ------------UI DESIGN----------------------------------------- */}
-
       <ColorBackground backgroundColor="linear-gradient(#F7FFF0, #F6F0FF)">
         <div className="main-container">
           <div className="case-study-container">
-            <div
-              className="case-study-section"
-              style={{ marginBottom: "80px" }}
-            >
+            <div className="case-study-section">
               <div
                 className="why-container"
-                style={{ backgroundColor: "#D7FF64", marginBottom: "160px" }}
+                style={{ backgroundColor: "#D7FF64", marginBottom: "120px" }}
               >
                 <div id="why-text">
                   <p className="weight-700 mb-4">Time for the visual design</p>
@@ -485,6 +455,7 @@ const UXJobsBoard = () => {
                 className="img-80"
                 src={uxjobsboardAlignment}
                 alt="Showing alignment in the UX Jobs finder app"
+                style={{ maxWidth: "60%" }}
               />
             </div>
           </div>
@@ -559,11 +530,7 @@ const UXJobsBoard = () => {
               </p>
               <div className="video-section">
                 <img
-                  style={{
-                    maxWidth: "420px",
-                    marginTop: "60px",
-                    marginBottom: "120px",
-                  }}
+                  id="uxjobsboard-gif"
                   src={uxjobsboardGif}
                   alt="UX jobs finder UI design"
                 />
@@ -573,11 +540,12 @@ const UXJobsBoard = () => {
         </div>
       </ColorBackground>
       <Contact
+        className="text-white"
         caseStudy={true}
-        backgroundColor="#EFC3F5"
+        backgroundColor="#8D53D9"
         header="Thank you for reading :)"
       />
-      <Footer backgroundColor="#EFC3F5" />
+      <Footer backgroundColor="#8D53D9" className="text-white" />
     </>
   );
 };

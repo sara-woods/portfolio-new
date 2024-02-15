@@ -145,6 +145,12 @@
   width: 50%;
 }
 
+#uxjobsboard-gif {
+  max-width: 60%;
+  margin-top: 60px;
+  margin-bottom: 120px;
+}
+
 /* ------ MOVIE CASE STUDY */
 
 #cafe-arrow {
@@ -204,6 +210,9 @@
   .case-study-container p {
     font-size: 1.25rem;
   }
+  .font-1-25rem {
+    font-size: 1rem !important;
+  }
   .case-study-container .tech-tag {
     font-size: 1rem;
   }
@@ -221,6 +230,9 @@
 @media screen and (max-width: 500px) {
   .case-study-container p {
     font-size: 1rem;
+  }
+  .font-1-25rem {
+    font-size: 0.875rem !important;
   }
   #popcorn {
     right: 0;
