@@ -8,7 +8,7 @@ import uxjobsboardImage from "../../images/UXjobsboard/uxjobsboard-cover-image.p
 const projectData = [
   {
     id: 1,
-    projectId: "uxjobsboard",
+    projectId: "uxjobsfinder",
     name: "UX Jobs Board",
     technologies: ["UX Research", "UX Design", "UI Design"],
     image: uxjobsboardImage,

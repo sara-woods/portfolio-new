@@ -5,7 +5,6 @@ import "./ProjectPage.css";
 import Navbar from "../../Navbar/Navbar";
 import ColorSwatch from "../../UI/ColorSwatch";
 import ColorBackground from "../../UI/ColorBackground";
-import LinkButton from "../../UI/LinkButton";
 import Contact from "../../Contact/Contact";
 import Footer from "../../Footer/Footer";
 
@@ -16,7 +15,7 @@ import uxjobsboardArrow from "../../../images/UXjobsboard/uxjobsboard-font-arrow
 import uxjobsboardGraph from "../../../images/UXjobsboard/uxjobsboard-graph.png";
 import competitiveanalysis from "../../../images/UXjobsboard/competitive-analysis.png";
 import uxjobsboardAlignment from "../../../images/UXjobsboard/uxjobsboard-alignment.png";
-import uxjobsboardSecondImage from "../../../images/UXjobsboard/uxjobsboard-second-image.png";
+import uxjobsboardSecondImage from "../../../images/UXjobsboard/uxjobsboardsecondimage.png";
 import lightbulb from "../../../images/UXjobsboard/lightbulb.png";
 import laptop from "../../../images/UXjobsboard/laptop.png";
 import user1 from "../../../images/UXjobsboard/user1.png";
@@ -27,6 +26,7 @@ import persona from "../../../images/UXjobsboard/persona.png";
 import userflow from "../../../images/UXjobsboard/userflow.png";
 import prototype from "../../../images/UXjobsboard/uxjobsboard-prototype.gif";
 import wireframes from "../../../images/UXjobsboard/wireframes.png";
+import illustrations from "../../../images/UXjobsboard/illustrations.png";
 
 const technologies = [
   "Market research",
@@ -116,10 +116,7 @@ const UXJobsBoard = () => {
       <ColorBackground backgroundColor="white">
         <div className="main-container">
           <div className="case-study-container">
-            <div
-              className="case-study-section"
-              style={{ marginBottom: "80px" }}
-            >
+            <div className="case-study-section">
               <h4>Market insights</h4>
               <h5 className="mt-5">The claim and the problem</h5>
               <p className="text-grey">
@@ -147,10 +144,7 @@ const UXJobsBoard = () => {
       <ColorBackground backgroundColor="#F6F0FF">
         <div className="main-container">
           <div className="case-study-container">
-            <div
-              className="case-study-section"
-              style={{ marginBottom: "80px" }}
-            >
+            <div className="case-study-section">
               <h4>Competitive analysis</h4>
               <p className="text-grey">
                 I analyzed 3 different websites/apps in the space - looking at
@@ -163,7 +157,7 @@ const UXJobsBoard = () => {
                 className="img-80"
                 src={competitiveanalysis}
                 alt="Screen-shots from three competitors"
-                style={{ marginBottom: "80px" }}
+                style={{ marginBottom: "100px", marginTop: "80px" }}
               />
               <h5 className="mt-5">The good</h5>
               <p className="text-grey">
@@ -228,10 +222,7 @@ const UXJobsBoard = () => {
       <ColorBackground backgroundColor="white">
         <div className="main-container">
           <div className="case-study-container">
-            <div
-              className="case-study-section"
-              style={{ marginBottom: "80px" }}
-            >
+            <div className="case-study-section">
               <h4>Persona</h4>
               <p className="text-grey">
                 I created one persona based on a typical user of the app.
@@ -240,7 +231,6 @@ const UXJobsBoard = () => {
                 className="img-80"
                 src={persona}
                 alt="Information about persona"
-                style={{ marginBottom: "80px" }}
               />
             </div>
           </div>
@@ -250,10 +240,7 @@ const UXJobsBoard = () => {
       <ColorBackground backgroundColor="#F7FFF0">
         <div className="main-container">
           <div className="case-study-container">
-            <div
-              className="case-study-section"
-              style={{ marginBottom: "80px" }}
-            >
+            <div className="case-study-section">
               <h4>Flow diagram</h4>
               <p className="text-grey">
                 To outline all the necessary functionality for the search
@@ -261,12 +248,7 @@ const UXJobsBoard = () => {
                 ease of navigation, ensuring users seamlessly transition from
                 welcome screen to search form, and subsequently, filter options.
               </p>
-              <img
-                className="img-80"
-                src={userflow}
-                alt="User flow diagram"
-                style={{ marginBottom: "80px" }}
-              />
+              <img className="img-80" src={userflow} alt="User flow diagram" />
             </div>
           </div>
         </div>
@@ -275,10 +257,7 @@ const UXJobsBoard = () => {
       <ColorBackground backgroundColor="white">
         <div className="main-container">
           <div className="case-study-container">
-            <div
-              className="case-study-section"
-              style={{ marginBottom: "80px" }}
-            >
+            <div className="case-study-section">
               <h4>Wireframes and prototype</h4>
               <p className="text-grey">
                 Once the flow diagram was established, I started sketching
@@ -318,10 +297,7 @@ const UXJobsBoard = () => {
       <ColorBackground backgroundColor="#F6F0FF">
         <div className="main-container">
           <div className="case-study-container">
-            <div
-              className="case-study-section"
-              style={{ marginBottom: "80px" }}
-            >
+            <div className="case-study-section">
               <h4>Mini usability test</h4>
               <p className="text-grey">
                 I tested my prototype with one user to assess its
@@ -396,13 +372,10 @@ const UXJobsBoard = () => {
       <ColorBackground backgroundColor="linear-gradient(#F7FFF0, #F6F0FF)">
         <div className="main-container">
           <div className="case-study-container">
-            <div
-              className="case-study-section"
-              style={{ marginBottom: "80px" }}
-            >
+            <div className="case-study-section">
               <div
                 className="why-container"
-                style={{ backgroundColor: "#D7FF64", marginBottom: "160px" }}
+                style={{ backgroundColor: "#D7FF64", marginBottom: "120px" }}
               >
                 <div id="why-text">
                   <p className="weight-700 mb-4">Time for the visual design</p>
@@ -462,8 +435,67 @@ const UXJobsBoard = () => {
                   />
                 </div>
               </div>
+              <h5 className="mt-5">Energetic and friendly feel</h5>
+              <p className="text-grey">
+                I chose colors that spark energy while keeping the backgrounds
+                neutral to not overwhelm. Since reading job listings in the app
+                can be text heavy I chose DM Sans for the font, as it is
+                suitable for small sizes. It also gives off a friendly yet
+                professional feel.
+              </p>
+              <h5 className="mt-5">Alignment and grid</h5>
+              <p className="text-grey">
+                I picked an 8-point grid system for the project to ensure visual
+                harmony and alignment and set the margins within groups at 12
+                and 16, and margins between groups at 12, 16, 32 and 48 points.
+              </p>
+              <img
+                // onContextMenu={handleRightClick}
+                // onDragStart={handleDrag}
+                className="img-80"
+                src={uxjobsboardAlignment}
+                alt="Showing alignment in the UX Jobs finder app"
+                style={{ maxWidth: "60%" }}
+              />
             </div>
-            {/* -------------ACCESSIBILITY CHECK---------------------------------------- */}
+          </div>
+        </div>
+      </ColorBackground>
+      {/* ------------SECOND DESIGN IMAGE----------------------------------------- */}
+      <ColorBackground backgroundColor="#F7FFF0">
+        <div className="main-container">
+          <div className="case-study-container">
+            <div
+              className="case-study-section"
+              style={{ position: "relative" }}
+            >
+              <img
+                // onContextMenu={handleRightClick}
+                // onDragStart={handleDrag}
+                className="cover-image"
+                src={uxjobsboardSecondImage}
+                alt="UX Jobs Finder UI design"
+                style={{
+                  zIndex: "1000",
+                  position: "relative",
+                  marginBottom: "0",
+                }}
+              />
+              <img
+                // onContextMenu={handleRightClick}
+                // onDragStart={handleDrag}
+                id="illustrations"
+                src={illustrations}
+                alt="UX Jobs Finder UI design"
+              />
+            </div>
+          </div>
+        </div>
+      </ColorBackground>
+      {/* -------------ACCESSIBILITY CHECK---------------------------------------- */}
+      <ColorBackground backgroundColor="#F6F0FF">
+        <div className="main-container">
+          <div className="case-study-container">
             <div className="case-study-section">
               <h4>Accessibility check</h4>
               <p className="text-grey">
@@ -483,25 +515,37 @@ const UXJobsBoard = () => {
       </ColorBackground>
       {/* ------------VIDEO----------------------------------------- */}
       <ColorBackground backgroundColor="white">
-        <div className="main-section extra-bottom-padding">
-          <div className="video-section">
-            <img
-              // onContextMenu={handleRightClick}
-              // onDragStart={handleDrag}
-              style={{ width: "80%", marginTop: "60px", marginBottom: "24px" }}
-              src={uxjobsboardGif}
-              alt="UX jobs finder UI design"
-            />
-            <LinkButton text="Visit Webflow site" className="mt-4" />
+        <div className="main-container">
+          <div className="case-study-container">
+            <div className="case-study-section">
+              <h4>Project summary</h4>
+              <p className="text-grey">
+                In this project, I created UX Job Finder, aimed at streamlining
+                UX job searching. Through research and testing, I identified
+                user pain points and refined the app's design for intuitive
+                navigation and accessibility. By incorporating user feedback, I
+                ensured the app met their needs. This project shows my abilities
+                in UX and UI design, and solving problems. The result is a
+                simple app that helps UX professionals find jobs easily.
+              </p>
+              <div className="video-section">
+                <img
+                  id="uxjobsboard-gif"
+                  src={uxjobsboardGif}
+                  alt="UX jobs finder UI design"
+                />
+              </div>
+            </div>
           </div>
         </div>
       </ColorBackground>
       <Contact
+        className="text-white"
         caseStudy={true}
-        backgroundColor="#EFC3F5"
+        backgroundColor="#8D53D9"
         header="Thank you for reading :)"
       />
-      <Footer backgroundColor="#EFC3F5" />
+      <Footer backgroundColor="#8D53D9" className="text-white" />
     </>
   );
 };
