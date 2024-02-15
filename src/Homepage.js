@@ -5,10 +5,12 @@ import Intro from "./components/Intro/Intro";
 import Projects from "./components/Projects/Projects";
 import IllustrationAnimation from "./components/Animation/IllustrationAnimation";
 import Contact from "./components/Contact/Contact";
+import About from "./components/About/About";
 import Footer from "./components/Footer/Footer";
 import Navbar from "./components/Navbar/Navbar";
 import { ProjectContextProvider } from "./store/project-context";
 import ScrollToHashElement from "./ScrollToHashElement";
+
 const Homepage = () => {
   useEffect(() => {
     document.title =
@@ -34,6 +36,7 @@ const Homepage = () => {
         <Intro />
         <Projects />
         <IllustrationAnimation />
+        <About />
         <Contact backgroundColor="#F2F2F2" header={"Let's connect"} />
         <Footer backgroundColor="#F2F2F2" />
       </div>
