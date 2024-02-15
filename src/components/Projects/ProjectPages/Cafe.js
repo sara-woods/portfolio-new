@@ -157,12 +157,12 @@ const Cafe = () => {
       {/* ----------------------------------------------------- */}
 
       <ColorBackground backgroundColor="white">
-        <div className="main-section extra-bottom-padding">
+        <div className="main-container extra-bottom-padding">
           <div className="video-section">
             <img
               // onContextMenu={handleRightClick}
               // onDragStart={handleDrag}
-              style={{ width: "80%", marginTop: "60px", marginBottom: "24px" }}
+              style={{ width: "80%", marginTop: "0px", marginBottom: "24px" }}
               src={cafeGif}
               alt="Café UI design"
             />

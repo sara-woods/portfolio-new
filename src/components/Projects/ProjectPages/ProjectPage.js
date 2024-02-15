@@ -7,7 +7,7 @@ import ErrorPage from "../../../ErrorPage";
 import WatchDominion from "./WatchDomionion";
 import Cafe from "./Cafe";
 
-const projects = ["uxjobsboard", "moviegenerator", "watchdominion", "cafe"];
+const projects = ["uxjobsfinder", "moviegenerator", "watchdominion", "cafe"];
 
 const ProjectPage = () => {
   const params = useParams();
@@ -20,7 +20,7 @@ const ProjectPage = () => {
   return (
     <div className="">
       {missingProjectPage && <ErrorPage />}
-      {params.projectId === "uxjobsboard" && <UXJobsBoard />}
+      {params.projectId === "uxjobsfinder" && <UXJobsBoard />}
       {params.projectId === "moviegenerator" && <MovieGenerator />}
       {params.projectId === "watchdominion" && <WatchDominion />}
       {params.projectId === "cafe" && <Cafe />}

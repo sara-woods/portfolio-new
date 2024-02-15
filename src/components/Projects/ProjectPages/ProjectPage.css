@@ -137,6 +137,13 @@
   right: 2%;
   width:  180px;
 }
+#illustrations {
+  z-index: 999;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 50%;
+}
 
 /* ------ MOVIE CASE STUDY */
 
