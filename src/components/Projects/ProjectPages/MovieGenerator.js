@@ -8,7 +8,7 @@ import LinkButton from "../../UI/LinkButton";
 import Contact from "../../Contact/Contact";
 import Footer from "../../Footer/Footer";
 
-import movieCoverImage from "../../../images/Movie/movie-cover-image.png";
+import movieCoverImage from "../../../images/Movie/movie-cover-image.jpg";
 import movieGif from "../../../images/Movie/movie-gif.gif";
 import movieAlignment from "../../../images/Movie/movie-alignment.png";
 import popcorn from "../../../images/Movie/popcorn.png";
@@ -197,7 +197,12 @@ const MovieGenerator = () => {
                 src={ipad}
                 alt="ipad frame"
               />
-              <LinkButton text="Visit site" className="mt-4 white" />
+              <LinkButton
+                to="https://what-movie.onrender.com"
+                target="_blank"
+                text="Visit site"
+                className="mt-4 white"
+              />
             </div>
           </div>
         </div>

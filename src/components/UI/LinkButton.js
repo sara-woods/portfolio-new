@@ -4,9 +4,9 @@ import "./LinkButton.css";
 const LinkButton = (props) => {
   return (
     <Link
-      to={`/${props.id}`}
-      // rel="noopener noreferrer"
-      // target="_blank"
+      to={`${props.to}`}
+      rel="noopener noreferrer"
+      target={props.target}
       className={`link-button ${props.className}`}
     >
       <span className="mask">

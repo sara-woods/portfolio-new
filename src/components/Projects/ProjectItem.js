@@ -22,7 +22,12 @@ const ProjectItem = (props) => {
               </div>
             ))}
           </div>
-          <LinkButton id={props.projectId} text={props.name} className="" />
+          <LinkButton
+            to={`/${props.projectId}`}
+            id={props.projectId}
+            text={props.name}
+            className=""
+          />
         </div>
       </div>
     </div>

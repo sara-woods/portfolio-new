@@ -15,7 +15,7 @@ const Contact = (props) => {
         {!props.caseStudy && <h1>{props.header}</h1>}
         {props.caseStudy && <h1 className="contact-header">{props.header}</h1>}
         {props.caseStudy && <p className="extra-paragraph">Get in touch</p>}
-        <a href="mailto: hello@sarawoodsdesign.com">
+        <a href="mailto: hellosarawoods@gmail.com">
           <p>hellosarawoods@gmail.com</p>
         </a>
       </div>

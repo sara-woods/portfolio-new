@@ -1,35 +1,64 @@
-import { useMemo, useEffect } from "react";
+// import { useMemo, useEffect } from "react";
+// import { useLocation } from "react-router-dom";
+
+// const ScrollToHashElement = () => {
+//   let location = useLocation();
+
+//   let hashElement = useMemo(() => {
+//     let hash = location.hash;
+//     const removeHashCharacter = (str) => {
+//       const result = str.slice(1);
+//       return result;
+//     };
+
+//     if (hash) {
+//       let element = document.getElementById(removeHashCharacter(hash));
+//       return element;
+//     } else {
+//       return null;
+//     }
+//   }, [location]);
+
+//   useEffect(() => {
+//     if (hashElement) {
+//       hashElement.scrollIntoView({
+//         behavior: "smooth",
+//         // block: "end",
+//         inline: "nearest",
+//       });
+//     }
+//   }, [hashElement]);
+
+//   return null;
+// };
+
+// export default ScrollToHashElement;
+
+import { useEffect, useRef } from "react";
 import { useLocation } from "react-router-dom";
 
-const ScrollToHashElement = () => {
-  let location = useLocation();
+function ScrollToHashElement() {
+  const location = useLocation();
+  const lastHash = useRef("");
 
-  let hashElement = useMemo(() => {
-    let hash = location.hash;
-    const removeHashCharacter = (str) => {
-      const result = str.slice(1);
-      return result;
-    };
+  // listen to location change using useEffect with location as dependency
+  // https://jasonwatmore.com/react-router-v6-listen-to-location-route-change-without-history-listen
+  useEffect(() => {
+    if (location.hash) {
+      lastHash.current = location.hash.slice(1); // safe hash for further use after navigation
+    }
 
-    if (hash) {
-      let element = document.getElementById(removeHashCharacter(hash));
-      return element;
-    } else {
-      return null;
+    if (lastHash.current && document.getElementById(lastHash.current)) {
+      setTimeout(() => {
+        document
+          .getElementById(lastHash.current)
+          ?.scrollIntoView({ behavior: "smooth", block: "start" });
+        lastHash.current = "";
+      }, 100);
     }
   }, [location]);
 
-  useEffect(() => {
-    if (hashElement) {
-      hashElement.scrollIntoView({
-        behavior: "smooth",
-        // block: "end",
-        inline: "nearest",
-      });
-    }
-  }, [hashElement]);
-
   return null;
-};
+}
 
 export default ScrollToHashElement;
