@@ -31,8 +31,6 @@ const Projects = () => {
   //   default:
   //     filterText = filterOptions.webDev;
   // }
-  const location = useLocation();
-  console.log(location);
 
   return (
     <WrapperBackground className="wrapper-background" backgroundColor="#f1f1f1">

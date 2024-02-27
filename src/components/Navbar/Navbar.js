@@ -11,8 +11,6 @@ const Navbar = () => {
   const [showResponsiveNavbar, setShowResponsiveNavbar] = useState(false);
   const navRef = useRef();
   // const ctx = useContext(ProjectContext);
-  const location = useLocation();
-  console.log(location);
 
   const navLinks = {
     webDev: "Projects",
