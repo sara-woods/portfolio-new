@@ -16,10 +16,9 @@ const About = (props) => {
           <div>
             <img src={profileImage} id="profile-image" alt="me" />
             <p>
-              Hi! I’m Sara. Lorem ipsum dolor sit amet consectetur. Pellentesque
-              vulputate nullam etiam urna non elementum. Nec dis nunc risus id
-              placerat nec. Vitae nisi varius id bibendum. Amet habitant ipsum
-              interdum vestibulum lectus amet nunc.
+              Hi! I’m Sara. With background as a PhD in engineering physics I
+              did a complete career change to focus on creativity. Now I am
+              playing with UI design, illustration and web development.
             </p>
           </div>
         </div>

@@ -1,16 +1,23 @@
+import { useNavigate } from "react-router-dom";
 import "./ProjectItem.css";
 
 import LinkButton from "../UI/LinkButton";
 
 const ProjectItem = (props) => {
+  const navigate = useNavigate();
+
   let style = {
     backgroundImage: `url(${props.projectImage})`,
+  };
+
+  const handleProjectClick = () => {
+    navigate(`/${props.projectId}`);
   };
 
   return (
     <div className="project-container">
       <div className="project-item">
-        <div className="image-container">
+        <div className="image-container" onClick={handleProjectClick}>
           <div className="image" style={style}></div>
         </div>
 
