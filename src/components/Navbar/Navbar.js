@@ -1,16 +1,18 @@
-import React, { useRef, useState, useContext } from "react";
-import { Link } from "react-router-dom";
+import React, { useRef, useState } from "react";
+import { Link, useLocation } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTimes, faBars } from "@fortawesome/free-solid-svg-icons";
 
 import "./Navbar.css";
 import logo from "../../images/logo2.png";
-import ProjectContext from "../../store/project-context";
+// import ProjectContext from "../../store/project-context";
 
 const Navbar = () => {
   const [showResponsiveNavbar, setShowResponsiveNavbar] = useState(false);
   const navRef = useRef();
-  const ctx = useContext(ProjectContext);
+  // const ctx = useContext(ProjectContext);
+  const location = useLocation();
+  console.log(location);
 
   const navLinks = {
     webDev: "Projects",
@@ -24,7 +26,7 @@ const Navbar = () => {
   };
 
   const handleNavLinkClick = (event) => {
-    ctx.handlePageChange(event);
+    // ctx.handlePageChange(event);
     hideResponsiveNavbar();
   };
 
@@ -42,7 +44,6 @@ const Navbar = () => {
           alt="logo sara woods"
         />
       </Link>
-      {/* <p id="name">SARA WOODS</p> */}
       <nav
         ref={navRef}
         className={`${showResponsiveNavbar ? "responsive-nav" : ""}`}
@@ -53,7 +54,7 @@ const Navbar = () => {
         <Link to="/illustrations" onClick={handleNavLinkClick}>
           {navLinks.illustrations}
         </Link>
-        <Link to="#scroll-about" onClick={handleNavLinkClick}>
+        <Link to="/#scroll-about" onClick={handleNavLinkClick}>
           {navLinks.about}
         </Link>
         <Link to="/#scroll-contact" onClick={handleNavLinkClick}>

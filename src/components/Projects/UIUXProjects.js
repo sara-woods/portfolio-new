@@ -1,6 +1,6 @@
 import ProjectItem from "./ProjectItem";
 
-import movieImage from "../../images/Movie/movie-cover-image.png";
+import movieImage from "../../images/Movie/movie-cover-image.jpg";
 import watchdominionImage from "../../images/WatchDominion/watchdominion-cover-image.png";
 import cafeImage from "../../images/Cafe/cafe-cover-image.png";
 import uxjobsboardImage from "../../images/UXjobsboard/uxjobsboard-cover-image.png";

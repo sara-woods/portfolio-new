@@ -156,7 +156,12 @@ const WatchDominion = () => {
               src={watchdominionGif}
               alt="Watch Domionion website scroll gif"
             />
-            <LinkButton text="Visit site" className="mt-4 white" />
+            <LinkButton
+              to="https://watchdominion.com"
+              target="_blank"
+              text="Visit site"
+              className="mt-4 white"
+            />
           </div>
         </div>
       </ColorBackground>
