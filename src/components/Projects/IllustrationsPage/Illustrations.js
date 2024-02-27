@@ -13,7 +13,7 @@ import girlImage from "../../../images/girl.jpg";
 import faceImage from "../../../images/face.jpg";
 import clownImage from "../../../images/pennywise.jpg";
 import vansImage from "../../../images/vans.jpg";
-import abcImage from "../../../images/abc.jpg";
+import catTurnaround from "../../../images/cat_turnaround.gif";
 import catGif from "../../../images/cat_turnaround.gif";
 import duckGif from "../../../images/duck.gif";
 import { useEffect } from "react";
@@ -62,14 +62,6 @@ const Illustrations = () => {
             alt="A girls face in watercolor with thick eyeliner"
           />
           <IllustrationItem
-            src={catGif}
-            alt="Black and white cat turnaround animation"
-          />
-          <IllustrationItem
-            src={abcImage}
-            alt="The alphabet as different figures"
-          />
-          <IllustrationItem
             src={basketImage}
             alt="A basket in a rubber hose retro style"
           />
@@ -80,6 +72,10 @@ const Illustrations = () => {
           <IllustrationItem
             src={clownImage}
             alt="Pennywise the clown in rubber hose retro style"
+          />
+          <IllustrationItem
+            src={catGif}
+            alt="Black and white cat turnaround animation"
           />
         </div>
       </div>

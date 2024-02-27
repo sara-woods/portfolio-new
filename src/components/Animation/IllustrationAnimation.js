@@ -46,7 +46,6 @@ const IllustrationAnimation = () => {
             <AnimationImage src={girlImage} />
             <AnimationImage src={photographyImage} />
             <AnimationImage src={faceImage} />
-            <AnimationImage src={abcImage} />
             <AnimationImage src={publishingImage} />
             <AnimationImage src={pennywiseImage} />
             <AnimationImage src={backgammonImage} />
@@ -76,7 +75,6 @@ const IllustrationAnimation = () => {
             <AnimationImage src={soapImage} />
             <AnimationImage src={catWereWolfImage} />
             <AnimationImage src={basketImage} />
-            <AnimationImage src={abcImage} />
             <AnimationImage src={tvImage} />
             <AnimationImage src={girlImage} />
           </div>
@@ -87,7 +85,6 @@ const IllustrationAnimation = () => {
             <AnimationImage src={tvImage} />
             <AnimationImage src={bearImage} />
             <AnimationImage src={faceImage} />
-            <AnimationImage src={abcImage} />
             <AnimationImage src={vansImage} />
             <AnimationImage src={cat_turnaroundImage} />
             <AnimationImage src={pennywiseImage} />
