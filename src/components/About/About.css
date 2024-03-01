@@ -3,7 +3,7 @@
 }
 .skills-container {
   display: flex;
-  gap: 160px;
+  gap: 100px;
 }
 
 #profile-image {
@@ -15,4 +15,22 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 100px;
+}
+
+@media screen  and (max-width: 900px ) {
+  .about-section {
+    gap: 40px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .skills-container {
+    flex-direction: column;
+    gap: 0;
+  }
+}
+@media screen and (max-width: 750px) {
+  .about-section {
+    grid-template-columns: 1fr;
+
+  }
 }

@@ -28,7 +28,7 @@ const Illustrations = () => {
   return (
     <>
       <Navbar />
-      <div className="main-container">
+      <div className="main-container extra-bottom-padding">
         <h1>Illustrations</h1>
         <div className="illustrations-container">
           <IllustrationItem
@@ -78,8 +78,8 @@ const Illustrations = () => {
           />
         </div>
       </div>
-      <Contact />
-      <Footer />
+      <Contact backgroundColor="#F2F2F2" header={"Let's connect"} />
+      <Footer backgroundColor="#F2F2F2" />
     </>
   );
 };

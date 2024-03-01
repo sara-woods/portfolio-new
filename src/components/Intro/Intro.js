@@ -8,7 +8,7 @@ const Intro = () => {
           {/* <img className="logo" src={logo} alt="Sara Woods logo"/> */}
           <p>
             Hi! I’m Sara Woods — <br></br>
-            UI & UX designer with coding experience and a love for illustration.
+            UI & UX designer, illustrator and developer.
           </p>
         </div>
         {/* <div className="intro-bottom">

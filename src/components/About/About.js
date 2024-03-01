@@ -16,14 +16,13 @@ const About = (props) => {
           <div>
             <img src={profileImage} id="profile-image" alt="me" />
             <p>
-              Hi! I’m Sara. With background as a PhD in engineering physics I
-              did a complete career change to focus on creativity. Now I am
-              playing with UI design, illustration and web development.
+              Hi! I’m Sara, based in Sweden and like to play with UI design,
+              illustration and web development.
             </p>
           </div>
         </div>
         <div className="about-section">
-          <h4>Skills</h4>
+          <h6>SKILLS</h6>
           <div className="skills-container">
             <div>
               <p>Figma</p>
