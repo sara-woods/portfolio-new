@@ -3,19 +3,18 @@ import IllustrationItem from "./IllustrationItem";
 import Contact from "../../Contact/Contact";
 import Footer from "../../Footer/Footer";
 
-import bearImage from "../../../images/bear.jpg";
-import tvImage from "../../../images/tv.jpg";
-import birdsImage from "../../../images/birds.jpg";
-import backgammonImage from "../../../images/backgammon.jpg";
-import basketImage from "../../../images/basket.jpg";
-import catWereWolfImage from "../../../images/catwerewolf.jpg";
-import girlImage from "../../../images/girl.jpg";
-import faceImage from "../../../images/face.jpg";
-import clownImage from "../../../images/pennywise.jpg";
-import vansImage from "../../../images/vans.jpg";
-import catTurnaround from "../../../images/cat_turnaround.gif";
-import catGif from "../../../images/cat_turnaround.gif";
-import duckGif from "../../../images/duck.gif";
+import bearImage from "../../../images/Illustrations/bear.jpg";
+import tvImage from "../../../images/Illustrations/tv.jpg";
+import birdsImage from "../../../images/Illustrations/birds.jpg";
+import backgammonImage from "../../../images/Illustrations/backgammon.jpg";
+import basketImage from "../../../images/Illustrations/basket.jpg";
+import catWereWolfImage from "../../../images/Illustrations/catwerewolf.jpg";
+import girlImage from "../../../images/Illustrations/girl.jpg";
+import faceImage from "../../../images/Illustrations/face.jpg";
+import clownImage from "../../../images/Illustrations/pennywise.jpg";
+import vansImage from "../../../images/Illustrations/vans.jpg";
+import catTurnaround from "../../../images/Illustrations/cat_turnaround.gif";
+import duckGif from "../../../images/Illustrations/duck.gif";
 import { useEffect } from "react";
 
 const Illustrations = () => {
@@ -74,7 +73,7 @@ const Illustrations = () => {
             alt="Pennywise the clown in rubber hose retro style"
           />
           <IllustrationItem
-            src={catGif}
+            src={catTurnaround}
             alt="Black and white cat turnaround animation"
           />
         </div>
