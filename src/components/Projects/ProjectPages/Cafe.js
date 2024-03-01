@@ -32,8 +32,6 @@ const Cafe = () => {
       <div className="main-container">
         <div className="case-study-container">
           <img
-            // onContextMenu={handleRightClick}
-            // onDragStart={handleDrag}
             className="cover-image"
             src={cafeCoverImage}
             alt="Café UI design"
@@ -144,8 +142,6 @@ const Cafe = () => {
                 using the Color Contrast plugin in Figma.
               </p>
               <img
-                // onContextMenu={handleRightClick}
-                // onDragStart={handleDrag}
                 className="img-80"
                 src={cafeAccessibilityImage}
                 alt="Café accessibility check for contrast in colors"
@@ -160,13 +156,16 @@ const Cafe = () => {
         <div className="main-container extra-bottom-padding">
           <div className="video-section">
             <img
-              // onContextMenu={handleRightClick}
-              // onDragStart={handleDrag}
               style={{ width: "80%", marginTop: "0px", marginBottom: "24px" }}
               src={cafeGif}
               alt="Café UI design"
             />
-            <LinkButton text="Visit page" className="mt-4" />
+            <LinkButton
+              to="https://cafe-landing-page-d5c2ef.webflow.io"
+              target="_blank"
+              text="Visit page"
+              className="mt-4"
+            />
           </div>
         </div>
       </ColorBackground>
