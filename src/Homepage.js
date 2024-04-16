@@ -32,7 +32,7 @@ const Homepage = () => {
     <ProjectContextProvider>
       <ScrollToHashElement />
       <Navbar />
-      <div className="app">
+      <div className="app" id="top">
         <Intro />
         <Projects />
         <IllustrationAnimation />
