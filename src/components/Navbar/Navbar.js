@@ -14,7 +14,7 @@ const Navbar = () => {
 
   const navLinks = {
     webDev: "Projects",
-    illustrations: "Illustrations",
+    illustration: "Illustration",
     about: "About",
     contact: "Contact",
   };
@@ -49,8 +49,8 @@ const Navbar = () => {
         <Link to="/#scroll-projects" onClick={handleNavLinkClick}>
           {navLinks.webDev}
         </Link>
-        <Link to="/illustrations" onClick={handleNavLinkClick}>
-          {navLinks.illustrations}
+        <Link to="/illustration" onClick={handleNavLinkClick}>
+          {navLinks.illustration}
         </Link>
         <Link to="/#scroll-about" onClick={handleNavLinkClick}>
           {navLinks.about}

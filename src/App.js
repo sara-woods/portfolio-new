@@ -15,7 +15,7 @@ const router = createHashRouter([
   },
   {
     errorElement: <ErrorPage />,
-    path: "/illustrations",
+    path: "/illustration",
     element: <Illustrations />,
   },
   {

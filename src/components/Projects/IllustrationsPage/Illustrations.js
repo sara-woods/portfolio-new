@@ -28,7 +28,7 @@ const Illustrations = () => {
     <>
       <Navbar />
       <div className="main-container extra-bottom-padding">
-        <h1>Illustrations</h1>
+        <h1>Illustration</h1>
         <div className="illustrations-container">
           <IllustrationItem
             src={tvImage}
