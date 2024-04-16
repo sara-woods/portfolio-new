@@ -12,7 +12,6 @@ import catWereWolfImage from "../../images/Illustrations/catwerewolf.jpg";
 import campingImage from "../../images/Illustrations/camping.jpg";
 import cat_turnaroundImage from "../../images/Illustrations/cat_turnaround.gif";
 import duckImage from "../../images/Illustrations/duck.gif";
-import faceImage from "../../images/Illustrations/face.jpg";
 import girlImage from "../../images/Illustrations/girl.jpg";
 import pennywiseImage from "../../images/Illustrations/pennywise.jpg";
 import vansImage from "../../images/Illustrations/vans.jpg";
@@ -44,7 +43,6 @@ const IllustrationAnimation = () => {
             <AnimationImage src={soapImage} />
             <AnimationImage src={rosesImage} />
             <AnimationImage src={girlImage} />
-            <AnimationImage src={faceImage} />
             <AnimationImage src={publishingImage} />
             <AnimationImage src={pennywiseImage} />
             <AnimationImage src={backgammonImage} />
@@ -65,7 +63,6 @@ const IllustrationAnimation = () => {
             <AnimationImage src={bearImage} />
             <AnimationImage src={rosesImage} />
             <AnimationImage src={campingImage} />
-            <AnimationImage src={faceImage} />
             <AnimationImage src={duckImage} />
             <AnimationImage src={vansImage} />
             <AnimationImage src={catWereWolfImage} />
@@ -82,7 +79,6 @@ const IllustrationAnimation = () => {
             <AnimationImage src={birdsImage} />
             <AnimationImage src={tvImage} />
             <AnimationImage src={bearImage} />
-            <AnimationImage src={faceImage} />
             <AnimationImage src={cat_turnaroundImage} />
             <AnimationImage src={soapImage} />
             <AnimationImage src={backgammonImage} />

@@ -10,7 +10,6 @@ import backgammonImage from "../../../images/Illustrations/backgammon.jpg";
 import basketImage from "../../../images/Illustrations/basket.jpg";
 import catWereWolfImage from "../../../images/Illustrations/catwerewolf.jpg";
 import girlImage from "../../../images/Illustrations/girl.jpg";
-import faceImage from "../../../images/Illustrations/face.jpg";
 import clownImage from "../../../images/Illustrations/pennywise.jpg";
 import vansImage from "../../../images/Illustrations/vans.jpg";
 import catTurnaround from "../../../images/Illustrations/cat_turnaround.gif";
@@ -56,10 +55,6 @@ const Illustrations = () => {
             alt="Cat-werewolf in a pumpkin"
           />
           <IllustrationItem src={duckGif} alt="Walking duck animation" />
-          <IllustrationItem
-            src={faceImage}
-            alt="A girls face in watercolor with thick eyeliner"
-          />
           <IllustrationItem
             src={basketImage}
             alt="A basket in a rubber hose retro style"
