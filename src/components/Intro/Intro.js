@@ -15,7 +15,7 @@ const Intro = () => {
             <p>Based in Sweden</p>
             <div className="intro-email">
               <p>Get in touch</p>
-              <a href="mailto: hello@sarawoodsdesign.com"><p>hellosarawoods@gmail.com</p></a>
+              <a href="mailto: sarawoodsdesign@gmail.com"><p>sarawoodsdesign@gmail.com</p></a>
             </div>
           </div> */}
       </div>

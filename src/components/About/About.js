@@ -16,8 +16,10 @@ const About = (props) => {
           <div>
             <img src={profileImage} id="profile-image" alt="me" />
             <p>
-              Hi! I’m Sara, based in Sweden and like to play with UI design,
-              illustration and web development.
+              Hi! I’m Sara, illustrator, designer and occasionally developer. At
+              university I completed a PhD in electrical engineering but decided
+              that I wanted to focus wholeheartedly on art and creativity. In my
+              spare time I enjoy bird watching and gardening.
             </p>
           </div>
         </div>

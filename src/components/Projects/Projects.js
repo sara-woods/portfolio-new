@@ -38,7 +38,7 @@ const Projects = () => {
         className="main-container extra-bottom-padding scroll-anchor"
         id="scroll-projects"
       >
-        <h1>Projects</h1>
+        <h1>Web Projects</h1>
         <UIUXProjects />
         {/* <Filter filterText={filterText} /> */}
         {/* {ctx.page === "1" && <WebDevProjects />}
