@@ -16,10 +16,11 @@ const About = (props) => {
           <div>
             <img src={profileImage} id="profile-image" alt="me" />
             <p>
-              Hi! I’m Sara, illustrator, designer and occasionally developer. At
-              university I completed a PhD in electrical engineering but decided
-              that I wanted to focus wholeheartedly on art and creativity. In my
-              spare time I enjoy bird watching and gardening.
+              Hi! I’m Sara, illustrator, designer with web development
+              experience. At university I completed a PhD in electrical
+              engineering, now I focus wholeheartedly on art and creativity. In
+              my spare time I enjoy bird watching and gardening. Feel free to
+              check out some of my work in this portfolio!
             </p>
           </div>
         </div>
