@@ -1,5 +1,4 @@
 // import { useContext } from "react";
-import { useLocation } from "react-router-dom";
 import "./Projects.css";
 import UIUXProjects from "./UIUXProjects";
 import WrapperBackground from "../UI/WrapperBackground";
