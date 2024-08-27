@@ -1,13 +1,11 @@
 .intro-container {
-  /* padding: 25% 0 80px 0; */
   display: flex;
   flex-direction: column;
 }
 
 .intro-top {
-  margin: 50px 0 60px 0;
+  margin: 30px 0 120px 0;
   line-height: 1.4em;
-  font-size: 2rem;
 }
 
 .intro-bottom {
@@ -17,25 +15,14 @@
   font-size: 1.5rem;
 }
 
-.intro-email a {
-  text-decoration: none;
-  font-weight: 500;
-  color: var(--black);
-}
-.intro-email a:hover {
-  text-decoration: underline;
-}
-
-.logo {
-  width: 128px;
-  margin-bottom: 24px;
+.arrow-email {
+  display: flex;
 }
 
 @media screen and (max-width: 750px) {
   .intro-top {
-      margin-bottom: 60px;
-      line-height: 1.4em;
-      font-size: 1.4rem;
+    line-height: 1.4em;
+    font-size: 1.4rem;
   }
 
   .intro-bottom {
@@ -51,6 +38,13 @@
     font-size: 1rem;
   }
   .intro-top {
-    margin: 10px 0 20px 0;
+    margin: 10px 0 80px 0;
+  }
+  .arrow-email {
+    flex-direction: column;
+  }
+  .arrow {
+    transform: rotate(120deg);
+    height: 50px;
   }
 }

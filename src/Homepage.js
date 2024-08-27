@@ -2,7 +2,6 @@ import { useEffect } from "react";
 
 import "./Homepage.css";
 import Intro from "./components/Intro/Intro";
-import Projects from "./components/Projects/Projects";
 import IllustrationAnimation from "./components/Animation/IllustrationAnimation";
 import Contact from "./components/Contact/Contact";
 import About from "./components/About/About";
@@ -34,10 +33,9 @@ const Homepage = () => {
       <Navbar />
       <div className="app" id="top">
         <Intro />
-        <Projects />
         <IllustrationAnimation />
         <About />
-        <Contact backgroundColor="#F2F2F2" header={"Let's connect"} />
+        <Contact backgroundColor="#F2F2F2" header={"Let's chat"} />
         <Footer backgroundColor="#F2F2F2" />
       </div>
     </ProjectContextProvider>

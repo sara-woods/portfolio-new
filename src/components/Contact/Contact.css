@@ -31,11 +31,7 @@ color: white !important;
   text-transform: none;
 }
 
-@media screen and (max-width: 750px) {
-  .contact-container p {
-      font-size: 1rem;
-  }
-}
+
 /* MIN-WIDTH */
 @media screen and (min-width: 551px) {
   .contact-header {
@@ -43,12 +39,12 @@ color: white !important;
   }
 }
 @media screen and (max-width: 450px) {
-  #scroll-contact a, .extra-paragraph {
+  .extra-paragraph {
     font-size: 1.2rem;
   }
 }
 @media screen and (max-width: 310px) {
-  #scroll-contact a, .extra-paragraph {
+  .email, .extra-paragraph {
     font-size: 1rem;
   }
 }

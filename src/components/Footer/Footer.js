@@ -13,7 +13,7 @@ const Footer = (props) => {
             href="https://www.linkedin.com/in/hellosarawoods/"
             target="_blank"
             rel="noopener noreferrer"
-            className="tab-link"
+            className="tab-link p-body"
           >
             <p className="">LinkedIn</p>
           </a>

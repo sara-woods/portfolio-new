@@ -30,7 +30,7 @@ const IllustrationAnimation = () => {
         className="main-container extra-bottom-padding"
         id="scroll-illustration"
       >
-        <h1>Illustration & graphic design</h1>
+        <h1>Projects</h1>
         <div className="animation-mask">
           <div className="animation-column">
             <AnimationImage src={beachImage} />
@@ -99,7 +99,19 @@ const IllustrationAnimation = () => {
         <LinkButton
           to="/illustration"
           id="illustration"
-          text="See more"
+          text="See more illustrations"
+          className="link-button-mb"
+        />
+        <LinkButton
+          to="/illustration"
+          id="illustration"
+          text="See more graphic design"
+          className="link-button-mb"
+        />
+        <LinkButton
+          to="/illustration"
+          id="illustration"
+          text="See more web design"
           className=""
         />
       </div>

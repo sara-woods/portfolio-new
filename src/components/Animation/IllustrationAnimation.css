@@ -18,7 +18,7 @@
   width: fit-content;
   --animation-offset: 7700px;
   --animation-duration: 45s;
-  margin-bottom: 32px;
+  margin-bottom: 60px;
 }
 
 @keyframes changeYup {
@@ -53,6 +53,10 @@
   animation-timing-function: linear;
 }
 
+.link-button-mb {
+  margin-bottom: 12px;
+}
+
 @media screen and (max-width: 1350px) {
   .animation-mask {
     --animation-offset: 5500px;
@@ -73,6 +77,10 @@
   .animation-mask {
     height: 400px;
     --animation-offset: 2000px;
+    margin-bottom: 32px;
+  }
+  .link-button-mb {
+    margin-bottom: 0;
   }
 }
 @media screen and (max-width: 400px) {

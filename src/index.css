@@ -85,6 +85,7 @@ p {
 
 p {
   line-height: 160%;
+  font-size: 1.5rem;
 }
 
 .weight-300 {
@@ -192,7 +193,11 @@ a:hover {
   width: 80%;
 }
 
+
+
 /* ---------------- RESPONSIVENESS */
+
+
 
 @media screen and (max-width: 950px) {
   .wrapper-background {
@@ -203,6 +208,9 @@ a:hover {
   }
   h1 {
     font-size: 56px;
+  }
+  p {
+    font-size: 1.3rem;
   }
 }
 @media screen and (max-width: 750px) {
@@ -231,12 +239,21 @@ a:hover {
     font-size: 36px;
   }
 }
+@media screen and (max-width: 550px) {
+.extra-bottom-padding {
+    padding-bottom: 150px;
+  }
+}
+
 @media screen and (max-width: 500px) {
   h4 {
     font-size: 1.5rem;
   }
   h5 {
     font-size: 1.25rem;
+  }
+  p {
+    font-size: 1.2rem;
   }
 }
 @media screen and (max-width: 450px) {
