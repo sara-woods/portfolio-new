@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.4786d9d1.css",
-    "main.js": "/static/js/main.4828604d.js",
+    "main.css": "/static/css/main.d637959f.css",
+    "main.js": "/static/js/main.4b8c75de.js",
     "static/media/movie-gif.gif": "/static/media/movie-gif.0ed789256bebec96bf42.gif",
     "static/media/watchdominion-gif.gif": "/static/media/watchdominion-gif.d0031fdd6e6997773bde.gif",
     "static/media/cafe-gif.gif": "/static/media/cafe-gif.cf714f3a47712fec99d2.gif",
@@ -12,7 +12,6 @@
     "static/media/movie-cover-image.jpg": "/static/media/movie-cover-image.91fdc992c876fa9b9cb3.jpg",
     "static/media/duck.gif": "/static/media/duck.a5378423051350d5654e.gif",
     "static/media/uxjobsboard-prototype.gif": "/static/media/uxjobsboard-prototype.696b20de4824aa327849.gif",
-    "static/media/portrait.jpg": "/static/media/portrait.4032371aee0c627fd5ec.jpg",
     "static/media/persona.png": "/static/media/persona.d5ef5ff212a59c3d50bd.png",
     "static/media/uxjobsboard-accessibility-check.png": "/static/media/uxjobsboard-accessibility-check.20962035006005b5020d.png",
     "static/media/catwerewolf.jpg": "/static/media/catwerewolf.f4a2e02b8f743b757172.jpg",
@@ -51,11 +50,11 @@
     "static/media/lightbulb.png": "/static/media/lightbulb.0e572aff49b3a5a997f7.png",
     "static/media/cafe-font-arrow.png": "/static/media/cafe-font-arrow.a12c77ca7ed5d32f004a.png",
     "index.html": "/index.html",
-    "main.4786d9d1.css.map": "/static/css/main.4786d9d1.css.map",
-    "main.4828604d.js.map": "/static/js/main.4828604d.js.map"
+    "main.d637959f.css.map": "/static/css/main.d637959f.css.map",
+    "main.4b8c75de.js.map": "/static/js/main.4b8c75de.js.map"
   },
   "entrypoints": [
-    "static/css/main.4786d9d1.css",
-    "static/js/main.4828604d.js"
+    "static/css/main.d637959f.css",
+    "static/js/main.4b8c75de.js"
   ]
 }
