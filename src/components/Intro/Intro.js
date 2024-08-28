@@ -6,8 +6,11 @@ const Intro = () => {
       <div className="intro-container">
         <div className="intro-top">
           <p className="p-body">
-            Hi! I’m Sara Woods — <br></br>a multidisciplinary designer,
-            illustrator, and web developer.<br></br>
+            Hi! I’m Sara Woods — <br></br>a multidisciplinary{" "}
+            <span className="weight-700">
+              designer, illustrator, and web developer.
+            </span>
+            <br></br>
             <br></br>With a focus on creativity and precision, I craft graphics
             and websites that captivate audiences and drive results. Do you have
             a project in mind? Let’s chat!<br></br>
@@ -41,7 +44,7 @@ const Intro = () => {
                 strokeLinecap="square"
               />
             </svg>
-            <p className="mt-4 p-body">sarawoodsdesign@gmail.com</p>
+            <p className="mt-4 p-body weight-500">sarawoodsdesign@gmail.com</p>
           </div>
         </div>
       </div>
