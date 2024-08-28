@@ -169,11 +169,7 @@ const Cafe = () => {
           </div>
         </div>
       </ColorBackground>
-      <Contact
-        caseStudy={true}
-        backgroundColor="#EFC3F5"
-        header="Thank you for reading :)"
-      />
+      <Contact backgroundColor="#EFC3F5" />
       <Footer backgroundColor="#EFC3F5" />
     </>
   );

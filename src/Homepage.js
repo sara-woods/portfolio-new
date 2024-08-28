@@ -35,7 +35,7 @@ const Homepage = () => {
         <Intro />
         <IllustrationAnimation />
         <About />
-        <Contact backgroundColor="#F2F2F2" header={"Let's chat"} />
+        <Contact backgroundColor="#F2F2F2" />
         <Footer backgroundColor="#F2F2F2" />
       </div>
     </ProjectContextProvider>

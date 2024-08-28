@@ -12,9 +12,8 @@ const Contact = (props) => {
         className={`main-container ${props.className} contact-container`}
         id="scroll-contact"
       >
-        {!props.caseStudy && <h1>{props.header}</h1>}
-        {props.caseStudy && <h1 className="contact-header">{props.header}</h1>}
-        {props.caseStudy && <p className="extra-paragraph">Get in touch</p>}
+        <p>Have a project in mind?</p>
+        <h1>LET'S CHAT</h1>
         <a href="mailto: sarawoodsdesign@gmail.com">
           <p className="email">sarawoodsdesign@gmail.com</p>
         </a>

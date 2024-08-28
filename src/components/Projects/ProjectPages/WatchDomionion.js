@@ -165,11 +165,7 @@ const WatchDominion = () => {
           </div>
         </div>
       </ColorBackground>
-      <Contact
-        caseStudy={true}
-        backgroundColor="#EFE9DC"
-        header="Thank you for reading :)"
-      />
+      <Contact backgroundColor="#EFE9DC" />
       <Footer backgroundColor="#EFE9DC" />
     </>
   );

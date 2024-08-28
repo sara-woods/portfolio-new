@@ -539,12 +539,7 @@ const UXJobsBoard = () => {
           </div>
         </div>
       </ColorBackground>
-      <Contact
-        className="text-white"
-        caseStudy={true}
-        backgroundColor="#8D53D9"
-        header="Thank you for reading :)"
-      />
+      <Contact className="text-white" backgroundColor="#8D53D9" />
       <Footer backgroundColor="#8D53D9" className="text-white" />
     </>
   );

@@ -207,12 +207,7 @@ const MovieGenerator = () => {
           </div>
         </div>
       </ColorBackground>
-      <Contact
-        className="text-white"
-        caseStudy={true}
-        backgroundColor="#D12141"
-        header="Thank you for reading :)"
-      />
+      <Contact className="text-white" backgroundColor="#D12141" />
       <Footer backgroundColor="#D12141" className="text-white" />
     </>
   );
