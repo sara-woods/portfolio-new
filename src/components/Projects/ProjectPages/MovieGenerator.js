@@ -168,7 +168,7 @@ const MovieGenerator = () => {
       {/* ----------------------------------------------------- */}
 
       <ColorBackground backgroundColor="#1A1A1A">
-        <div className="extra-bottom-padding">
+        <div>
           <div className="video-section">
             <div
               className="case-study-section"

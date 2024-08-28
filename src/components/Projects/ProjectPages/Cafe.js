@@ -153,7 +153,7 @@ const Cafe = () => {
       {/* ----------------------------------------------------- */}
 
       <ColorBackground backgroundColor="white">
-        <div className="main-container extra-bottom-padding">
+        <div className="main-container">
           <div className="video-section">
             <img
               style={{ width: "80%", marginTop: "0px", marginBottom: "24px" }}

@@ -31,10 +31,7 @@ const Projects = () => {
   // }
 
   return (
-    <div
-      className="main-container extra-bottom-padding scroll-anchor"
-      id="scroll-projects"
-    >
+    <div className="main-container scroll-anchor" id="scroll-projects">
       <h1>Web Projects</h1>
       <UIUXProjects />
       {/* <Filter filterText={filterText} /> */}

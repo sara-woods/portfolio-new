@@ -27,7 +27,7 @@ const Illustrations = () => {
   return (
     <>
       <Navbar />
-      <div className="main-container extra-bottom-padding">
+      <div className="main-container">
         <h1>Illustration</h1>
         <div className="illustrations-container">
           <IllustrationItem

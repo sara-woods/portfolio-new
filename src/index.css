@@ -27,10 +27,6 @@ body {
   padding: 80px 0 80px 0;
 }
 
-.extra-bottom-padding {
-  padding-bottom: 200px;
-}
-
 html {
   scroll-behavior: smooth;
 }
@@ -225,11 +221,6 @@ a:hover {
   }
   h1 {
     font-size: 36px;
-  }
-}
-@media screen and (max-width: 550px) {
-.extra-bottom-padding {
-    padding-bottom: 150px;
   }
 }
 

@@ -147,7 +147,7 @@ const WatchDominion = () => {
       {/* ----------------------------------------------------- */}
 
       <ColorBackground backgroundColor="#171716">
-        <div className="extra-bottom-padding">
+        <div>
           <div className="video-section">
             <img
               // onContextMenu={handleRightClick}
