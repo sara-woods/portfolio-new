@@ -1,12 +1,10 @@
 import "./Footer.css";
-import WrapperBackground from "../UI/WrapperBackground";
+
+import ColorBackground from "../UI/ColorBackground";
 
 const Footer = (props) => {
   return (
-    <WrapperBackground
-      id="footer-wrapper"
-      backgroundColor={props.backgroundColor}
-    >
+    <ColorBackground backgroundColor={props.backgroundColor}>
       <div className={`footer main-container ${props.className}`}>
         <div className="social-links">
           <a
@@ -28,7 +26,7 @@ const Footer = (props) => {
         </div>
         <p className="copyright">©2024 Sara Woods</p>
       </div>
-    </WrapperBackground>
+    </ColorBackground>
   );
 };
 

@@ -1,13 +1,10 @@
 import "./Contact.css";
 
-import WrapperBackground from "../UI/WrapperBackground";
+import ColorBackground from "../UI/ColorBackground";
 
 const Contact = (props) => {
   return (
-    <WrapperBackground
-      backgroundColor={props.backgroundColor}
-      id="wrapper-contact"
-    >
+    <ColorBackground backgroundColor={props.backgroundColor}>
       <div
         className={`main-container ${props.className} contact-container`}
         id="scroll-contact"
@@ -18,7 +15,7 @@ const Contact = (props) => {
           <p className="email">sarawoodsdesign@gmail.com</p>
         </a>
       </div>
-    </WrapperBackground>
+    </ColorBackground>
   );
 };
 

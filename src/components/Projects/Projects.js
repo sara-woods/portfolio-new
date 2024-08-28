@@ -1,7 +1,6 @@
 // import { useContext } from "react";
 import "./Projects.css";
 import UIUXProjects from "./UIUXProjects";
-import WrapperBackground from "../UI/WrapperBackground";
 // import Illustrations from "./Illustrations";
 // import GraphicDesigns from "./GraphicDesigns";
 // import Filter from "./Filter";
@@ -32,19 +31,17 @@ const Projects = () => {
   // }
 
   return (
-    <WrapperBackground className="wrapper-background" backgroundColor="#f1f1f1">
-      <div
-        className="main-container extra-bottom-padding scroll-anchor"
-        id="scroll-projects"
-      >
-        <h1>Web Projects</h1>
-        <UIUXProjects />
-        {/* <Filter filterText={filterText} /> */}
-        {/* {ctx.page === "1" && <WebDevProjects />}
+    <div
+      className="main-container extra-bottom-padding scroll-anchor"
+      id="scroll-projects"
+    >
+      <h1>Web Projects</h1>
+      <UIUXProjects />
+      {/* <Filter filterText={filterText} /> */}
+      {/* {ctx.page === "1" && <WebDevProjects />}
         {ctx.page === "2" && <Illustrations />}
         {ctx.page === "3" && <GraphicDesigns />} */}
-      </div>
-    </WrapperBackground>
+    </div>
   );
 };
 

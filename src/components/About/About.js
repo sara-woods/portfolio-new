@@ -1,12 +1,11 @@
 import "./About.css";
 
-import WrapperBackground from "../UI/WrapperBackground";
-import profileImage from "../../images/portrait.jpg";
 import avatarImage from "../../images/avatar.png";
+import ColorBackground from "../UI/ColorBackground";
 
 const About = (props) => {
   return (
-    <WrapperBackground backgroundColor="#E5E3E0" id="wrapper-contact">
+    <ColorBackground backgroundColor="#E5E3E0">
       <div
         className={`main-container ${props.className} extra-bottom-padding`}
         id="scroll-about"
@@ -40,7 +39,7 @@ const About = (props) => {
           </div>
         </div>
       </div>
-    </WrapperBackground>
+    </ColorBackground>
   );
 };
 

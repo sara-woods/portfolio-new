@@ -1,4 +1,3 @@
-import WrapperBackground from "../UI/WrapperBackground";
 import LinkButton from "../UI/LinkButton";
 import AnimationImage from "./AnimationImage";
 import "./IllustrationAnimation.css";
@@ -22,10 +21,11 @@ import publishingImage from "../../images/Illustrations/publishing.jpg";
 import photographyImage from "../../images/Illustrations/photography.jpg";
 import paddleboardsImage from "../../images/Illustrations/paddleboards.jpg";
 import babyImage from "../../images/Illustrations/baby.jpg";
+import ColorBackground from "../UI/ColorBackground";
 
 const IllustrationAnimation = () => {
   return (
-    <WrapperBackground id="wrapper-animation" backgroundColor="#dbd7d7">
+    <ColorBackground backgroundColor="#dbd7d7">
       <div
         className="main-container extra-bottom-padding"
         id="scroll-illustration"
@@ -115,7 +115,7 @@ const IllustrationAnimation = () => {
           className=""
         />
       </div>
-    </WrapperBackground>
+    </ColorBackground>
   );
 };
 

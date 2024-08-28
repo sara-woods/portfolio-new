@@ -35,12 +35,6 @@ html {
   scroll-behavior: smooth;
 }
 
-
-.wrapper-background {
-  margin: 0 auto;
-  /* border-radius: 100px 100px 0 0; */
-}
-
 /* ------------------- TYPE */
 
 h1 {
@@ -200,9 +194,6 @@ a:hover {
 
 
 @media screen and (max-width: 950px) {
-  .wrapper-background {
-    border-radius: 80px 80px 0 0;
-  }
   .main-container {
     padding-top: 60px;
   }
@@ -214,9 +205,6 @@ a:hover {
   }
 }
 @media screen and (max-width: 750px) {
-  .wrapper-background {
-    border-radius: 60px 60px 0 0;
-  }
   .main-container {
     padding-top: 60px;
   }
@@ -257,9 +245,6 @@ a:hover {
   }
 }
 @media screen and (max-width: 450px) {
-  .wrapper-background {
-    border-radius: 40px 40px 0 0;
-  }
   .main-container {
     padding-top: 60px;
   }
