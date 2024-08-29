@@ -9,7 +9,6 @@ import Footer from "./components/Footer/Footer";
 import Navbar from "./components/Navbar/Navbar";
 import { ProjectContextProvider } from "./store/project-context";
 import ScrollToHashElement from "./ScrollToHashElement";
-import Projects from "./components/Projects/Projects";
 
 const Homepage = () => {
   useEffect(() => {
@@ -36,9 +35,8 @@ const Homepage = () => {
         <Intro />
         <IllustrationAnimation />
         <About />
-        <Projects />
-        <Contact backgroundColor="#F2F2F2" />
-        <Footer backgroundColor="#F2F2F2" />
+        <Contact backgroundColor="#F4EFEC" />
+        <Footer backgroundColor="#F4EFEC" />
       </div>
     </ProjectContextProvider>
   );

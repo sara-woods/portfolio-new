@@ -25,9 +25,9 @@ import ColorBackground from "../UI/ColorBackground";
 
 const IllustrationAnimation = () => {
   return (
-    <ColorBackground backgroundColor="#dbd7d7">
+    <ColorBackground backgroundColor="#F4EFEC">
       <div className="main-container" id="scroll-illustration">
-        <h1>Projects</h1>
+        <h1>Portfolio</h1>
         <div className="animation-mask">
           <div className="animation-column">
             <AnimationImage src={beachImage} />
