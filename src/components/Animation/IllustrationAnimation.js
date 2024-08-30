@@ -94,21 +94,21 @@ const IllustrationAnimation = () => {
           </div>
         </div>
         <LinkButton
+          to="/webprojects"
+          id="webprojects"
+          text="See more web projects"
+          className="link-button-mb"
+        />
+        <LinkButton
           to="/illustration"
           id="illustration"
           text="See more illustrations"
           className="link-button-mb"
         />
         <LinkButton
-          to="/illustration"
-          id="illustration"
+          to="/graphicdesign"
+          id="graphicdesign"
           text="See more graphic design"
-          className="link-button-mb"
-        />
-        <LinkButton
-          to="/webprojects"
-          id="webprojects"
-          text="See more web projects"
           className=""
         />
       </div>

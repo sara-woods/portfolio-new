@@ -13,8 +13,9 @@ const Navbar = () => {
   // const ctx = useContext(ProjectContext);
 
   const navLinks = {
-    webDev: "Web projects",
+    webDev: "Web Projects",
     illustration: "Illustration",
+    graphicdesign: "Graphic Design",
     about: "About",
     contact: "Contact",
   };
@@ -51,6 +52,9 @@ const Navbar = () => {
         </Link>
         <Link to="/illustration" onClick={handleNavLinkClick}>
           {navLinks.illustration}
+        </Link>
+        <Link to="/graphicdesign" onClick={handleNavLinkClick}>
+          {navLinks.graphicdesign}
         </Link>
         <Link to="/#scroll-about" onClick={handleNavLinkClick}>
           {navLinks.about}

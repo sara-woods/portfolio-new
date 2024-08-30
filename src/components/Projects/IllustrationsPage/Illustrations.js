@@ -73,8 +73,8 @@ const Illustrations = () => {
           />
         </div>
       </div>
-      <Contact backgroundColor="#F2F2F2" header={"Let's connect"} />
-      <Footer backgroundColor="#F2F2F2" />
+      <Contact backgroundColor="#F4EFEC" />
+      <Footer backgroundColor="#F4EFEC" />
     </>
   );
 };
