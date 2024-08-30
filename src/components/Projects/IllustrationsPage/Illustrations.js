@@ -3,13 +3,13 @@ import IllustrationItem from "./IllustrationItem";
 import Contact from "../../Contact/Contact";
 import Footer from "../../Footer/Footer";
 
+import swansImage from "../../../images/Illustrations/swans.jpg";
 import bearImage from "../../../images/Illustrations/bear.jpg";
 import tvImage from "../../../images/Illustrations/tv.jpg";
 import birdsImage from "../../../images/Illustrations/birds.jpg";
 import backgammonImage from "../../../images/Illustrations/backgammon.jpg";
 import basketImage from "../../../images/Illustrations/basket.jpg";
 import catWereWolfImage from "../../../images/Illustrations/catwerewolf.jpg";
-import girlImage from "../../../images/Illustrations/girl.jpg";
 import clownImage from "../../../images/Illustrations/pennywise.jpg";
 import vansImage from "../../../images/Illustrations/vans.jpg";
 import catTurnaround from "../../../images/Illustrations/cat_turnaround.gif";
@@ -30,6 +30,10 @@ const Illustrations = () => {
       <div className="main-container">
         <h1>Illustration</h1>
         <div className="illustrations-container">
+          <IllustrationItem
+            src={swansImage}
+            alt="Swans flying amongst the clouds in a risograph effect"
+          />
           <IllustrationItem
             src={tvImage}
             alt="Vintage tv flying among the clouds"
@@ -58,10 +62,6 @@ const Illustrations = () => {
           <IllustrationItem
             src={basketImage}
             alt="A basket in a rubber hose retro style"
-          />
-          <IllustrationItem
-            src={girlImage}
-            alt="Crying girl in halftone asking for vegan chocolate in vintage comic book halftone style"
           />
           <IllustrationItem
             src={clownImage}

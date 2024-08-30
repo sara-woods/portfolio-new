@@ -3,6 +3,7 @@ import IllustrationItem from "../IllustrationsPage/IllustrationItem";
 import Contact from "../../Contact/Contact";
 import Footer from "../../Footer/Footer";
 
+import reddotImage from "../../../images/Illustrations/thereddot.jpg";
 import babyImage from "../../../images/Illustrations/baby.jpg";
 import beachImage from "../../../images/Illustrations/beach.jpg";
 import campingImage from "../../../images/Illustrations/camping.jpg";
@@ -27,6 +28,10 @@ const GraphicDesign = () => {
       <div className="main-container">
         <h1>Graphic Design</h1>
         <div className="illustrations-container">
+          <IllustrationItem
+            src={reddotImage}
+            alt="Seinfeld episode poster design"
+          />
           <IllustrationItem src={babyImage} alt="Baby shop logo design" />
           <IllustrationItem src={beachImage} alt="Beachy company logo design" />
           <IllustrationItem
