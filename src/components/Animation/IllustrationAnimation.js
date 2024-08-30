@@ -22,6 +22,10 @@ import paddleboardsImage from "../../images/Illustrations/paddleboards.jpg";
 import babyImage from "../../images/Illustrations/baby.jpg";
 import reddotImage from "../../images/Illustrations/thereddot.jpg";
 import swansImage from "../../images/Illustrations/swans.jpg";
+import movieImage from "../../images/Movie/movie-cover-image.jpg";
+import watchdominionImage from "../../images/WatchDominion/watchdominion-cover-image.png";
+import cafeImage from "../../images/Cafe/cafe-cover-image.png";
+import uxjobsboardImage from "../../images/UXjobsboard/uxjobsboard-cover-image.png";
 import ColorBackground from "../UI/ColorBackground";
 
 const IllustrationAnimation = () => {
@@ -38,6 +42,8 @@ const IllustrationAnimation = () => {
             <AnimationImage src={duckImage} />
             <AnimationImage src={vansImage} />
             <AnimationImage src={birdsImage} />
+            {/* <AnimationImage style={{ width: "700px" }} src={movieImage} /> */}
+            {/* <AnimationImage style={{ width: "700px" }} src={cafeImage} /> */}
             {/* <AnimationImage src={soapImage} /> */}
             <AnimationImage src={rosesImage} />
             <AnimationImage src={reddotImage} />
