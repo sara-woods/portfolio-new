@@ -44,7 +44,9 @@ const Intro = () => {
                 strokeLinecap="square"
               />
             </svg>
-            <p className="mt-4 p-body weight-500">sarawoodsdesign@gmail.com</p>
+            <p className="email-top-margin p-body weight-500">
+              sarawoodsdesign@gmail.com
+            </p>
           </div>
         </div>
       </div>
