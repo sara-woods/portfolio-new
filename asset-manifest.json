@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.c8663ea1.css",
-    "main.js": "/static/js/main.24506e75.js",
+    "main.css": "/static/css/main.fdbf35c1.css",
+    "main.js": "/static/js/main.b71a5115.js",
     "static/media/movie-gif.gif": "/static/media/movie-gif.0ed789256bebec96bf42.gif",
     "static/media/watchdominion-gif.gif": "/static/media/watchdominion-gif.d0031fdd6e6997773bde.gif",
     "static/media/cafe-gif.gif": "/static/media/cafe-gif.cf714f3a47712fec99d2.gif",
@@ -18,12 +18,14 @@
     "static/media/uxjobsboard-alignment.png": "/static/media/uxjobsboard-alignment.504dbf859128af4d7dca.png",
     "static/media/vans.jpg": "/static/media/vans.247f17e52da8dc21b133.jpg",
     "static/media/bear.jpg": "/static/media/bear.3b910f5b6c5b5cacf2cf.jpg",
-    "static/media/girl.jpg": "/static/media/girl.7d3415302949a77567da.jpg",
+    "static/media/swans.jpg": "/static/media/swans.6738828789738458fa36.jpg",
     "static/media/cafe-cover-image.png": "/static/media/cafe-cover-image.2e069e44d71dd8407940.png",
     "static/media/uxjobsboard-graph.png": "/static/media/uxjobsboard-graph.abf6a684245935ec02f9.png",
     "static/media/backgammon.jpg": "/static/media/backgammon.18a29b8b2bedbf532672.jpg",
     "static/media/cafe-accessibility.png": "/static/media/cafe-accessibility.ae13b99e7127d2fc185d.png",
     "static/media/illustrations.png": "/static/media/illustrations.02c61b61155a752822f4.png",
+    "static/media/logo2.png": "/static/media/logo2.cc3f8179cebf30a9c6c2.png",
+    "static/media/thereddot.jpg": "/static/media/thereddot.73577388b27192c4e25d.jpg",
     "static/media/pennywise.jpg": "/static/media/pennywise.d8075ea9c75cc538c378.jpg",
     "static/media/competitive-analysis.png": "/static/media/competitive-analysis.45a186f6ce1bdcb32780.png",
     "static/media/wireframes.png": "/static/media/wireframes.c069f6654b437ff215fd.png",
@@ -42,7 +44,6 @@
     "static/media/soap.jpg": "/static/media/soap.829c8e7d29f093239128.jpg",
     "static/media/paddleboards.jpg": "/static/media/paddleboards.e0c9515083c34bd99a30.jpg",
     "static/media/ipad.png": "/static/media/ipad.0f349c8116307479ecb8.png",
-    "static/media/logo2.png": "/static/media/logo2.bcbc581d72bc427f50e8.png",
     "static/media/beach.jpg": "/static/media/beach.0c7624b62460fa7ce37e.jpg",
     "static/media/baby.jpg": "/static/media/baby.42c1d0cd27e7c4f987d3.jpg",
     "static/media/popcorn.png": "/static/media/popcorn.22864ba99133f7642e7d.png",
@@ -50,11 +51,11 @@
     "static/media/lightbulb.png": "/static/media/lightbulb.0e572aff49b3a5a997f7.png",
     "static/media/cafe-font-arrow.png": "/static/media/cafe-font-arrow.a12c77ca7ed5d32f004a.png",
     "index.html": "/index.html",
-    "main.c8663ea1.css.map": "/static/css/main.c8663ea1.css.map",
-    "main.24506e75.js.map": "/static/js/main.24506e75.js.map"
+    "main.fdbf35c1.css.map": "/static/css/main.fdbf35c1.css.map",
+    "main.b71a5115.js.map": "/static/js/main.b71a5115.js.map"
   },
   "entrypoints": [
-    "static/css/main.c8663ea1.css",
-    "static/js/main.24506e75.js"
+    "static/css/main.fdbf35c1.css",
+    "static/js/main.b71a5115.js"
   ]
 }
