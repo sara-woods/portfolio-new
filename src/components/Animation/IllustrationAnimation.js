@@ -106,9 +106,9 @@ const IllustrationAnimation = () => {
           className="link-button-mb"
         />
         <LinkButton
-          to="/illustration"
-          id="illustration"
-          text="See more web design"
+          to="/webprojects"
+          id="webprojects"
+          text="See more web projects"
           className=""
         />
       </div>

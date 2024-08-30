@@ -46,7 +46,7 @@ const Navbar = () => {
         ref={navRef}
         className={`${showResponsiveNavbar ? "responsive-nav" : ""}`}
       >
-        <Link to="/#scroll-projects" onClick={handleNavLinkClick}>
+        <Link to="/webprojects" onClick={handleNavLinkClick}>
           {navLinks.webDev}
         </Link>
         <Link to="/illustration" onClick={handleNavLinkClick}>
