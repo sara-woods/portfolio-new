@@ -6,6 +6,7 @@ import ColorBackground from "../UI/ColorBackground";
 const About = (props) => {
   return (
     <ColorBackground backgroundColor="white">
+      <div></div>
       <div className={`main-container ${props.className}`} id="scroll-about">
         <div className="about-section" style={{ marginBottom: "60px" }}>
           <h6>ABOUT</h6>
