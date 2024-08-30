@@ -1,52 +1,43 @@
 import "./About.css";
 
-import WrapperBackground from "../UI/WrapperBackground";
-import profileImage from "../../images/portrait.jpg";
+import avatarImage from "../../images/avatar.png";
+import ColorBackground from "../UI/ColorBackground";
 
 const About = (props) => {
   return (
-    <WrapperBackground backgroundColor="#E5E3E0" id="wrapper-contact">
-      <div
-        className={`main-container ${props.className} extra-bottom-padding`}
-        id="scroll-about"
-      >
-        <h1>About</h1>
-        <div className="about-section" style={{ marginBottom: "100px" }}>
-          <span></span>
-          <div>
-            <img src={profileImage} id="profile-image" alt="me" />
-            <p>
-              Hi! I’m Sara, illustrator, designer with web development
-              experience. At university I completed a PhD in electrical
-              engineering, now I focus wholeheartedly on art and creativity. In
-              my spare time I enjoy bird watching and gardening. Feel free to
-              check out some of my work in this portfolio!
+    <ColorBackground backgroundColor="white">
+      <div></div>
+      <div className={`main-container ${props.className}`} id="scroll-about">
+        <div className="about-section" style={{ marginBottom: "60px" }}>
+          <h6>ABOUT</h6>
+          <div className="about-inner">
+            <p className="p-body">
+              Hi! I’m Sara, a multidisciplinary creative specializing in
+              illustration, graphic design, and web development. Nestled in the
+              heart of Sweden’s forests, I’m passionate about crafting unique,
+              impactful solutions that connect with your audience.
             </p>
+            <img src={avatarImage} id="profile-image" alt="me" />
           </div>
         </div>
         <div className="about-section">
-          <h6>SKILLS</h6>
+          <h6>SERVICES</h6>
           <div className="skills-container">
             <div>
-              <p>Figma</p>
-              <p>UI Design</p>
-              <p>UX Design</p>
-              <p>Graphic Design</p>
-              <p>Adobe Illustrator</p>
-              <p>Procreate</p>
-            </div>
-            <div>
-              <p>Webflow</p>
-              <p>Javascript</p>
-              <p>HTML/CSS</p>
-              <p>React</p>
-              <p>Ruby on Rails</p>
-              <p>Github</p>
+              <p className="p-body">Illustration</p>
+              <p className="p-body">Graphic Design</p>
+              <p className="p-body">Logos</p>
+              <p className="p-body">Brand Identity</p>
+              <p className="p-body">UI/UX Design</p>
+              <p className="p-body">Poster Design</p>
+              <p className="p-body">Webflow</p>
+              <p className="p-body">Wix</p>
+              <p className="p-body">Squarespace</p>
             </div>
           </div>
         </div>
       </div>
-    </WrapperBackground>
+    </ColorBackground>
   );
 };
 

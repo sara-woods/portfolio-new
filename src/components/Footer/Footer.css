@@ -1,13 +1,6 @@
-#footer-wrapper {
-  border-radius: 0;
-  position: static;
-}
-
-
 .footer.main-container {
   display: flex;
   justify-content: space-between;
-  /* margin-bottom: 10px; */
   padding: 24px 0;
 }
 
@@ -38,7 +31,7 @@
 }
 
 @media screen and (max-width: 750px) {
-  .footer p, .social-links {
+  .social-links {
     font-size: 1rem;
   }
 }

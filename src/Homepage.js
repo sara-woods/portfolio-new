@@ -2,7 +2,6 @@ import { useEffect } from "react";
 
 import "./Homepage.css";
 import Intro from "./components/Intro/Intro";
-import Projects from "./components/Projects/Projects";
 import IllustrationAnimation from "./components/Animation/IllustrationAnimation";
 import Contact from "./components/Contact/Contact";
 import About from "./components/About/About";
@@ -13,8 +12,7 @@ import ScrollToHashElement from "./ScrollToHashElement";
 
 const Homepage = () => {
   useEffect(() => {
-    document.title =
-      "Sara Woods | UX/UI designer, illustrator and front-end developer";
+    document.title = "Sara Woods | Designer, illustrator and web developer";
   }, []);
 
   useEffect(() => {
@@ -34,11 +32,10 @@ const Homepage = () => {
       <Navbar />
       <div className="app" id="top">
         <Intro />
-        <Projects />
         <IllustrationAnimation />
         <About />
-        <Contact backgroundColor="#F2F2F2" header={"Let's connect"} />
-        <Footer backgroundColor="#F2F2F2" />
+        <Contact backgroundColor="#F4EFEC" />
+        <Footer backgroundColor="#F4EFEC" />
       </div>
     </ProjectContextProvider>
   );

@@ -15,13 +15,15 @@
 }
 
 .illustration {
-  width: 100%;
-  border-radius: 8px;
+  width: 70%;
+  /* border-radius: 8px; */
 }
 
 .illustration-container:nth-child(even) {
   margin-left: auto;
   margin-right: 0;
+  display: flex;
+  justify-content: end;
 }
 .illustration-container:nth-child(odd) {
   margin-left: 0;

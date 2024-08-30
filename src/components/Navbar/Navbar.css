@@ -14,7 +14,7 @@
 
 header {
   position: sticky;
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: white;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -139,8 +139,6 @@ input:checked + .slider:before {
 }
 
 @media screen and (max-width: 1000px) {
-
-
   header .nav-btn {
     display: block;
   }
@@ -168,6 +166,10 @@ input:checked + .slider:before {
 
   nav a {
     font-size: 26px;
+  }
+
+  nav a:nth-last-child(2) {
+    margin-right: 1.5rem;
   }
 
   header .responsive-nav {

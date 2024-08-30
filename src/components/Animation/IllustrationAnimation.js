@@ -1,4 +1,3 @@
-import WrapperBackground from "../UI/WrapperBackground";
 import LinkButton from "../UI/LinkButton";
 import AnimationImage from "./AnimationImage";
 import "./IllustrationAnimation.css";
@@ -12,7 +11,6 @@ import catWereWolfImage from "../../images/Illustrations/catwerewolf.jpg";
 import campingImage from "../../images/Illustrations/camping.jpg";
 import cat_turnaroundImage from "../../images/Illustrations/cat_turnaround.gif";
 import duckImage from "../../images/Illustrations/duck.gif";
-import girlImage from "../../images/Illustrations/girl.jpg";
 import pennywiseImage from "../../images/Illustrations/pennywise.jpg";
 import vansImage from "../../images/Illustrations/vans.jpg";
 import beachImage from "../../images/Illustrations/beach.jpg";
@@ -22,15 +20,19 @@ import publishingImage from "../../images/Illustrations/publishing.jpg";
 import photographyImage from "../../images/Illustrations/photography.jpg";
 import paddleboardsImage from "../../images/Illustrations/paddleboards.jpg";
 import babyImage from "../../images/Illustrations/baby.jpg";
+import reddotImage from "../../images/Illustrations/thereddot.jpg";
+import swansImage from "../../images/Illustrations/swans.jpg";
+import movieImage from "../../images/Movie/movie-cover-image.jpg";
+import watchdominionImage from "../../images/WatchDominion/watchdominion-cover-image.png";
+import cafeImage from "../../images/Cafe/cafe-cover-image.png";
+import uxjobsboardImage from "../../images/UXjobsboard/uxjobsboard-cover-image.png";
+import ColorBackground from "../UI/ColorBackground";
 
 const IllustrationAnimation = () => {
   return (
-    <WrapperBackground id="wrapper-animation" backgroundColor="#dbd7d7">
-      <div
-        className="main-container extra-bottom-padding"
-        id="scroll-illustration"
-      >
-        <h1>Illustration & graphic design</h1>
+    <ColorBackground backgroundColor="#F4EFEC">
+      <div className="main-container" id="scroll-illustration">
+        <h1>Portfolio</h1>
         <div className="animation-mask">
           <div className="animation-column">
             <AnimationImage src={beachImage} />
@@ -40,9 +42,12 @@ const IllustrationAnimation = () => {
             <AnimationImage src={duckImage} />
             <AnimationImage src={vansImage} />
             <AnimationImage src={birdsImage} />
-            <AnimationImage src={soapImage} />
+            {/* <AnimationImage style={{ width: "700px" }} src={movieImage} /> */}
+            {/* <AnimationImage style={{ width: "700px" }} src={cafeImage} /> */}
+            {/* <AnimationImage src={soapImage} /> */}
             <AnimationImage src={rosesImage} />
-            <AnimationImage src={girlImage} />
+            <AnimationImage src={reddotImage} />
+            <AnimationImage src={swansImage} />
             <AnimationImage src={publishingImage} />
             <AnimationImage src={pennywiseImage} />
             <AnimationImage src={backgammonImage} />
@@ -55,10 +60,12 @@ const IllustrationAnimation = () => {
           </div>
           <div className="animation-column" id="column-2">
             <AnimationImage src={beachImage} />
-            <AnimationImage src={cat_turnaroundImage} />
+            {/* <AnimationImage src={cat_turnaroundImage} /> */}
             <AnimationImage src={photographyImage} />
             <AnimationImage src={birdsImage} />
             <AnimationImage src={babyImage} />
+            <AnimationImage src={reddotImage} />
+            <AnimationImage src={swansImage} />
             <AnimationImage src={publishingImage} />
             <AnimationImage src={bearImage} />
             <AnimationImage src={rosesImage} />
@@ -68,11 +75,10 @@ const IllustrationAnimation = () => {
             <AnimationImage src={catWereWolfImage} />
             <AnimationImage src={pennywiseImage} />
             <AnimationImage src={backgammonImage} />
-            <AnimationImage src={soapImage} />
+            {/* <AnimationImage src={soapImage} /> */}
             <AnimationImage src={basketImage} />
             <AnimationImage src={paddleboardsImage} />
             <AnimationImage src={tvImage} />
-            <AnimationImage src={girlImage} />
           </div>
           <div className="animation-column">
             <AnimationImage src={catWereWolfImage} />
@@ -80,7 +86,7 @@ const IllustrationAnimation = () => {
             <AnimationImage src={tvImage} />
             <AnimationImage src={bearImage} />
             <AnimationImage src={cat_turnaroundImage} />
-            <AnimationImage src={soapImage} />
+            {/* <AnimationImage src={soapImage} /> */}
             <AnimationImage src={backgammonImage} />
             <AnimationImage src={beachImage} />
             <AnimationImage src={babyImage} />
@@ -91,19 +97,32 @@ const IllustrationAnimation = () => {
             <AnimationImage src={publishingImage} />
             <AnimationImage src={basketImage} />
             <AnimationImage src={campingImage} />
-            <AnimationImage src={girlImage} />
+            <AnimationImage src={reddotImage} />
+            <AnimationImage src={swansImage} />
             <AnimationImage src={duckImage} />
             <AnimationImage src={rosesImage} />
           </div>
         </div>
         <LinkButton
+          to="/webprojects"
+          id="webprojects"
+          text="See more web projects"
+          className="link-button-mb"
+        />
+        <LinkButton
           to="/illustration"
           id="illustration"
-          text="See more"
+          text="See more illustrations"
+          className="link-button-mb"
+        />
+        <LinkButton
+          to="/graphicdesign"
+          id="graphicdesign"
+          text="See more graphic design"
           className=""
         />
       </div>
-    </WrapperBackground>
+    </ColorBackground>
   );
 };
 

@@ -13,8 +13,9 @@ const Navbar = () => {
   // const ctx = useContext(ProjectContext);
 
   const navLinks = {
-    webDev: "Web projects",
+    webDev: "Web Projects",
     illustration: "Illustration",
+    graphicdesign: "Graphic Design",
     about: "About",
     contact: "Contact",
   };
@@ -46,11 +47,14 @@ const Navbar = () => {
         ref={navRef}
         className={`${showResponsiveNavbar ? "responsive-nav" : ""}`}
       >
-        <Link to="/#scroll-projects" onClick={handleNavLinkClick}>
+        <Link to="/webprojects" onClick={handleNavLinkClick}>
           {navLinks.webDev}
         </Link>
         <Link to="/illustration" onClick={handleNavLinkClick}>
           {navLinks.illustration}
+        </Link>
+        <Link to="/graphicdesign" onClick={handleNavLinkClick}>
+          {navLinks.graphicdesign}
         </Link>
         <Link to="/#scroll-about" onClick={handleNavLinkClick}>
           {navLinks.about}
