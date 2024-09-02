@@ -35,16 +35,16 @@ const Illustrations = () => {
             alt="Swans flying amongst the clouds in a risograph effect"
           />
           <IllustrationItem
-            src={tvImage}
-            alt="Vintage tv flying among the clouds"
-          />
-          <IllustrationItem
             src={backgammonImage}
             alt="Cat playing backgammon"
           />
           <IllustrationItem
             src={birdsImage}
             alt="Birds in watercolor and ink"
+          />
+          <IllustrationItem
+            src={tvImage}
+            alt="Vintage tv flying among the clouds"
           />
           <IllustrationItem
             src={bearImage}
