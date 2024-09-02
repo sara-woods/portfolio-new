@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.fdbf35c1.css",
-    "main.js": "/static/js/main.b71a5115.js",
+    "main.css": "/static/css/main.a20f04c7.css",
+    "main.js": "/static/js/main.2db29fec.js",
     "static/media/movie-gif.gif": "/static/media/movie-gif.0ed789256bebec96bf42.gif",
     "static/media/watchdominion-gif.gif": "/static/media/watchdominion-gif.d0031fdd6e6997773bde.gif",
     "static/media/cafe-gif.gif": "/static/media/cafe-gif.cf714f3a47712fec99d2.gif",
@@ -25,8 +25,8 @@
     "static/media/cafe-accessibility.png": "/static/media/cafe-accessibility.ae13b99e7127d2fc185d.png",
     "static/media/illustrations.png": "/static/media/illustrations.02c61b61155a752822f4.png",
     "static/media/logo2.png": "/static/media/logo2.cc3f8179cebf30a9c6c2.png",
-    "static/media/thereddot.jpg": "/static/media/thereddot.73577388b27192c4e25d.jpg",
     "static/media/pennywise.jpg": "/static/media/pennywise.d8075ea9c75cc538c378.jpg",
+    "static/media/thereddot.jpg": "/static/media/thereddot.cc2c6d1d6cfbed38aa63.jpg",
     "static/media/competitive-analysis.png": "/static/media/competitive-analysis.45a186f6ce1bdcb32780.png",
     "static/media/wireframes.png": "/static/media/wireframes.c069f6654b437ff215fd.png",
     "static/media/birds.jpg": "/static/media/birds.446577fd54341e765300.jpg",
@@ -51,11 +51,11 @@
     "static/media/lightbulb.png": "/static/media/lightbulb.0e572aff49b3a5a997f7.png",
     "static/media/cafe-font-arrow.png": "/static/media/cafe-font-arrow.a12c77ca7ed5d32f004a.png",
     "index.html": "/index.html",
-    "main.fdbf35c1.css.map": "/static/css/main.fdbf35c1.css.map",
-    "main.b71a5115.js.map": "/static/js/main.b71a5115.js.map"
+    "main.a20f04c7.css.map": "/static/css/main.a20f04c7.css.map",
+    "main.2db29fec.js.map": "/static/js/main.2db29fec.js.map"
   },
   "entrypoints": [
-    "static/css/main.fdbf35c1.css",
-    "static/js/main.b71a5115.js"
+    "static/css/main.a20f04c7.css",
+    "static/js/main.2db29fec.js"
   ]
 }
