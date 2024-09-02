@@ -15,7 +15,6 @@ import pennywiseImage from "../../images/Illustrations/pennywise.jpg";
 import vansImage from "../../images/Illustrations/vans.jpg";
 import beachImage from "../../images/Illustrations/beach.jpg";
 import rosesImage from "../../images/Illustrations/roses.jpg";
-import soapImage from "../../images/Illustrations/soap.jpg";
 import publishingImage from "../../images/Illustrations/publishing.jpg";
 import photographyImage from "../../images/Illustrations/photography.jpg";
 import paddleboardsImage from "../../images/Illustrations/paddleboards.jpg";
@@ -36,22 +35,23 @@ const IllustrationAnimation = () => {
         <div className="animation-mask">
           <div className="animation-column">
             <AnimationImage src={beachImage} />
-            <AnimationImage src={cat_turnaroundImage} />
+            <AnimationImage src={swansImage} />
+            <AnimationImage src={uxjobsboardImage} />
             <AnimationImage src={bearImage} />
+            <AnimationImage src={movieImage} />
             <AnimationImage src={photographyImage} />
+            <AnimationImage src={cafeImage} />
             <AnimationImage src={duckImage} />
             <AnimationImage src={vansImage} />
-            <AnimationImage src={birdsImage} />
-            {/* <AnimationImage style={{ width: "700px" }} src={movieImage} /> */}
-            {/* <AnimationImage style={{ width: "700px" }} src={cafeImage} /> */}
-            {/* <AnimationImage src={soapImage} /> */}
-            <AnimationImage src={rosesImage} />
             <AnimationImage src={reddotImage} />
-            <AnimationImage src={swansImage} />
+            <AnimationImage src={birdsImage} />
+            <AnimationImage src={rosesImage} />
+            <AnimationImage src={cat_turnaroundImage} />
             <AnimationImage src={publishingImage} />
             <AnimationImage src={pennywiseImage} />
             <AnimationImage src={backgammonImage} />
             <AnimationImage src={campingImage} />
+            <AnimationImage src={watchdominionImage} />
             <AnimationImage src={catWereWolfImage} />
             <AnimationImage src={basketImage} />
             <AnimationImage src={paddleboardsImage} />
@@ -64,40 +64,46 @@ const IllustrationAnimation = () => {
             <AnimationImage src={photographyImage} />
             <AnimationImage src={birdsImage} />
             <AnimationImage src={babyImage} />
-            <AnimationImage src={reddotImage} />
-            <AnimationImage src={swansImage} />
-            <AnimationImage src={publishingImage} />
+            <AnimationImage src={watchdominionImage} />
             <AnimationImage src={bearImage} />
+            <AnimationImage src={swansImage} />
+            <AnimationImage src={uxjobsboardImage} />
+            <AnimationImage src={reddotImage} />
+            <AnimationImage src={publishingImage} />
             <AnimationImage src={rosesImage} />
             <AnimationImage src={campingImage} />
-            <AnimationImage src={duckImage} />
-            <AnimationImage src={vansImage} />
-            <AnimationImage src={catWereWolfImage} />
-            <AnimationImage src={pennywiseImage} />
-            <AnimationImage src={backgammonImage} />
-            {/* <AnimationImage src={soapImage} /> */}
-            <AnimationImage src={basketImage} />
             <AnimationImage src={paddleboardsImage} />
+            <AnimationImage src={catWereWolfImage} />
+            <AnimationImage src={duckImage} />
+            <AnimationImage src={pennywiseImage} />
+            <AnimationImage src={movieImage} />
+            <AnimationImage src={backgammonImage} />
+            <AnimationImage src={basketImage} />
+            <AnimationImage src={cafeImage} />
+            <AnimationImage src={vansImage} />
             <AnimationImage src={tvImage} />
           </div>
           <div className="animation-column">
             <AnimationImage src={catWereWolfImage} />
             <AnimationImage src={birdsImage} />
+            <AnimationImage src={reddotImage} />
             <AnimationImage src={tvImage} />
-            <AnimationImage src={bearImage} />
+            <AnimationImage src={uxjobsboardImage} />
             <AnimationImage src={cat_turnaroundImage} />
-            {/* <AnimationImage src={soapImage} /> */}
             <AnimationImage src={backgammonImage} />
             <AnimationImage src={beachImage} />
+            <AnimationImage src={watchdominionImage} />
             <AnimationImage src={babyImage} />
+            <AnimationImage src={movieImage} />
             <AnimationImage src={pennywiseImage} />
             <AnimationImage src={paddleboardsImage} />
             <AnimationImage src={photographyImage} />
             <AnimationImage src={vansImage} />
+            <AnimationImage src={bearImage} />
             <AnimationImage src={publishingImage} />
-            <AnimationImage src={basketImage} />
             <AnimationImage src={campingImage} />
-            <AnimationImage src={reddotImage} />
+            <AnimationImage src={basketImage} />
+            <AnimationImage src={cafeImage} />
             <AnimationImage src={swansImage} />
             <AnimationImage src={duckImage} />
             <AnimationImage src={rosesImage} />

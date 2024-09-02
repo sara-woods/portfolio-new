@@ -4,7 +4,6 @@
 
 .animation-mask {
   height: 700px;
-  width: 800px;
   overflow: hidden;
   display: flex;
   gap: 16px;
@@ -13,6 +12,10 @@
   --animation-offset: 7700px;
   --animation-duration: 45s;
   margin-bottom: 60px;
+}
+
+.animation-mask > * {
+  flex: 1 1 0;
 }
 
 @keyframes changeYup {
