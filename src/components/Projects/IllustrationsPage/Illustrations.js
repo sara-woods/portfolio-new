@@ -14,6 +14,7 @@ import clownImage from "../../../images/Illustrations/pennywise.jpg";
 import vansImage from "../../../images/Illustrations/vans.jpg";
 import catTurnaround from "../../../images/Illustrations/cat_turnaround.gif";
 import duckGif from "../../../images/Illustrations/duck.gif";
+import abcImage from "../../../images/Illustrations/Abc.jpg";
 import { useEffect } from "react";
 
 const Illustrations = () => {
@@ -66,6 +67,10 @@ const Illustrations = () => {
           <IllustrationItem
             src={clownImage}
             alt="Pennywise the clown in rubber hose retro style"
+          />
+          <IllustrationItem
+            src={abcImage}
+            alt="Alphabet spelled out with funny characters"
           />
           <IllustrationItem
             src={catTurnaround}

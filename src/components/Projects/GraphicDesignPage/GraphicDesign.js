@@ -12,6 +12,7 @@ import photographyImage from "../../../images/Illustrations/photography.jpg";
 import publishingImage from "../../../images/Illustrations/publishing.jpg";
 import rosesImage from "../../../images/Illustrations/roses.jpg";
 import symmetryImage from "../../../images/Illustrations/symmetry.jpg";
+import bagImage from "../../../images/Illustrations/bag.jpg";
 import { useEffect } from "react";
 
 const GraphicDesign = () => {
@@ -38,6 +39,10 @@ const GraphicDesign = () => {
             alt="Logo design for a photographer"
           />
           <IllustrationItem src={symmetryImage} alt="Yoga studio logo design" />
+          {/* <IllustrationItem
+            src={bagImage}
+            alt="Tote bag with outdoorsy illustration"
+          /> */}
           <IllustrationItem src={babyImage} alt="Baby shop logo design" />
           <IllustrationItem
             src={campingImage}
