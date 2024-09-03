@@ -11,7 +11,7 @@ import paddleboardsImage from "../../../images/Illustrations/paddleboards.jpg";
 import photographyImage from "../../../images/Illustrations/photography.jpg";
 import publishingImage from "../../../images/Illustrations/publishing.jpg";
 import rosesImage from "../../../images/Illustrations/roses.jpg";
-import soapImage from "../../../images/Illustrations/soap.jpg";
+import symmetryImage from "../../../images/Illustrations/symmetry.jpg";
 import { useEffect } from "react";
 
 const GraphicDesign = () => {
@@ -32,8 +32,13 @@ const GraphicDesign = () => {
             src={reddotImage}
             alt="Seinfeld episode poster design"
           />
-          <IllustrationItem src={babyImage} alt="Baby shop logo design" />
           <IllustrationItem src={beachImage} alt="Beachy company logo design" />
+          <IllustrationItem
+            src={photographyImage}
+            alt="Logo design for a photographer"
+          />
+          <IllustrationItem src={symmetryImage} alt="Yoga studio logo design" />
+          <IllustrationItem src={babyImage} alt="Baby shop logo design" />
           <IllustrationItem
             src={campingImage}
             alt="Outdoors and nature oriented brand logo design"
@@ -43,20 +48,12 @@ const GraphicDesign = () => {
             alt="Stand up paddle boards logo design"
           />
           <IllustrationItem
-            src={photographyImage}
-            alt="Logo design for a photographer"
-          />
-          <IllustrationItem
             src={publishingImage}
             alt="Logo design for a publishing company"
           />
           <IllustrationItem
             src={rosesImage}
             alt="T-shirt design with roses and text"
-          />
-          <IllustrationItem
-            src={soapImage}
-            alt="Logo design for a handmande soap company with a young owner"
           />
         </div>
       </div>
