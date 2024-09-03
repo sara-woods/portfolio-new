@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.942c4fb1.css",
-    "main.js": "/static/js/main.20ff87af.js",
+    "main.js": "/static/js/main.90c21e80.js",
     "static/media/movie-gif.gif": "/static/media/movie-gif.0ed789256bebec96bf42.gif",
     "static/media/watchdominion-gif.gif": "/static/media/watchdominion-gif.d0031fdd6e6997773bde.gif",
     "static/media/cafe-gif.gif": "/static/media/cafe-gif.cf714f3a47712fec99d2.gif",
@@ -15,6 +15,7 @@
     "static/media/persona.png": "/static/media/persona.d5ef5ff212a59c3d50bd.png",
     "static/media/uxjobsboard-accessibility-check.png": "/static/media/uxjobsboard-accessibility-check.20962035006005b5020d.png",
     "static/media/catwerewolf.jpg": "/static/media/catwerewolf.f4a2e02b8f743b757172.jpg",
+    "static/media/Abc.jpg": "/static/media/Abc.ebd113b70f12505d8da3.jpg",
     "static/media/uxjobsboard-alignment.png": "/static/media/uxjobsboard-alignment.504dbf859128af4d7dca.png",
     "static/media/vans.jpg": "/static/media/vans.247f17e52da8dc21b133.jpg",
     "static/media/bear.jpg": "/static/media/bear.3b910f5b6c5b5cacf2cf.jpg",
@@ -27,6 +28,7 @@
     "static/media/logo2.png": "/static/media/logo2.cc3f8179cebf30a9c6c2.png",
     "static/media/pennywise.jpg": "/static/media/pennywise.d8075ea9c75cc538c378.jpg",
     "static/media/thereddot.jpg": "/static/media/thereddot.cc2c6d1d6cfbed38aa63.jpg",
+    "static/media/bag.jpg": "/static/media/bag.4fd4747118ba263c9d15.jpg",
     "static/media/competitive-analysis.png": "/static/media/competitive-analysis.45a186f6ce1bdcb32780.png",
     "static/media/wireframes.png": "/static/media/wireframes.c069f6654b437ff215fd.png",
     "static/media/birds.jpg": "/static/media/birds.446577fd54341e765300.jpg",
@@ -52,10 +54,10 @@
     "static/media/cafe-font-arrow.png": "/static/media/cafe-font-arrow.a12c77ca7ed5d32f004a.png",
     "index.html": "/index.html",
     "main.942c4fb1.css.map": "/static/css/main.942c4fb1.css.map",
-    "main.20ff87af.js.map": "/static/js/main.20ff87af.js.map"
+    "main.90c21e80.js.map": "/static/js/main.90c21e80.js.map"
   },
   "entrypoints": [
     "static/css/main.942c4fb1.css",
-    "static/js/main.20ff87af.js"
+    "static/js/main.90c21e80.js"
   ]
 }
