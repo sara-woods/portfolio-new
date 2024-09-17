@@ -11,9 +11,9 @@ const Intro = () => {
               designer, illustrator, and web developer.
             </span>
             <br></br>
-            <br></br>With a focus on creativity and precision, I craft graphics
-            and websites that captivate audiences and drive results. Do you have
-            a project in mind? Let’s chat!<br></br>
+            <br></br>With a focus on creativity and precision, I create graphics
+            and websites that grab attention. Do you have a project in mind?
+            Let’s chat!<br></br>
             <br></br>
           </p>
           <div className="arrow-email">
