@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.942c4fb1.css",
-    "main.js": "/static/js/main.0b6870cf.js",
+    "main.js": "/static/js/main.d5249198.js",
     "static/media/movie-gif.gif": "/static/media/movie-gif.0ed789256bebec96bf42.gif",
     "static/media/watchdominion-gif.gif": "/static/media/watchdominion-gif.d0031fdd6e6997773bde.gif",
     "static/media/cafe-gif.gif": "/static/media/cafe-gif.cf714f3a47712fec99d2.gif",
@@ -34,6 +34,7 @@
     "static/media/birds.jpg": "/static/media/birds.446577fd54341e765300.jpg",
     "static/media/userflow.png": "/static/media/userflow.0c2af6ac823e7a403c91.png",
     "static/media/watchdominion-cover-image.png": "/static/media/watchdominion-cover-image.1053997c65ee7b4d6935.png",
+    "static/media/birds-ink.jpg": "/static/media/birds-ink.4311f19f2356cbd2a194.jpg",
     "static/media/basket.jpg": "/static/media/basket.2952b30b5b3f03cede91.jpg",
     "static/media/publishing.jpg": "/static/media/publishing.2f9156714de48ae30148.jpg",
     "static/media/roses.jpg": "/static/media/roses.714515b758b658f4ea1c.jpg",
@@ -54,10 +55,10 @@
     "static/media/cafe-font-arrow.png": "/static/media/cafe-font-arrow.a12c77ca7ed5d32f004a.png",
     "index.html": "/index.html",
     "main.942c4fb1.css.map": "/static/css/main.942c4fb1.css.map",
-    "main.0b6870cf.js.map": "/static/js/main.0b6870cf.js.map"
+    "main.d5249198.js.map": "/static/js/main.d5249198.js.map"
   },
   "entrypoints": [
     "static/css/main.942c4fb1.css",
-    "static/js/main.0b6870cf.js"
+    "static/js/main.d5249198.js"
   ]
 }
