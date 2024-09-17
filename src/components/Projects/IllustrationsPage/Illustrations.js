@@ -15,6 +15,7 @@ import vansImage from "../../../images/Illustrations/vans.jpg";
 import catTurnaround from "../../../images/Illustrations/cat_turnaround.gif";
 import duckGif from "../../../images/Illustrations/duck.gif";
 import abcImage from "../../../images/Illustrations/Abc.jpg";
+import birdsInkImage from "../../../images/Illustrations/birds-ink.jpg";
 import { useEffect } from "react";
 
 const Illustrations = () => {
@@ -35,6 +36,7 @@ const Illustrations = () => {
             src={swansImage}
             alt="Swans flying amongst the clouds in a risograph effect"
           />
+          <IllustrationItem src={birdsInkImage} alt="Birds in ink" />
           <IllustrationItem
             src={backgammonImage}
             alt="Cat playing backgammon"
