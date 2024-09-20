@@ -3,8 +3,10 @@
 }
 
 .illustration-container {
-  width: fit-content;
-  margin: 50px auto 50px auto;
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  margin: 25% auto 25% auto;
 }
 .illustration-container:first-child {
   margin-top: 0;
@@ -13,9 +15,6 @@
   margin-bottom: 0;
 }
 
-.illustration {
-  max-width: 500px;
-}
 
 .illustration-container:nth-child(even) {
   margin-left: auto;
@@ -26,6 +25,10 @@
 .illustration-container:nth-child(odd) {
   margin-left: 0;
   margin-right: auto;
+}
+.image-description {
+  font-size: 0.875rem;
+  margin-top: 1.5rem;
 }
 @media screen and (max-width: 600px) {
   .illustration {

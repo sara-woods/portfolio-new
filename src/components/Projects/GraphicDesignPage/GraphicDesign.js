@@ -13,6 +13,8 @@ import publishingImage from "../../../images/Illustrations/publishing.jpg";
 import rosesImage from "../../../images/Illustrations/roses.jpg";
 import symmetryImage from "../../../images/Illustrations/symmetry.jpg";
 import bagImage from "../../../images/Illustrations/bag.jpg";
+import musikkolloImage from "../../../images/Illustrations/musikkollo.jpg";
+import posterMusicImage from "../../../images/Illustrations/poster-music.jpg";
 import { useEffect } from "react";
 
 const GraphicDesign = () => {
@@ -32,25 +34,46 @@ const GraphicDesign = () => {
           <IllustrationItem
             src={reddotImage}
             alt="Seinfeld episode poster design"
+            description="Poster design for the Seinfeld episode The Red Dot, inspired by Saul Bass's movie posters."
           />
-          <IllustrationItem src={beachImage} alt="Beachy company logo design" />
+          <IllustrationItem
+            src={beachImage}
+            alt="Beachy company logo design"
+            description="Logo design for company selling beach totes. The logo mark was inspired by the sun and a bay seen from above."
+          />
+          <IllustrationItem
+            src={musikkolloImage}
+            alt="Music camp logo design"
+            description="Hand lettered logo for a local music camp, targeting 10-15 year olds learning to play an instrument."
+          />
+          <IllustrationItem
+            src={posterMusicImage}
+            alt="Poster design for a music fest"
+            description="Poster design for a local music fest with a hand lettered main title/logo."
+          />
           <IllustrationItem
             src={photographyImage}
-            alt="Logo design for a photographer"
+            alt="Logo design for a photographer business."
           />
           <IllustrationItem src={symmetryImage} alt="Yoga studio logo design" />
           {/* <IllustrationItem
             src={bagImage}
             alt="Tote bag with outdoorsy illustration"
           /> */}
-          <IllustrationItem src={babyImage} alt="Baby shop logo design" />
+          <IllustrationItem
+            src={babyImage}
+            alt="Baby shop logo design"
+            description="Logo design for a small shop selling baby clothes and accessories."
+          />
           <IllustrationItem
             src={campingImage}
             alt="Outdoors and nature oriented brand logo design"
+            description="Logo design for a company offering outdoor experiences."
           />
           <IllustrationItem
             src={paddleboardsImage}
             alt="Stand up paddle boards logo design"
+            description="Logo design for a stand up paddling (SUP) boards brand."
           />
           <IllustrationItem
             src={publishingImage}

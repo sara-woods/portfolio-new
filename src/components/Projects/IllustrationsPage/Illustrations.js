@@ -35,8 +35,13 @@ const Illustrations = () => {
           <IllustrationItem
             src={swansImage}
             alt="Swans flying amongst the clouds in a risograph effect"
+            description="Digitally illustrated with a risograph print effect."
           />
-          <IllustrationItem src={birdsInkImage} alt="Birds in ink" />
+          <IllustrationItem
+            src={birdsInkImage}
+            alt="Birds in ink"
+            description="A selection of birds from my nature journal. Great Spotted Woodpecker, European Crested Tit and Winter Wren."
+          />
           <IllustrationItem
             src={backgammonImage}
             alt="Cat playing backgammon"
@@ -44,6 +49,7 @@ const Illustrations = () => {
           <IllustrationItem
             src={birdsImage}
             alt="Birds in watercolor and ink"
+            description="Watercolor and ink."
           />
           <IllustrationItem
             src={tvImage}
@@ -56,6 +62,7 @@ const Illustrations = () => {
           <IllustrationItem
             src={vansImage}
             alt="old vans shoes in watercolor and ink"
+            description="Watercolor and ink."
           />
           <IllustrationItem
             src={catWereWolfImage}

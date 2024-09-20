@@ -18,6 +18,9 @@ const IllustrationItem = (props) => {
         src={props.src}
         alt={props.alt}
       />
+      {props.description && (
+        <p className="image-description">{props.description}</p>
+      )}
     </div>
   );
 };
