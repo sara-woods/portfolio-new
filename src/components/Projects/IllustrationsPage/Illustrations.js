@@ -40,7 +40,7 @@ const Illustrations = () => {
           <IllustrationItem
             src={birdsInkImage}
             alt="Birds in ink"
-            description="A selection of birds from my nature journal. Great Spotted Woodpecker, European Crested Tit and Winter Wren."
+            description="A selection of birds from my nature journal. Great Spotted Woodpecker, Crested Tit and Eurasian Wren."
           />
           <IllustrationItem
             src={backgammonImage}
