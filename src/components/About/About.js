@@ -26,13 +26,16 @@ const About = (props) => {
             <div>
               <p className="p-body">Illustration</p>
               <p className="p-body">Graphic Design</p>
-              <p className="p-body">Logos</p>
+              <p className="p-body">Logo Design</p>
+              <p className="p-body">Illustrator & Photoshop</p>
               <p className="p-body">Brand Identity</p>
               <p className="p-body">UI/UX Design</p>
               <p className="p-body">Poster Design</p>
+              <p className="p-body">Figma</p>
               <p className="p-body">Webflow</p>
               <p className="p-body">Wix</p>
               <p className="p-body">Squarespace</p>
+              <p className="p-body">HTML, CSS, Javascript, React</p>
             </div>
           </div>
         </div>
