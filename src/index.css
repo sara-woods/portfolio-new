@@ -40,10 +40,6 @@ h1 {
   margin-bottom: 72px;
 }
 
-h2 {
-  font-size: 42px;
-}
-
 h3 {
   font-family: 'Dela Gothic One', sans-serif;
   font-size: 2.625rem;
@@ -62,13 +58,12 @@ h5 {
   margin-bottom: 1rem;
 }
 
-h6 {
+h6, h2 {
   font-family: 'Dela Gothic One', sans-serif;
   font-size: 1.5rem;
   margin-bottom: 1rem;
 }
 
-h2,
 p {
   margin: 0;
 }
@@ -210,7 +205,7 @@ a:hover {
 }
 
 @media screen and (max-width: 700px) {
-  h6 {
+  h6, h2 {
       font-size: 1.25rem;
     }
 }

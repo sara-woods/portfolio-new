@@ -22,7 +22,7 @@ const About = (props) => {
           </div>
         </div>
         <div className="about-section">
-          <h6>SERVICES</h6>
+          <h2>SERVICES</h2>
           <div className="skills-container">
             <div>
               <p className="p-body">Illustration</p>
