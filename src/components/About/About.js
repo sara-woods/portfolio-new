@@ -12,10 +12,11 @@ const About = (props) => {
           <h6>ABOUT</h6>
           <div className="about-inner">
             <p className="p-body">
-              Hi! I’m Sara, a multidisciplinary creative specializing in
-              illustration, graphic design, and web development. Nestled in the
-              heart of Sweden’s forests, I’m passionate about crafting unique,
-              impactful solutions that connect with your audience.
+              Hey there! I’m Sara, an illustrator, graphic designer, and web
+              developer, nestled in the heart of Sweden’s forests. Whether
+              you’re looking for some fun illustrations, graphics, or a
+              smooth-running website to showcase your stuff, I’m here to help.
+              Let’s chat about your idea!
             </p>
             <img src={avatarImage} id="profile-image" alt="me" />
           </div>

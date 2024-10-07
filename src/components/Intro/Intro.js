@@ -6,7 +6,7 @@ const Intro = () => {
       <div className="intro-container">
         <div className="intro-top">
           <p className="p-body">
-            Hi! I’m Sara Woods — <br></br>a multidisciplinary{" "}
+            Hi! I’m Sara Woods — <br></br>
             <span className="weight-700">
               designer, illustrator, and web developer.
             </span>
