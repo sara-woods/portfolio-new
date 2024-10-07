@@ -40,6 +40,11 @@ h1 {
   margin-bottom: 72px;
 }
 
+#h1-intro {
+  font-family: 'Inter', sans-serif;
+  text-transform: none;
+}
+
 h3 {
   font-family: 'Dela Gothic One', sans-serif;
   font-size: 2.625rem;
@@ -64,11 +69,11 @@ h6, h2 {
   margin-bottom: 1rem;
 }
 
-p {
+p, #h1-intro {
   margin: 0;
 }
 
-p {
+p, #h1-intro {
   line-height: 160%;
   font-size: 1.5rem;
 }
@@ -191,7 +196,7 @@ a:hover {
   h1 {
     font-size: 56px;
   }
-  p {
+  p, #h1-intro {
     font-size: 1.3rem;
   }
 }
@@ -226,7 +231,7 @@ a:hover {
   h5 {
     font-size: 1.25rem;
   }
-  p {
+  p,#h1-intro {
     font-size: 1.2rem;
   }
 }

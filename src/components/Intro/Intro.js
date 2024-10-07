@@ -5,17 +5,21 @@ const Intro = () => {
     <div className="main-container">
       <div className="intro-container">
         <div className="intro-top">
-          <p className="p-body">
+          <h1 id="h1-intro">
             Hi! I’m Sara Woods — <br></br>
             <span className="weight-700">
               designer, illustrator, and web developer.
             </span>
-            <br></br>
-            <br></br>With a focus on creativity and precision, I create graphics
-            and websites that grab attention. Do you have a project in mind?
-            Let’s chat!<br></br>
-            <br></br>
+          </h1>
+          <br></br>
+          <p className="p-body">
+            With a focus on creativity and precision, I create graphics and
+            websites that grab attention. Do you have a project in mind? Let’s
+            chat!
           </p>
+          <br></br>
+          <br></br>
+
           <div className="arrow-email">
             <svg
               className="mr-4 arrow"
