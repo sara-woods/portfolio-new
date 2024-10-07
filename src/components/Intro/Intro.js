@@ -8,7 +8,7 @@ const Intro = () => {
           <h1 id="h1-intro">
             Hi! I’m Sara Woods — <br></br>
             <span className="weight-700">
-              designer, illustrator, and web developer.
+              illustrator, graphic designer and web developer.
             </span>
           </h1>
           <br></br>
