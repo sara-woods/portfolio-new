@@ -16,6 +16,7 @@ import catTurnaround from "../../../images/Illustrations/cat_turnaround.gif";
 import duckGif from "../../../images/Illustrations/duck.gif";
 import abcImage from "../../../images/Illustrations/Abc.jpg";
 import birdsInkImage from "../../../images/Illustrations/birds-ink.jpg";
+import trickortreatImage from "../../../images/Illustrations/trickortreat_small.jpg";
 import { useEffect } from "react";
 
 const Illustrations = () => {
@@ -32,6 +33,10 @@ const Illustrations = () => {
       <div className="main-container">
         <h1>Illustration</h1>
         <div className="illustrations-container">
+          <IllustrationItem
+            src={trickortreatImage}
+            alt="Hand-lettered illustration spelling out Trick or Treat"
+          />
           <IllustrationItem
             src={swansImage}
             alt="Swans flying amongst the clouds in a risograph effect"
