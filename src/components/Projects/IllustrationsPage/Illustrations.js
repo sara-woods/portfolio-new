@@ -21,6 +21,9 @@ import { useEffect } from "react";
 
 const Illustrations = () => {
   useEffect(() => {
+    document.title = "Sara Woods | Illustration";
+  }, []);
+  useEffect(() => {
     document.documentElement.scrollTo({
       top: 0,
       left: 0,

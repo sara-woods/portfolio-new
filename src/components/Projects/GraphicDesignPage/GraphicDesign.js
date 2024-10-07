@@ -12,12 +12,14 @@ import photographyImage from "../../../images/Illustrations/photography.jpg";
 import publishingImage from "../../../images/Illustrations/publishing.jpg";
 import rosesImage from "../../../images/Illustrations/roses.jpg";
 import symmetryImage from "../../../images/Illustrations/symmetry.jpg";
-import bagImage from "../../../images/Illustrations/bag.jpg";
 import musikkolloImage from "../../../images/Illustrations/musikkollo.jpg";
 import posterMusicImage from "../../../images/Illustrations/poster-music.jpg";
 import { useEffect } from "react";
 
 const GraphicDesign = () => {
+  useEffect(() => {
+    document.title = "Sara Woods | Graphic Design";
+  }, []);
   useEffect(() => {
     document.documentElement.scrollTo({
       top: 0,
