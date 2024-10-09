@@ -12,11 +12,7 @@ const Intro = () => {
             </span>
           </h1>
           <br></br>
-          <p className="p-body">
-            With a focus on creativity and precision, I create graphics and
-            websites that grab attention. Do you have a project in mind? Let’s
-            chat!
-          </p>
+          <p className="p-body">Need help with a project? Let’s chat!</p>
           <br></br>
           <br></br>
 
