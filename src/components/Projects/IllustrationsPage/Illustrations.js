@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import Navbar from "../../Navbar/Navbar";
 import IllustrationItem from "./IllustrationItem";
 import Contact from "../../Contact/Contact";
@@ -17,7 +18,8 @@ import duckGif from "../../../images/Illustrations/duck.gif";
 import abcImage from "../../../images/Illustrations/Abc.jpg";
 import birdsInkImage from "../../../images/Illustrations/birds-ink.jpg";
 import trickortreatImage from "../../../images/Illustrations/trickortreat_small.jpg";
-import { useEffect } from "react";
+import tattooImage from "../../../images/Illustrations/tattoo_small.jpg";
+import donutImage from "../../../images/Illustrations/donutmesswithme_small.jpg";
 
 const Illustrations = () => {
   useEffect(() => {
@@ -36,6 +38,11 @@ const Illustrations = () => {
       <div className="main-container">
         <h1>Illustration</h1>
         <div className="illustrations-container">
+          <IllustrationItem src={donutImage} alt="Donut on a 80s bike" />
+          <IllustrationItem
+            src={tattooImage}
+            alt="Illustration of a tattoo going wrong"
+          />
           <IllustrationItem
             src={trickortreatImage}
             alt="Hand-lettered illustration spelling out Trick or Treat"
