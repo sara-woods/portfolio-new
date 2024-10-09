@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.b3bc1a5b.css",
-    "main.js": "/static/js/main.fc359c32.js",
+    "main.js": "/static/js/main.553be390.js",
     "static/media/movie-gif.gif": "/static/media/movie-gif.0ed789256bebec96bf42.gif",
     "static/media/watchdominion-gif.gif": "/static/media/watchdominion-gif.d0031fdd6e6997773bde.gif",
     "static/media/cafe-gif.gif": "/static/media/cafe-gif.cf714f3a47712fec99d2.gif",
@@ -12,11 +12,13 @@
     "static/media/movie-cover-image.jpg": "/static/media/movie-cover-image.91fdc992c876fa9b9cb3.jpg",
     "static/media/duck.gif": "/static/media/duck.a5378423051350d5654e.gif",
     "static/media/uxjobsboard-prototype.gif": "/static/media/uxjobsboard-prototype.696b20de4824aa327849.gif",
+    "static/media/tattoo_small.jpg": "/static/media/tattoo_small.b6901f76968021f9a61f.jpg",
     "static/media/persona.png": "/static/media/persona.d5ef5ff212a59c3d50bd.png",
     "static/media/uxjobsboard-accessibility-check.png": "/static/media/uxjobsboard-accessibility-check.20962035006005b5020d.png",
     "static/media/catwerewolf.jpg": "/static/media/catwerewolf.f4a2e02b8f743b757172.jpg",
     "static/media/Abc.jpg": "/static/media/Abc.ebd113b70f12505d8da3.jpg",
     "static/media/uxjobsboard-alignment.png": "/static/media/uxjobsboard-alignment.504dbf859128af4d7dca.png",
+    "static/media/donutmesswithme_small.jpg": "/static/media/donutmesswithme_small.61027d4466158cec7d1b.jpg",
     "static/media/vans.jpg": "/static/media/vans.247f17e52da8dc21b133.jpg",
     "static/media/bear.jpg": "/static/media/bear.3b910f5b6c5b5cacf2cf.jpg",
     "static/media/swans.jpg": "/static/media/swans.6738828789738458fa36.jpg",
@@ -57,10 +59,10 @@
     "static/media/cafe-font-arrow.png": "/static/media/cafe-font-arrow.a12c77ca7ed5d32f004a.png",
     "index.html": "/index.html",
     "main.b3bc1a5b.css.map": "/static/css/main.b3bc1a5b.css.map",
-    "main.fc359c32.js.map": "/static/js/main.fc359c32.js.map"
+    "main.553be390.js.map": "/static/js/main.553be390.js.map"
   },
   "entrypoints": [
     "static/css/main.b3bc1a5b.css",
-    "static/js/main.fc359c32.js"
+    "static/js/main.553be390.js"
   ]
 }
