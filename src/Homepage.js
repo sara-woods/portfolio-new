@@ -12,7 +12,8 @@ import ScrollToHashElement from "./ScrollToHashElement";
 
 const Homepage = () => {
   useEffect(() => {
-    document.title = "Sara Woods | Designer, illustrator and web developer";
+    document.title =
+      "Sara Woods | Illustrator, graphic designer and web developer";
   }, []);
 
   useEffect(() => {

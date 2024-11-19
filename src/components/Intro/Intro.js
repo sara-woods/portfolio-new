@@ -5,17 +5,17 @@ const Intro = () => {
     <div className="main-container">
       <div className="intro-container">
         <div className="intro-top">
-          <p className="p-body">
-            Hi! I’m Sara Woods — <br></br>a multidisciplinary{" "}
+          <h1 id="h1-intro">
+            Hi! I’m Sara Woods — <br></br>
             <span className="weight-700">
-              designer, illustrator, and web developer.
+              illustrator, graphic designer and web developer.
             </span>
-            <br></br>
-            <br></br>With a focus on creativity and precision, I craft graphics
-            and websites that captivate audiences and drive results. Do you have
-            a project in mind? Let’s chat!<br></br>
-            <br></br>
-          </p>
+          </h1>
+          <br></br>
+          <p className="p-body">Need help with a project? Let’s chat!</p>
+          <br></br>
+          <br></br>
+
           <div className="arrow-email">
             <svg
               className="mr-4 arrow"
@@ -45,7 +45,7 @@ const Intro = () => {
               />
             </svg>
             <p className="email-top-margin p-body weight-500">
-              sarawoodsdesign@gmail.com
+              hellosarawoods@gmail.com
             </p>
           </div>
         </div>

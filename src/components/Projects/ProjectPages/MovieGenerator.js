@@ -43,7 +43,7 @@ const MovieGenerator = () => {
             src={movieCoverImage}
             alt="Movie generator UI design"
           />
-          <h3 className="">Movie generator</h3>
+          <h3 className="">MOVIE GENERATOR</h3>
           <p className="text-grey case-study-body">
             Streamlining the movie night decision
           </p>

@@ -61,7 +61,7 @@ const UXJobsBoard = () => {
             src={uxjobsboardCoverImage}
             alt="UX Jobs Finder UI design"
           />
-          <h3 className="">UX Job Finder</h3>
+          <h3 className="">UX JOBS BOARD</h3>
           <p className="text-grey case-study-body">
             Seamless job searching in the UX field
           </p>

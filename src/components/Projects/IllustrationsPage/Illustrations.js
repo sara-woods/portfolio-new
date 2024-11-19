@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import Navbar from "../../Navbar/Navbar";
 import IllustrationItem from "./IllustrationItem";
 import Contact from "../../Contact/Contact";
@@ -14,9 +15,16 @@ import clownImage from "../../../images/Illustrations/pennywise.jpg";
 import vansImage from "../../../images/Illustrations/vans.jpg";
 import catTurnaround from "../../../images/Illustrations/cat_turnaround.gif";
 import duckGif from "../../../images/Illustrations/duck.gif";
-import { useEffect } from "react";
+import abcImage from "../../../images/Illustrations/Abc.jpg";
+import birdsInkImage from "../../../images/Illustrations/birds-ink.jpg";
+import trickortreatImage from "../../../images/Illustrations/trickortreat_small.jpg";
+import tattooImage from "../../../images/Illustrations/tattoo_small.jpg";
+import donutImage from "../../../images/Illustrations/donutmesswithme_small.jpg";
 
 const Illustrations = () => {
+  useEffect(() => {
+    document.title = "Sara Woods | Illustration";
+  }, []);
   useEffect(() => {
     document.documentElement.scrollTo({
       top: 0,
@@ -30,13 +38,24 @@ const Illustrations = () => {
       <div className="main-container">
         <h1>Illustration</h1>
         <div className="illustrations-container">
+          <IllustrationItem src={donutImage} alt="Donut on a 80s bike" />
+          <IllustrationItem
+            src={tattooImage}
+            alt="Illustration of a tattoo going wrong"
+          />
+          <IllustrationItem
+            src={trickortreatImage}
+            alt="Hand-lettered illustration spelling out Trick or Treat"
+          />
           <IllustrationItem
             src={swansImage}
             alt="Swans flying amongst the clouds in a risograph effect"
+            // description="Digitally illustrated with a risograph print effect."
           />
           <IllustrationItem
-            src={tvImage}
-            alt="Vintage tv flying among the clouds"
+            src={birdsInkImage}
+            alt="Birds in ink"
+            // description="A selection of birds from my nature journal. Great Spotted Woodpecker, Crested Tit and Eurasian Wren."
           />
           <IllustrationItem
             src={backgammonImage}
@@ -45,6 +64,11 @@ const Illustrations = () => {
           <IllustrationItem
             src={birdsImage}
             alt="Birds in watercolor and ink"
+            // description="Watercolor and ink."
+          />
+          <IllustrationItem
+            src={tvImage}
+            alt="Vintage tv flying among the clouds"
           />
           <IllustrationItem
             src={bearImage}
@@ -53,6 +77,7 @@ const Illustrations = () => {
           <IllustrationItem
             src={vansImage}
             alt="old vans shoes in watercolor and ink"
+            // description="Watercolor and ink."
           />
           <IllustrationItem
             src={catWereWolfImage}
@@ -66,6 +91,10 @@ const Illustrations = () => {
           <IllustrationItem
             src={clownImage}
             alt="Pennywise the clown in rubber hose retro style"
+          />
+          <IllustrationItem
+            src={abcImage}
+            alt="Alphabet spelled out with funny characters"
           />
           <IllustrationItem
             src={catTurnaround}

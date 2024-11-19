@@ -35,7 +35,7 @@ const Navbar = () => {
 
   return (
     <header>
-      <Link to="/#top">
+      <Link to="/#root">
         <img
           tabIndex="0"
           className="navbar-logo"

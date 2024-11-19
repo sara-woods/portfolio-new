@@ -11,8 +11,8 @@ const Contact = (props) => {
       >
         <p>Have a project in mind?</p>
         <h1>LET'S CHAT</h1>
-        <a href="mailto: sarawoodsdesign@gmail.com">
-          <p className="email">sarawoodsdesign@gmail.com</p>
+        <a href="mailto: hellosarawoods@gmail.com">
+          <p className="email">hellosarawoods@gmail.com</p>
         </a>
       </div>
     </ColorBackground>

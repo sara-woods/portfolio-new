@@ -36,7 +36,7 @@ const Cafe = () => {
             src={cafeCoverImage}
             alt="Café UI design"
           />
-          <h3 className="">Café landing page</h3>
+          <h3 className="">CAFÉ LANDING PAGE</h3>
           <p className="text-grey case-study-body">
             A landing page for a fictional café
           </p>

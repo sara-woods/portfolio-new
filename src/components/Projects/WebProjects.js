@@ -6,6 +6,9 @@ import { useEffect } from "react";
 
 const WebProjects = () => {
   useEffect(() => {
+    document.title = "Sara Woods | Web Projects";
+  }, []);
+  useEffect(() => {
     document.documentElement.scrollTo({
       top: 0,
       left: 0,
