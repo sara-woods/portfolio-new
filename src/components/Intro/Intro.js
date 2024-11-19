@@ -45,7 +45,7 @@ const Intro = () => {
               />
             </svg>
             <p className="email-top-margin p-body weight-500">
-              sarawoodsdesign@gmail.com
+              hellosarawoods@gmail.com
             </p>
           </div>
         </div>
