@@ -50,7 +50,7 @@ const Illustrations = () => {
           <IllustrationItem
             src={trickortreatGifImage}
             alt="Morphing animation spelling out Trick or Treat"
-            description="Morphing animation spelling out Trick or Treat, illustrated in Adobe Fresco."
+            description="Morphing animation spelling out Trick or Treat, 35 individual frames illustrated in Adobe Fresco."
           />
           <IllustrationItem
             src={trickortreatImage}
