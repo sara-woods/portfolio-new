@@ -22,6 +22,7 @@ import trickortreatGifImage from "../../../images/Illustrations/trickortreat.gif
 import tattooImage from "../../../images/Illustrations/tattoo_small.jpg";
 import donutImage from "../../../images/Illustrations/donutmesswithme_small.jpg";
 import halloweenpatternImage from "../../../images/Illustrations/halloween-pattern.jpg";
+import magpieImage from "../../../images/Illustrations/magpie.jpg";
 
 const Illustrations = () => {
   useEffect(() => {
@@ -40,12 +41,13 @@ const Illustrations = () => {
       <div className="main-container">
         <h1>Illustration</h1>
         <div className="illustrations-container">
+          <IllustrationItem src={magpieImage} alt="Magpie holding a coin in their beak" description='"Thank you for the loan". My submission for a postcard illustration contest by Swish (mobile payment system in Sweden)'/>
           <IllustrationItem src={halloweenpatternImage} alt="Pattern with halloween realted illustrations" description="Halloween-themed pattern" />
-          <IllustrationItem src={donutImage} alt="Illustration of a donut on an 80s bike" description="'Donut mess with me', Stinktober Day 9, 2024" />
+          <IllustrationItem src={donutImage} alt="Illustration of a donut on an 80s bike" description='"Donut mess with me", Stinktober Day 9, 2024' />
           <IllustrationItem
             src={tattooImage}
             alt="Illustration of a tattoo going wrong"
-            description="'Bill is getting a tattoo of his belowed nephew Timmy. Too bad he didn't check the reviews of Tattoo City first.' Made for the prompt 'A Really Stupid Tattoo', Stinktober Day 4, 2024"
+            description='"Bill is getting a tattoo of his beloved nephew Timmy. Too bad he didn&apos;t check the reviews of Tattoo City first." Made for the prompt "A Really Stupid Tattoo", Stinktober Day 4, 2024'
           />
           <IllustrationItem
             src={trickortreatGifImage}
