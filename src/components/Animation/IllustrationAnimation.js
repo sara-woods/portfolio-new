@@ -26,6 +26,7 @@ import uxjobsboardImage from "../../images/UXjobsboard/uxjobsboard-cover-image.p
 import trickortreatImage from "../../images/Illustrations/trickortreat_small.jpg";
 import tattooImage from "../../images/Illustrations/tattoo_small.jpg";
 import donutImage from "../../images/Illustrations/donutmesswithme_small.jpg";
+import magpieImage from "../../images/Illustrations/magpie.jpg";
 
 const IllustrationAnimation = () => {
   return (
@@ -35,6 +36,7 @@ const IllustrationAnimation = () => {
         <div className="animation-mask">
           <div className="animation-column">
             <AnimationImage src={beachImage} />
+            <AnimationImage src={magpieImage} />
             <AnimationImage src={swansImage} />
             <AnimationImage src={uxjobsboardImage} />
             <AnimationImage src={tattooImage} />
@@ -49,32 +51,33 @@ const IllustrationAnimation = () => {
             <AnimationImage src={birdsImage} />
             <AnimationImage src={rosesImage} />
             <AnimationImage src={publishingImage} />
-            <AnimationImage src={pennywiseImage} />
+            {/* <AnimationImage src={pennywiseImage} /> */}
             <AnimationImage src={backgammonImage} />
             <AnimationImage src={campingImage} />
             <AnimationImage src={watchdominionImage} />
             <AnimationImage src={catWereWolfImage} />
             <AnimationImage src={basketImage} />
-            <AnimationImage src={babyImage} />
+            {/* <AnimationImage src={babyImage} /> */}
             <AnimationImage src={tvImage} />
           </div>
           <div className="animation-column" id="column-2">
             <AnimationImage src={beachImage} />
+            <AnimationImage src={magpieImage} />
             <AnimationImage src={trickortreatImage} />
             <AnimationImage src={photographyImage} />
             <AnimationImage src={birdsImage} />
-            <AnimationImage src={babyImage} />
+            {/* <AnimationImage src={babyImage} /> */}
             <AnimationImage src={watchdominionImage} />
             <AnimationImage src={bearImage} />
             <AnimationImage src={swansImage} />
             <AnimationImage src={uxjobsboardImage} />
             <AnimationImage src={donutImage} />
             <AnimationImage src={reddotImage} />
-            <AnimationImage src={publishingImage} />
+            {/* <AnimationImage src={publishingImage} /> */}
             <AnimationImage src={rosesImage} />
             <AnimationImage src={campingImage} />
             <AnimationImage src={catWereWolfImage} />
-            <AnimationImage src={pennywiseImage} />
+            {/* <AnimationImage src={pennywiseImage} /> */}
             <AnimationImage src={movieImage} />
             <AnimationImage src={backgammonImage} />
             <AnimationImage src={tattooImage} />
@@ -87,16 +90,15 @@ const IllustrationAnimation = () => {
             <AnimationImage src={catWereWolfImage} />
             <AnimationImage src={birdsImage} />
             <AnimationImage src={reddotImage} />
-            <AnimationImage src={tattooImage} />
             <AnimationImage src={tvImage} />
-            <AnimationImage src={tattooImage} />
             <AnimationImage src={uxjobsboardImage} />
+            <AnimationImage src={tattooImage} />
             <AnimationImage src={backgammonImage} />
             <AnimationImage src={beachImage} />
             <AnimationImage src={watchdominionImage} />
             <AnimationImage src={movieImage} />
             <AnimationImage src={trickortreatImage} />
-            <AnimationImage src={pennywiseImage} />
+            {/* <AnimationImage src={pennywiseImage} /> */}
             <AnimationImage src={photographyImage} />
             <AnimationImage src={vansImage} />
             <AnimationImage src={bearImage} />
